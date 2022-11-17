@@ -148,6 +148,13 @@
   height: 25px;
   
 }
+.busca  div {
+  margin-left: 50%;
+}
+.busca{
+  width: 50px;
+  margin-left:20%;
+}
 .nome{
   border: 2px solid #dedede48;
   background-color:#ff823e;
@@ -185,9 +192,8 @@
 .chat1{
   border: 2px solid #dedede;
   background-color:rgba(170, 170, 170, 0.308);
-  border-radius: 25px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px ;
   width: 550px;
   margin-left: 5px;
   position: absolute;
@@ -305,3 +311,14 @@
     position: absolute;
     width: 50px;
   }
+
+
+
+
+
+
+
+
+
+
+

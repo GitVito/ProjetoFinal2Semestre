@@ -179,8 +179,9 @@ span.calendario{
 
 img.perfil{
     width: 60px;
-    margin-left: 2900px;
+    right: 8.5%;
     position: absolute;
+    z-index: 2000;
 }
 img.perfil{
     cursor: pointer;
@@ -273,21 +274,31 @@ span.tarefas{
 }
 
 .dropDown{
-    position: fixed;
+    position: absolute;
     right: 3%;
-    z-index: 2;
+    z-index: -1;
 
     width: 12.5%;
-    height: 25%;
+    height: 200px;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #f7fcff;
 }
 .dropDownPositionOpen{
     top: 8.65%;
     transition: 0.5s ease-in-out;
 }
 .dropDownPositionClose{
-    top: -17%;
+    top: -25%;
+    transition: 0.5s ease;
+}
+.dropDown h5{
+    cursor: pointer;
+    border-radius: 1em;
+}
+.dropDown a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
 }
 
 .dropIcon{
@@ -305,4 +316,32 @@ span.tarefas{
     background-color: #dadada;
     cursor: pointer;
     transition: 0.2s linear;
+}
+
+.PlaceTextPerfil{
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+
+.PlaceTextFormulario{
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+
+.PlaceTextSuporte{
+    position: absolute;
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
 }

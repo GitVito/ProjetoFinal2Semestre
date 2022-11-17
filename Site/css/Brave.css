@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+ 
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+ *{
+     font-family: Poppins;
+ }
+
+body{
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-size:17px ;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.Logo{
+    width: 300px;
+    height: 250px;
+    margin-left: -900px;
+}
+
+li{
+    color: white;
+    text-decoration: none;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+  
+}
+header{
+    background-color: black;
+    align-items: center;
+}
+
+=======
  
  @import url('https://fonts.googleapis.com/css?family=Poppins');
 
@@ -32,3 +73,4 @@ a{
     text-decoration: none;
   
 }
+>>>>>>> adde2776ab0720b66e152bcc3e0c9fa6a6a9720f
