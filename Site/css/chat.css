@@ -43,11 +43,11 @@
     border-radius: 35px;
   }
   .chatvictor1{
+  margin-left: 30%;
+  position: absolute;
   
-      width: 70px;
-      margin-left: 35%;
-      position: absolute;
-      border-radius: 60%;
+  
+      
   }
    /* Darker chat container */
    .darker2 {
@@ -124,36 +124,38 @@
 }
 
 #divBusca{
-  background-color:rgba(128, 128, 128, 0.185);
+  background-color: rgba(128, 128, 128, 0.185);
+  border-color: #FF833E;
   border:solid 1px;
   border-radius:15px;
-  width:300px;
+  width:500px;
   position: absolute;
-  margin-left: 100px;
-  margin: 30px;
+  margin-left: 1%;
+  margin-top:1.5%;
+ 
+}
+
+#divBusca{
+  background-color: rgba(128, 128, 128, 0.185);
+  border-color: #FF833E;
+  border-radius:35px;
+  width:550px;
 }
 
 #txtBusca{
   float:left;
   background-color:transparent;
-  padding-left:5px;
+  margin-left: 5%;
   font-style:italic;
   font-size:18px;
   border:none;
   height:32px;
   width:260px;
 }
-.lupita{
-  width: 25px;
-  height: 25px;
-  
-}
-.busca  div {
-  margin-left: 50%;
-}
-.busca{
-  width: 50px;
-  margin-left:20%;
+.lupinha{
+  width: 23px;
+  margin-top: 2%;
+  margin-left: 30%;
 }
 .nome{
   border: 2px solid #dedede48;
@@ -165,10 +167,11 @@
  
 }
 .fotonome{
-  width: 50px;
+  width: 80px;
   margin-left: -20%;
   position: absolute;
-  border-radius: 80%;
+  border-radius: 30%;
+ 
 }
 .linha {
   width: 600px;
@@ -176,6 +179,7 @@
   margin-top: 3%;
   overflow: scroll;
   position: absolute;
+  overflow-x: hidden;
   
 }
 .cuadrito{
@@ -190,7 +194,7 @@
 }
 
 .chat1{
-  border: 2px solid #dedede;
+  border-radius: 23px;
   background-color:rgba(170, 170, 170, 0.308);
   padding: 10px;
   margin: 10px ;
@@ -200,10 +204,18 @@
   margin-top: 50px;
 }
 .chatrafa{
-  width: 70px;
+  width: 80px;
   margin-left: -45%;
   position: absolute;
-  border-radius: 60%;
+  border-radius: 50%;
+  margin-top: 1%;
+}
+.chatrafa1{
+  width: 100px;
+  margin-left: -17%;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 1%;
 }
 .chat2{
   border: 2px solid #dedede;
@@ -217,10 +229,10 @@
   margin-top: 200px;
 }
 .chatvictor{
-  width: 70px;
+  width: 80px;
   margin-left: -45%;
   position: absolute;
-  border-radius: 60%;
+  border-radius: 50%;
     }
 .chat3{
   border: 2px solid #dedede;
@@ -241,11 +253,19 @@
   margin-top: -1%;
 }
 .chatcard1{
-  width: 65px;
+  width: 70px;
   margin-left: -47%;
   position: absolute;
-  border-radius: 60%;
-  margin-top: -1%;
+  border-radius: 70%;
+  margin-top: 1%;
+}
+.chatail{
+  width: 80px;
+  margin-left: 35%;
+  position: absolute;
+  border-radius: 70%;
+  margin-top: 2%;
+
 }
 .chat4{
  border: 2px solid #dedede;
@@ -259,11 +279,17 @@
           margin-top: 500px;
         }
         .chataline{
-          width: 60px;
+          width: 80px;
           margin-left: -45%;
           position: absolute;
-          border-radius: 50%;
-          margin-top: -1%;
+          border-radius: 60%;
+         
+        }
+        .chatbeno{
+          width: 80px;
+          margin-left: -45%;
+          position: absolute;
+          border-radius: 60%;
         }
         .chat5{
           border: 2px solid #dedede;
@@ -275,7 +301,21 @@
             margin-left: 5px;
             position: absolute;
             margin-top: 650px;
-          } .chat6{
+          }
+          .sala{
+          width: 90px;
+          margin-left: -45%;
+          position: absolute;
+          border-radius: 60%;
+          }
+          .chatgu{
+            width: 60px;
+          margin-left: 35%;
+          position: absolute;
+          border-radius: 60%;
+          margin-top: 3%;
+          }
+           .chat6{
             border: 2px solid #dedede;
               background-color:rgba(170, 170, 170, 0.308);
               border-radius: 25px;
@@ -285,6 +325,13 @@
               margin-left: 5px;
               position: absolute;
               margin-top: 800px;
+              }
+              .fotothami{
+                width: 90px;
+               margin-left: -45%;
+               position: absolute;
+               border-radius: 60%;
+
               }
 .barrita{
   position: absolute;
