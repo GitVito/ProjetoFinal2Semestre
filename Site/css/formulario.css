@@ -1,0 +1,472 @@
+body{
+    height: 88.1vh;
+}
+
+.dropDown h5:hover{
+    background-color: #40b9ff;
+    transition: all 0.5s linear;
+}
+#folha-base{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.5em;
+    border-radius: 0.8em;
+
+
+    width: 28%;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0em 0em 0.6em 0em #000;
+}
+
+.centro{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: inline-block;
+}
+
+fieldset{
+    border: 2px solid dodgerblue;
+    padding: 1em;
+}
+legend{
+    padding: 5px;
+    border: 2px solid dodgerblue;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    font-size: 1.4em;
+}
+.box-input{
+    position: relative;
+}
+.inputUser{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    margin-bottom: 3%;
+    letter-spacing: 2px; /*Espaço entre as letras*/
+    font-family: 'Poppins';
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+}
+
+.label-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;  /* Qualquer lugar que você clicar, irá reproduzir esta ação */
+    transition: 0.5s;
+}
+.inputUser:focus ~ .label-input, .inputUser:valid ~ .label-input{
+    top: -20px;
+    left: 0;
+    font-size: 15px;
+    /* transform: scale(0.75); */
+    color: dodgerblue;
+}
+
+.pM{
+    margin-bottom: 3%;
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 3%;
+    background-color: rgb(224, 224, 224);
+}
+
+#submit{
+    background-image: linear-gradient(to right, dodgerblue, rgb(41, 0, 107));
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 94, 189), rgb(24, 0, 63));
+    transition: 0.5s linear;
+}
+
+.folha-explica{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+
+    width: 30%;
+    height: 712px;
+
+    padding: 2.5em;
+    border-radius: 0.8em;
+
+
+    width: 30%;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0em 0em 0.6em 0em #000;
+
+    background-image: url(../img/formulario/fundoText.png);
+    background-size: cover;
+}
+
+.arte-base{
+    position: absolute;
+    width: 30%;
+    height: 712px;
+
+    padding: 1.5em;
+    border-radius: 0.8em;
+
+    margin: auto;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: #ffffff;
+    box-shadow: 0em 0em 0.6em 0em;
+}
+
+.containExplicacao{
+    width: 100%;
+    height: 100%;
+    border: 2px solid dodgerblue;
+}
+
+.Textpreencha{
+    width: 100%;
+    margin: auto;
+    font-size: 1.15em;
+    text-align: justify;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.85em;
+}
+.preencha{
+    text-indent: 0.5em;
+}
+
+.placeTituloExplica{
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+}
+.placeTituloExplica h3{
+    font-size: 2em
+}
+
+.placeExplica{
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 1.2em;
+    text-indent: 1em;
+    font-size: 1.15em;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+
+ 
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+h3{
+   font-size:20px ;
+   font-family: 'Poppins';
+}
+.sessao-home{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;    
+}
+
+
+/*imagens e Videos*/
+.home-img{
+   height: 550px;
+   width: 600px;
+   margin-left: 800px;
+   margin-top: 750px;
+}
+
+
+/*Botões*/
+
+.btn:link,
+.btn:visited {
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 15px 40px;
+   display: inline-block;
+   border-radius: 100px;
+   transition: all .2s;
+   position: absolute;
+   background-color: #009ffb;
+   margin-top: 300px;
+   left: 120px;
+}
+
+.btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+   transform: translateY(-1px);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.btn::after {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   width: 100%;
+   border-radius: 100px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transition: all .4s;
+}
+
+.btn-white::after {
+   background-color: #fff;
+}
+
+.btn:hover::after {
+   transform: scaleX(1.4) scaleY(1.6);
+   opacity: 0;
+}
+
+.btn-animated {
+   animation: moveInBottom 5s ease-out;
+   animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+   0% {
+       opacity: 0;
+       transform: translateY(30px);
+   }
+
+   100% {
+       opacity: 1;
+       transform: translateY(0px);
+   }
+}
+.tarefas{
+   background-color: #cffcff7c;
+   height: 280px;
+   width: 40%;
+   margin-left: 50px;
+   margin-top: 850px;
+   position: absolute;
+   text-align: left;
+   padding-left: 50px;
+   border-radius: 50px;
+
+
+}
+
+h2.tarefas{
+   width: 40%;
+   margin-top:100px;
+   left: 50px;
+   position: absolute;
+}
+
+p.tarefas{
+   width: 40%;
+   margin-top:150px;
+   left: 150px;
+   position: absolute;
+   justify-content: left;
+   text-align: left;
+
+}
+
+h2.chat{
+   width: 40%;
+   margin-top:100px;
+   left: 1000px;
+   position: absolute;
+}
+
+p.chat{
+   width: 40%;
+   margin-top:200px;
+   left: 1000px;
+   position: absolute;
+   justify-content: left;
+   text-align: right;
+
+}
+
+img.chat{
+   width: 600px;
+   margin-right: 900px;
+}
+
+
+ 
+/* Animação */
+
+[data-anime] {
+   opacity: 0;
+   transition: .3s;
+ }
+ 
+ [data-anime="left"] {
+   transform: translate3d(-50px, 0, 0);
+ }
+ 
+ [data-anime="right"] {
+   transform: translate3d(50px, 0, 0);
+ }
+ 
+ [data-anime="top"] {
+   transform: translate3d(0, -50px, 0);
+ }
+ 
+ [data-anime].animate {
+   opacity: 1;
+   transform: translate3d(0px, 0px, 0px);
+ }
+
+
+
+/*Comparação*/
+
+.img-comp-container {
+   position: relative;
+   height: 50vh;
+}
+
+
+.img-comp-img {
+   position: absolute;
+   width: auto;
+   height: auto;
+   overflow: hidden;
+
+}
+
+
+.img-comp-img img {
+   display: block;
+   vertical-align: middle;
+}
+
+
+.img-comp-slider {
+   position: absolute;
+   z-index: 9;
+   cursor: ew-resize;
+   width: 40px;
+   height: 40px;
+   background-color: rgb(15, 177, 136);
+   opacity: 0.7;
+   border-radius: 50%;
+}
+
+
+.align-comparation{
+   margin-top: 20px;
+   height: 50vh;
+   width: 50vw;
+   margin-left: 0;
+   padding: 0;
+   margin: 0;
+}
+
+
+/*Fim Comparação*/
+
+
+
+
+/*---------------------------------------------------*/
+/*Imagens Acessorios*/
+
+.sessao-aluno{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   
+   
+}
+
+.alunos1{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   background-color: #8C52FF;
+   width: 280px;
+   border: black;
+   border-radius: 30px;
+   box-shadow: 10px 10px  #8c52ff62;
+  
+   
+}
+
+
+.alunos2{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   background-color:#FF66C4;
+   width: 280px;
+  
+   border-radius: 30px;
+   box-shadow: 10px 10px  #ff66c442;
+  
+   
+}
+
+.img_div{    
+   margin-left:190px;
+   margin-top: 13px;
+   height: 300px;
+   width: 200px;
+}
+
+footer h5{
+   color: white;
+   font-size: 15px;
+}
+
+footer{
+    margin-top: 5%;
+}
+/*--------------------------------------------------*/

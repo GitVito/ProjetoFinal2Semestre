@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +18,7 @@
     </header>
     
 </body>
-=======
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +32,106 @@
     <title>Brave</title>
 </head>
 <body>
-    <header>
-        <img  class="Logo" src="img/brave.png" alt="Brave_Logo">
-        <a href=""><li>Sobre Nos</li></a>
-        <a href=""><li>Home</li></a>
+    <!--Header-->
+ 
+
+ <header>
+    <div class="overlay"></div>
+    <div class="nav">
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home tab-is-active">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/home.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+  
+        <li class="tabs-item tab tab-chat" style="height:55px ;">
+  
+          <div class="tab-circle"></div>
+          <i class="fa fa-comment tab-icon"></i>
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas.html">
+  
+        <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+  
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
+  
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sino.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendar.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/multiple-users-silhouette.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
+    </div>
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporte.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formulario.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
     </header>
+  
+    <!--  fim Header-->
     
 </body>
->>>>>>> adde2776ab0720b66e152bcc3e0c9fa6a6a9720f
+
 </html>

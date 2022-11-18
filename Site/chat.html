@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/chat.css" />
+    <script src="js/menu.js"></script>
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -22,13 +22,15 @@
   </head>
   <body>
 <!--Header-->
+ 
+
 <header>
   <div class="overlay"></div>
   <div class="nav">
     <ul class="tabs">
 
       <a href="index.html">
-      <li class="tabs-item tab tab-home ">
+      <li class="tabs-item tab tab-home tab-is-active">
         <div class="tab-circle"></div>
         <img class="roxinho" src="img/home.png">            
         <span class="tab-home">Home</span>
@@ -36,7 +38,9 @@
       </a>
 
       <a href="chat.html">
-      <li class="tabs-item tab tab-chat   tab-is-active">
+
+      <li class="tabs-item tab tab-chat">
+
         <div class="tab-circle"></div>
         <i class="fa fa-comment tab-icon"></i>
       
@@ -44,7 +48,9 @@
       </li>
       </a>
       <a href="Tarefas.html">
+
       <li class="tabs-item tab tab-tarefas">
+
         <div class="tab-circle"></div>
         <i class="fa fa-clipboard tab-icon"></i>
         <span class="tarefas">Tarefas</span>
@@ -77,15 +83,43 @@
       </li>
       </a>
       
-      <img class="perfil" src="img/girl.png">
+      <img id="perfilImg" class="perfil" src="img/girl.png">
+      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
 
     </ul>
   </div>
 
+
+  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+
+    <div class="PlaceTextPerfil">
+      <a href="perfil.html"><h5>Perfil</h5></a>
+      
+    </div>
+    <div class="PlaceTextFormulario">
+      <a href="suporte.html"><h5>Suporte</h5></a>
+      
+    </div>
+    <div class="PlaceTextSuporte">
+      <a href="formulario.html"><h5>Formulario</h5></a>
+      
+    </div>
+
+    <div class="placeLinhaSeparar">
+      <div class="linhaSeparar"></div>
+    </div>
+
+
+    <div class="PlaceTextSair">
+      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+      
+    </div>
+
+  </div>
+
   </header>
 
-
-<!--  fim Header-->
+  <!--  fim Header-->
 
         <!-- acessivel em libras -->
 

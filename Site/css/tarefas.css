@@ -95,3 +95,12 @@
     font-size: 3.5em;
     color:#717272
   }
+
+  .dropDown h5:hover{
+    background-color: #D73379;
+    transition: all 0.5s linear;
+}
+
+.dropDown{
+  background-color: #fde8f1;
+}

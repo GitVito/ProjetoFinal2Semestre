@@ -340,8 +340,9 @@ p{
     width: 70%;
     height: 60%;
     border-radius: 1em;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.199);
 
+    background-color: #f3f3f3;
 }
 .ir:hover{
     cursor: pointer;
@@ -376,4 +377,8 @@ h6{
 .dropDown h5:hover{
     background-color: #40b9ff;
     transition: all 0.5s linear;
+}
+
+.dropDown{
+    background-color: #f7fcff;
 }

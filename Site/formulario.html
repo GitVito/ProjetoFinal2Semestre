@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
-    
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/app.css">
-   
+    <link rel="stylesheet" href="css/formulario.css" />
+    <script src="js/notificacao.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
-
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -20,10 +19,11 @@
       referrerpolicy="no-referrer"
     />
    
-    <title>Home</title>
   </head>
-  <body class="light">
-    <!--Header-->
+  <body>
+
+
+       <!--Header-->
  
 
  <header>
@@ -51,11 +51,10 @@
       </a>
       <a href="Tarefas.html">
 
-        <li class="tabs-item tab tab-tarefas" style="height:55px ;">
-          
-          <div class="tab-circle"></div>
-          <i class="fa fa-clipboard tab-icon"></i>
-        
+      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+
+        <div class="tab-circle"></div>
+        <i class="fa fa-clipboard tab-icon"></i>
         <span class="tarefas">Tarefas</span>
       </li>
     </a>
@@ -124,67 +123,98 @@
 
   <!--  fim Header-->
 
+<div class="centro">
 
+    <div class="arte-base">
+        <div class="containImg">
+            <img class="gifForms" src="img/formulario/Forms.gif" alt="Preencha corretamente">
+        </div>
+        <div class="Textpreencha">
+            <p class="preencha"> Preste atenção em cada elemento do formulário, é nescessário que todas as informações estejam corretas.</p>
+            <p class="preencha"> Seja verdadeira na declaração de suas respostas, não há motivos para falsificação de informações.</p>
+        </div>
+    </div>
+  <div class="folha-explica">
 
-    <!-- acessivel em libras -->
+    <div class="containExplicacao">
+        <div class="placeTituloExplica">
+            <h3>Por que o questionário?</h3>
+        </div>
+        <div class="placeExplica">
+            <p>Fazemos o pedido da realização deste formulario, para sabermos como está a utilização do sistema, pois caso ocorra algum mal funcionamento de alguma função, ou um problema recorrente, podemos realizar a manutenção deste componente. Melhorando a experiência do usuário sempre que acessar o sistema.</p>
+        </div>
+    </div>
 
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
   </div>
+  <div id="folha-base">
+    <form action="">
+        <fieldset>
+            <legend><b>Formulário</b></legend>
+            <br>
+            <div class="box-input">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label class="label-input" for="nome">Nome completo</label>
+            </div>
+            <br>
+            <div class="box-input">
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label class="label-input" for="email">Email</label>
+            </div>
+            <br>
+            <div class="box-input">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                <label class="label-input" for="telefone">telefone</label>
+            </div>
+            <br>
+
+            <p class="pM">Sexo: </p>
+            
+            <input type="radio" name="genero" id="feminino" value="feminino" required>
+            <label for="feminino">Feminino</label>
+            
+
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            
+            
+            <input type="radio" name="genero" id="outro" value="outro" required>
+            <label for="outro">Outro</label>
+            <br>
+            
+            <br>
+            
+
+                <label for="data_nascimento"><b>Data de nascimento</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+            
+            <br>
+
+            <div class="box-input">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label class="label-input" for="cidade">Cidade</label>
+            </div><br>
+            <div class="box-input">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label class="label-input" for="estado">Estado</label>
+            </div><br>
+            <div class="box-input">
+                <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                <label class="label-input" for="cpf">CPF</label>
+            </div><br>
+            
+            <input type="submit" name="submit" id="submit">
+
+        </fieldset>
+    </form>
 </div>
 
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
 
-<style>
-  .access-button {
-      border-radius: 50px;
-      width: 45px;
-    float: right;
-  }
-    </style>
+</div>
 
-    <!-- fim libras -->
-
-
-    <div class="calendar">
-      <div class="calendar-header">
-          <span class="month-picker" id="month-picker">February</span>
-          <div class="year-picker">
-              <span class="year-change" id="prev-year">
-                  <pre><</pre>
-              </span>
-              <span id="year">2021</span>
-              <span class="year-change" id="next-year">
-                  <pre>></pre>
-              </span>
-          </div>
-      </div>
-      <div class="calendar-body">
-          <div class="calendar-week-day">
-              <div>Dom</div>
-              <div>Seg</div>
-              <div>Ter</div>
-              <div>Qua</div>
-              <div>Qui</div>
-              <div>Sex</div>
-              <div>Sab</div>
-          </div>
-          <div class="calendar-days"></div>
-      </div>
   
-      <div class="month-list"></div>
-  </div>
 
-  <script src="js/app.js"></script>
 
- <!-- Footer -->
-
-<footer class="footer" data-anime="left">
+<footer class="footer">
   <hr>
   <div class="container">
       
@@ -207,10 +237,10 @@
               </ul>
           </div>
 
-          <div class="footer-col" >
+          <div class="footer-col containerFoot" >
               <h4>Autor</h4>
               <ul>
-                  <li><a>Aline Batista</a></li>
+                  <li><a>Victor</a></li>
               </ul>
           </div>
 
@@ -227,31 +257,6 @@
  
 
 </footer>
- <!--  Fim Footer -->
-
-
-
- <!-- Scripts -->
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  </body>
-  <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/comparacao.js"></script>
-
-
-   <!--inicio Script Preloader-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-    }, 1500);
     
-</script>
- <!--Fim Script Preloader-->
+</body>
 </html>

@@ -23,9 +23,8 @@ function dropMenu(){
   dropId.style.transform = 'rotate(270deg)';
 
 
-  setTimeout(function(){
-    dropDownFundo.style.zIndex = '2000';
-  }, 2000);
+
+
   
   dropDownFundo.classList.remove('dropDownPositionClose');
   dropDownFundo.classList.add('dropDownPositionOpen');
