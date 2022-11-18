@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/tarefas.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/pullup_tarefas.css" />
+    <link rel="stylesheet" href="css/popup_tarefas.css" />
     <link rel="stylesheet" href="css/preloader.css" type="text/css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -163,28 +160,47 @@
 <!--inicio tarefas-->
 <h1> Anote suas atividades a fazer aqui:</h1> 
 <h99>"estipule datas para uma melhor perfomance"</h99>
-<div class="container01">
+<div class="container">
   <div class="new-task-container">
     <input
       type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
     /><br>
     <br><input
       type="date" class="new-task-input1"/><br>
+      <br><input type="text" class="new-task-input2" placeholder="Descreva a tarefa.."/><br>
 
     <br><button class="new-task-button">Adicionar</button>
-  </div>
+  
 
-  <div class="tasks-container"></div>
+    <div class="tasks-container"></div>
 
-  <br><button class="new-task-button "><a href="#openModal" >Open Modal</a>
+    <br><button class="new-task-button "><a href="#openModal" >descrição</a></button>
 
-    <div id="openModal" class="modalDialog">
-      <div>
-        <a href="#close" title="Close" class="close">X</a>
-        <h2>Popup</h2>
-        <p>Isto é uma popup toda bonitinha a funcionar apenas com CSS3.</p>
+      <div id="openModal" class="modalDialog">
+        <div>
+        
+          <a href="#close" title="Close" class="close">X</a>
+          <br>
+            <table> 
+              <tr>
+                  <td style="margin-left:0;margin-right: 0;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="100" height="100" src="img/notificacoes/MayaraProf.jpg" style="border-radius: 50%;margin: auto;"/>
+                  </td>
+
+                  <td style="margin: left 0;margin-right: 0;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Criado por Prof(a): Mayara em 18/10/2022 
+                  </td>
+              </tr>
+            </table>
+            <button class="new-task-button">Tirar Dúvida</button><br>
+            <br><hr><br>
+            <br><h2>Atividade - 21/11/2022</h2><br>
+        
+         <p>criar uma página em html e estilizada com css . Criar também um sistema em python que se comunique com os registro da pagina e também usar javascript</p>
+         <br><input type="text" class="new-task-input" placeholder="Adicione um comentario"/>
+        </div>
       </div>
-    </div></button>
+  </div>
 </div>
 
 
@@ -219,7 +235,7 @@
               </ul>
           </div>
 
-          <div class="footer-col containerFoot" >
+          <div class="footer-col" >
               <h4>Autor</h4>
               <ul>
                   <li><a>Rafaela</a></li>

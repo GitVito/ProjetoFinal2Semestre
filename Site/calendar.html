@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Calendar
-    </title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/menu.css" />
-   
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu2.css" />
+  
     <link rel="stylesheet" href="css/footer.css" />
-</head>
+    <link rel="stylesheet" href="css/app.css">
+   
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+
 
 <body class="light">
 
  <!--Header-->
  
+
+
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Home</title>
+  </head>
+  <body class="light">
+    <!--Header-->
 
  <header>
   <div class="overlay"></div>
@@ -24,7 +38,7 @@
     <ul class="tabs">
 
       <a href="index.html">
-      <li class="tabs-item tab tab-home tab-is-active">
+      <li class="tabs-item tab tab-home ">
         <div class="tab-circle"></div>
         <img class="roxinho" src="img/home.png">            
         <span class="tab-home">Home</span>
@@ -41,7 +55,9 @@
         <span class="chat">Chat</span>
       </li>
       </a>
+      
       <a href="Tarefas.html">
+
 
       <li class="tabs-item tab tab-tarefas" style="height:55px ;">
 
@@ -51,6 +67,14 @@
       </li>
     </a>
 
+        <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
+ 
+
     <a href="notificacoes.html">
       <li class="tabs-item tab tab-sino ">
         <div class="tab-circle"></div>
@@ -59,8 +83,13 @@
       </li>
       </a>
 
+
       <a href="chat.html">
       <li class="tabs-item tab tab-calendar ">
+
+      <a href="calendario.html">
+      <li class="tabs-item tab tab-calendar tab-is-active">
+
         <div class="tab-circle"></div>
         <img class="calendario" src="img/calendar.png">            
         <span class="calendario">Agenda</span>
@@ -117,110 +146,132 @@
 
 
 
-        <!-- acessivel em libras -->
+    <!-- acessivel em libras -->
 
 <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
   </div>
-  
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-  
-  <style>
-    .access-button {
-        border-radius: 50px;
-        width: 45px;
-      float: right;
-    }
-      </style>
-      <!-- fim libras -->
-  
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<style>
+  .access-button {
+      border-radius: 50px;
+      width: 45px;
+    float: right;
+  }
+    </style>
+
+    <!-- fim libras -->
+
+
     <div class="calendar">
-        <div class="calendar-header">
-            <span class="month-picker" id="month-picker">February</span>
-            <div class="year-picker">
-                <span class="year-change" id="prev-year">
-                    <pre><</pre>
-                </span>
-                <span id="year">2021</span>
-                <span class="year-change" id="next-year">
-                    <pre>></pre>
-                </span>
-            </div>
-        </div>
-        <div class="calendar-body">
-            <div class="calendar-week-day">
-                <div>Dom</div>
-                <div>Seg</div>
-                <div>Ter</div>
-                <div>Qua</div>
-                <div>Qui</div>
-                <div>Sex</div>
-                <div>Sab</div>
-            </div>
-            <div class="calendar-days"></div>
-        </div>
-    
-        <div class="month-list"></div>
-    </div>
+      <div class="calendar-header">
+          <span class="month-picker" id="month-picker">February</span>
+          <div class="year-picker">
+              <span class="year-change" id="prev-year">
+                  <pre><</pre>
+              </span>
+              <span id="year">2021</span>
+              <span class="year-change" id="next-year">
+                  <pre>></pre>
+              </span>
+          </div>
+      </div>
+      <div class="calendar-body">
+          <div class="calendar-week-day">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sab</div>
+          </div>
+          <div class="calendar-days"></div>
+      </div>
+  
+      <div class="month-list"></div>
+  </div>
 
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 
-
-    
  <!-- Footer -->
 
 <footer class="footer" data-anime="left">
-    <hr>
-    <div class="container">
-        
-              <div class="col-md-12 text-center" >
-                <h5 class="animate-charcter" > Seed</h5>
-              </div>
-              <div class="row">
-            <div class="footer-col" >
-                <h4>Ajuda</h4>
-                <ul>
-                    <li><a href="faleconosco.html">Fale Conosco</a></li>
-                    <li><a href="politica.html">Politica de Privacidade</a></li>
-                    <li>  <a href="#">Sobre nós</a></li>
-                    <li><a href="#">Informações Gerais</a></li> 
-                    <li> <a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Políticas de Privacidade</a></li>
-                    <li><a href="#">Mapa do Site</a></li>
-                    
-  
-                </ul>
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
             </div>
-  
-            <div class="footer-col" >
-                <h4>Autor</h4>
-                <ul>
-                    <li><a>Aline Batista</a></li>
-                </ul>
-            </div>
-  
-            <div class="footer-col">
-                <h4>Redes Sociais</h4>
-                <div class="redes">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-  
-  </footer>
-   <!--  Fim Footer -->
-  
-  
-</body>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
 
+              </ul>
+          </div>
+
+          <div class="footer-col" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Aline Batista</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+ <!--  Fim Footer -->
+
+
+
+ <!-- Scripts -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/comparacao.js"></script>
+
+
+   <!--inicio Script Preloader-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+    
+</script>
+ <!--Fim Script Preloader-->
 </html>
