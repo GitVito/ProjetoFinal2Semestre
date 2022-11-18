@@ -10,13 +10,14 @@ body{
     height: 100%;
     margin: auto;
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(228, 228, 228);
     overflow: hidden;
 }
 .lastNoti h3{
     position: absolute;
     left: 1%;
     margin: 0 auto;
+    font-size: 1.4em;
 }
 
 .tituloRecentes{
@@ -26,7 +27,6 @@ body{
     
     width: 91%;
     font-size: 2em;
-    background-color: aqua;
 }
 
 .placeNotiRecentes{
@@ -50,13 +50,13 @@ body{
 
 .iconFilter{
     position: absolute;
-    left: 12%;
-    width: 1.4%;
+    left: 14%;
+    width: 2%;
     padding: 0.2em;
     border-radius: 50%;
 }
 .iconFilter:hover{
-    background-color: #e6e6e6;
+    background-color: #b8b8b8;
     cursor: pointer;
     transition: 0.1s linear;
 }
@@ -341,11 +341,13 @@ p{
     height: 60%;
     border-radius: 1em;
     border: none;
-    background-image:\ ;
+
 }
 .ir:hover{
     cursor: pointer;
-    background-color: ;
+    background-color: #a35802;
+    transition: 0.3s linear;
+    filter: invert(100%);
 }
 
 .irTurmas{
@@ -369,4 +371,9 @@ h6{
     font-size: 1.5em;
     margin: auto;
     padding-top: 20%;
+}
+
+.dropDown h5:hover{
+    background-color: #40b9ff;
+    transition: all 0.5s linear;
 }

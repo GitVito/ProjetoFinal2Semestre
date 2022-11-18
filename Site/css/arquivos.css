@@ -128,9 +128,12 @@ div.principal{
     font-weight: lighter;
     background-color: #7b52bd;
     width: 100px;
+    height: 50px;
+    border: rgba(0, 0, 0, 0);
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 15px;
+    overflow: hidden;
 
   }
 
@@ -149,12 +152,12 @@ div.principal{
     background-color: #c5afe9;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
     cursor: pointer;
-
   }
 div.quadro{
-  overflow: scroll;
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   width: 1500px;
+  margin: auto;
 }
 
 .caixa{
@@ -163,8 +166,6 @@ div.quadro{
 .abriropcoes{
   background-color: #ffffff;
   margin-left: 10px;
-
-  
 }
 .container {
   border: 2px solid #fff;
@@ -312,9 +313,7 @@ div.quadro{
     transition: 0.1s linear;
 }
 
-.lineAlert{
-    border: 1px solid black;
-}
+
 
 /*Noti1*/
 .noti1{
@@ -327,6 +326,8 @@ div.quadro{
     border-radius: 10px;
     margin-left: 40px;
     margin-top: 50px;
+    border: 1px solid black;
+
     background-color: #64646417;
 
 }
@@ -361,6 +362,22 @@ div.quadro{
 }
 
 .noti2{
+    display: none;
+    grid-template-columns: 10% 30% 30% 5% 10%;
+    grid-template-rows: 30% 50% 20%;
+    border-color: #6464649f;
+    width: 950px;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
+    border: 1px solid black;
+
+    background-color: #64646417;
+
+}
+
+.noti2.aparecer{
   display: grid;
   grid-template-columns: 10% 30% 30% 5% 10%;
   grid-template-rows: 30% 50% 20%;
@@ -368,10 +385,11 @@ div.quadro{
   width: 950px;
   height: 70px;
   border-radius: 10px;
-  margin-left: -120px;
+  margin-left: 40px;
   margin-top: 50px;
+  border: 1px solid black;
+
   background-color: #64646417;
-  z-index: 2000 !important;
 
 }
 .comp3-not1{

@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/notificacoes.css" />
     <script src="js/notificacao.js"></script>
-    <link rel="stylesheet" href="css/preloader.css" type="text/css">
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -30,14 +32,18 @@
    
   </head>
   <body>
-    <!--Header-->
+<<<<<<< HEAD
+       <!--Header-->
+=======
+      <!--Header-->
+>>>>>>> adde2776ab0720b66e152bcc3e0c9fa6a6a9720f
  <header>
   <div class="overlay"></div>
   <div class="nav">
     <ul class="tabs">
 
       <a href="index.html">
-      <li class="tabs-item tab tab-home">
+      <li class="tabs-item tab tab-home tab-is-active">
         <div class="tab-circle"></div>
         <img class="roxinho" src="img/home.png">            
         <span class="tab-home">Home</span>
@@ -45,7 +51,11 @@
       </a>
 
       <a href="chat.html">
-      <li class="tabs-item tab tab-chat">
+<<<<<<< HEAD
+      <li class="tabs-item tab tab-chat" style="height:55px ;">
+=======
+      <li class="tabs-item tab tab-chat" style="height:35px ;">
+>>>>>>> adde2776ab0720b66e152bcc3e0c9fa6a6a9720f
         <div class="tab-circle"></div>
         <i class="fa fa-comment tab-icon"></i>
       
@@ -53,7 +63,11 @@
       </li>
       </a>
       <a href="Tarefas.html">
-      <li class="tabs-item tab tab-tarefas">
+<<<<<<< HEAD
+      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+=======
+      <li class="tabs-item tab tab-tarefas" style="height:35px ;">
+>>>>>>> adde2776ab0720b66e152bcc3e0c9fa6a6a9720f
         <div class="tab-circle"></div>
         <i class="fa fa-clipboard tab-icon"></i>
         <span class="tarefas">Tarefas</span>
@@ -61,7 +75,7 @@
     </a>
 
     <a href="notificacoes.html">
-      <li class="tabs-item tab tab-sino tab-is-active">
+      <li class="tabs-item tab tab-sino ">
         <div class="tab-circle"></div>
         <img class="sino" src="img/sino.png">        
         <span class="sino">Avisos</span>
@@ -86,14 +100,33 @@
       </li>
       </a>
       
-      <img class="perfil" src="img/girl.png">
+      <img id="perfilImg" class="perfil" src="img/girl.png">
+      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
 
     </ul>
   </div>
 
+
+  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+
+    <div class="PlaceTextPerfil">
+      <a href=""><h5>Perfil</h5></a>
+      
+    </div>
+    <div class="PlaceTextFormulario">
+      <a href=""><h5>Suporte</h5></a>
+      
+    </div>
+    <div class="PlaceTextSuporte">
+      <a href=""><h5>Formulario</h5></a>
+      
+    </div>
+
+  </div>
+
   </header>
 
-
+  <!--  fim Header-->
 
   <div class="lastNoti">
 
@@ -116,7 +149,7 @@
               <h5>Mayara Ferreira</h5>
             </div>
             <div class="comp3-not1">
-              <p>Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!</p>
+              <p>"Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!"</p>
             </div>
             <div class="separador"></div>
 
@@ -214,7 +247,7 @@
           <h5>Ailton Gonçalves</h5>
         </div>
         <div class="comp3-not1">
-          <b>Enviou um anexo</b>
+          <p>"Link do forms enviado! Por favor não esqueçam de realizar."</p><b> (Enviou um anexo)</b>
         </div>
         <div class="separador"></div>
 
@@ -227,7 +260,7 @@
         </div>
         <div class="comp5">
         <div class="dataNotif">
-          <p>07/11/2022</p>
+          <p>10/11/2022</p>
           </div>
         </div>
         <div class="comp6">
@@ -256,14 +289,14 @@
     <div class="noti4">
 
       <div class="comp1-not1">
-        <img class="imgPerfil" src="../Site/img/notificacoes/mayara.jpg" alt="Maiara Ferreira de Paula">
+        <img class="imgPerfil" src="../Site/img/notificacoes/foto Aline.jpg" alt="Aline Batista">
       </div>
 
       <div class="comp2-not1">
-        <h5>Mayara Ferreira</h5>
+        <h5>Aline Batista</h5>
       </div>
       <div class="comp3-not1">
-        <p>Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!</p>
+        <p>"Você consegue atualizar o banco de dados para mim? É só colocar alguns valores..."</p>
       </div>
       <div class="separador"></div>
 
@@ -276,7 +309,7 @@
       </div>
       <div class="comp5">
       <div class="dataNotif">
-        <p>07/11/2022</p>
+        <p>08/11/2022</p>
         </div>
       </div>
       <div class="comp6">
@@ -286,7 +319,7 @@
             <button class="ir" type="button">
               <div class="textIr">
                 <h6>
-                  Ir para turma
+                  Ir para chats
                 </h6>
               </div>
               <div class="imgIrTurmas">
@@ -305,14 +338,14 @@
   <div class="noti5">
 
     <div class="comp1-not1">
-      <img class="imgPerfil" src="../Site/img/notificacoes/mayara.jpg" alt="Maiara Ferreira de Paula">
+      <img class="imgPerfil" src="../Site/img/notificacoes/foto - Gustavo.jpg" alt="Gustavo">
     </div>
 
     <div class="comp2-not1">
-      <h5>Mayara Ferreira</h5>
+      <h5>Gustavo Batista</h5>
     </div>
     <div class="comp3-not1">
-      <p>Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!</p>
+      <p>"Estou trabalhando nisso, mas ainda estou tendo alguns problemas com este código."</p>
     </div>
     <div class="separador"></div>
 
@@ -325,7 +358,7 @@
     </div>
     <div class="comp5">
     <div class="dataNotif">
-      <p>07/11/2022</p>
+      <p>08/11/2022</p>
       </div>
     </div>
     <div class="comp6">
@@ -335,7 +368,7 @@
           <button class="ir" type="button">
             <div class="textIr">
               <h6>
-                Ir para turma
+                Ir para chats
               </h6>
             </div>
             <div class="imgIrTurmas">
@@ -354,14 +387,14 @@
 <div class="noti6">
 
   <div class="comp1-not1">
-    <img class="imgPerfil" src="../Site/img/notificacoes/mayara.jpg" alt="Maiara Ferreira de Paula">
+    <img class="imgPerfil" src="../Site/img/notificacoes/brneo_foto.jpg" alt="Breno">
   </div>
-
+  
   <div class="comp2-not1">
-    <h5>Mayara Ferreira</h5>
+    <h5>Breno Monteiro</h5>
   </div>
   <div class="comp3-not1">
-    <p>Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!</p>
+    <p>"Banco de dados ja está linkado!"</p>
   </div>
   <div class="separador"></div>
 
@@ -374,7 +407,7 @@
   </div>
   <div class="comp5">
   <div class="dataNotif">
-    <p>07/11/2022</p>
+    <p>05/11/2022</p>
     </div>
   </div>
   <div class="comp6">
@@ -384,7 +417,7 @@
         <button class="ir" type="button">
           <div class="textIr">
             <h6>
-              Ir para turma
+              Ir para chats
             </h6>
           </div>
           <div class="imgIrTurmas">
@@ -410,7 +443,7 @@
     <h5>Mayara Ferreira</h5>
   </div>
   <div class="comp3-not1">
-    <p>Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!</p>
+    <p>"Última semana para finalizar projeto! Foquem na apresentação, boa sorte!"</p>
   </div>
   <div class="separador"></div>
 
@@ -423,7 +456,7 @@
   </div>
   <div class="comp5">
   <div class="dataNotif">
-    <p>07/11/2022</p>
+    <p>11/11/2022</p>
     </div>
   </div>
   <div class="comp6">
@@ -454,6 +487,51 @@
 
 </div>
 
+
+
+<footer class="footer">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col containerFoot" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Victor</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
     
 </body>
 </html>

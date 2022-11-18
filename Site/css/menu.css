@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
 
-
-
 body{
     background-color: white;
     align-items: center;
@@ -51,12 +49,12 @@ body{
 }
 
 .tab-is-active {
-    max-width: 100px;
+    max-width: 120px;
     box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
 }
 
 .tab:hover {
-    max-width: 100px;
+    max-width: 120px;
     box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
     position: relative;
 }
@@ -181,8 +179,12 @@ span.calendario{
 
 img.perfil{
     width: 60px;
-    margin-left: 2900px;
+    right: 8.5%;
     position: absolute;
+    z-index: 2000;
+}
+img.perfil{
+    cursor: pointer;
 }
 .sino{
     width: 20px;
@@ -269,4 +271,77 @@ span.tarefas{
     color: #d93479;
     left: 620px;
     height: 30px;
+}
+
+.dropDown{
+    position: absolute;
+    right: 3%;
+    z-index: -1;
+
+    width: 12.5%;
+    height: 200px;
+    margin: auto;
+    background-color: #f7fcff;
+}
+.dropDownPositionOpen{
+    top: 8.65%;
+    transition: 0.5s ease-in-out;
+}
+.dropDownPositionClose{
+    top: -25%;
+    transition: 0.5s ease;
+}
+.dropDown h5{
+    cursor: pointer;
+    border-radius: 1em;
+}
+.dropDown a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropIcon{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    width: 35px;
+    margin: auto;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+.dropIcon:hover{
+    background-color: #dadada;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.PlaceTextPerfil{
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+
+.PlaceTextFormulario{
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+
+.PlaceTextSuporte{
+    position: absolute;
+    width: 100%;
+    height: 33.3%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 0.5em;
+
 }
