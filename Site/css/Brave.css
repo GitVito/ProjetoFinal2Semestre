@@ -373,11 +373,17 @@ footer{
     background-size: cover;
     box-shadow: inset 0em 0em 1em 0em #000;
 }
+footer li{
+    list-style: none;
+    margin: auto;
+    margin-bottom: 5%;
+}
 .capa{
     width: 100%;
     height: 100%;
     margin: auto;
     transition: 0.5s linear;
+    padding-top: 1.5em;
 }
 .capa:hover{
     background-color: rgba(0, 0, 0, 0.637);
@@ -390,6 +396,7 @@ footer{
     width: 100%;
     height: 40%;
     margin: auto;
+    margin-top: 10em;
     text-align: left;
 
 }
@@ -403,4 +410,75 @@ footer{
     margin: auto;
     width: 90%;
     text-align: justify;
+}
+
+.conteudoFooter{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+}
+
+.placePalavras{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 31% 31% 31.5%;
+    column-gap: 3%;
+}
+
+.secaoOpcoes{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+footer h6{
+    width: 70%;
+    border-radius: 1em;
+    margin: auto;
+    font-size: 1.1em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: all 0.5s linear;
+}
+footer h5{
+    text-align: left;
+    margin: auto;
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+footer h6:hover{
+    background-color: #0f0;
+}
+
+
+.secaoCriadorPag{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.secaoCriadorPag h6{
+    font-size: 1.35em !important;
+}
+
+.secaoRedesSociais{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.containImgRedes img{
+    margin: 0.02em;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+.containImgRedes img:hover{
+    cursor: pointer;
+    filter: drop-shadow(0em 0em 0.5em);
 }
