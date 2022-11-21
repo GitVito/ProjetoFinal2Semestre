@@ -261,12 +261,12 @@ div.quadro{
     
 
 div.fundoinput{
-  background-color: #ffffff;
+  background-color: #e0d0fa;
   margin-top: 602px;
   position: fixed;
   left: 253px;
   width: 1670px; /* Set a width if you like */
-  height: 89px;
+  height: 109px;
   box-shadow: 0 0 7px 0px #000;
   clip-path: inset(0px -15px 0px -15px);
 
@@ -274,13 +274,13 @@ div.fundoinput{
 }
 
 input.fundoinput{
-    width: 450px;
+    width: 500px;
     height: 25px;
     position: relative;
     margin-left: -1000px;
     top: 30px;
     border-radius: 0.5em;
-    border-color: black;
+    border: 1px solid rgb(146, 146, 146) ;
     padding-left: 10px;
     z-index: 2000 !important;
 
@@ -303,9 +303,18 @@ input.fundoinput{
   height: 25px;
   margin-top: 35px;
   left: 600px;
-  background-color: #cbbde2;
+  background-color: #e8daff;
   position: absolute;
   transition: 0.3s;
-  color: black;
+  border: 1px solid rgb(0, 0, 0) ;
+
+  color: rgb(0, 0, 0);
 }
 
+
+img.aviao{
+  width:25px;
+  margin-top: 35px ;
+  position: fixed;
+  margin-left: 20px;
+}
