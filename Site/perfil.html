@@ -127,9 +127,11 @@
 <div class="logoPerfil">
     <img src="img/perfil/retomar.png" alt="Settings Icon">
 </div>
+
 <div class="placeConfigPerfil">
 
     <div class="opcoesPerfil">
+
         <div class="tituloEditPerfil">
             <h3>Edições para perfil e login</h3>
         </div>
@@ -146,13 +148,78 @@
 
                 <div class="nome">
                     <h4>Rafaella Tomassetti</h4>
+                    <img src="img/perfil/editar.png" alt="EditNome" class="editNomeUser">
                 </div>
-                
+                <div class="matricula">
+                  <li><h5>Nº Matricula:</h5></li>
+                  <li><p><select name="matriculas" id="matriculas">
+                    <optgroup label="TI">
+                      <option value="item1">M1DSI: 9928374728</option>
+                    <option value="item2">AWS: 9922233328</option>
+                    </optgroup>
+                    
+                    op
+                  </select></li>
+                </div>
+                <div class="senha">
+                  <li><h5>Senha de acesso:</h5></li>
+                  <li>********</li>
+                  <img class="editSenha" src="img/perfil/editar.png" alt="Edit">
+                </div>
+                <div class="email">
+                  <li><h5>Email:</h5></li>
+                  <li>rafaellatomasseti@gmail.com</li>
+                </div>
+                <div class="nomeCompleto">
+                  <li><h5>Nome completo:</h5></li>
+                  <li>Rafaella Tomasseti Prado  </li>
+                </div>
+                <div class="dataNasc">
+                  <li><h5>Data de nascimento:</h5></li>
+                  <li>17/01/2005</li>
+                </div>
+
             </div>
         </div>
 
-
     </div>
+
+    <div class="tituloEditSistema">
+      <h3>Edições do site</h3>
+  </div>
+
+  <div class="placeEditSistema">
+
+    <div class="areaDelogin">
+      
+      <h5>Login automático:</h5>
+      
+      <br>
+      <input type="radio" name="loginAuto" id="loginSim">
+      <label for="loginSim">Sim</label>
+      
+      <input type="radio" name="loginAuto" id="loginNao">
+      <label for="loginNao">Não</label>
+    </div>
+
+    <div class="imgChat">
+      <h5>Editar fundo de chat</h5>
+      <br>
+
+      <div class="uploadImg">
+        <input type="file" name="imagemUp" value="" id="imgFundoChat">
+      </div>
+
+      <button class="btnShowImgUp" type="button">Selecionar</button>
+
+     <div class="showImgChat">
+
+      <img class="imgChat" src="" alt="">
+      
+     </div>
+    </div>
+
+  </div>
 
 </div>
 

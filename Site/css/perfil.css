@@ -29,7 +29,7 @@
 .placeConfigPerfil{
     position: relative;
     width: 80%;
-    height: 700px;
+    height: 900px;
     margin: auto;
     margin-top: 3.5%;
     margin-bottom: 5%;
@@ -41,7 +41,7 @@
 .opcoesPerfil{
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 50%;
     margin: auto;
     border: 1px solid black;
 }
@@ -121,8 +121,6 @@ div.tituloEditPerfil{
     height: 90%;
     border-radius: 0.5em;
     margin: auto;
-
-    background-color: rgba(68, 68, 68, 0);
 }
 .nome{
     position: absolute;
@@ -132,4 +130,242 @@ div.tituloEditPerfil{
     text-indent: 1em;
     font-size: 1.7em;
     padding: 0.2em;
+}
+.editNomeUser{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    filter: invert(100%);
+    background-color: #949494;
+}
+.editNomeUser:hover{
+    background-color: #555555;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.matricula{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    list-style: none;
+
+}
+.matricula h5{
+    font-size: 1.2em;
+}
+.matricula p{
+    font-size: 1.1em;
+}
+
+.senha{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    list-style: none;
+}
+.senha h5{
+    font-size: 1.2em;
+}
+.senha p{
+    font-size: 1.1em;
+}
+select{
+    border: none;
+    background-color: #d4d4d4;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.editSenha{
+        position: absolute;
+        top: 50%;
+        right: -0%;
+        width: 24px;
+        height: 24px;
+        margin: auto;
+        padding: 0.2em;
+        border-radius: 0.2em;
+        filter: invert(100%);
+        background-color: #949494;
+    
+}
+
+.editSenha:hover{
+    background-color: #555555;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.email{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    list-style: none;
+    width: 60%;
+
+}
+
+.email h5{
+    text-align: left;
+    font-size: 1.2em;
+
+}
+.email p{
+    font-size: 1.1em;
+    text-indent: 0.2em;
+}
+
+.nomeCompleto{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    list-style: none;
+    text-align: left;
+}
+.nomeCompleto h5{
+    text-align: left;
+    font-size: 1.2em;
+
+}
+.nomeCompleto p{
+    font-size: 1.1em;
+    text-indent: 0.2em;
+}
+
+
+.dataNasc{
+    position: absolute;
+    top: 70%;
+    left: 57%;
+    list-style: none;
+}
+
+.dataNasc h5{
+    text-align: left;
+    font-size: 1.01em;
+
+}
+.dataNasc p{
+    font-size: 1.1em;
+    text-indent: 0.2em;
+}
+
+.tituloEditSistema{
+    position: absolute;
+    bottom: 40%;
+    left: 3%;
+    font-size: 4em;
+}
+.tituloEditSistema h3{
+    font-size: 0.4em;
+}
+
+.placeEditSistema{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+    width: 90%;
+    height: 32%;
+    margin: auto;
+
+    /* background-color: #555555; */
+}
+
+.areaDelogin{
+    position: absolute;
+
+    font-size: 1em;
+    /* background-color: #d4d4d4; */
+}
+.areaDelogin h5{
+    text-indent: 0.5em;
+    font-size: 1.2em;
+}
+#loginSim{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#loginNao{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.imgChat{
+    position: absolute;
+    top: 46%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 90%;
+
+    font-size: 1em;
+}
+.imgChat h5{
+    font-size: 1.2em;
+}
+
+.uploadImg{
+    position: absolute;
+
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #d4d4d4;
+}
+.uploadImg:hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+
+#imgFundoChat{
+    cursor: pointer;
+}
+
+.btnShowImgUp{
+    position: absolute;
+    bottom: 61.5%;
+    right: 18%;
+    width: 90px;
+    height: 44px;
+    margin: auto;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #d4d4d4;
+}
+.btnShowImgUp:hover{
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+.showImgChat{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height:50%;
+    margin: auto;
+    border-radius: 0.5em;
+    align-items: center;
+    background-color: #555555;
+}
+
+img.imgChat{
+    position: absolute;
+    top: 46%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+
+    width: 55%;
+    height: 80%;
+
 }
