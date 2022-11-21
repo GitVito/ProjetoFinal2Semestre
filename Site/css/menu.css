@@ -5,6 +5,7 @@ body{
     align-items: center;
     text-align: center;
     margin: 0;
+    font-family: 'Poppins';
 }
 
 .overlay {
@@ -277,7 +278,8 @@ span.tarefas{
     right: 3%;
     z-index: -1;
     overflow: scroll;
-
+    overflow-x: hidden;
+    
     width: 12.5%;
     height: 200px;
     margin: auto;

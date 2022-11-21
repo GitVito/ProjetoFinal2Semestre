@@ -6,6 +6,10 @@ body{
     background-color: #40b9ff;
     transition: all 0.5s linear;
 }
+.dropDown{
+   background-color: #f7fcff;
+}
+
 #folha-base{
     position: absolute;
     left: 50%;

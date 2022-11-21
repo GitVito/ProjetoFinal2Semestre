@@ -1,0 +1,135 @@
+.dropDown h5:hover{
+    background-color: #19E164;
+    transition: all 0.5s linear;
+}
+
+.dropDown{
+    background-color: #CAFBC2;
+}   
+
+/*fim Menu*/
+
+
+.logoPerfil{
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 13%;
+    text-align: center;
+}
+.logoPerfil img{
+    filter: drop-shadow(0em 0em 0.2em #444);
+    width: 60%;
+    margin: auto;
+}
+
+.placeConfigPerfil{
+    position: relative;
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 3.5%;
+    margin-bottom: 5%;
+    border-radius: 0.5em;
+
+    background-color: #CAFBC2;
+}
+
+.opcoesPerfil{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+div.tituloEditPerfil{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+
+    font-size: 4em;
+}
+.tituloEditPerfil h3{
+    font-size: 0.4em;
+}
+
+.placeFotoPerfil{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    width: 70%;
+    height: 350px;
+    margin: auto;
+    border-radius: 0.5em;
+
+    background-color: #19E164;
+}
+
+.foto{
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    width: 35%;
+    height: 90%;
+    margin: auto;
+    border-radius: 1em;
+
+
+    background-color: rgba(37, 37, 37, 0.973);
+}
+
+
+/* .editarFoto{
+    position: absolute;
+    top: %;
+    left: 33.8%;
+    width: 50px;
+} */
+.imgUserPerfil{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+.imgEdit{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 38px;
+    height: 38px;
+    margin: auto;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    filter: invert(100%);
+    background-color: #949494;
+}
+
+.imgEdit:hover{
+    background-color: #555555;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nomeOutros{
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    width: 60%;
+    height: 90%;
+    border-radius: 0.5em;
+    margin: auto;
+
+    background-color: rgba(68, 68, 68, 0);
+}
+.nome{
+    position: absolute;
+    width: 100%;
+
+    text-align: left;
+    text-indent: 1em;
+    font-size: 1.7em;
+    padding: 0.2em;
+}

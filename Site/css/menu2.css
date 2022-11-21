@@ -292,13 +292,19 @@ span.tarefas{
     transition: 0.5s ease;
 }
 .dropDown h5{
-    cursor: pointer;
     border-radius: 1em;
 }
 .dropDown a{
     list-style: none;
     text-decoration: none;
     color: #000;
+}
+.dropDown h5:hover{
+    background-color: #40b9ff;
+    transition: all 0.5s linear;
+}
+.dropDown{
+   background-color: #f7fcff;
 }
 
 .dropIcon{

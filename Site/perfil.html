@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+  </head>
+  <body>
+
+       <!--Header-->
+ 
+
+ <header>
+  <div class="overlay"></div>
+  <div class="nav">
+    <ul class="tabs">
+
+      <a href="index.html">
+      <li class="tabs-item tab tab-home tab-is-active">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/home.png">            
+        <span class="tab-home">Home</span>
+      </li>
+      </a>
+
+      <a href="chat.html">
+
+      <li class="tabs-item tab tab-chat" style="height:55px ;">
+
+        <div class="tab-circle"></div>
+        <i class="fa fa-comment tab-icon"></i>
+      
+        <span class="chat">Chat</span>
+      </li>
+      </a>
+      <a href="Tarefas.html">
+
+      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+
+        <div class="tab-circle"></div>
+        <i class="fa fa-clipboard tab-icon"></i>
+        <span class="tarefas">Tarefas</span>
+      </li>
+    </a>
+
+    <a href="notificacoes.html">
+      <li class="tabs-item tab tab-sino ">
+        <div class="tab-circle"></div>
+        <img class="sino" src="img/sino.png">        
+        <span class="sino">Avisos</span>
+      </li>
+      </a>
+
+      <a href="calendario.html">
+      <li class="tabs-item tab tab-calendar ">
+        <div class="tab-circle"></div>
+        <img class="calendario" src="img/calendar.png">            
+        <span class="calendario">Agenda</span>
+      
+      </li>
+      </a>
+
+
+      <a href="turmas.html">
+      <li class="tabs-item tab tab-team ">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/multiple-users-silhouette.png">        
+        <span class="tab-team">Equipes</span>
+      </li>
+      </a>
+      
+      <img id="perfilImg" class="perfil" src="img/girl.png">
+      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+
+    </ul>
+  </div>
+
+
+  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+
+    <div class="PlaceTextPerfil">
+      <a href="perfil.html"><h5>Perfil</h5></a>
+      
+    </div>
+    <div class="PlaceTextFormulario">
+      <a href="suporte.html"><h5>Suporte</h5></a>
+      
+    </div>
+    <div class="PlaceTextSuporte">
+      <a href="formulario.html"><h5>Formulario</h5></a>
+      
+    </div>
+
+    <div class="placeLinhaSeparar">
+      <div class="linhaSeparar"></div>
+    </div>
+
+
+    <div class="PlaceTextSair">
+      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+      
+    </div>
+
+  </div>
+
+  </header>
+
+  <!--  fim Header-->
+
+
+
+<div class="logoPerfil">
+    <img src="img/perfil/retomar.png" alt="Settings Icon">
+</div>
+<div class="placeConfigPerfil">
+
+    <div class="opcoesPerfil">
+        <div class="tituloEditPerfil">
+            <h3>Edições para perfil e login</h3>
+        </div>
+
+        <div class="placeFotoPerfil">
+
+            <div class="foto">
+                <img class="imgUserPerfil" src="img/notificacoes/Rafafafafa.jpg" alt="Rafaella Tomassetti">
+                <img class="imgEdit" src="img/perfil/editar.png" alt="">
+            </div>
+
+
+            <div class="nomeOutros">
+
+                <div class="nome">
+                    <h4>Rafaella Tomassetti</h4>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+  
+
+
+
+<footer class="footer">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col containerFoot" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Victor</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+    
+</body>
+</html>
