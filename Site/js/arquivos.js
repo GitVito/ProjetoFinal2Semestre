@@ -1,10 +1,14 @@
 aux = 0;
 function caixa(){
-    var id_caixa = document.getElementById('opcoes');
-    id_caixa.classList.remove("caixa");
-    id_caixa.classList.add("abriropcoes");
+    var id_caixa = document.getElementById('quadro2');
+    id_caixa.classList.remove("quadro2");
+    id_caixa.classList.add("quadro3");
 
-    console.log('teste');
+
+    var id_caixa = document.getElementById('quadro3');
+    id_caixa.classList.remove("quadro2");
+    id_caixa.classList.add("quadro4");
+    console.log('caixa');
 
     string = '';
 
@@ -22,13 +26,17 @@ function caixa(){
 }
 
 function caixafechar(){
-    var id_caixa = document.getElementById('opcoes');
+    var id_caixa2 = document.getElementById('quadro2');
+    var id_caixa3 = document.getElementById('quadro3');
 
     if (string == 'ímpar'){
         console.log(string);
 
-        id_caixa.classList.remove("abriropcoes");
-        id_caixa.classList.add("caixa");
+        id_caixa2.classList.remove("quadro");
+        id_caixa2.classList.add("quadro2");
+
+        id_caixa3.classList.remove("quadro4");
+        id_caixa3.classList.add("quadro2");
 
     }
     console.log('teste3');
@@ -37,35 +45,35 @@ function caixafechar(){
 
 aux2 = 0;
 function arquivo(){
-    var id_container = document.querySelectorAll('.container');
-    id_container.style.display = 'visible';
+  console.log('arquivo');
+
+  var arquivo = document.getElementById('container2');
+  arquivo.classList.remove("container");
+  arquivo.classList.add("container3");
 
 
-    console.log('oi');
+  string2 = '';
 
-    string = '';
+  if(aux2%2 ==0){
+    string2='par';
+  }
 
-    if(aux2%2 ==0){
-        string='par';
-    }
+  if(aux2%2 ==1){
+    string2='ímpar';
+  }
 
-    if(aux2%2 ==1){
-        string='ímpar';
-    }
-
-    console.log('fdgdfg');
-    aux2 += 1;
-
+  console.log('teste2');
+  aux2 += 1;
 }
 
 function arquivofechar(){
-    var id_container = document.getElementById('container');
+    var id_container2 = document.getElementById('container2');
 
-    if (string == 'ímpar'){
-        console.log(string);
+    if (string2 == 'ímpar'){
+        console.log(string2);
 
-        id_container.classList.remove("container2");
-        id_container.classList.add("container");
+        id_container2.classList.remove("container3");
+        id_container2.classList.add("container");
 
     }
     console.log('hhhh');
@@ -96,22 +104,45 @@ function pasta(){
 }
 
 function pastafechar(){
-    var id_container3 = document.getElementById('container3');
+    var id_container4 = document.getElementById('container3');
 
     if (string3 == 'ímpar'){
-        console.log(string);
+        console.log(string3);
 
-        id_container3.classList.remove("container3");
-        id_container3.classList.add("container");
+        id_container4.classList.remove("container3");
+        id_container4.classList.add("container");
 
     }
-    console.log('teste3');
+    console.log('fecharpasta');
+
+}
+
+function aparecerpasta(){
+  console.log("pasta");
+
+  var pasta = document.getElementById('pasta2');
+  pasta.classList.remove("noti2");
+  pasta.classList.add("noti3");
+
+  console.log("pasta");
+
+  var texto = document.getElementById('texto').value;
+  document.getElementById('mostrarpasta').innerHTML  = texto;
+
 
 }
 
 function aparecerfile(){
-  var texto = document.getElementById('texto').value;
-  document.getElementById('mostrarpasta').innerHTML = texto;
+  console.log("file");
+
+  var pasta = document.getElementById('arquivo2');
+  pasta.classList.remove("noti2");
+  pasta.classList.add("noti4");
+
+  console.log("fileee");
+
+  var nomearquivo = document.getElementById('nomearquivo').value;
+  document.getElementById('mostrarfile').innerHTML  = nomearquivo;
 
 
 }

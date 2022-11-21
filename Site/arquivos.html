@@ -163,44 +163,42 @@
      </div>
  
    
+     
      <div class="quadro">
       
         <!--inicio tarefas-->
         <button type="button" class="quadro" onclick="caixa(), caixafechar()"> NOVO +</button> 
 
-        <button type="button" class="quadro2" id="pasta" onclick="pasta(), pastafechar()"> pasta</button>   
-        <button type="button" class="quadro3" id="arquivo"  onclick="arquivo(), arquivofechar()"> arquivo</button> 
-
-
-            
-            
-            <div class="container" id="container1">
-              <div class="new-task-container">
+        <button type="button" class="quadro2" id="quadro2" onclick="pasta(), pastafechar()"> pasta</button>   
+        <button type="button" class="quadro2" id="quadro3" onclick="arquivo(), arquivofechar()"> arquivo</button> 
         
-                <input
-                type="file" class="new-task-input" placeholder="Tarefa para ser feita..."
-              />
-            
-                <button class="new-task-button">Adicionar</button>
-              </div>
-            
-              <div class="tasks-container"></div>
-
-              
-            </div>
-
-
-            <div class="container" id="container3">
-              <div class="new-task-container">
+        <div class="container" id="container2">
+          <div class="new-task-container">
+    
+            <input
+            type="file" class="new-task-input" id="nomearquivo" placeholder="Tarefa para ser feita..."
+          />
         
-                <input
-                type="text" class="new-task-input" id="texto" placeholder="Nome da pasta"
-              />
-            
-                <button class="new-task-button" onclick="aparecerfile()">Adicionar pasta</button>
-              </div>
+            <button class="new-task-button" onclick="aparecerfile()">Adicionar pastaaa</button>
+          </div>
+        
+          <div class="tasks-container"></div>
+
           
-              
+        </div>
+
+        <div class="container" id="container3">
+          <div class="new-task-container">
+    
+            <input
+            type="text" class="new-task-input" id="texto" placeholder="Nome da pasta"
+          />
+        
+            <button class="new-task-button" onclick="aparecerpasta()">Adicionar pasta</button>
+          </div>
+  
+
+
             </div>
             <script src="js/arquivos.js"></script>
 
@@ -208,7 +206,7 @@
   <div class="noti1">
 
       <div class="comp1-not1">
-        <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
+        <img src="../Site/img/arquivos/folder-removebg-preview.png">
       </div>
 
       <div class="comp2-not1">
@@ -217,10 +215,10 @@
   
   </div>
 
-  <div class="noti2" id="pasta">
+  <div class="noti2" id="pasta2">
 
     <div class="comp1-not2">
-      <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
+      <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" >
     </div>
 
     <div class="comp2-not1">
@@ -228,6 +226,33 @@
     </div>
 
 </div>
+  <div class="noti1">
+
+    <div class="comp1-not1">
+      <img class="" src="../Site/img/arquivos/arquivos.png">
+    </div>
+
+    <div class="comp2-not1">
+      <h5>orientacoes.docx</h5>
+    </div>
+    
+  </div>
+
+  <div class="noti2" id="arquivo2">
+
+    <div class="comp1-not1">
+      <img class="" src="../Site/img/arquivos/arquivos.png">
+    </div>
+
+    <div class="comp2-not1">
+      <h5 id="mostrarfile"></h5>
+    </div>
+</div>
+
+
+  
+
+
 
 
 <!--fim tarefas-->
