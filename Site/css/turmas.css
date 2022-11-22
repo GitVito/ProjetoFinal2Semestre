@@ -229,15 +229,15 @@ span.chat{
         position: relative;
         margin: 10% auto;
         padding: 5px 20px 13px 20px;
-        border-radius: 10px;
-        background: rgb(233, 232, 232);
+        border-radius: 0px;
+        background: rgb(255, 255, 255);
       }
       .modalDialog p{
         text-align: left;
       }
       .close {
-        background: #606061;
-        color: #FFFFFF;
+        background: #ffffff;
+        color: #af0909;
         line-height: 25px;
         position: absolute;
         right: -12px;
@@ -255,7 +255,8 @@ span.chat{
         box-shadow: 1px 1px 3px #000;
       }
       .close:hover {
-        background: #00d9ff;
+        background: #783aa1;
+        color: white;
       }
 
 
@@ -265,7 +266,7 @@ span.chat{
 }
 
 a.mais{
-        color: white;
+        color: rgba(245, 24, 24, 0);
 }
 
 img.mais{
@@ -286,6 +287,9 @@ img.mais:hover{
         border: 1px solid rgb(0, 0, 0);
         border-radius: 50%;
         width: 52px;
+        color: rgba(255, 255, 255, 0);
+        text-decoration: none;
+
 
          
 }
@@ -299,6 +303,22 @@ img.mais:hover{
         background-color: #f7fcff;
     }
 
+img.membros{
+    width: 200px;
+}
+    
+img.titulo{
+    width: 600px;
+    margin-left:-20px;
+    margin-top:-6px;
+
+
+}
+
+h2.titulo{
+    font-family: "Poppins";
+    font-weight: bolder
+}
 
 
 /*Css Menu*/
@@ -693,3 +713,6 @@ span.tarefas{
     .dropDown{
         background-color: #F1DDFD;
     }
+
+
+
