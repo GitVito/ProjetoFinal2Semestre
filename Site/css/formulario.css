@@ -104,6 +104,8 @@ legend{
     color: #fff;
     font-size: 18px;
     cursor: pointer;
+
+    position: fixed;
 }
 
 #submit:hover{

@@ -26,16 +26,16 @@ h3{
 }
 
 
-/*imagens e Videos*/
+
 .home-img{
     height: 550px;
     width: 600px;
     margin-left: 800px;
-    margin-top: 750px;
+    margin-top: 320px;
 }
 
 
-/*Botões*/
+
 
 .btn:link,
 .btn:visited {
@@ -106,7 +106,7 @@ h3{
     height: 280px;
     width: 40%;
     margin-left: 50px;
-    margin-top: 850px;
+    margin-top: 300px;
     position: absolute;
     text-align: left;
     padding-left: 50px;
@@ -187,6 +187,8 @@ img.chat{
 .img-comp-container {
     position: relative;
     height: 50vh;
+    margin-left: 500px;
+  
 }
 
 
@@ -218,28 +220,23 @@ img.chat{
 
 
 .align-comparation{
-    margin-top: 20px;
     height: 50vh;
     width: 50vw;
-    margin-left: 0;
     padding: 0;
-    margin: 0;
+    margin-top:25px;
+    margin-left: 30px;
 }
+
 
 
 /*Fim Comparação*/
 
 
-
- 
-/*---------------------------------------------------*/
-/*Imagens Acessorios*/
-
 .sessao-aluno{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    margin-left:10px;
     
 }
 
@@ -248,12 +245,11 @@ img.chat{
     flex-direction: column;
     margin: 10px;
     background-color: #8C52FF;
-    width: 280px;
+    width: 320px;
     border: black;
     border-radius: 30px;
     box-shadow: 10px 10px  #8c52ff62;
-   
-    
+    height: 450px;
 }
 
 
@@ -262,23 +258,105 @@ img.chat{
     flex-direction: column;
     margin: 10px;
     background-color:#FF66C4;
-    width: 280px;
-   
+    width: 320px;
     border-radius: 30px;
     box-shadow: 10px 10px  #ff66c442;
+    margin-left: 150px;
+    height: 450px;
+}
+
+.alunos3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color:#eb8a52;
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: 10px 10px  #eb8a526b;
+    margin-left: 150px;
+    height: 450px;
    
+}
+
+
+
+.img_div1{    
+    margin-left:50px;
+    margin-top: -85px;
+    height: 500px;
+    width: 500px;
+    position: relative;
+  
+}
+
+.img_div2{    
+    margin-left:50px;
+    margin-top: -85px;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.img_div3{    
+    margin-left:50px;
+    margin-top: -85px;
+    height: 500px;
+    width: 500px;
+    position: relative;
     
 }
 
-.img_div{    
-    margin-left:190px;
-    margin-top: 13px;
-    height: 300px;
-    width: 200px;
+
+h5{
+    color: white;
+    margin-top: 50px;
+    font-size: 15px;
+    
+  
+}
+h4{
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+    
 }
 
-footer h5{
-    color: white;
-    font-size: 15px;
+.sec-publi{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/ondas-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-/*--------------------------------------------------*/
+
+
+
+    .sec-publi div{
+        position: absolute;
+        top: 25%;
+        left: 40%;
+
+        width: 510px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 0px 30px;
+        border: 1px solid #0127ff;
+        padding: 20px;
+        box-shadow: 3px 3px #0021db;
+        margin-left: 30px;
+       
+    }
+
+    .sec-publi h1{
+        font-weight: 1000;
+    }
+
+
+.btn2{
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #009ffb; 
+   cursor: pointer;
+}

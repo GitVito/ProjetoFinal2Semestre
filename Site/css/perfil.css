@@ -29,31 +29,53 @@
 .placeConfigPerfil{
     position: relative;
     width: 80%;
-    height: 900px;
+    height: 1200px;
     margin: auto;
     margin-top: 3.5%;
     margin-bottom: 5%;
     border-radius: 0.5em;
 
-    background-color: #CAFBC2;
+    /* background-color: #CAFBC2; */
+    box-shadow: 0em 0em 0.5em 0.01em;
+
+
+    background-image: linear-gradient(to bottom, #19e16623, #19e1660a );
+
+
 }
 
 .opcoesPerfil{
     position: absolute;
+    top: 0%;
     width: 100%;
-    height: 50%;
+    height: 70%;
     margin: auto;
+
+    background-image: url(../img/perfil/backgroundImg.png);
+    background-size: 102% 45%;
+    background-repeat: no-repeat ;
+    background-position-y: 0;
 }
 
 div.tituloEditPerfil{
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 3%;
 
     font-size: 4em;
 }
 .tituloEditPerfil h3{
     font-size: 0.4em;
+    color: #ffff;
+}
+
+.fundoFotoPerfil{
+    position: relative;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, #19E164, #b4ffd100); */
+    padding: 0.5em;
 }
 
 .placeFotoPerfil{
@@ -65,7 +87,7 @@ div.tituloEditPerfil{
     margin: auto;
     border-radius: 0.5em;
 
-    background-color: #4bff63;
+    background-color: #4bff6300;
 }
 
 @media screen and (max-width: 1500px) {
@@ -119,20 +141,20 @@ div.tituloEditPerfil{
 }
 .imgEdit{
     position: absolute;
-    top: 2%;
+    top: 3%;
     right: 2%;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     margin: auto;
     padding: 0.2em;
     border-radius: 0.2em;
     filter: invert(100%);
-    background-color: #949494;
+    /* background-color: #949494; */
 }
 
 .imgEdit:hover{
-    background-color: #555555;
-    transition: 0.5s;
+    /* background-color: #555555;
+    transition: 0.5s; */
     cursor: pointer;
 }
 
@@ -157,18 +179,16 @@ div.tituloEditPerfil{
 .editNomeUser{
     position: absolute;
     top: 20%;
-    right: 15%;
+    right: 40%;
     width: 30px;
     height: 30px;
     margin: auto;
     padding: 0.2em;
     border-radius: 0.2em;
-    filter: invert(100%);
-    background-color: #949494;
+    /* filter: invert(100%);
+    background-color: #949494; */
 }
 .editNomeUser:hover{
-    background-color: #555555;
-    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -200,7 +220,7 @@ div.tituloEditPerfil{
 }
 select{
     border: none;
-    background-color: #d4d4d4;
+    background-color: #f0f0f0;
     border-radius: 0.5em;
     padding: 0.2em;
     cursor: pointer;
@@ -215,14 +235,12 @@ select{
         margin: auto;
         padding: 0.2em;
         border-radius: 0.2em;
-        filter: invert(100%);
-        background-color: #949494;
+        /* filter: invert(100%); */
+        /* background-color: #949494; */
     
 }
 
 .editSenha:hover{
-    background-color: #555555;
-    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -248,7 +266,7 @@ select{
 .nomeCompleto{
     position: absolute;
     top: 70%;
-    left: 3%;
+    left: 10%;
     list-style: none;
     text-align: left;
 }
@@ -282,7 +300,7 @@ select{
 
 .tituloEditSistema{
     position: absolute;
-    bottom: 40%;
+    bottom: 45%;
     left: 3%;
     font-size: 4em;
 }
@@ -292,8 +310,8 @@ select{
 
 .placeEditSistema{
     position: absolute;
-    bottom: 5%;
-    left: 3%;
+    bottom: 11%;
+    left: 5%;
 
     width: 95%;
     height: 32%;
@@ -326,7 +344,7 @@ select{
 .imgChat{
     position: absolute;
     top: 46%;
-    left: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 55%;
     height: 90%;
@@ -339,7 +357,7 @@ select{
 
 .uploadImg{
     position: absolute;
-
+    left: 15%;
     border-radius: 0.5em;
     padding: 0.5em;
     background-color: #d4d4d4;
@@ -355,8 +373,8 @@ select{
 
 .btnShowImgUp{
     position: absolute;
-    bottom: 61.5%;
-    right: 18%;
+    bottom: 71%;
+    right: 30%;
     width: 90px;
     height: 44px;
     margin: auto;
@@ -374,7 +392,7 @@ select{
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 30%;
     height:50%;
     margin: auto;
     border-radius: 0.5em;
@@ -390,8 +408,8 @@ img.imgChat{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 40%;
-    height: 80%;
+    width: 48%;
+    height: 70%;
 
 }
 
@@ -418,4 +436,16 @@ img.imgChat{
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+div.linhaSeparar{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    width: 40%;
+    height: 0.1%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.493);
 }
