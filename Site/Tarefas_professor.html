@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/tarefas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/popup_tarefas.css" />
+    <link rel="stylesheet" href="css/preloader.css" type="text/css">
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Home</title>
+  </head>
+  <body>
+  <!--Header-->
+  <header>
+    <div class="overlay"></div>
+    <div class="nav">
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/home.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+        <li class="tabs-item tab tab-chat" style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-comment tab-icon"></i>
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas.html">
+        <li class="tabs-item tab tab-tarefas tab-is-active"  style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
+  
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sino.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendar.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/multiple-users-silhouette.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img class="perfil" src="img/girl.png">
+  
+      </ul>
+    </div>
+  
+    </header>
+
+  <!--  fim Header-->
+
+
+
+
+    <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<style>
+  .access-button {
+      border-radius: 50px;
+      width: 45px;
+    float: right;
+  }
+    </style>
+
+    <!-- fim libras -->
+
+    
+<!--inicio tarefas-->
+<h1> Atividades a fazer aqui:</h1> 
+<h99>"estipule datas para uma melhor perfomance"</h99>
+<div class="container">
+  <div class="new-task-container">
+    <input
+      type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
+    /><br>
+  
+    <br><input
+      type="date" class="new-task-input1"/><br>
+      <br><input type="text" class="new-task-input2" placeholder="Descreva a tarefa.."/><br>
+
+    <br><button class="new-task-button">Adicionar</button>
+  
+
+    <div class="tasks-container"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><hr>
+
+<h1> Atividade entregues :</h1>
+
+
+<img width="50" height="50" src="img/tarefas/bob.jpg" style="border-radius: 50%;margin-right: 60pc;"/>
+
+<input type="text" class="new-task-input222" placeholder="Adicione um comentario"/><br>
+<input type="number" min="0" max="10" class="new-task-input222" placeholder="Escolha a nota de 0 a 10"/>
+
+<br><hr>
+
+
+
+
+
+
+
+
+
+    
+    <br>
+
+
+
+  </div>
+</div>
+
+
+<script
+  src="https://kit.fontawesome.com/f9e19193d6.js"
+  crossorigin="anonymous"
+></script>
+<script src="js/tarefas.js"></script>
+<!--fim tarefas-->
+ <!-- Footer -->
+
+ <footer class="footer" data-anime="left">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Rafaela</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+ <!--  Fim Footer -->
+
+
+ <!-- Scripts -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+   <!--inicio Script Preloader-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+    
+</script>
+
+
+ <!--Fim Script Preloader-->
+</html>

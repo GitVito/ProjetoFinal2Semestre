@@ -19,7 +19,7 @@
     background-color: #fff;
     padding: 30px 20px;
     border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.3);
     display: fixed;
    
   }
@@ -107,7 +107,7 @@
   }
 
   .dropDown h5:hover{
-    background-color: #D73379;
+    background-color: #cc23b6;
     transition: all 0.5s linear;
 }
 
@@ -118,7 +118,7 @@
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 30px rgba(255, 0, 221, 0.5);
   display: fixed;
  
 }
@@ -135,7 +135,7 @@
 
 .new-task-container input:focus {
   outline: none;
-  border-color: #41b883;
+  border-color: #cc23b6;
 }
 
 .new-task-button {
@@ -145,7 +145,7 @@
   height: 100%;
   font-size: 1rem;
   border: none;
-  background-color: #41b883;
+  background-color: #cc23b6;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
@@ -173,7 +173,7 @@
 }
 
 .task-item i {
-  background-color: #41b883;
+  background-color: #cc23b6;
   color: #fff;
   padding: 12px;
   border-radius: 5px;
@@ -208,3 +208,112 @@ a:active{
   color: white;
   text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.new-task-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(230, 30, 230, 0.5);
+  display: fixed;
+ 
+}
+
+.new-task-input222{
+  flex: 34;
+  font-size: 1rem;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 500;
+}
+.new-task-container input {
+  flex: 34;
+  font-size: 1rem;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 500;
+  
+}
+
+.new-task-container input:focus {
+  outline: none;
+  border-color: #cc23b6;
+}
+
+.new-task-button {
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #cc23b6;
+  color: #fff;
+  padding: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+  
+}
+
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-top: 25px;
+}
+
+.task-item i {
+  background-color: #cc23b6;
+  color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+
+ Utilities 
+.error {
+  border: 2px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+
+
+a:active{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+*/

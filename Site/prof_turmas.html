@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/turmas.css" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- FontAwesome 6.1.1 CDN -->
@@ -179,16 +180,40 @@
 <div id="openModal" class="modalDialog">
   <div>
     <a href="#close" title="Close" class="close">X</a>
-    <h2>Editar turma</h2>
-    <p>Adicionar aluno</p>
+    <img src="img/turmas/titulo.png" alt="" class="titulo">
+
+    <h2 class="titulo">Editar turma</h2>
+    <p>Membros da turma</p>
+
+    <img src="img/turmas/membros.png" alt="" class="membros">
+    <img src="img/turmas/mais (3).png" alt="" class="membros">
     <ul class="list-group">
-      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">oi</li>
       <li class="list-group-item">Dapibus ac facilisis in</li>
       <li class="list-group-item">Morbi leo risus</li>
       <li class="list-group-item">Porta ac consectetur ac</li>
       <li class="list-group-item">Vestibulum at eros</li>
     </ul>
 
+    <select name="select">
+      <option value="valor1">Valor 1</option>
+      <option value="valor2" selected>Valor 2</option>
+      <option value="valor3">Valor 3</option>
+    </select>
+
+    <form>
+      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> opção1
+      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> opção2
+      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> opção3
+      </form>
+
+      <form>
+        <INPUT TYPE="radio" NAME="OPCAO" VALUE="op1" CHECKED> opção1
+        <INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"> opção2
+        </form>
+        <input type="checkbox" class="switch" name="s1" id="s1">
+        <label for="s1">Switch</label>
+        
   </div>
 </div>
           
@@ -225,7 +250,8 @@
                 <div class="inner">
                   <p>Professora: Mayara</p>
                   <br>               
-                  <p>40 horas</p>                </div>
+                  <p>40 horas</p>                
+                </div>
               </div>
             </div>
           </a>  
