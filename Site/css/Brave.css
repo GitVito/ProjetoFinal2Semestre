@@ -454,7 +454,7 @@ footer h5{
     letter-spacing: 1px;
 }
 footer h6:hover{
-    background-color: #0f0;
+    background-color: rgba(255, 255, 255, 0.267);
 }
 
 
@@ -481,4 +481,112 @@ footer h6:hover{
 .containImgRedes img:hover{
     cursor: pointer;
     filter: drop-shadow(0em 0em 0.5em);
+}
+
+@media  screen and (max-width: 400px) {
+    
+    header{
+        width: 100%;
+        margin: auto;
+    }
+
+    .Logo{
+        width: 230px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .lineHr{
+    width: 60%;
+    height: 1px;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    }
+    
+    .titulo h1{
+        margin: auto;
+        font-size: 1.3em;
+    }
+
+    .containTextImg{
+        display: block;
+        position: relative;
+    
+        width: 100%;
+        height: 600px;
+        margin: auto;
+    
+        background-image: url(../img/Brave/BravePc3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0;
+    
+        overflow: hidden;
+    }
+
+    .placeImgBraveEnterprise{
+        display: none;
+    }
+
+    
+.texto1{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    margin: auto;
+    padding: 1.2em;
+    font-size: 0.9em;
+    text-align: justify;
+    text-indent: 1em;
+
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.texto2{
+    position: absolute;
+    top: 52.15%;
+    width: 100%;
+    height: 64.95%;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: justify;
+    text-indent: 1em;
+
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.texto2 h4{
+    font-size: 1em;
+    font-weight: 100;
+
+}
+
+.btnContato{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}
+.btnContact{
+    font-size: 1em;
+    cursor: pointer;
+    margin: auto;
+    width: 52%;
+    height: 43px;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    color: #fff;
+    background-color: #FF833E;
+}
+
+
+
+
+
 }

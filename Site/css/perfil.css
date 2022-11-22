@@ -43,7 +43,6 @@
     width: 100%;
     height: 50%;
     margin: auto;
-    border: 1px solid black;
 }
 
 div.tituloEditPerfil{
@@ -66,7 +65,26 @@ div.tituloEditPerfil{
     margin: auto;
     border-radius: 0.5em;
 
-    background-color: #19E164;
+    background-color: #4bff63;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .logoPerfil{
+        top: 14%;
+    }
+
+    .placeFotoPerfil{
+        width: 90%;
+    }
+
+    div.showImgChat{
+        width: 45%;
+    }
+
+    button.btnShowImgUp{
+        right: 23%;
+    }
 }
 
 .foto{
@@ -77,11 +95,16 @@ div.tituloEditPerfil{
     height: 90%;
     margin: auto;
     border-radius: 1em;
+    box-shadow: inset 0em 0em 0.5em 0.1em #000;
 
 
     background-color: rgba(37, 37, 37, 0.973);
 }
+.foto:hover{
+    box-shadow: inset 0em 0em 1.3em 0.2em #000;
+    transition: all 0.3s linear;
 
+}
 
 /* .editarFoto{
     position: absolute;
@@ -270,9 +293,9 @@ select{
 .placeEditSistema{
     position: absolute;
     bottom: 5%;
-    left: 5%;
+    left: 3%;
 
-    width: 90%;
+    width: 95%;
     height: 32%;
     margin: auto;
 
@@ -356,16 +379,43 @@ select{
     margin: auto;
     border-radius: 0.5em;
     align-items: center;
-    background-color: #555555;
+    background-color: #d4d4d4;
+    border: 1px solid black;
+    cursor: no-drop;
 }
 
 img.imgChat{
     position: absolute;
-    top: 46%;
-    left: 53%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 55%;
+    width: 40%;
     height: 80%;
 
+}
+
+.notificacaoOn{
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 27%;
+    height: 80%;
+    margin: auto;
+}
+.notificacaoOn h5{
+        text-indent: 0.3em;
+        font-size: 1.2em;
+    }
+
+#notiHabilitado{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+#notiDesabilitado{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
