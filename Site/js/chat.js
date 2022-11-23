@@ -13,4 +13,10 @@ function chamar(){
     
 }
 
+    function aparecerdiv(){
+        var victor = document.getElementById('gu');
+         
+        victor.classList.remove('hide');
 
+
+}
