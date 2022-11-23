@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-document.getElementsByTagName("button")[btnEntrarDeVez].addEventListener('click', function(){
+document.getElementsByTagName("button")[btnEntrarLogin].addEventListener('click', function(){
 
     email = document.getElementById("digitoCpfEmail").value 
     senha = document.getElementById("digitoSenha").value 
