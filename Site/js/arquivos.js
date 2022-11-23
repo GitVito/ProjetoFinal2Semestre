@@ -275,5 +275,5 @@ refreshTasksUsingLocalStorage();
 
 addTaskButton1.addEventListener("click", () => handleAddTask());
 
-inputElement.addEventListener("change", () => handleInputChange());
+inputElement.addEventListener("change", () => handleInputChange());A
 

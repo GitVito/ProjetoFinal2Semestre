@@ -124,7 +124,7 @@
 }
 
 #divBusca{
-  background-color: rgba(128, 128, 128, 0.185);
+  background-color: rgb(255, 248, 248);
   border-color: #FF833E;
   border:solid 1px;
   border-radius:15px;
@@ -156,6 +156,7 @@
   width: 23px;
   margin-top: 2%;
   margin-left: 30%;
+ 
 }
 .nome{
   border: 2px solid #dedede48;
@@ -755,6 +756,8 @@
   background-color: #FFEACA;
 }
 
-
+.hide{
+  display: none;
+}
 
 
