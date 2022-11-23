@@ -14,7 +14,7 @@ body{
     font-family: 'Poppins';
 }
 
-h3{
+footer h3{
     font-size:20px ;
     font-family: 'Poppins';
 }
@@ -307,14 +307,14 @@ img.chat{
 }
 
 
-h5{
+footer h5{
     color: white;
     margin-top: 50px;
     font-size: 15px;
     
   
 }
-h4{
+footer h4{
     color: white;
     margin-top: 15px;
     font-size: 18px;
