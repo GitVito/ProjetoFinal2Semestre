@@ -414,16 +414,24 @@ body{
 
 }
 
+.logoSeed{
+    position: absolute;
+    left: 0%;
+    top: -2vh;
+    width: 280px;
+    margin: auto;
+}
+
 .tab-calendar {
-    background: #cffcff;
-    color: #009ffb;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 
 }
 
 span.tab-team {
-    background: #f1ddff;
-    color: #8f44fd;
+    background: #52cbbf00;
+    color: #5B58FA;
     width: 200px;
     margin-left: -10px;
     font-family: "Ubuntu", sans-serif;
@@ -437,8 +445,8 @@ span.tab-team {
 
 }
 .tab-team {
-    background: #f1ddff;
-    color: #8f44fd;
+    background: #52cbbf3d;
+    color: #5B58FA;
     width: 200px;
     left: 620px;
 }
@@ -446,8 +454,8 @@ span.tab-team {
 
 
 .tab-home {
-    background-color: #3ef00846;
-    color: #35e77f;
+    background-color: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 
     
@@ -459,7 +467,7 @@ span.tab-home {
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #19E164;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
     text-decoration: none;
@@ -480,7 +488,8 @@ span.calendario{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #009ffb;
+    background: #52cbbf00;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
 
@@ -514,7 +523,7 @@ span.sino{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #009ffb;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
 
@@ -522,8 +531,8 @@ span.sino{
 }
 
 .tab-sino {
-    background:#E0EFFD;
-    color: #009ffb;
+    background:#52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 }
 
@@ -533,8 +542,8 @@ a{
 
 .chat{
     width: 20px;
-    margin-left: -08px;
-    margin-top: 5px;
+    margin: auto;
+    margin-bottom: 5px;
 }
 img.chat{
     width: 20px;
@@ -547,15 +556,15 @@ span.chat{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #FF833E;    
-    top: 0px;
+    color: #5B58FA;    
+    top: -6px;
     left: 10px;
 
 }
 
 .tab-chat {
-    background:#FFEACA;
-    color: #FF833E;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
     height: 30px;
 
@@ -567,7 +576,7 @@ img.tarefas{
     height: 22px;
     margin-left: -57px;
     margin-top: px;
-    background: #ecd1dd00;
+    background: #52cbbf3d;
 
 }
 span.tarefas{
@@ -576,7 +585,7 @@ span.tarefas{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #d93479;
+    color: #5B58FA;
     top: 0px;
     background: #ecd1dd00;
     left: -85px;
@@ -584,11 +593,12 @@ span.tarefas{
 
 }
 .tab-tarefas {
-    background: #ecd1dd;
-    color: #d93479;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
     height: 30px;
 }
+
 
 .dropDown{
   position: absolute;
@@ -697,13 +707,15 @@ width: 100%;
 }
 
 .dropDown h5:hover{
-  background-color: #8F47FA;
+  background-color: #11ffe72c;
   transition: all 0.5s linear;
 }
 
 .dropDown{
-  background-color: #F1DDFD;
-}
+  background-color: #e7e7ff;
+}  
+
+
 img.aviao{
   width:25px;
   margin-top: 35px ;

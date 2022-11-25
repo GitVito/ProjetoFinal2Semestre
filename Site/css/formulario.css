@@ -2,14 +2,6 @@ body{
     height: 88.1vh;
 }
 
-.dropDown h5:hover{
-    background-color: #40b9ff;
-    transition: all 0.5s linear;
-}
-.dropDown{
-   background-color: #f7fcff;
-}
-
 #folha-base{
     position: absolute;
     left: 50%;
@@ -37,14 +29,14 @@ body{
 }
 
 fieldset{
-    border: 2px solid dodgerblue;
+    border: 2px solid #5B58FA;
     padding: 1em;
 }
 legend{
     padding: 5px;
-    border: 2px solid dodgerblue;
+    border: 2px solid #5B58FA;
     text-align: center;
-    background-color: dodgerblue;
+    background-color: #5B58FA;
     border-radius: 5px;
     font-size: 1.4em;
 }
@@ -78,7 +70,7 @@ legend{
     left: 0;
     font-size: 15px;
     /* transform: scale(0.75); */
-    color: dodgerblue;
+    color: #5B58FA;
 }
 
 .pM{
@@ -96,7 +88,7 @@ legend{
 }
 
 #submit{
-    background-image: linear-gradient(to right, dodgerblue, rgb(41, 0, 107));
+    background-image: linear-gradient(to right, #5B58FA, rgb(41, 0, 107));
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -155,7 +147,7 @@ legend{
 .containExplicacao{
     width: 100%;
     height: 100%;
-    border: 2px solid dodgerblue;
+    border: 2px solid #5B58FA;
 }
 
 .Textpreencha{

@@ -113,7 +113,7 @@ body{
 }
 
 span.tab-team {
-    background: #52cbbf3d;
+    background: #52cbbf00;
     color: #5B58FA;
     width: 200px;
     margin-left: -10px;
@@ -171,7 +171,7 @@ span.calendario{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    background: #52cbbf3d;
+    background: #52cbbf00;
     color: #5B58FA;
     top: -5px;
     left: 15px;
@@ -389,3 +389,14 @@ span.tarefas{
     bottom: -28%;
     width: 100%;
 }
+
+
+
+.dropDown h5:hover{
+    background-color: #11ffe72c;
+    transition: all 0.5s linear;
+}
+
+.dropDown{
+    background-color: #e7e7ff;
+}  

@@ -42,6 +42,7 @@ body{
     height: 80%;
 
     overflow: scroll;
+    overflow-x: hidden;
     box-shadow: 0em 0em 0.4em 0.1em #858585;
 
 
@@ -346,7 +347,7 @@ p{
 }
 .ir:hover{
     cursor: pointer;
-    background-color: #a35802;
+    background-color: #afb313;
     transition: 0.3s linear;
     filter: invert(100%);
 }
