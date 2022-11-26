@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/tarefas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/tarefaaluno.css" />
+    <link rel="stylesheet" href="css/preloader.css" type="text/css">
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Home</title>
+  </head>
+  <body>
+   <!--Header-->
+ 
+
+   <header>
+    <div class="overlay"></div>
+    <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/casinha.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+  
+        <li class="tabs-item tab tab-chat" style="height:55px ;">
+  
+          <div class="tab-circle"></div>
+          <img src="img/chat.png" alt="" class="roxinho">
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas_alunos.html">
+  
+        <li class="tabs-item tab tab-tarefas tab-is-active" style="height:55px ;">
+  
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
+  
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sinoooo.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="calendario.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendarioooo.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/team.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
+    </div>
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporte.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formulario.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
+    </header>
+  
+    <!--  fim Header-->
+
+
+
+    <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<style>
+  .access-button {
+      border-radius: 50px;
+      width: 45px;
+    float: right;
+  }
+    </style>
+
+    <!-- fim libras -->
+
+    <div class = "pro">
+
+    <td style="margin-left:0;margin-right: 0;">
+        <img width="100" height="100" src="img/notificacoes/MayaraProf.jpg" style="border-radius: 50%;margin: auto;"/>
+       </td>
+
+       <td style="margin: left 0;margin-right: 0;">
+          
+         Criado por Prof(a): Mayara em 18/10/2022 
+       </td>
+   </tr>
+ </table>
+ 
+ <br><hr><br>
+ <br><h2>Atividade - 21/11/2022</h2><br>
+
+<p>criar uma página em html e estilizada com css . Criar também um sistema em python que se comunique com os registro da pagina e também usar javascript</p>
+<br>
+
+</div>
+
+
+<div class = "actividade">
+<br><hr>
+
+<h1> Atividade entregues :</h1>
+
+
+
+<div class="container">
+    <div class="new-task-container">
+      <input
+        type="file"
+        class="new-task-input"
+        placeholder="Tarefa para ser feita..."
+      />
+
+      <button class="new-task-button">Adicionar</button>
+    </div>
+
+    <div class="tasks-container"></div>
+  </div>
+
+  <script
+    src="https://kit.fontawesome.com/f9e19193d6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./tarefaaluno.js"></script>
+        
+</div>
+
+
+
+  
+    
+
+
+
+
+    
+    
+
+
+
+  
+
+
+
+
+
+ <footer class="footer" data-anime="left">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Rafaela</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+ <!--  Fim Footer -->
+
+
+ <!-- Scripts -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+   <!--inicio Script Preloader-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+    
+</script>
+
+
+ <!--Fim Script Preloader-->
+</html>

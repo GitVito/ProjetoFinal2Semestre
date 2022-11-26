@@ -87,7 +87,7 @@ a{
 .containTextImg{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 20% 20%;
+    grid-template-rows: 100%;
     column-gap: 2%;
     align-content: space-between;
     align-items: center;
@@ -123,9 +123,6 @@ a{
     text-align: justify;
     text-indent: 1em;
 
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
 }
 
 
@@ -157,16 +154,14 @@ a{
     height: 100%;
     margin: 0 auto;
     padding: 1em;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: justify;
-    text-indent: 1em;
+    text-indent: 1rem;
 
-    grid-column-start: 2;
-    grid-row-start: 2;
 }
 
 .texto2 h4{
-    font-size: 1.11em;
+    font-size: 1.11rem;
     font-weight: 100;
 
 }
@@ -483,7 +478,7 @@ footer h6:hover{
     filter: drop-shadow(0em 0em 0.5em);
 }
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width: 500px) {
     
     header{
         width: 100%;
@@ -536,10 +531,10 @@ footer h6:hover{
 
     width: 100%;
     margin: auto;
-    padding: 1.2em;
-    font-size: 0.9em;
+    padding: 1.2rem;
+    font-size: 0.9rem;
     text-align: justify;
-    text-indent: 1em;
+    text-indent: 1rem;
 
     background-color: rgba(0, 0, 0, 0.726);
 }
