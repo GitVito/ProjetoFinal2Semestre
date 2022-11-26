@@ -1,6 +1,3 @@
-var imgUpload = document.getElementById('imgFundoChat').value;
-
-function mostrarImg(){
-    var showImgUp = document.getElementById('showImgUp');
-    showImgUp.src= 'imgUpload';
+function mudouCor(){
+    alert("Cor de fundo de chat alterada com sucesso!");
 }
