@@ -18,143 +18,158 @@ footer h3{
     font-size:20px ;
     font-family: 'Poppins';
 }
-.sessao-home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;    
+
+ 
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+body{
+   background-color: white;
+   align-items: center;
+   text-align: center;
+   margin: 0;
+   font-size:17px ;
+   font-family: 'Poppins';
+   color: black;
+}
+header{
+    background-image: url(../img/Inserir_um_título__3_-removebg-preview.png);
+    margin-top: 0%;
+    background-repeat: no-repeat ;
+    background-size: 100% 150% ;
+    }
+
+.logoSeed{
+    
+    left: 0%;
+    top: -45%;
+    width: 280px;
+    margin: auto;
+}
+.home{
+   position: absolute;
+   width: 100%;
+   height: 75%;
+   margin: 0 ;
+   background-image: url(../img/perfil/16-removebg-preview.png);
+   background-size: 102% 150%;
+   background-repeat: no-repeat ;
+   
+  
+
+}
+
+.btn_Home{
+   margin-top: 2rem;
+   padding: 0.4rem;
+   height: 4rem;
+   width: 10rem;
+   background: linear-gradient(to left, #4776E6, #8e54e9);
+   cursor: pointer;
+   color: white;
+   font-size: 20px;
+
+   border-radius: 30px;
+   transition: all 0.3s ease;
 }
 
 
 
-.home-img{
-    height: 550px;
-    width: 600px;
-    margin-left: 800px;
-    margin-top: 320px;
+.btn_Home:hover {
+    letter-spacing: 0.5px; /*específica o comportamento do espaçamento entre caracteres de texto*/
+    background: linear-gradient(to right, #4776E6, #8e54e9);
 }
 
-
-
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
+.home div{
+   color: white;
+ 
+   font-size: 30px;
     position: absolute;
-    background-color: #009ffb;
-    margin-top: 300px;
-    left: 120px;
-}
+    top: 15%;
+    left: 20%;
+    margin: 10px;
+    padding: 20px;
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
+.computer{
+    margin-left: 80rem;
+    width: 600px;
+    height: 550px;
+    border-color: black;
+}
 
-.btn::after {
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 800px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.Im_card{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
     content: "";
-    display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    transition: all .4s;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
 }
-
-.btn-white::after {
-    background-color: #fff;
+.card1>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
 }
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+.card2>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdce3,
+        #42ffdb
+    );
 }
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
+.card3>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
 }
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+.details{
+    padding: 20px 10px;
 }
-.tarefas{
-    background-color: #cffcff7c;
-    height: 280px;
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 300px;
-    position: absolute;
-    text-align: left;
-    padding-left: 50px;
-    border-radius: 50px;
-
-
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
 }
-
-h2.tarefas{
-    width: 40%;
-    margin-top:100px;
-    left: 50px;
-    position: absolute;
+.details>p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
 }
-
-p.tarefas{
-    width: 40%;
-    margin-top:150px;
-    left: 150px;
-    position: absolute;
-    justify-content: left;
-    text-align: left;
-
-}
-
-h2.chat{
-    width: 40%;
-    margin-top:100px;
-    left: 1000px;
-    position: absolute;
-}
-
-p.chat{
-    width: 40%;
-    margin-top:200px;
-    left: 1000px;
-    position: absolute;
-    justify-content: left;
-    text-align: right;
-
-}
-
-img.chat{
-    width: 600px;
-    margin-right: 900px;
-}
-
-
   
 /* Animação */
 
@@ -233,6 +248,7 @@ img.chat{
 
 
 .sessao-aluno{
+    margin-top: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -332,31 +348,5 @@ footer h4{
 
 
 
-    .sec-publi div{
-        position: absolute;
-        top: 25%;
-        left: 40%;
-
-        width: 510px;
-        margin: 10px;
-        background-color: white;
-        border-radius: 0px 30px;
-        border: 1px solid #0127ff;
-        padding: 20px;
-        box-shadow: 3px 3px #0021db;
-        margin-left: 30px;
-       
-    }
-
-    .sec-publi h1{
-        font-weight: 1000;
-    }
 
 
-.btn2{
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 100px;
-    background-color: #009ffb; 
-   cursor: pointer;
-}
