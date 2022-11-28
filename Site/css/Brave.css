@@ -307,6 +307,7 @@ a{
 .legenda{
     position: absolute;
     bottom: -25%;
+    left: 0;
 
     width: 100%;
     text-align: center;
@@ -317,7 +318,7 @@ a{
 }
 .legenda h5{
     cursor: default;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 100;
 }
 .legenda h6{
@@ -789,4 +790,19 @@ footer h5{
     font-size: 0.7em;
 }
 
+}
+
+@media screen and (max-width: 350px) {
+    .texto1{
+        font-size: 0.77em;
+    }
+    .texto2{
+        font-size: 0.77em;
+    }
+    .btnContact{
+        font-size: 0.8em;
+    }
+    .btnContato{
+        bottom: 3%;
+    }
 }
