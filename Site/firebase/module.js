@@ -11,18 +11,18 @@ import { getFirestore, getDoc,doc, getDocs, addDoc, collection,query, where } fr
 
 //Firebase config.....
 const firebaseConfig = {
-  apiKey: "AIzaSyDQXQhgBeYPxeiiKTur_irACskxneqpQ8s",
-  authDomain: "seed-eca5d.firebaseapp.com",
-  databaseURL: "https://seed-eca5d-default-rtdb.firebaseio.com",
-  projectId: "seed-eca5d",
-  storageBucket: "seed-eca5d.appspot.com",
-  messagingSenderId: "709891424582",
-  appId: "1:709891424582:web:1e45d8ed46bbc9cbeea547"
+  apiKey: "AIzaSyB0mRJtewMmLrtjVhKwO5jfVFQ4lY4zOFI",
+  authDomain: "seed-f091d.firebaseapp.com",
+  projectId: "seed-f091d",
+  storageBucket: "seed-f091d.appspot.com",
+  messagingSenderId: "467421316797",
+  appId: "1:467421316797:web:b8ae86d14e959af2b519d4",
+  measurementId: "G-HMX1XZ8VG7"
 };
    
 // inicia o firebase 
 const app = initializeApp(firebaseConfig);
-firebase.initializeAPP(firebaseConfig);
+
 
 // referencia  pra seu banco
 
