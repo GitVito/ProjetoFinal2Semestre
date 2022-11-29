@@ -93,7 +93,7 @@ a{
     align-items: center;
 
     width: 100%;
-    height: 450px;
+    height: 510px;
     margin: auto;
     padding-right: 1em;
 
@@ -129,7 +129,7 @@ a{
 .placeImgBraveEnterprise{
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 490px;
     margin: auto;
     overflow: hidden;
     text-align: center;
@@ -244,7 +244,6 @@ a{
     border-radius: 1em;
     margin: auto;
     overflow: hidden;
-
 }
 .card1{
     top: 0%;
@@ -308,6 +307,7 @@ a{
 .legenda{
     position: absolute;
     bottom: -25%;
+    left: 0;
 
     width: 100%;
     text-align: center;
@@ -318,7 +318,7 @@ a{
 }
 .legenda h5{
     cursor: default;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 100;
 }
 .legenda h6{
@@ -509,13 +509,14 @@ footer h6:hover{
         position: relative;
     
         width: 100%;
-        height: 600px;
+        height: 500px;
         margin: auto;
     
         background-image: url(../img/Brave/BravePc3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0;
+        padding-right: 0;
     
         overflow: hidden;
     }
@@ -530,27 +531,25 @@ footer h6:hover{
     top: 0;
 
     width: 100%;
+    height: 40%;
     margin: auto;
     padding: 1.2rem;
     font-size: 0.9rem;
     text-align: justify;
     text-indent: 1rem;
-
-    background-color: rgba(0, 0, 0, 0.726);
 }
 
 .texto2{
     position: absolute;
-    top: 52.15%;
+    top: 45%;
     width: 100%;
-    height: 64.95%;
+    height: 50%;
     margin: 0 auto;
     padding: 1em;
     font-size: 0.9em;
     text-align: justify;
     text-indent: 1em;
 
-    background-color: rgba(0, 0, 0, 0.726);
 }
 
 .texto2 h4{
@@ -580,8 +579,230 @@ footer h6:hover{
     background-color: #FF833E;
 }
 
+.containTexts{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.card{
+    width: 30%;
+    height: 170px;
+}
+.card1{
+    top: 0%;
+    left: 3%;
+}
+.card3{
+    top: 0%;
+    right: 3%;
+}
+.card4{
+    top: 0%;
+    left: 3%;
+}
+.card5{
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card6{
+    top: 0%;
+    right: 3%;
+    transform: none;
+}
+.card7{
+    display: none;
+}
+
+.secao1{
+    left: 0;
+    padding: 0;
+    height: 200px;
+}
+.secao2{
+    bottom: 5%;
+    left: 0;
+    padding: 0;
+
+    height: 200px;
+}
+.containEquipe{
+    height: 430px;
+}
+
+
+.legenda{
+    bottom: -25%;
+    height: 60%;
+}
+
+.legenda h5{
+    font-size: 0.9em;
+}
+#nameSofia{
+    font-size: 0.8em;
+}
+#nameRafa{
+    font-size: 0.7em;
+}
+#nameSofia{
+    font-size: 0.8em;
+}
+#Thami{
+    font-size: 0.75em;
+}
+#nameGu{
+    font-size: 0.8em;
+}
+
+.legenda h6{
+    font-size: 0.6em;
+}
+
+/* 
+.legenda:hover{
+    bottom: 0;
+    transition: 0.5s ease;
+} */
+
+.btnGitLink{
+    bottom: 5%;
+    width: 90%;
+    height: 35px;
+}
+.btnGit{
+    width: 80%;
+    height: 30px;
+    font-size: 0.8em;
+
+}
+.btnGit:hover{
+    border: 2px solid #0f0;
+    transition: 0.2s linear;
+    background-color: rgba(1, 27, 0, 0.815);
+} 
 
 
 
 
+
+
+
+footer{
+    height: 600px;
+    margin: auto;
+
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer li{
+    margin-bottom: 2%;
+}
+
+.avisos{
+    height: 25%;
+}
+.avisos h3{
+    text-indent: 1.2em;
+    margin-bottom: 3%;
+}
+.avisos p{
+    font-size: 0.6em;
+}
+
+.conteudoFooter{
+    width: 100%;
+    height: 70%;
+}
+
+.placePalavras{
+    grid-template-columns: 100%;
+    grid-template-rows: 31% 31% 31.5%;
+    row-gap: 3%;
+}
+
+.secaoOpcoes{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+footer h6{
+    font-size: 0.9em;
+    transition: all 0.5s linear;
+}
+footer h5{
+    text-align: left;
+    margin: auto;
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.secaoCriadorPag{
+    height: 75%;
+}
+.secaoCriadorPag h6{
+    margin-top: 5%;
+    font-size: 1.25em !important;
+}
+
+/* .secaoRedesSociais{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+} */
+
+.containImgRedes img{
+   width: 48px;
+}
+
+}
+
+@media screen and (max-width:360px){
+    
+.texto1{
+    font-size: 0.85rem;
+    text-indent: 1rem;
+}
+
+.texto2{
+    font-size: 0.85em;
+}
+
+#nameAline{
+    font-size: 0.7em;
+}
+#Thami{
+    font-size: 0.7em;
+}
+#nameGu{
+    font-size: 0.7em;
+}
+#nameVito{
+    font-size: 0.8em;
+}
+#nameSofia{
+    font-size: 0.7em;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    .texto1{
+        font-size: 0.77em;
+    }
+    .texto2{
+        font-size: 0.77em;
+    }
+    .btnContact{
+        font-size: 0.8em;
+    }
+    .btnContato{
+        bottom: 3%;
+    }
 }
