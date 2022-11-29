@@ -36,5 +36,9 @@ function entrar(){
   .then((userCredential) => {
       const user = userCredential.user
       alert("Usuario logado")
-    })
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+  });
 }
