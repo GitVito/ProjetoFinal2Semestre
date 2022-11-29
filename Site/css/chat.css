@@ -1,4 +1,6 @@
-
+body{
+  overflow: hidden;
+}
   .container {
     background-color: #52cbbf3d;
     border-radius: 35px;
@@ -6,8 +8,10 @@
     margin: 10px 0;
     width: 500px;
     margin-left: 200px;
-    position: abs;
-    margin-top: 20%;
+    position:absolute;
+    margin-top: 10%;
+
+    clip-path: none;
   }
   .container2 {
    
@@ -18,7 +22,7 @@
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 40%;
   }
   .container3 {
     background-color:#52cbbf3d;
@@ -28,7 +32,7 @@
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 650px;
+    margin-top: 70%;
   }
   
   /* Darker chat container */
@@ -36,7 +40,7 @@
     background-color: #52cbbf3d;
     margin-left: 600px;
     position: absolute;
-    margin-top: 150px;
+    margin-top: 25%;
     border-radius: 35px;
   }
   .chatvictor1{
@@ -48,18 +52,18 @@
   }
    /* Darker chat container */
    .darker2 {
-    background-color:#dedede;
+    background-color: #52cbbf3d;
     margin-left: 600px;
     position: absolute;
-    margin-top: 470px;
+    margin-top: 55%;
     border-radius: 35px;
   }
   /* Darker chat container */
   .darker3 {
-    background-color:  #52cbbf3d;
+    background-color:  #dedede;
     margin-left: 600px;
     position: absolute;
-    margin-top: 830px;
+    margin-top: 85%;
     border-radius: 35px;
   
   }
@@ -89,17 +93,15 @@
   /* Style time text */
   .time-right {
     float: right;
-    color:#000;
+    color: rgb(26, 23, 23);
     
   }
-  .time-right1{
-    color:grey;
-  }
+  
   .bol{
     width: 5vh;
-    margin-left: 20%;
+    margin-left: 34%;
     position: absolute;
-    margin-top: -5%;
+    margin-top: -7%;
   }
   /* Style time text */
   .time-left {
@@ -128,7 +130,7 @@
 }
 
 #divBusca{
-  background-color: rgb(255, 248, 248);
+  background-color: rgb(223, 223, 223);
   border-color: rgb(91, 88, 250);;
   border:solid 1px;
   border-radius:15px;
@@ -140,10 +142,11 @@
 }
 
 #divBusca{
-  background-color: rgba(128, 128, 128, 0.185);
+  background-color: rgb(252, 247, 247);
   border-color: rgb(91, 88, 250);;
   border-radius:35px;
   width:550px;
+  z-index: 2000! important;
 }
 
 #txtBusca{
@@ -167,7 +170,7 @@
   background-color:rgb(91, 88, 250);;
   padding: 10px;
   width: 1270px;
-  margin-left:31%;
+  margin-left:32%;
   position: absolute;
  
 }
@@ -190,7 +193,7 @@
 }
 .cuadrito{
   width: 1298px;
-  height: 77%;
+  height: 78%;
   overflow: scroll;
   position: absolute;
   right: 0%;
@@ -201,12 +204,11 @@
 
 .chat1{
   
-  background-color:rgba(170, 170, 170, 0.308);
+  background-color:white;
   padding: 10px;
-  margin: 10px ;
-  width: 70vh;
+  width: 80%;
   height: 14vh;
-  margin-left: 5px;
+  left: 15%;
   position: absolute;
   margin-top: 50px;
 }
@@ -214,102 +216,104 @@
   width: 100px;
   margin-left: -45%;
   position: absolute;
+  left: 33%;
   border-radius: 50%;
   margin-top: 5%;
 }
 .chatrafa1{
   width: 200px;
-  margin-left: -29%;
+  margin-left: -70%;
   position: absolute;
   border-radius: 50%;
   margin-top: 1%;
 }
 .chat2{
   
-  background-color:rgba(170, 170, 170, 0.308);
+  background-color:white;
   padding: 10px;
-  margin: 10px 0;
-  width: 70vh;
+  width: 80%;
   height: 14vh;
-  margin-left: px;
+  left: 15%;
   position: absolute;
-  margin-top: 200px;
+  margin-top: 32%;
 }
 .chatvictor{
   width: 100px;
-  margin-left: -45%;
   position: absolute;
-  border-radius: 100%;
-  margin-top:2% ;
+  left: -10%;
+  border-radius: 50%;
+  margin-top: 5%;
     }
 .chatvictor1{
   width: 200px;
-  margin-left: 60%;
+  margin-left: -70%;
   position: absolute;
   border-radius: 50%;
   margin-top: 1%;
     }
 .chat3{
   
-  background-color:rgba(170, 170, 170, 0.308);
+  background-color:white;
   padding: 10px;
-  margin: 10px 0;
-  width: 70vh;
+  width: 80%;
   height: 14vh;
-  margin-left: 5px;
+  left: 15%;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 57%;
 }
 .chatcard{
   width: 100px;
-  margin-left: -45%;
+  position: absolute;
+  left: -10%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+.chatcard1{
+  width: 80px;
+  margin-left: -73%;
   position: absolute;
   border-radius: 50%;
   margin-top: 1%;
 }
-.chatcard1{
-  width: 70px;
-  margin-left: -70%;
-  position: absolute;
-  border-radius: 70%;
-  margin-top: 1%;
 
-
-}
 .chat4{
-         background-color:rgba(170, 170, 170, 0.308);
+  background-color:white;
+  padding: 10px;
+  width: 80%;
+  height: 14vh;
+  left: 15%;
+  position: absolute;
+  margin-top:89%;
+}
+.chataline{
+  width: 100px;
+  margin-left: -59%;
+  position: absolute;
+  border-radius: 60%;
+ 
+}
+.chatbeno{
+width: 80px;
+margin-left: -73%;
+position: absolute;
+border-radius: 60%;
           
-          padding: 10px;
-          margin: 10px 0;
-          width: 70vh;
-          height: 14vh;
-          margin-left: 5px;
-          position: absolute;
-          margin-top: 500px;
-        }
-        .chataline{
-          width: 100px;
-          margin-left: -45%;
-          position: absolute;
-          border-radius: 60%;
-         
-        }
-        .chatbeno{
-          width: 80px;
-          margin-left: -45%;
-          position: absolute;
-          border-radius: 60%;
-        }
-        .chat5{
-        
-            background-color:rgba#52cbbf3d;
-            padding: 10px;
-            margin: 10px 0;
-            width: 70vh;
-            height: 14vh;
-            margin-left: 5px;
+}
+.chat5{
+  background-color:#dedede;
+  padding: 10px;
+  width: 102%;
+  height: 14vh;
+  left: -5%;
+  position: absolute;
+  margin-top:113%;
+}
+          .chatail{
+            width: 70px;
+            margin-left: -70%;
             position: absolute;
-            margin-top: 650px;
+            border-radius: 70%;
+            margin-top: 1%;
           }
           .sala{
           width: 120px;
@@ -320,14 +324,15 @@
           }
           .chatgu{
             width: 60px;
-          margin-left: 35%;
+          margin-left: 60%;
           position: absolute;
           border-radius: 60%;
           margin-top: 3%;
+          
           }
            .chat6{
            
-              background-color:rgba(170, 170, 170, 0.308);
+            background-color:white;
               
               padding: 10px;
               margin: 10px 0;
@@ -354,10 +359,11 @@
 }
 .input{
   border-radius: 35px;
+  position: posit;
   width: 60%;
   height: 35px;
   margin-left: 0px;
-  background-color: rgba(128, 128, 128, 0.185);
+  background-color: rgb(218, 227, 231);
   border-color: rgb(91, 88, 250);;
   }
   .emoji{
@@ -369,18 +375,22 @@
     width: 50px;
   }
   .camera{
-  width: 5vh;
+  width: 4vh;
   position: absolute;
-  margin-left: 30%;
-  margin-top: -4%;
+  margin-left: 40%;
+  margin-top: -3%;
   
 
   }
   .pontos{
-  width: 5vh;
+  width: 4vh;
   position: absolute;
-  margin-left: 35%;
-  margin-top: -4%;
+  margin-left: 45%;
+  margin-top: -3.5%;
+  }
+  .nomegru{
+  color: white;
+  font-size: 2vh;
   }
 
 

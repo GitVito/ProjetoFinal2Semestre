@@ -121,7 +121,393 @@
         </header>
       
         <!--  fim Header-->
-  
+  <style>
+    .overlay {
+    height: 69vh;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    background-color: white;
+    padding: 12px 5px;
+    box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+    position: relative;
+    z-index: 99;
+}
+
+.tabs {
+    display: flex;
+    width: 530px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tab {
+    padding: 12px 22px;
+    background-color: #e0efff;
+    color: #58a6ff;
+    margin-right: 15px;
+    border-radius: 55px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.7s ease;
+    overflow: hidden;
+    max-width: 0px;
+    cursor: pointer;
+    position: relative;
+    flex-basis: 120px;
+}
+
+.tab-is-active {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+}
+
+.tab:hover {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+    position: relative;
+}
+
+.tab-is-active .tab-name {
+    opacity: 1;
+}
+
+.tab-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 2px solid #95c5fd;
+    z-index: 10;
+    opacity: 0;
+    left: 20px;
+    pointer-events: none;
+}
+
+.tab-icon {
+    margin-right: 1px;
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    right: 6.7px;
+    top: -1px;
+
+}
+
+.tab-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: 1px;
+    opacity: 0;
+
+}
+
+.tab-calendar {
+    background: #D6D5F8;
+    color: #009ffb;
+    left: 620px;
+
+}
+
+span.tab-team {
+    background: #f1ddff;
+    color: #8f44fd;
+    width: 200px;
+    margin-left: -10px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: -5px;
+    left: 15px;
+
+
+}
+.tab-team {
+    background: #D6D5F8;
+    color: #8f44fd;
+    width: 200px;
+    left: 620px;
+}
+
+
+
+.tab-home {
+    background-color: #D6D5F8;
+    color: #35e77f;
+    left: 620px;
+
+    
+}
+span.tab-home {
+    background-color: #3ef00800;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -3.5px;
+    left: 15px;
+    text-decoration: none;
+    
+}
+
+
+.roxinho{
+    width: 20px;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+
+span.calendario{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #009ffb;
+    top: -5px;
+    left: 15px;
+
+}
+
+.calendario{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+
+
+}
+
+img.perfil{
+    width: 60px;
+    right: 8.5%;
+    position: absolute;
+    z-index: 2000;
+}
+img.perfil{
+    cursor: pointer;
+}
+.sino{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+}
+span.sino{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+
+
+}
+
+.tab-sino {
+    background:#D6D5F8;
+    color: #009ffb;
+    left: 620px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.chat{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+}
+img.chat{
+    width: 20px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+span.chat{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;    
+    top: -6px;
+    left: 10px;
+
+}
+
+.tab-chat {
+    background:#D6D5F8;
+    color: #FF833E;
+    left: 620px;
+    height: 30px;
+
+}
+
+
+img.tarefas{
+    width: 22px;
+    height: 22px;
+    margin-left: -57px;
+    margin-top: px;
+    background: #ecd1dd00;
+
+}
+span.tarefas{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: 3px;
+    background: #ecd1dd00;
+    left: 8px;
+
+
+}
+.tab-tarefas {
+    background: #D6D5F8;
+    color: #d93479;
+    left: 620px;
+    height: 30px;
+}
+
+.dropDown{
+  position: absolute;
+  right: 3%;
+  z-index: 98 !important;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  width: 12.5%;
+  height: 200px;
+  margin: auto;
+}
+
+.dropDownPositionOpen{
+  top: 8.3%;
+  transition: 0.5s ease-in-out;
+}
+.dropDownPositionClose{
+  top: -25%;
+  transition: 0.5s ease;
+}
+.dropDown h5{
+  font-size: 0.7em;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #000 !important;
+  padding: 0.5em;
+}
+#sizeSair{
+  font-size: 1em !important;
+}
+
+.dropDown a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropIcon{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  width: 35px;
+  margin: auto;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  padding: 0.2em;
+}
+
+.dropIcon:hover{
+  background-color: #dadada;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.PlaceTextPerfil{
+position: absolute;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+
+}
+
+.PlaceTextFormulario{
+position: absolute;
+top: 35%;
+width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.PlaceTextSuporte{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.placeLinhaSeparar{
+  position: absolute;
+
+  bottom: -10%;
+
+  width: 100%;
+  margin: auto;
+}
+
+.linhaSeparar{
+  margin: auto;
+  width: 60%;
+  height: 1px;
+  background-color: #000;
+}
+
+.PlaceTextSair{
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+}
+
+.dropDown h5:hover{
+  background-color: #8F47FA;
+  transition: all 0.5s linear;
+}
+
+.dropDown{
+  background-color: #F1DDFD;
+}
+img.aviao{
+  width:25px;
+  margin-top: 35px ;
+  position: fixed;
+  margin-left: 20px;
+}
+  </style>
 
     <!-- acessivel em libras -->
 
@@ -162,6 +548,8 @@
     <div class="horizontal-menu">
       <a href="#" class="active">Comunicados</a>
       <a href="arquivos.html">Arquivos</a>
+      <a href="apostilas.html">Apostilas</a>
+
     </div>
 
   
@@ -214,10 +602,61 @@
     </div>
 
     <div class="espaco"></div>
+    <a href="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" download="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf">Download Text</a>
+    <a href="/images/myw3schoolsimage.jpg" download> DOWNLOAD</a>
 
   </div>
+  
 
   <style>
+
+.quadro{
+    overflow: hidden;
+    background-color: rgb(110, 97, 80);
+    width: 500px;
+  }
+
+.horizontal-menu {
+    background-color: #C0FFEA;
+    position: fixed;
+    z-index: 97 !important;
+    top: 110px;
+    left: 252px;
+    width: 1670px; /* Set a width if you like */
+    height: 110px;
+    box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  overflow: hidden;
+  }
+  .horizontal-menu a {
+    margin-right: 50px;
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 30%;
+    left: -540px;
+  }
+  
+  .horizontal-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61);
+    text-decoration: underline; 
+    transition: 0.2s;
+
+}
+  
+  .horizontal-menu a.active {
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 0.9s;
+
+
+  }
   .vertical-menu {
     width: 200px; /* Set a width if you like */
     margin-left: 20px;
@@ -239,7 +678,7 @@
 }
   
   .vertical-menu a.active {
-    background-color: #7b52bd; /* Add a green color to the "active/current" link */
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
     color: white;
   }
 
@@ -483,7 +922,7 @@ div.principal{
 
   
 input.fundoinput{
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
     width: 500px;
     height: 55px;
     position: relative;
@@ -505,7 +944,39 @@ div.fundoinput{
   height: 109px;
   box-shadow: 0 0 7px 0px #000;
   clip-path: inset(0px -15px 0px -15px);
+  border-top: solid 1px #adb5bd;
   }
+
+  img.aviao{
+  width: 35px;
+  height: 25px;
+  margin-top: 48px;
+  left: 600px;
+  position: absolute;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+img.aviao:hover{
+  animation: aviao 0.8s;
+
+  cursor: pointer;
+
+}
+
+@keyframes aviao{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 
   
