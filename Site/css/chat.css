@@ -1,7 +1,6 @@
 
   .container {
-    border: 2px solid #ff823eb7;
-    background-color: #FFEACA;
+    background-color: #52cbbf3d;
     border-radius: 35px;
     padding: 10px;
     margin: 10px 0;
@@ -11,8 +10,8 @@
     margin-top: 20%;
   }
   .container2 {
-    border: 2px solid #ff823eb7;
-    background-color:#FFEACA;
+   
+    background-color: #52cbbf3d;
     border-radius: 35px;
     padding: 10px;
     margin: 10px 0;
@@ -22,8 +21,7 @@
     margin-top: 300px;
   }
   .container3 {
-    border: 2px solid #ff823eb7;
-    background-color: #FFEACA;
+    background-color:#52cbbf3d;
     border-radius: 35px;
     padding: 10px;
     margin: 10px 0;
@@ -35,8 +33,7 @@
   
   /* Darker chat container */
   .darker {
-    border-color: #ff823efd;
-    background-color:#ff823eef;
+    background-color: #52cbbf3d;
     margin-left: 600px;
     position: absolute;
     margin-top: 150px;
@@ -51,8 +48,7 @@
   }
    /* Darker chat container */
    .darker2 {
-    border-color: #ff823efd;
-    background-color:#ff823eef;
+    background-color:#dedede;
     margin-left: 600px;
     position: absolute;
     margin-top: 470px;
@@ -60,8 +56,7 @@
   }
   /* Darker chat container */
   .darker3 {
-    border-color: #ff823efd;
-    background-color: #ff823eef;
+    background-color:  #52cbbf3d;
     margin-left: 600px;
     position: absolute;
     margin-top: 830px;
@@ -94,9 +89,18 @@
   /* Style time text */
   .time-right {
     float: right;
-    color: #aaa;
+    color:#000;
+    
   }
-  
+  .time-right1{
+    color:grey;
+  }
+  .bol{
+    width: 5vh;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: -5%;
+  }
   /* Style time text */
   .time-left {
     float: left;
@@ -125,7 +129,7 @@
 
 #divBusca{
   background-color: rgb(255, 248, 248);
-  border-color: #FF833E;
+  border-color: rgb(91, 88, 250);;
   border:solid 1px;
   border-radius:15px;
   width:500px;
@@ -137,7 +141,7 @@
 
 #divBusca{
   background-color: rgba(128, 128, 128, 0.185);
-  border-color: #FF833E;
+  border-color: rgb(91, 88, 250);;
   border-radius:35px;
   width:550px;
 }
@@ -159,8 +163,8 @@
  
 }
 .nome{
-  border: 2px solid #dedede48;
-  background-color:#ff823e;
+
+  background-color:rgb(91, 88, 250);;
   padding: 10px;
   width: 1270px;
   margin-left:31%;
@@ -182,6 +186,7 @@
   position: absolute;
   overflow-x: hidden;
   
+  
 }
 .cuadrito{
   width: 1298px;
@@ -190,97 +195,100 @@
   position: absolute;
   right: 0%;
   overflow-x: hidden;
-  background-image: url(../img/chat/grupo.jpeg);
+  background-image: url();
 
 }
 
 .chat1{
-  border-radius: 23px;
+  
   background-color:rgba(170, 170, 170, 0.308);
   padding: 10px;
   margin: 10px ;
-  width: 550px;
+  width: 70vh;
+  height: 14vh;
   margin-left: 5px;
   position: absolute;
   margin-top: 50px;
 }
 .chatrafa{
-  width: 80px;
+  width: 100px;
   margin-left: -45%;
   position: absolute;
   border-radius: 50%;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 .chatrafa1{
-  width: 100px;
-  margin-left: -17%;
+  width: 200px;
+  margin-left: -29%;
   position: absolute;
   border-radius: 50%;
   margin-top: 1%;
 }
 .chat2{
-  border: 2px solid #dedede;
+  
   background-color:rgba(170, 170, 170, 0.308);
-  border-radius: 25px;
   padding: 10px;
   margin: 10px 0;
-  width: 550px;
+  width: 70vh;
+  height: 14vh;
   margin-left: px;
   position: absolute;
   margin-top: 200px;
 }
 .chatvictor{
-  width: 80px;
+  width: 100px;
   margin-left: -45%;
   position: absolute;
+  border-radius: 100%;
+  margin-top:2% ;
+    }
+.chatvictor1{
+  width: 200px;
+  margin-left: 60%;
+  position: absolute;
   border-radius: 50%;
+  margin-top: 1%;
     }
 .chat3{
-  border: 2px solid #dedede;
+  
   background-color:rgba(170, 170, 170, 0.308);
-   border-radius: 25px;
   padding: 10px;
   margin: 10px 0;
-  width: 550px;
+  width: 70vh;
+  height: 14vh;
   margin-left: 5px;
   position: absolute;
   margin-top: 350px;
 }
 .chatcard{
-  width: 65px;
+  width: 100px;
   margin-left: -45%;
   position: absolute;
-  border-radius: 60%;
-  margin-top: -1%;
+  border-radius: 50%;
+  margin-top: 1%;
 }
 .chatcard1{
   width: 70px;
-  margin-left: -47%;
+  margin-left: -70%;
   position: absolute;
   border-radius: 70%;
   margin-top: 1%;
-}
-.chatail{
-  width: 80px;
-  margin-left: 35%;
-  position: absolute;
-  border-radius: 70%;
-  margin-top: 2%;
+
 
 }
 .chat4{
- border: 2px solid #dedede;
          background-color:rgba(170, 170, 170, 0.308);
-          border-radius: 25px;
+          
           padding: 10px;
           margin: 10px 0;
-          width: 550px;
+          width: 70vh;
+          height: 14vh;
           margin-left: 5px;
           position: absolute;
           margin-top: 500px;
         }
         .chataline{
-          width: 80px;
+          width: 100px;
           margin-left: -45%;
           position: absolute;
           border-radius: 60%;
@@ -293,21 +301,22 @@
           border-radius: 60%;
         }
         .chat5{
-          border: 2px solid #dedede;
-            background-color:rgba(170, 170, 170, 0.308);
-            border-radius: 25px;
+        
+            background-color:rgba#52cbbf3d;
             padding: 10px;
             margin: 10px 0;
-            width: 550px;
+            width: 70vh;
+            height: 14vh;
             margin-left: 5px;
             position: absolute;
             margin-top: 650px;
           }
           .sala{
-          width: 90px;
+          width: 120px;
           margin-left: -45%;
           position: absolute;
-          border-radius: 60%;
+          border-radius: 50%;
+          margin-top: 2%;
           }
           .chatgu{
             width: 60px;
@@ -317,9 +326,9 @@
           margin-top: 3%;
           }
            .chat6{
-            border: 2px solid #dedede;
+           
               background-color:rgba(170, 170, 170, 0.308);
-              border-radius: 25px;
+              
               padding: 10px;
               margin: 10px 0;
               width: 550px;
@@ -328,7 +337,7 @@
               margin-top: 800px;
               }
               .fotothami{
-                width: 90px;
+                width: 100px;
                margin-left: -45%;
                position: absolute;
                border-radius: 60%;
@@ -349,17 +358,30 @@
   height: 35px;
   margin-left: 0px;
   background-color: rgba(128, 128, 128, 0.185);
-  border-color: #FF833E;
+  border-color: rgb(91, 88, 250);;
   }
   .emoji{
   border-radius:30px ;
     margin-top: -45px;
-    margin-left:-450px;
+    margin-left:-500px;
     background-color: rgba(240, 248, 255, 0);
     position: absolute;
     width: 50px;
   }
+  .camera{
+  width: 5vh;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -4%;
+  
 
+  }
+  .pontos{
+  width: 5vh;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -4%;
+  }
 
 
 
@@ -374,6 +396,7 @@
       align-items: center;
       text-align: center;
       margin: 0;
+      font-family: 'Poppins';
   }
   
   .overlay {
@@ -465,16 +488,24 @@
   
   }
   
+  .logoSeed{
+      position: absolute;
+      left: 0%;
+      top: -2vh;
+      width: 280px;
+      margin: auto;
+  }
+  
   .tab-calendar {
-      background: #cffcff;
-      color: #009ffb;
+      background: #52cbbf3d;
+      color: #5B58FA;
       left: 620px;
   
   }
   
   span.tab-team {
-      background: #f1ddff;
-      color: #8f44fd;
+      background: #52cbbf3d;
+      color: #5B58FA;
       width: 200px;
       margin-left: -10px;
       font-family: "Ubuntu", sans-serif;
@@ -488,8 +519,8 @@
   
   }
   .tab-team {
-      background: #f1ddff;
-      color: #8f44fd;
+      background: #52cbbf3d;
+      color: #5B58FA;
       width: 200px;
       left: 620px;
   }
@@ -497,8 +528,8 @@
   
   
   .tab-home {
-      background-color: #3ef00846;
-      color: #35e77f;
+      background-color: #52cbbf3d;
+      color: #5B58FA;
       left: 620px;
   
       
@@ -510,7 +541,7 @@
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      color: #19E164;
+      color: #5B58FA;
       top: -5px;
       left: 15px;
       text-decoration: none;
@@ -531,7 +562,8 @@
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      color: #009ffb;
+      background: #52cbbf3d;
+      color: #5B58FA;
       top: -5px;
       left: 15px;
   
@@ -565,7 +597,7 @@
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      color: #009ffb;
+      color: #5B58FA;
       top: -5px;
       left: 15px;
   
@@ -573,8 +605,8 @@
   }
   
   .tab-sino {
-      background:#E0EFFD;
-      color: #009ffb;
+      background:#52cbbf3d;
+      color: #5B58FA;
       left: 620px;
   }
   
@@ -584,8 +616,8 @@
   
   .chat{
       width: 20px;
-      margin-left: -08px;
-      margin-top: 5px;
+      margin: auto;
+      margin-bottom: 5px;
   }
   img.chat{
       width: 20px;
@@ -598,15 +630,15 @@
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      color: #FF833E;    
-      top: 0px;
+      color: #5B58FA;    
+      top: -6px;
       left: 10px;
   
   }
   
   .tab-chat {
-      background:#FFEACA;
-      color: #FF833E;
+      background: #52cbbf3d;
+      color: #5B58FA;
       left: 620px;
       height: 30px;
   
@@ -618,7 +650,7 @@
       height: 22px;
       margin-left: -57px;
       margin-top: px;
-      background: #ecd1dd00;
+      background: #52cbbf3d;
   
   }
   span.tarefas{
@@ -627,7 +659,7 @@
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      color: #d93479;
+      color: #5B58FA;
       top: 0px;
       background: #ecd1dd00;
       left: -85px;
@@ -635,8 +667,8 @@
   
   }
   .tab-tarefas {
-      background: #ecd1dd;
-      color: #d93479;
+      background: #52cbbf3d;
+      color: #5B58FA;
       left: 620px;
       height: 30px;
   }
@@ -748,13 +780,13 @@
   }
 
   .dropDown h5:hover{
-    background-color: #FF833E;
+    background-color: #11ffe72c;
     transition: all 0.5s linear;
 }
 
 .dropDown{
-  background-color: #FFEACA;
-}
+    background-color: #e7e7ff;
+}  
 
 .hide{
   display: none;

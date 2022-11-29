@@ -23,18 +23,21 @@
   <body>
 
 
-       <!--Header-->
+        <!--Header-->
  
 
  <header>
   <div class="overlay"></div>
   <div class="nav">
+
+    <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+
     <ul class="tabs">
 
       <a href="index.html">
-      <li class="tabs-item tab tab-home tab-is-active">
+      <li class="tabs-item tab tab-home">
         <div class="tab-circle"></div>
-        <img class="roxinho" src="img/home.png">            
+        <img class="roxinho" src="img/casinha.png">            
         <span class="tab-home">Home</span>
       </li>
       </a>
@@ -44,7 +47,7 @@
       <li class="tabs-item tab tab-chat" style="height:55px ;">
 
         <div class="tab-circle"></div>
-        <i class="fa fa-comment tab-icon"></i>
+        <img src="img/chat.png" alt="" class="roxinho">
       
         <span class="chat">Chat</span>
       </li>
@@ -62,15 +65,15 @@
     <a href="notificacoes.html">
       <li class="tabs-item tab tab-sino ">
         <div class="tab-circle"></div>
-        <img class="sino" src="img/sino.png">        
+        <img class="sino" src="img/sinoooo.png">        
         <span class="sino">Avisos</span>
       </li>
       </a>
 
-      <a href="chat.html">
+      <a href="calendario.html">
       <li class="tabs-item tab tab-calendar ">
         <div class="tab-circle"></div>
-        <img class="calendario" src="img/calendar.png">            
+        <img class="calendario" src="img/calendarioooo.png">            
         <span class="calendario">Agenda</span>
       
       </li>
@@ -80,7 +83,7 @@
       <a href="turmas.html">
       <li class="tabs-item tab tab-team ">
         <div class="tab-circle"></div>
-        <img class="roxinho" src="img/multiple-users-silhouette.png">        
+        <img class="roxinho" src="img/team.png">        
         <span class="tab-team">Equipes</span>
       </li>
       </a>
@@ -134,6 +137,7 @@
             <p class="preencha"> Seja verdadeira na declaração de suas respostas, não há motivos para falsificação de informações.</p>
         </div>
     </div>
+
   <div class="folha-explica">
 
     <div class="containExplicacao">
@@ -146,11 +150,16 @@
     </div>
 
   </div>
+
   <div id="folha-base">
     <form action="">
         <fieldset>
             <legend><b>Formulário</b></legend>
             <br>
+
+            <h4 class="tittleForm">Informações pessoais</h4>
+            <br>
+
             <div class="box-input">
                 <input type="text" name="nome" id="nome" class="inputUser" required>
                 <label class="label-input" for="nome">Nome completo</label>
@@ -200,7 +209,62 @@
             <div class="box-input">
                 <input type="text" name="cpf" id="cpf" class="inputUser" required>
                 <label class="label-input" for="cpf">CPF</label>
-            </div><br>
+            </div>
+
+            <br>
+            <h4 class="tittleForm">Inicio do questionário</h4>
+            <br>
+
+            <p class="quest">Na utilização do sistema notou alguma lentidão ou travamento? </p>
+            <br>
+            
+            <input type="radio" name="quest1" id="quest1Sim" value="quest1Sim" required>
+            <label for="quest1Sim">Sim</label>
+            
+
+            <input type="radio" name="quest1" id="quest1Nao" value="quest1Nao" required>
+            <label for="quest1Nao">Não</label>
+
+            <br>
+
+           <div class="lineForm"></div>
+
+            <br>
+
+            <p class="quest">Em relação a praticidade, na sua opnião, acha que poderia ter ferramentas mais úteis, ou com melhor desempenho?</p>
+            <br>
+            
+            <input type="radio" name="quest2" id="quest2Sim" value="quest2Sim" required>
+            <label for="quest2Sim">Sim</label>
+            
+
+            <input type="radio" name="quest2" id="quest2Nao" value="quest2Nao" required>
+            <label for="quest2Nao">Não</label>
+
+            <br>
+            <div class="lineForm"></div>
+            <br>
+
+            <p class="quest">Este sistema te ajuda a entregar as atividades propostas pelos professores?</p>
+            <br>
+            
+            <input type="radio" name="quest3" id="quest3Sim" value="quest3Sim">
+            <label for="quest3Sim">Sim</label>
+
+
+            <input type="radio" name="quest3" id="quest3Nao" value="quest3Nao">
+            <label for="quest3Nao">Não</label>
+
+            <br>
+            <div class="lineForm"></div>
+            <br>
+
+            <p class="quest">Use este espaço para justificar e descrever algumas respostas:</p>
+            <br>
+
+            <textarea name="questJustify" id="questJustify" cols="40" rows="20" placeholder="Digite aqui" required></textarea>
+
+            <br><br>
             
             <input type="submit" name="submit" id="submit">
 

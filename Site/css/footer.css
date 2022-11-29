@@ -15,13 +15,14 @@
     text-transform: uppercase;
     text-align: center;
     background-image: linear-gradient(
-     -22deg,
-     #FF833E 0%,
-     #D73379 29%,
-     #5FA8FB 67%,
-     #8F49F7 100%
-     
-   );
+       -22deg,
+       
+        #5B58FA 0%,
+        #5B58FA 29%,
+        #52CBBE 67%,
+        #5B58FA 100% 
+  );
+
    background-size: auto auto;
    background-clip: border-box;
    background-size: 200% auto;
@@ -63,7 +64,7 @@
   }
   
   /* irá fazer a centralização do footer*/
-  .container {
+  footer.container {
     max-width: 1170px;
     margin: auto;
   }
@@ -77,6 +78,8 @@
   .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
   
   .footer-col{
@@ -122,7 +125,7 @@
     position: absolute;
     left: 85;
     bottom: -10px;
-    background-color: #d93479;
+    background-color: #52CBBE;
     height: 1px;
     width: 130px;
     box-sizing: border-box;
@@ -147,19 +150,19 @@
   background-color: rgb(56, 55, 55);
   border-radius: 50%;
   color: rgb(252, 241, 241);
- 
-  
+  }
+  .redes{
+    text-align: left;
   }
   
   /*hover para modificar os icones*/
   .footer-col .redes a:hover{
-   color: rgb(39, 39, 39);
-   background-color: rgb(255, 255, 255);
+   transform: translateY(-10%);
    transition: all 0.3s ease;
   }
   /*FIM*/
 
-   .containerFoot {
+   footer.containerFoot {
     border: 2px solid #fff;
     padding: 30px 40px;
     width: 40%;

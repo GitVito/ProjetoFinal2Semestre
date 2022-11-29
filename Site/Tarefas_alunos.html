@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/tarefas.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/dropdown.css" />
+      <link rel="stylesheet" href="css/dropdown.css" />
     <link rel="stylesheet" href="css/tarefaaluno.css" />
     <link rel="stylesheet" href="css/preloader.css" type="text/css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
@@ -30,30 +29,39 @@
     <title>Home</title>
   </head>
   <body>
-  <!--Header-->
-  <header>
+   <!--Header-->
+ 
+
+   <header>
     <div class="overlay"></div>
     <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
       <ul class="tabs">
   
         <a href="index.html">
         <li class="tabs-item tab tab-home ">
           <div class="tab-circle"></div>
-          <img class="roxinho" src="img/home.png">            
+          <img class="roxinho" src="img/casinha.png">            
           <span class="tab-home">Home</span>
         </li>
         </a>
   
         <a href="chat.html">
+  
         <li class="tabs-item tab tab-chat" style="height:55px ;">
+  
           <div class="tab-circle"></div>
-          <i class="fa fa-comment tab-icon"></i>
+          <img src="img/chat.png" alt="" class="roxinho">
         
           <span class="chat">Chat</span>
         </li>
         </a>
-        <a href="Tarefas.html">
-        <li class="tabs-item tab tab-tarefas tab-is-active"  style="height:55px ;">
+        <a href="Tarefas_alunos.html">
+  
+        <li class="tabs-item tab tab-tarefas tab-is-active" style="height:55px ;">
+  
           <div class="tab-circle"></div>
           <i class="fa fa-clipboard tab-icon"></i>
           <span class="tarefas">Tarefas</span>
@@ -63,15 +71,15 @@
       <a href="notificacoes.html">
         <li class="tabs-item tab tab-sino ">
           <div class="tab-circle"></div>
-          <img class="sino" src="img/sino.png">        
+          <img class="sino" src="img/sinoooo.png">        
           <span class="sino">Avisos</span>
         </li>
         </a>
   
-        <a href="chat.html">
+        <a href="calendario.html">
         <li class="tabs-item tab tab-calendar ">
           <div class="tab-circle"></div>
-          <img class="calendario" src="img/calendar.png">            
+          <img class="calendario" src="img/calendarioooo.png">            
           <span class="calendario">Agenda</span>
         
         </li>
@@ -81,20 +89,48 @@
         <a href="turmas.html">
         <li class="tabs-item tab tab-team ">
           <div class="tab-circle"></div>
-          <img class="roxinho" src="img/multiple-users-silhouette.png">        
+          <img class="roxinho" src="img/team.png">        
           <span class="tab-team">Equipes</span>
         </li>
         </a>
         
-        <img class="perfil" src="img/girl.png">
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
   
       </ul>
     </div>
   
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporte.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formulario.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
     </header>
-
-  <!--  fim Header-->
-
+  
+    <!--  fim Header-->
 
 
 
@@ -151,7 +187,7 @@
 
 
 
-<div class="container">
+<div class="container01">
     <div class="new-task-container">
       <input
         type="file"

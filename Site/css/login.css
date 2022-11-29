@@ -32,6 +32,7 @@ h6{
     margin: auto;
     padding: 0%;
     overflow: hidden;
+    background-color: #28D1BF;
 
 }
 
@@ -44,7 +45,10 @@ h6{
     height: 100%;
     margin: auto;
     transition: all 0.5s linear;
-    background-image: linear-gradient(110deg, #cc6ce6be, #6E86E7);
+    background-image: url(../img/login/fundoOndaDown.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: 0% 100%;
 }
 
 .divAlunoPosition1{
@@ -60,7 +64,10 @@ h6{
     height: 100%;
     margin: auto;
     transition: all 0.5s linear;
-    background-image: linear-gradient(90deg, #6e86e7f3, #cc6ce6da, #6e86e79f);
+    background-image: url(../img/login/fundoDuploBlue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: 0% 200%;
 }
 .divEscolhaPosition1{
     left: 100%;
@@ -150,7 +157,10 @@ h6{
     height: 100%;
     margin: auto;
     transition: all 0.5s linear;
-    background-image: linear-gradient(200deg, #cc6ce6da, #6E86E7);
+    background-image: url(../img/login/fundoOndaDown.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: 0% 100%;
 }
 .loginProfessorPosition{
     left: 0%;
@@ -194,7 +204,7 @@ h6{
   /*  background-color: #6E86E7;*/
 }
 .caminhoLoginBtn:hover{
-    background-color: #856e15;
+    background-color: #699510;
     box-shadow: 0em 0em 1em 0.2em black;
     filter: invert(100%);
     transition: all 0.2s linear;
@@ -255,7 +265,7 @@ h6{
 
     border-radius: 5%;
 
-    background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(255, 255, 255, 0.664);
 }
 .positionAlunoPlaceLogin{
     left: 10%;
@@ -348,7 +358,7 @@ h6{
 }
 
 .btnEntrarLogin:hover{
-    box-shadow: inset 0em 0em 0.5em 2em rgb(255, 169, 244);
+    box-shadow: inset 0em 0em 0.5em 2em #5B58FA;
     transition: 0.3s ease-in-out;
-    color: rgb(92, 0, 179);
+    color: #fff;
 }

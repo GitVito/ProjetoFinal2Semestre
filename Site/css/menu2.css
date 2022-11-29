@@ -97,15 +97,15 @@ body{
 }
 
 .tab-calendar {
-    background: #cffcff;
-    color: #009ffb;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 
 }
 
 span.tab-team {
-    background: #f1ddff;
-    color: #8f44fd;
+    background: #52cbbf00;
+    color: #5B58FA;
     width: 200px;
     margin-left: -10px;
     font-family: "Ubuntu", sans-serif;
@@ -119,8 +119,8 @@ span.tab-team {
 
 }
 .tab-team {
-    background: #f1ddff;
-    color: #8f44fd;
+    background: #52cbbf3d;
+    color: #5B58FA;
     width: 200px;
     left: 620px;
 
@@ -129,8 +129,8 @@ span.tab-team {
 
 
 .tab-home {
-    background-color: #3ef00846;
-    color: #35e77f;
+    background-color: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 
     
@@ -142,7 +142,7 @@ span.tab-home {
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #19E164;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
     text-decoration: none;
@@ -163,7 +163,8 @@ span.calendario{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #009ffb;
+    background: #52cbbf00;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
 
@@ -197,7 +198,7 @@ span.sino{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #009ffb;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
 
@@ -205,8 +206,8 @@ span.sino{
 }
 
 .tab-sino {
-    background:#E0EFFD;
-    color: #009ffb;
+    background:#52cbbf3d;
+    color: #5B58FA;
     left: 620px;
 }
 
@@ -216,8 +217,7 @@ a{
 
 .chat{
     width: 20px;
-    margin-left: -08px;
-    margin-top: 5px;
+
 }
 img.chat{
     width: 20px;
@@ -230,15 +230,15 @@ span.chat{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #FF833E;    
-    top: 0px;
-    left: 10px;
+    color: #5B58FA;    
+    top: -4px;
+    left: 5px;
 
 }
 
 .tab-chat {
-    background:#FFEACA;
-    color: #FF833E;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
     height: 30px;
 
@@ -249,8 +249,8 @@ img.tarefas{
     width: 22px;
     height: 22px;
     margin-left: -57px;
-    margin-top: px;
-    background: #ecd1dd00;
+    margin-top: 0px;
+    background: #52cbbf3d;
 
 }
 span.tarefas{
@@ -259,29 +259,31 @@ span.tarefas{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #d93479;
-    top: 0px;
-    background: #ecd1dd00;
-    left: 15px;
-
+    color: #5B58FA;
+    top: -0px;
+    left: 5px;
 
 }
 .tab-tarefas {
-    background: #ecd1dd;
-    color: #d93479;
+    background: #52cbbf3d;
+    color: #5B58FA;
     left: 620px;
     height: 30px;
+}
+.posicaoIcon{
+    top: 0.35vh;
 }
 
 .dropDown{
     position: absolute;
     right: 3%;
     z-index: -1;
+    overflow: scroll;
+    overflow-x: hidden;
 
     width: 12.5%;
     height: 200px;
     margin: auto;
-    background-color: #f7fcff;
 }
 .dropDownPositionOpen{
     top: 8.65%;
@@ -292,7 +294,11 @@ span.tarefas{
     transition: 0.5s ease;
 }
 .dropDown h5{
+    font-size: 0.7em;
+    cursor: pointer;
     border-radius: 1em;
+    color: #000 !important;
+    padding: 0.5em;
 }
 .dropDown a{
     list-style: none;
@@ -300,12 +306,13 @@ span.tarefas{
     color: #000;
 }
 .dropDown h5:hover{
-    background-color: #40b9ff;
+    background-color: #11ffe72c;
     transition: all 0.5s linear;
 }
+
 .dropDown{
-   background-color: #f7fcff;
-}
+    background-color: #e7e7ff;
+}  
 
 .dropIcon{
     position: absolute;
@@ -350,4 +357,38 @@ span.tarefas{
     font-size: 1.5em;
     padding: 0.5em;
 
+}
+
+
+.placeLinhaSeparar{
+    position: absolute;
+    bottom: -1%;
+
+    width: 100%;
+    margin: auto;
+}
+
+.linhaSeparar{
+    margin: auto;
+    width: 60%;
+    height: 1px;
+    background-color: #000;
+}
+
+.PlaceTextSair{
+
+    position: absolute;
+    bottom: -28%;
+    width: 100%;
+}
+#sizeSair{
+    font-size: 1.1em;
+}
+
+.logoSeed{
+    position: absolute;
+    left: 0%;
+    top: -45%;
+    width: 280px;
+    margin: auto;
 }
