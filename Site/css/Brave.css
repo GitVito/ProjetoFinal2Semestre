@@ -318,9 +318,9 @@ a{
 }
 .legenda h5{
     cursor: default;
-    font-size: 1.1em;
-    font-weight: 100;
-}
+        font-size: 1.1em;
+        font-weight: 100;
+    }
 .legenda h6{
     cursor: default;
     font-size: 0.8em;

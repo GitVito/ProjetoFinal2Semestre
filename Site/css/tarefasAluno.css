@@ -1,0 +1,114 @@
+.placeConteudo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    width: 70%;
+    height: 90vh;
+    margin-top: 5%;
+    border-radius: 1em;
+
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+.areaNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 15%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+    background-color: #0000003e;
+}
+
+.viewAtividades{
+    position: absolute;
+    top: 0;
+    left: 3%;
+
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    color: rgb(29, 29, 29);
+}
+.viewDesempenho{
+    position: absolute;
+    top: 0;
+    left: 23%;
+
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    color: rgb(29, 29, 29);
+}
+
+.viewAtividadesSelect{
+    position: absolute;
+    top: 0;
+    left: 3%;
+
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    cursor: default;
+
+    background-color: rgb(227, 227, 227);
+    color: #000000;
+}
+.viewDesempenhoSelect{
+    position: absolute;
+    top: 0;
+    left: 23%;
+
+    width: 20%;
+    height: 100%;
+    margin: auto;
+
+    background-color: rgb(227, 227, 227);
+    color: #000000;
+}
+
+.viewAtividades:hover{
+    background-color: #00000033;
+    cursor: pointer;
+} 
+.viewDesempenho:hover{
+    background-color: #00000033;
+    cursor: pointer;
+}
+
+.tittleView{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+}
+
+.conteudoAtividades{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: rgba(0, 213, 255, 0.119);
+}
+.conteudoDesempenho{
+    position: absolute;
+    top: 15%;
+    right: -100%;
+    width: 100%;
+    height: 85%;
+
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: rgba(229, 255, 0, 0.719);
+}

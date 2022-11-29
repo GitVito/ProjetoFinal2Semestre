@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/footer.css" />
-      <link rel="stylesheet" href="css/dropdown.css" />
-    <link rel="stylesheet" href="css/tarefaaluno.css" />
-    <link rel="stylesheet" href="css/preloader.css" type="text/css">
-    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/tarefasAluno.css">
+
+    <link rel="shortcut icon" href="img/" type="image/x-icon">
     <link href="css/tarefas_alunosss.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -159,127 +157,36 @@
 
     <!-- fim libras -->
 
-    <div class = "pro">
-
-    <td style="margin-left:0;margin-right: 0;">
-        <img width="100" height="100" src="img/notificacoes/MayaraProf.jpg" style="border-radius: 50%;margin: auto;"/>
-       </td>
-
-       <td style="margin: left 0;margin-right: 0;">
-          
-         Criado por Prof(a): Mayara em 18/10/2022 
-       </td>
-   </tr>
- </table>
- 
- <br><hr><br>
- <br><h2>Atividade - 21/11/2022</h2><br>
-
-<p>criar uma página em html e estilizada com css . Criar também um sistema em python que se comunique com os registro da pagina e também usar javascript</p>
-<br>
-
-</div>
 
 
-<div class = "actividade">
-<br><hr>
+ <div class="placeConteudo">
 
-<h1> Atividade entregues :</h1>
+  <div class="areaNav">
 
+    <div id="divViewAtiv" class="viewAtividadesSelect selected">
+      <div class="tittleView">
+        <h3>Tarefas</h3>
+      </div>
 
-
-<div class="container01">
-    <div class="new-task-container">
-      <input
-        type="file"
-        class="new-task-input"
-        placeholder="Tarefa para ser feita..."
-      />
-
-      <button class="new-task-button">Adicionar</button>
     </div>
 
-    <div class="tasks-container"></div>
+    <div id="divViewDesem" class="viewDesempenho">
+      <div class="tittleView">
+        <h3>Desempenho</h3>
+      </div>
+
+    </div>
   </div>
 
-  <script
-    src="https://kit.fontawesome.com/f9e19193d6.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./tarefaaluno.js"></script>
 
-  <h1></h1>
-        <br> 
-        <div class="process-wrapper">
-        <div id="progress-bar-container">
-            <ul>
-                <li class="step step01 active"><div class="step-inner">ANOS 80</div></li>
-                <li class="step step02"><div class="step-inner">ANOS 90</div></li>
-                <li class="step step03"><div class="step-inner">ANOS 2000</div></li>
-                <li class="step step04"><div class="step-inner">ANOS 2010</div></li>
-                <li class="step step05"><div class="step-inner">ANOS 2023</div></li>
-            </ul>
-            
-            <div id="line">
-                <div id="line-progress"></div>
-            </div>
-        </div>
-        
-        <div id="progress-content-section">
-            <div class="section-content discovery active">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                
-                <h2></h2>
-                <p></p>
-            </div>
-            
-            <div class="section-content strategy">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                <h2></h2>
-                <p></p>
-            </div>
-            
-            <div class="section-content creative">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                <h2></h2>
-                <p></p>
-            </div>
-            
-            <div class="section-content production">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                <h2></h2>
-                <p> </p>
-            </div>
-            
-            <div class="section-content analysis">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                <h2></h2>
-                <p></p>
-            </div>
-            <br>
-            </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="tarefas_alunosss.js"></script>
-        
-</div>
-
-
-
-  
+  <div class="conteudoAtividades">
     
+  </div>
+  <div class="conteudoDesempenho">
 
+  </div>
 
-
-
-    
-    
-
-
-
-  
-
+ </div>
 
 
 
@@ -338,18 +245,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  </body>
+  
   <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
-   <!--inicio Script Preloader-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-    }, 1500);
-    
-</script>
-
-
- <!--Fim Script Preloader-->
+</body>
 </html>
