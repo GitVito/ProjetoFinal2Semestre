@@ -21,7 +21,7 @@ const handleAddTask = () => {
   taskItemContainer.classList.add("task-item");
 
   const taskContent = document.createElement("p");
-  taskContent.innerText = inputElement.value + ' - ' + inputElement1.value;
+  taskContent.innerText = inputElement.value + '      ' + inputElement1.value;
   
 
   taskContent.addEventListener("click", () => handleClick(taskContent));
