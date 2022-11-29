@@ -26,19 +26,15 @@ const app = initializeApp(firebaseConfig);
 
 // referencia  pra seu banco
 
-var usuarioSEED =  firebase.database().ref("usuario-seed")
 
-document.getElementById("id-div-professor").addEventListener("btnEntrarDeVez",submitForm);
+function entrar(){
 
-function submitForm(e){
-  e.preventDefault();
-
-  var email = getElementVal("digitoCpfEmailPro")
+  var email = getElementVal("digitoEmailPro")
   var senha = getElementVal("digitoSenhapPro")
 
-  console.log(email,senha);
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+      const user = userCredential.user
+      alert("Usuario logado")
+    })
 }
-
-const getElementVal = (id) =>{
-  return document.getElementById(id).value;
-};
