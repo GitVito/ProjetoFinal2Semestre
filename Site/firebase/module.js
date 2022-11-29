@@ -30,9 +30,9 @@ const app = initializeApp(firebaseConfig);
 function entrar(){
 
   var email = getElementVal("digitoEmailPro")
-  var senha = getElementVal("digitoSenhapPro")
+  var senha = getElementVal("digitoSenhaPro")
 
-  signInWithEmailAndPassword(auth, email, password)
+  signInWithEmailAndPassword(auth, email, senha)
   .then((userCredential) => {
       const user = userCredential.user
       alert("Usuario logado")
