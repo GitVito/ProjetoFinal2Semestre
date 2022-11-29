@@ -21,6 +21,7 @@ const firebaseConfig = {
 };
    
 // inicia o firebase 
+const app = initializeApp(firebaseConfig);
 firebase.initializeAPP(firebaseConfig);
 
 // referencia  pra seu banco
