@@ -1,46 +1,32 @@
-
-
-//Inicializa aplicação e sincroniza com o Firebase.
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-
-//Importa principais métodos de autenticação.
-import { getAuth,  signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
-
-//Importa principais métodos de conexão com o Firestore.
-import { getFirestore, getDoc,doc, getDocs, addDoc, collection,query, where } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
-
-
 //Firebase config.....
 const firebaseConfig = {
-    apiKey: "AIzaSyAn3WDqBGsl9_IMhdsgVvXI4tTWvu3KTOQ",
-    authDomain: "usuario-a882f.firebaseapp.com",
-    projectId: "usuario-a882f",
-    storageBucket: "usuario-a882f.appspot.com",
-    messagingSenderId: "995646945266",
-    appId: "1:995646945266:web:05f9022b9724f19b879d6b"
-  };
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+  apiKey: "AIzaSyDQXQhgBeYPxeiiKTur_irACskxneqpQ8s",
+  authDomain: "seed-eca5d.firebaseapp.com",
+  databaseURL: "https://seed-eca5d-default-rtdb.firebaseio.com",
+  projectId: "seed-eca5d",
+  storageBucket: "seed-eca5d.appspot.com",
+  messagingSenderId: "709891424582",
+  appId: "1:709891424582:web:1e45d8ed46bbc9cbeea547"
+};
+   
+// inicia o firebase 
+firebase.initializeAPP(firebaseConfig);
 
-document.getElementsByTagName("button")[btnEntrarLogin].addEventListener('click', function(){
+// referencia  pra seu banco
 
-    email = document.getElementById("digitoCpfEmail").value 
-    senha = document.getElementById("digitoSenha").value 
+var usuarioSEED =  firebase.database().ref("usuario-seed")
 
-    
-signInWithEmailAndPassword(auth, email, senha)
-  .then((userCredential) => {
+document.getElementById("id-div-professor").addEventListener("btnEntrarDeVez",submitForm);
 
-    alert ("sucesso")
+function submitForm(e){
+  e.preventDefault();
 
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
+  var email = getElementVal("digitoCpfEmailPro")
+  var senha = getElementVal("digitoSenhapPro")
 
-});
+  console.log(email,senha);
+}
+
+const getElementVal = (id) =>{
+  return document.getElementById(id).value;
+};

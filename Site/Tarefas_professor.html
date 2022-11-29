@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/tarefas.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/sidebar_professor.css" />
     <link rel="stylesheet" href="css/popup_tarefas.css" />
     <link rel="stylesheet" href="css/preloader.css" type="text/css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
@@ -120,23 +121,42 @@
   }
     </style>
 
-    <!-- fim libras -->
+<!-- fim libras -->
 
     
 <!--inicio tarefas-->
+<br>
 <h1> Atividades a fazer aqui:</h1> 
 <h99>"estipule datas para uma melhor perfomance"</h99>
 <div class="container">
-  <div class="new-task-container">
-    <input
-      type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
-    /><br>
-  <div id="dropdown">
-    <ul><a></a></ul>
-  </div>
+    <div class="new-task-container">
+      
+
+    
+    <input type="text" class="new-task-input" placeholder="Tarefa para ser feita..."/>
+    <div class="menu_container">
+      <button class="list_btn">Escolha a turma:</button>
+      <span class="button_arrow"></span>
+      <div class="option_container">
+        <label class="option_field">
+          <input class="list_option" type="radio" name="list" title="M2DSI">M2DSI
+          <span class="checkmark"></span>
+        </label>
+        <label class="option_field">
+          <input class="list_option" type="radio" name="list" title="AWS">AWS
+          <span class="checkmark"></span>
+        </label>
+        <label class="option_field">
+          <input class="list_option" type="radio" name="list" title="DP-900">DP-900
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  
+
     <br><input
       type="date" class="new-task-input1"/><br>
-      <br><input type="text" class="new-task-input2" placeholder="Descreva a tarefa.." style=""><br>
+      <br><input type="text" class="new-task-input2" placeholder="Descreva a tarefa.."/><br>
 
     <br><button class="new-task-button">Adicionar</button>
   
@@ -156,13 +176,24 @@
 
 <br><hr>
 
-<h1> Atividade entregues :</h1>
+<h1 style="margin-left: 0;"> Atividade entregues :</h1><br>
 
-
-<img width="50" height="50" src="img/brave.png" style="border-radius: 50%;margin-right: 20pc; margin-top: 0pc;"/>
-
-<input type="text" class="new-task-input222" placeholder="Adicione um comentario"/><br>
-<br><input type="text" min="0" max="100" class="new-task-input222" placeholder="Escolha a nota de 0 a 100" style="margin-left: 23.5pc; padding: 10px px;"/><br>
+<div class="borderIMG">
+  <div class="kok">
+    <img width="50" height="50" src="img/aluno1.jpg"  class="imgGGG"/>
+  </div>
+        <div class="bordaBRD">
+          <h6 
+            class="JKJ">Fazer upload do arquivo:
+          </h6>
+            <img width="50" height="50" src="img/tarefas/nuvem.png"  class="imgGGG1"/>
+            <img width="50" height="50" src="img/tarefas/googledrive.png"  class="imgGGG2"/>
+            <img width="50" height="50" src="img/tarefas/GitHub.png"  class="imgGGG3"/>
+        </div><br>
+  
+</div>
+<br><input type="text" class="new-task-input222" placeholder="Adicione um comentario"/><br>
+<input type="number" min="0" max="100" class="new-task-input222" placeholder="Escolha a nota de 0 a 100"/>
 
 <br><hr>
 
@@ -183,10 +214,8 @@
 </div>
 
 
-<script
-  src="https://kit.fontawesome.com/f9e19193d6.js"
-  crossorigin="anonymous"
-></script>
+<script src="https://kit.fontawesome.com/f9e19193d6.js"crossorigin="anonymous"></script>
+<script src="js/dropdown.js"></script>
 <script src="js/tarefas.js"></script>
 <!--fim tarefas-->
  <!-- Footer -->
