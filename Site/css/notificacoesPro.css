@@ -1,0 +1,30 @@
+.tituloRecentes{
+    width: 84%;
+    height: 8vh;
+    /* background-color: #ff0000; */
+}
+
+.editNotif{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+
+    width: 8%;
+    height: 90%;
+
+/* 
+    background-color: #1f0000; */
+}
+
+.editNotif img{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 80%;
+    padding: 0.1em;
+    border-radius: 0.2em;
+}
+.editNotif img:hover{
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
