@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/dev.css" />
+    <link rel="stylesheet" href="css/dev.css"/>
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
+
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -165,12 +167,12 @@
 
       <div class="container2">
         <img src="img/dev/mayara.jpg" alt="Avatar" class="img1">
-        <p>AVISOS FRONT-END</p>
+        <p>AVISO SAÍDA DE AULA</p>
         <p class="nome">Mayara Ferreira</p>
 
-        <span class="con">As atividades FORMATVAS devem ser entregues dia 27/11</span>
+        <span class="container2">No dia 15/11 vocês devem trazer esse documento assinado. Os menor sde idade devem solicitar a assinatura pelos responsáveis. Obrigada</span>
         <br>
-        <span>As recomendações estão no documento abaixo</span>
+        <br>
         <img src="img/dev/DOCS.jpg" alt="" class="img2">
         <p class="time-right">11:02</p>
       </div>
@@ -181,7 +183,7 @@
       <a >11:00</a>
 
       <p class="nome2">Ailton Gonsalves</p>
-      <p class="container3">Bom dia pessoal, para a aula de hoje goataria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!</p>
+      <p class="container3">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!</p>
 
     </div>
 
@@ -189,36 +191,83 @@
       <img src="img/notificacoes/mayara.jpg" alt="Avatar" class="img1">
       <a>11:00</a>
 
-      <p class="nome3">Ailton Gonsalves</p>
+      <p class="nome3">Mayara Ferreira</p>
       <p class="container4">Bom dia pessoal, Hoje terei uma consulta médica e não irei para a escola, mas está tudo bem! ​😁</p>
       <br>
       <br>
       <br>
 
-      <p class="container4">Gostaria que vocês fizessem uma pesquisa  sobe UX e UI.❤️</p>
+      <p class="container4">Gostaria que vocês fizessem uma pesquisa sobre JavaScript❤️</p>
       <br>
-      <br>
-  
-      <p class="container4">Gostaria que vocês fizessem uma pesquisa  sobe UX e UI.❤️</p>
+
     </div>
 
-    
+    <div class="container5">
+      <img src="img/notificacoes/Ailtonoo.png" alt="Avatar" class="img1">
+      <a >11:00</a>
+
+      <p class="nome4">Ailton Gonsalves</p>
+      <p class="container5">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!</p>
+
+    </div>
+
+    <div class="espaco"></div>
 
   </div>
 
   <style>
-    
-  div.fundoinput{
-  background-color: #e0d0fa;
-  position: fixed;
-  top:25.5%;
-  left: 253px;
-  width: 1670px; /* Set a width if you like */
-  height: 109px;
-  box-shadow: 0 0 7px 0px #000;
-  clip-path: inset(0px -15px 0px -15px);
+  .vertical-menu {
+    width: 200px; /* Set a width if you like */
+    margin-left: 20px;
+  }
+  .vertical-menu a {
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+
+}
+  
+  .vertical-menu a.active {
+    background-color: #7b52bd; /* Add a green color to the "active/current" link */
+    color: white;
   }
 
+  .overlay{
+    display: none;
+  }
+
+div.principal{
+    height:685px;
+    background-color: rgb(255, 255, 255);
+    width: 1660px;
+    position: relative;
+    left: 101%;
+    top: -390px;
+    box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
+    overflow: scroll;
+}
+
+  .espaco {
+    background-color: rgba(243, 239, 239, 0);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 480px;
+    border: none;
+    margin-bottom: 100px;
+  }
   .container2 {
     background-color: rgb(243, 239, 239);
     border-radius: 15px;
@@ -227,8 +276,9 @@
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 70px;
+    margin-top: 40px;
     border: none;
+    margin-bottom: 100px;
   }
 
   .container2 p{
@@ -242,8 +292,11 @@
     color: rgb(0, 0, 0);
     font-family: "Poppins";
     font-weight: normal;
-    margin-top: 20px;
-    margin-left:-50px;
+    margin-top: -30px;
+    margin-left: -250px;
+    text-align: left;
+    width: 480px;
+
   }
   .img1{
     width: 50px;
@@ -267,7 +320,7 @@
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 320px;
+    margin-top: 285px;
     border: none;
   }
   .container3 p{
@@ -306,7 +359,8 @@
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 480px;
+    margin-top: 440px;
+    height: 150px;
   }
 
   .container4 p{
@@ -319,6 +373,7 @@
     background-color: rgba(243, 239, 239, 0);
     border: none;
     text-align: left;
+    width: 460px;
   }
 
   .container4 span{
@@ -333,8 +388,48 @@
     color: #aaa;
     text-decoration: none;
     font-weight: normal;
+    margin-top:120px;
+  }
+
+  .container5 {
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 645px;
+    border: none;
+    margin-bottom: 100px;
+  }
+  .container5 p{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: -75px;
+    left: -185px;
+    height: 10px;
+    background-color: rgba(243, 239, 239, 0);
+    border: none;
+    text-align: left;
+  }
+
+  .container5 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: 100px;
+  }
+
+  .container5 a{
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: normal;
     margin-top:80px;
   }
+
   p.nome{
     color: rgb(71, 71, 71);
     font-weight: normal;
@@ -356,7 +451,16 @@
   p.nome3{
     color: rgb(71, 71, 71);
     font-weight: normal;
-    margin-left: -690px;
+    margin-left: -140px;
+    margin-top: 0px;
+    font-size: 12px;
+
+  }
+
+  p.nome4{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left: -140px;
     margin-top: 0px;
     font-size: 12px;
 
@@ -374,6 +478,35 @@
     float: left;
     color: rgb(187, 187, 187);
   }
+
+  
+input.fundoinput{
+  background-color: #f1f1f1;
+    width: 500px;
+    height: 55px;
+    position: relative;
+    font-size: 20px;
+    margin-left: -1000px;
+    top: 30px;
+    border-radius: 0.5em;
+    border: none ;
+    padding-left: 50px;
+    z-index: 2000 !important;
+}
+
+div.fundoinput{
+  background-color: #f1f1f1;
+  position: fixed;
+  top:24.5%;
+  left: 253px;
+  width: 1670px; /* Set a width if you like */
+  height: 109px;
+  box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  }
+
+
+  
   </style>
     
   <div class="fundoinput">
