@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
-
     <link rel="stylesheet" href="css/menu2.css" />
   
- 
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/app.css">
    
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -27,57 +24,49 @@
     <title>Home</title>
   </head>
   <body class="light">
-           <!--Header-->
- 
-
+    <!--Header-->
  <header>
-  <div class="overlay"></div>
+  
   <div class="nav">
-
-    <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
-
     <ul class="tabs">
 
       <a href="index.html">
-      <li class="tabs-item tab tab-home">
+      <li class="tabs-item tab tab-home ">
         <div class="tab-circle"></div>
-        <img class="roxinho" src="img/casinha.png">            
+        <img class="roxinho" src="img/home.png">            
         <span class="tab-home">Home</span>
       </li>
       </a>
 
       <a href="chat.html">
-
       <li class="tabs-item tab tab-chat" style="height:55px ;">
-
         <div class="tab-circle"></div>
-        <img src="img/chat.png" alt="" class="roxinho" style="margin-right: 5px;">
+        <i class="fa fa-comment tab-icon"></i>
       
         <span class="chat">Chat</span>
       </li>
       </a>
-      <a href="Tarefas_alunos.html">
-
-      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
-
-        <div class="tab-circle"></div>
-        <i class="fa fa-clipboard tab-icon posicaoIcon"></i>
-        <span class="tarefas">Tarefas</span>
-      </li>
-    </a>
+      
+      <a href="Tarefas.html">
+        <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
 
     <a href="notificacoes.html">
       <li class="tabs-item tab tab-sino ">
         <div class="tab-circle"></div>
-        <img class="sino" src="img/sinoooo.png">        
+        <img class="sino" src="img/sino.png">        
         <span class="sino">Avisos</span>
       </li>
       </a>
 
-      <a href="calendario.html">
+      <a href="calendar.html">
       <li class="tabs-item tab tab-calendar tab-is-active">
         <div class="tab-circle"></div>
-        <img class="calendario" src="img/calendarioooo.png">            
+        <img class="calendario" src="img/calendar.png">            
         <span class="calendario">Agenda</span>
       
       </li>
@@ -87,43 +76,14 @@
       <a href="turmas.html">
       <li class="tabs-item tab tab-team ">
         <div class="tab-circle"></div>
-        <img class="roxinho" src="img/team.png">        
+        <img class="roxinho" src="img/multiple-users-silhouette.png">        
         <span class="tab-team">Equipes</span>
       </li>
       </a>
       
-      <img id="perfilImg" class="perfil" src="img/girl.png">
-      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+      <img class="perfil" src="img/girl.png">
 
     </ul>
-  </div>
-
-
-  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
-
-    <div class="PlaceTextPerfil">
-      <a href="perfil.html"><h5>Perfil</h5></a>
-      
-    </div>
-    <div class="PlaceTextFormulario">
-      <a href="suporte.html"><h5>Suporte</h5></a>
-      
-    </div>
-    <div class="PlaceTextSuporte">
-      <a href="formulario.html"><h5>Formulario</h5></a>
-      
-    </div>
-
-    <div class="placeLinhaSeparar">
-      <div class="linhaSeparar"></div>
-    </div>
-
-
-    <div class="PlaceTextSair">
-      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
-      
-    </div>
-
   </div>
 
   </header>
@@ -156,7 +116,6 @@
 
     <!-- fim libras -->
 
-
     <div class="calendar">
       <div class="calendar-header">
           <span class="month-picker" id="month-picker">February</span>
@@ -185,6 +144,56 @@
   
       <div class="month-list"></div>
   </div>
+  <div class="container1">
+    <div class="header1">
+        <span>Agenda</span>
+        <button onclick="openModal()" id="new">Incluir</i></bu>
+          
+    
+  </div>
+    <div class="divTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Início</th>
+                    <th>Fim</th>
+                    <th>Descrição</th>
+                    <th>Horário</th>
+                    <th>Turma</th>
+                    <th>Matéria</th>
+               
+                    <th class="acao">Editar</th>
+                    <th class="acao">Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <form>
+                <label for="m-Título">Titulo</label>
+                <input id="m-Título" type="text" required />
+                <label for="m-Início">Início</label>
+                <input id="m-Início" type="date" required />
+                <label for="m-Fim">Fim </label>
+                <input id="m-Fim" type="date" required />
+                <label for="m-Descrição">Descrição </label>
+                <input id="m-Descrição" type="text" required />
+                <label for="m-Horário">Horário </label>
+                <input id="m-Horário" type="time" required />
+                <label for="m-Turma">Turma </label>
+                <input id="m-Turma" type="text" required />
+                <label for="m-Matéria">Matéria </label>
+                <input id="m-Matéria" type="text" required />
+                
+                <button id="btnSalvar" onclick="">Salvar</button>
+            </form>
+        </div>
+    </div>
+</div>
 
   <script src="js/app.js"></script>
 
@@ -202,7 +211,7 @@
               <h4>Ajuda</h4>
               <ul>
                   <li><a href="faleconosco.html">Fale Conosco</a></li>
-                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li><a href="politica.html">Política de Privacidade</a></li>
                   <li>  <a href="#">Sobre nós</a></li>
                   <li><a href="#">Informações Gerais</a></li> 
                   <li> <a href="#">Fale Conosco</a></li>
@@ -219,7 +228,7 @@
                   <li><a>Aline Batista</a></li>
               </ul>
           </div>
-
+</div>
           <div class="footer-col">
               <h4>Redes Sociais</h4>
               <div class="redes">
@@ -229,8 +238,8 @@
               </div>
           </div>
       </div>
-  </div>
- 
+
+</div>
 
 </footer>
  <!--  Fim Footer -->

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+  />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/perfil.css" />
     <script src="js/menu.js"></script>
@@ -20,13 +23,8 @@
     />
    
   </head>
-  <body>
-       <!--Header-->
- 
-       <header>
-        <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
-      
-      </header>
+  <body >
+          
       
       
     <!-- acessivel em libras -->
@@ -52,16 +50,28 @@
     </style>
 
     <!-- fim libras -->
-   
+     
+      
+
 <section class="home">
-  <div >
+  <img class="logoSeed" src="img/LogoSeed.png" alt="Seed_Logo">
+  <!--Dark Mode-->
+  <div style="left: 90%;top: 5%;">
+    <input type="checkbox" name="change-theme" id="change-theme" />
+    <label for="change-theme">
+      <i class="bi bi-sun"></i>
+      <i class="bi bi-moon"></i
+    ></label>
+  </div>
+<!--Fim Dark Mode-->
+
+  <div>
     <h2 data-anime="left">Seed estudo que muda vidas!</h2>
     <h3>A Maior Escola Online Do Mundo
       <br>Venha conhecer e ter o melhor aprendizado 
     </h3>
     <a href=""><button class="btn_Home" data-anime="top">Entrar</button></a>
 
-    
   </div>
     <img  class="computer" src="img/Inserir_um_título__1_-removebg-preview.png"
      alt="">
@@ -112,9 +122,8 @@
 <div>
   <h1>App Seed</h1>
   <p>Estude de qualquer lugar com nosso App Seed</p>
-<a href=""><button class="btn2"> Baixar</button></a>
+<a href=""><button class="btn_Home"> Baixar</button></a>
 </div>
-<img src="img/template_publi-removebg-preview.png" class="img-publi" style="margin-left: 1470px;">
 
 </section>
 
@@ -178,7 +187,7 @@
   ></script>
   </body>
   <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index.js" defer></script>
   <script src="js/comparacao.js"></script>
 
 
