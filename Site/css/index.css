@@ -17,11 +17,10 @@ body{
  transition: 0.3s;
 }
 
-
 .logoSeed{
-    top: -45%;
+     margin-top: 20px;
     width: 280px;
-    left: 5%;
+    margin-left: 20px;
    
 }
 .home{
@@ -275,12 +274,18 @@ footer h4{
     position: relative;
     bottom: 0;
     left: 0;
-    background-image: url(../img/ondas-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+
 }
 
+.app{
+  width:1000px;
+  height: 800px;
+  left: 2;
+}
 
-
-
+p{
+  font-size: 25px;
+  text-align: justify;
+  left: 5%;
+}
 
