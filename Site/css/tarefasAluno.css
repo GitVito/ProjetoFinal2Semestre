@@ -93,22 +93,58 @@
 .conteudoAtividades{
     position: absolute;
     top: 15%;
-    left: 0;
+
     width: 100%;
     height: 85%;
 
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: rgba(0, 213, 255, 0.119);
+   background-color: rgb(227, 227, 227);
+
 }
 .conteudoDesempenho{
     position: absolute;
     top: 15%;
-    right: -100%;
+
     width: 100%;
     height: 85%;
 
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    background-color: rgba(229, 255, 0, 0.719);
+    background-color: rgb(227, 227, 227);
+}
+.conteudoPositView{
+    left: 0;
+}
+.conteudoDesempenhoFora{
+    right: -100%;
+}
+.conteudoAtividadesFora{
+    left: -100%;
+}
+
+.contain-informacoes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 95%;
+    height: 85%;
+
+
+   background-color: rgb(63, 27, 27);
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.tittle-atividades{
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    width: 100%;
+    height: 100%;
+    background-color: #0909;
 }
