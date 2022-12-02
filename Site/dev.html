@@ -48,16 +48,14 @@
               <span class="chat">Chat</span>
             </li>
             </a>
-            <a href="Tarefas_alunos.html">
       
-            <li class="tabs-item tab tab-tarefas" >
-      
+          <a href="notificacoes.html">
+            <li class="tabs-item tab tab-sino ">
               <div class="tab-circle"></div>
-              <i class="fa fa-clipboard tab-icon"></i>
-              <span class="tarefas">Tarefas</span>
+              <img class="sino" src="img/clipboard (2).png">        
+              <span class="sino">Tarefas</span>
             </li>
-          </a>
-      
+            </a>
           <a href="notificacoes.html">
             <li class="tabs-item tab tab-sino ">
               <div class="tab-circle"></div>
@@ -212,14 +210,14 @@
 }
 
 .tab-calendar {
-    background: #D6D5F8;
+    background: #52cbbf3d;
     color: #009ffb;
     left: 620px;
 
 }
 
 span.tab-team {
-    background: #f1ddff;
+    background: #ffffff00;
     color: #8f44fd;
     width: 200px;
     margin-left: -10px;
@@ -234,7 +232,7 @@ span.tab-team {
 
 }
 .tab-team {
-    background: #D6D5F8;
+    background: #52cbbf3d;
     color: #8f44fd;
     width: 200px;
     left: 620px;
@@ -243,7 +241,7 @@ span.tab-team {
 
 
 .tab-home {
-    background-color: #D6D5F8;
+    background-color: #52cbbf3d;
     color: #35e77f;
     left: 620px;
 
@@ -260,6 +258,7 @@ span.tab-home {
     top: -3.5px;
     left: 15px;
     text-decoration: none;
+    background-color: #ffffff00;
     
 }
 
@@ -277,9 +276,11 @@ span.calendario{
     font-weight: 500;
     position: relative;
     transition: 0.3s ease;
-    color: #009ffb;
+    color: #5B58FA;
     top: -5px;
     left: 15px;
+    background-color: #ffffff00;
+
 
 }
 
@@ -319,7 +320,7 @@ span.sino{
 }
 
 .tab-sino {
-    background:#D6D5F8;
+    background:#52cbbf3d;
     color: #009ffb;
     left: 620px;
 }
@@ -330,7 +331,7 @@ a{
 
 .chat{
     width: 20px;
-    margin-left: -08px;
+    margin-left: -05px;
     margin-top: 5px;
 }
 img.chat{
@@ -351,7 +352,7 @@ span.chat{
 }
 
 .tab-chat {
-    background:#D6D5F8;
+    background:#52cbbf3d;
     color: #FF833E;
     left: 620px;
     height: 30px;
@@ -533,7 +534,7 @@ img.aviao{
      <!--Conteudo pagina -->
     <div class="icone">
      <div>
-      <img src="img/dev/devicone.png" class="icone">
+      <img src="img/dev/dev2-removebg-preview.png" class="icone">
       <div class="vertical-menu">
         <a href="#" class="active">Home</a>
         <a href="#">PWFE</a>
@@ -602,14 +603,25 @@ img.aviao{
     </div>
 
     <div class="espaco"></div>
-    <a href="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" download="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf">Download Text</a>
-    <a href="/images/myw3schoolsimage.jpg" download> DOWNLOAD</a>
+    <a href="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" download="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" target="_blank">Download Text</a>
+    
 
   </div>
   
 
   <style>
-
+  
+  div.quadro{
+  overflow: hidden;
+  background-color: rgb(110, 97, 80);
+  width: 500px;
+}
+img.icone{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
 .quadro{
     overflow: hidden;
     background-color: rgb(110, 97, 80);
@@ -617,7 +629,7 @@ img.aviao{
   }
 
 .horizontal-menu {
-    background-color: #C0FFEA;
+    background-color: #B3E8E3;
     position: fixed;
     z-index: 97 !important;
     top: 110px;
@@ -641,8 +653,8 @@ img.aviao{
     position: relative;
     top: 30%;
     left: -540px;
-  }
-  
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }  
   .horizontal-menu a:hover {
     background-color: rgba(177, 177, 177, 0.61);
     text-decoration: underline; 
@@ -654,7 +666,7 @@ img.aviao{
     background-color: #52CBBE; /* Add a green color to the "active/current" link */
     color: white;
     transition: 0.9s;
-
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 12px 0px;
 
   }
   .vertical-menu {
@@ -717,7 +729,7 @@ div.principal{
     width: 500px;
     margin-left: 200px;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     border: none;
     margin-bottom: 100px;
   }
@@ -949,12 +961,11 @@ div.fundoinput{
 
   img.aviao{
   width: 35px;
-  height: 25px;
+  height: 35px;
   margin-top: 48px;
   left: 600px;
   position: absolute;
   color: white;
-  border-radius: 100px;
   border: none;
   cursor: pointer;
 }
@@ -983,8 +994,8 @@ img.aviao:hover{
   </style>
     
   <div class="fundoinput">
-      <input type="text" class="fundoinput" placeholder="Digte uma mensagem.">
-      <img src="img/dev/paper-plane.png" alt="" class="aviao">
+      <input type="text" class="fundoinput" placeholder="Digite uma mensagem.">
+      <img src="img/dev/send.png" alt="" class="aviao">
 
   </div>
      
