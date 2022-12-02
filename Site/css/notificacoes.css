@@ -347,7 +347,7 @@ p{
 }
 .ir:hover{
     cursor: pointer;
-    background-color: #afb313;
+    background-color: #9b9d0fe0;
     transition: 0.3s linear;
     filter: invert(100%);
 }
