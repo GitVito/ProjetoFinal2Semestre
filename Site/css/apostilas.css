@@ -26,34 +26,36 @@ div.icone{
 
 }
 img.icone{
-    width: 200px;
-    margin-top: 30px;
-    margin-left: -10px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-bottom: 20px;
 }
+
 .vertical-menu {
-    width: 200px; /* Set a width if you like */
-    margin-left: 20px;
-  }
-  .vertical-menu a {
-    background-color: rgb(243, 239, 239); /* Grey background color */
-    color: rgb(5, 5, 5); /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer;
-    font-family: "Poppins";
-    border-radius: 10px;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+  width: 200px; /* Set a width if you like */
+  margin-left: 20px;
+}
+.vertical-menu a {
+  background-color: rgb(243, 239, 239); /* Grey background color */
+  color: rgb(5, 5, 5); /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  font-family: "Poppins";
+  border-radius: 10px;
+}
+
+.vertical-menu a:hover {
+  background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
 
 }
-  
-  .vertical-menu a.active {
-    background-color: #7b52bd; /* Add a green color to the "active/current" link */
-    color: white;
-  }
+
+.vertical-menu a.active {
+  background-color: #52CBBE; /* Add a green color to the "active/current" link */
+  color: white;
+}
 
 
 
@@ -70,18 +72,18 @@ div.principal{
 
 
 
-
 .horizontal-menu {
-  background-color: #e0d0fa;
-  position: fixed;
-  z-index: 97 !important;
-  top: 110px;
-  left: 252px;
-  width: 1670px; /* Set a width if you like */
-  height: 110px;
-  box-shadow: 0 0 7px 0px #000;
-clip-path: inset(0px -15px 0px -15px);
-}
+    background-color: #B3E8E3;
+    position: fixed;
+    z-index: 97 !important;
+    top: 110px;
+    left: 252px;
+    width: 1670px; /* Set a width if you like */
+    height: 110px;
+    box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  overflow: hidden;
+  }
   .horizontal-menu a {
     margin-right: 50px;
     background-color: rgb(243, 239, 239); /* Grey background color */
@@ -95,20 +97,20 @@ clip-path: inset(0px -15px 0px -15px);
     position: relative;
     top: 30%;
     left: -540px;
-  }
-  
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }  
   .horizontal-menu a:hover {
     background-color: rgba(177, 177, 177, 0.61);
     text-decoration: underline; 
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
   
   .horizontal-menu a.active {
-    background-color: #7b52bd; /* Add a green color to the "active/current" link */
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
     color: white;
     transition: 0.9s;
-
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 12px 0px;
 
   }
 
@@ -191,7 +193,36 @@ cursor: pointer;
     font-family: "Poppins";
 
 }
+.card:hover div.info{
+  display: grid;
+  transition: 0.5s;
+}
 
+div.info{
+grid-template-columns: repeat(2,45%);
+width: 80%;
+margin: auto;
+display: none;
+column-gap: 10%;
+
+}
+button.info{
+  margin-top: -15%;
+  background-color: #000;
+  border: solid 0.3px #ffffff;
+  color: white;
+  font-family: "poppins";
+  font-size: 12px;
+  border-radius: 10px;
+
+}
+button.info:hover{
+  margin-top: -15%;
+  background-color: rgb(201, 201, 201);
+  border: solid 0.3px #ffffff;
+  color: rgb(0, 0, 0);
+
+}
 /*Menu*/
 
 
@@ -211,7 +242,7 @@ body{
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 100%;
     transform: translate(-50%, -50%);
 }
 
