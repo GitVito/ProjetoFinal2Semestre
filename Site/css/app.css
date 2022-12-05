@@ -95,10 +95,12 @@ body{
 }
 
 .calendar-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
-    color: var(--color-txt);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  color: var(--color-txt);
+  position: absolute;
+  width: 94%;
+  left: 7%;
 }
 
 .calendar-days div {
@@ -448,12 +450,11 @@ tbody tr td.acao {
 }
 
 .modal button {
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
   outline: none;
   border-radius: 20px; 
   padding: 5px 10px; 
-  width: 100%;
   border: none;
   background-color:#5B58FA;
   color: white;

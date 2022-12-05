@@ -46,7 +46,7 @@ body{
     box-shadow: 0em 0em 0.4em 0.1em #858585;
 
 
-    background-color: #dddcff;
+    background-color: #f9f8ff;
 }
 
 .iconFilter{
@@ -347,7 +347,7 @@ p{
 }
 .ir:hover{
     cursor: pointer;
-    background-color: #afb313;
+    background-color: #9b9d0fe0;
     transition: 0.3s linear;
     filter: invert(100%);
 }

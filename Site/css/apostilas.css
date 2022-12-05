@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    position: fixed;
+}
+i{
+        margin-top:5px;
+
+}
+span.tarefas{
+        left:03px;
+        top:5px;
+}
+span.chat{
+        left:09px;
+        top:5px;
+}
+div.icone{
+    height: 830px;
+    background-color: rgb(243, 239, 239);
+    width: 250px;
+
+}
+img.icone{
+  width: 200px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+  margin-left: 20px;
+}
+.vertical-menu a {
+  background-color: rgb(243, 239, 239); /* Grey background color */
+  color: rgb(5, 5, 5); /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  font-family: "Poppins";
+  border-radius: 10px;
+}
+
+.vertical-menu a:hover {
+  background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+
+}
+
+.vertical-menu a.active {
+  background-color: #52CBBE; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+
+
+div.principal{
+    height:745px;
+    background-color: rgb(255, 255, 255);
+    width: 1660px;
+    position: relative;
+    left: 101%;
+    top: -390px;
+    box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
+    overflow: scroll;
+}
+
+
+
+.horizontal-menu {
+    background-color: #B3E8E3;
+    position: fixed;
+    z-index: 97 !important;
+    top: 110px;
+    left: 252px;
+    width: 1670px; /* Set a width if you like */
+    height: 110px;
+    box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  overflow: hidden;
+  }
+  .horizontal-menu a {
+    margin-right: 50px;
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 30%;
+    left: -540px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }  
+  .horizontal-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61);
+    text-decoration: underline; 
+    transition: 0.2s;
+
+}
+  
+  .horizontal-menu a.active {
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 0.9s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 12px 0px;
+
+  }
+
+  .cards{
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    width: 80%;
+
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    overflow: hidden;
+    width: 100%;
+}
+.Im_card{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card1>.container:hover{
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+    
+}
+.card2>.container:hover{
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+
+    
+}
+.card3>.container:hover{
+transition: 0.3s;
+opacity: .7;
+cursor: pointer;
+
+
+}
+.details{    
+    padding: 20px 10px;
+    margin-top: -20px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    font-family: "Poppins";
+}
+.details>p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins";
+
+}
+.card:hover div.info{
+  display: grid;
+  transition: 0.5s;
+}
+
+div.info{
+grid-template-columns: repeat(2,45%);
+width: 80%;
+margin: auto;
+display: none;
+column-gap: 10%;
+
+}
+button.info{
+  margin-top: -15%;
+  background-color: #000;
+  border: solid 0.3px #ffffff;
+  color: white;
+  font-family: "poppins";
+  font-size: 12px;
+  border-radius: 10px;
+
+}
+button.info:hover{
+  margin-top: -15%;
+  background-color: rgb(201, 201, 201);
+  border: solid 0.3px #ffffff;
+  color: rgb(0, 0, 0);
+
+}
+/*Menu*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
+
+body{
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.overlay {
+    height: 69vh;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    background-color: white;
+    padding: 12px 5px;
+    box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+    position: relative;
+    z-index: 99;
+}
+
+.tabs {
+    display: flex;
+    width: 530px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tab {
+    padding: 12px 22px;
+    background-color: #e0efff;
+    color: #58a6ff;
+    margin-right: 15px;
+    border-radius: 55px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.7s ease;
+    overflow: hidden;
+    max-width: 0px;
+    cursor: pointer;
+    position: relative;
+    flex-basis: 120px;
+}
+
+.tab-is-active {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+}
+
+.tab:hover {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+    position: relative;
+}
+
+.tab-is-active .tab-name {
+    opacity: 1;
+}
+
+.tab-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 2px solid #95c5fd;
+    z-index: 10;
+    opacity: 0;
+    left: 20px;
+    pointer-events: none;
+}
+
+.tab-icon {
+    margin-right: 1px;
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    right: 6.7px;
+    top: -1px;
+
+}
+
+.tab-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: 1px;
+    opacity: 0;
+
+}
+
+.logoSeed{
+    position: absolute;
+    left: 0%;
+    top: -2vh;
+    width: 280px;
+    margin: auto;
+}
+
+.tab-calendar {
+    background: #52cbbf3d;
+    color: #5B58FA;
+    left: 620px;
+
+}
+
+span.tab-team {
+    background: #52cbbf00;
+    color: #5B58FA;
+    width: 200px;
+    margin-left: -10px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: -5px;
+    left: 15px;
+
+
+}
+.tab-team {
+    background: #52cbbf3d;
+    color: #5B58FA;
+    width: 200px;
+    left: 620px;
+}
+
+
+
+.tab-home {
+    background-color: #52cbbf3d;
+    color: #5B58FA;
+    left: 620px;
+
+    
+}
+span.tab-home {
+    background-color: #3ef00800;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+    text-decoration: none;
+    
+}
+
+
+.roxinho{
+    width: 20px;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+
+span.calendario{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    background: #52cbbf00;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+
+}
+
+.calendario{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+
+
+}
+
+img.perfil{
+    width: 60px;
+    right: 8.5%;
+    position: absolute;
+    z-index: 2000;
+}
+img.perfil{
+    cursor: pointer;
+}
+.sino{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+}
+span.sino{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+
+
+}
+
+.tab-sino {
+    background:#52cbbf3d;
+    color: #5B58FA;
+    left: 620px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.chat{
+    width: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+img.chat{
+    width: 20px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+span.chat{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;    
+    top: -6px;
+    left: 10px;
+
+}
+
+.tab-chat {
+    background: #52cbbf3d;
+    color: #5B58FA;
+    left: 620px;
+    height: 30px;
+
+}
+
+
+img.tarefas{
+    width: 22px;
+    height: 22px;
+    margin-left: -57px;
+    margin-top: px;
+    background: #52cbbf3d;
+
+}
+span.tarefas{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: 5px;
+    background: #ecd1dd00;
+    left: 2px;
+
+
+}
+.tab-tarefas {
+    background: #52cbbf3d;
+    color: #5B58FA;
+    left: 620px;
+    height: 30px;
+}
+
+
+.dropDown{
+  position: absolute;
+  right: 3%;
+  z-index: 98 !important;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  width: 12.5%;
+  height: 200px;
+  margin: auto;
+}
+
+.dropDownPositionOpen{
+  top: 8.3%;
+  transition: 0.5s ease-in-out;
+}
+.dropDownPositionClose{
+  top: -25%;
+  transition: 0.5s ease;
+}
+.dropDown h5{
+  font-size: 0.7em;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #000 !important;
+  padding: 0.5em;
+}
+#sizeSair{
+  font-size: 1em !important;
+}
+
+.dropDown a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropIcon{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  width: 35px;
+  margin: auto;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  padding: 0.2em;
+}
+
+.dropIcon:hover{
+  background-color: #dadada;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.PlaceTextPerfil{
+position: absolute;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+
+}
+
+.PlaceTextFormulario{
+position: absolute;
+top: 35%;
+width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.PlaceTextSuporte{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.placeLinhaSeparar{
+  position: absolute;
+
+  bottom: -10%;
+
+  width: 100%;
+  margin: auto;
+}
+
+.linhaSeparar{
+  margin: auto;
+  width: 60%;
+  height: 1px;
+  background-color: #000;
+}
+
+.PlaceTextSair{
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+}
+
+.dropDown h5:hover{
+  background-color: #11ffe72c;
+  transition: all 0.5s linear;
+}
+
+.dropDown{
+  background-color: #e7e7ff;
+}  
+
+
+img.aviao{
+  width:25px;
+  margin-top: 35px ;
+  position: fixed;
+  margin-left: 20px;
+}
