@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/perfil.css" />
     <script src="js/menu.js"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -23,10 +24,23 @@
     />
    
   </head>
-  <body >
+  <body>
           
-      
-      
+
+          <!-- início do preloader -->
+
+     
+ <div class="loader_bg">
+  <div class="loader">
+      <div class="container">
+          
+            <video src="img/Loader.mp4" autoplay muted style=" height: 500px;margin-top: 200px;"></video>
+          
+        </div>
+  </div>
+
+ </div>
+        <!-- fim do preloader --> 
     <!-- acessivel em libras -->
 
 <div vw class="enabled">
@@ -44,8 +58,7 @@
 <style>
   .access-button {
       border-radius: 50px;
-      width: 55px;
-     
+      width: 60px;
     float: right;
   }
     </style>
@@ -57,7 +70,7 @@
 <section class="home">
   <img class="logoSeed" src="img/LogoSeed.png" alt="Seed_Logo">
   <!--Dark Mode-->
-  <div style="left: 90%;top: 5%;">
+  <div style="left: 96%;top: 5%;">
     <input type="checkbox" name="change-theme" id="change-theme" />
     <label for="change-theme">
       <i class="bi bi-sun"></i>
@@ -74,8 +87,7 @@
     <a href="login.html"><button class="btn_Home" data-anime="top">Entrar</button></a>
 
   </div>
-    <img  class="computer" src="img/PC.png"
-     alt="">
+    <img  class="computer" src="img/PC.png" alt="">
 <br><br><br><br>
 </section>
 
@@ -202,5 +214,13 @@
   <script src="js/index.js" defer></script>
   <script src="js/comparacao.js"></script>
 
-
+ <!--inicio Script Preloader-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+     setTimeout(function(){
+         $('.loader_bg').fadeToggle();
+     }, 1500);
+     
+ </script>
+  <!--Fim Script Preloader-->
 </html>
