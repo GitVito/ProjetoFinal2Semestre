@@ -313,6 +313,144 @@
 
   <div id="contDesempenho" class="conteudoDesempenho conteudoDesempenhoFora">
 
+    <div class="contain-informacoes-desempenho">
+
+      <div class="tittle-desempenho-info">
+        <h1>Acompanhe seu desempenho</h1>
+      </div>
+      
+        <br> 
+        <div class="process-wrapper">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                  1º Semestre
+                  <div class="step-inner"></div>
+                </li>
+                <li class="step step02">
+                  2º Semestre
+                  <div class="step-inner"></div>
+                </li>
+                <li class="step step03">
+                  3º Semestre
+                  <div class="step-inner"></div>
+                </li>
+
+            </ul>
+            
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+        
+        <div id="progress-content-section">
+
+            <div class="section-content semestre1 active"> <!-- SEMESTRE1 -->
+               
+              <div class="contain-avaliacoes-passadas">
+                <div class="tipo-nota1">
+                    <li><h5>AV1:</h5></li>
+                </div>  
+                <div class="tipo-nota2">
+                    <li><h5>AV2:</h5></li>
+                </div>   
+                <div class="tipo-nota3">
+                    <li><h5>P1:</h5></li>
+                </div>   
+                <div class="tipo-nota4">
+                    <li><h5>AT2:</h5></li>
+                </div>   
+                <div class="tipo-nota5">
+                    <li><h5>AV1:</h5></li>
+                </div>       
+                
+                <div class="nota1">
+                  <li><h5>100</h5></li>
+              </div>  
+              <div class="nota2">
+                  <li><h5>97</h5></li>
+              </div>   
+              <div class="nota3">
+                  <li><h5>89</h5></li>
+              </div>   
+              <div class="nota4">
+                  <li><h5>94</h5></li>
+              </div>   
+              <div class="nota5">
+                  <li><h5>99</h5></li>
+              </div> 
+
+              </div>
+
+              <div class="contain-melhoria-passadas">        
+
+                  <div class="melhoria1">
+                    <li><h5>100%</h5></li>
+                  </div>
+                  <div class="melhoria2">
+                    <li><h5>97%</h5></li>
+                  </div>
+                  <div class="melhoria3">
+                    <li><h5>89%</h5></li>
+                  </div>
+                  <div class="melhoria4">
+                    <li><h5>94%</h5></li>
+                  </div>
+                  <div class="melhoria5">
+                    <li><h5>99%</h5></li>
+                  </div>
+
+
+                  <div class="icon-melhoria">
+                    <li>
+                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                    
+                  </div>
+                  <div class="legenda-melhoria m1">Melhoria de 100% desde o último semestre</div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+
+              </div>
+
+
+              <div class="contain-media-desempenho">             </div>
+
+
+            </div>
+          
+            <div class="section-content semestre2">
+                
+            </div>
+            
+            <div class="section-content semestre3">
+                <img class="img-fluid rounded" src="" alt=""><br>
+                <h2></h2>
+                <p></p>
+            </div>
+            
+            <br>
+            </div>
+        </div>
+    </div>
   </div>
 
  </div>
@@ -367,6 +505,52 @@
 
 
  <!-- Scripts -->
+
+ <!-- Desempenho tarefas alunos -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script src="tarefas_alunosss.js"></script>
+
+ <script>
+
+$(".step").click( function() {
+  $(this).addClass("active").prevAll().addClass("active");
+  $(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+  $("#line-progress").css("width", "-0%");
+  $(".semestre1").addClass("active").siblings().removeClass("active");
+
+  
+});
+
+$(".step02").click( function() {
+  $("#line-progress").css("width", "50%");
+  $(".semestre2").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+  $("#line-progress").css("width", "100%");
+  $(".semestre3").addClass("active").siblings().removeClass("active");
+});
+
+// $(".step04").click( function() {
+//   $("#line-progress").css("width", "75%");
+//   $(".production").addClass("active").siblings().removeClass("active");
+// });
+
+// $(".step05").click( function() {
+//   $("#line-progress").css("width", "100%");
+//   $(".analysis").addClass("active").siblings().removeClass("active");
+// });
+
+
+ </script>
+
+
+
+
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
