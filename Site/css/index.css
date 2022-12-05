@@ -14,7 +14,7 @@ body{
    font-size:17px ;
    font-family: 'Poppins';
    color: black;
- transition: 0.3s;
+
 }
 
 .logoSeed{
@@ -30,7 +30,7 @@ body{
    height: 75%;
    margin: 0 ;
    background-image: url(../img/perfil/16-removebg-preview.png);
-   background-size: 110% 155%;
+   background-size: 110% 185%;
    background-repeat: no-repeat ;
    top: 0%;
   
@@ -70,11 +70,11 @@ body{
 
 
 .computer{
-    margin-left: 80rem;
+    margin-left:60rem;
     width: 800px;
     height: 700px;
-    border-color: black
-    ;margin-top: -9px;
+    border-color: black;
+    margin-top: -9px;
     position: relative;
     
 }
@@ -84,7 +84,7 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     padding: 20px;
     grid-gap: 40px;
-    margin-top: 900px;
+    margin-top: 800px;
 }
 .card{
     background-color: #1c1b29;
@@ -164,7 +164,7 @@ body{
     color: white;
   }
 
-  .dark footer {
+  .dark footer-col {
     color: white;
   }
 
@@ -172,6 +172,7 @@ body{
   background-color: #263238;
   color: #fff;
 }
+
 
 .dark .bi-sun {
   display: none;
@@ -275,21 +276,13 @@ footer h4{
 }
 
 .sec-publi{
-    
     left: 0;
-    background-image: url(../img/bg_bggenerator_com.png);
-    background-size: 100% 80%;
+    background-image: url(../img/fundo_Publi.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat ;
 }
 
 
-.app{
-  width:1000px;
-  height: 800px;
-  margin-left: 90px;
-  margin-top: -20px;
-  position: relative;
-}
 
 .info{
  margin-left: 80px;
@@ -298,7 +291,7 @@ footer h4{
 }
 
 h1{
-  font-size: 30px;
+  font-size: 40px;
   
   font-family: poppins;
 }
@@ -339,8 +332,10 @@ p{
 
 
 .app{
-  top: 20px;
-  margin-left: 1000px;
-  position: relative;
+    height: 900px;
+   width: 750px;
+  margin-left: 900px;
+  margin-top: -9px;
+ 
 }
 
