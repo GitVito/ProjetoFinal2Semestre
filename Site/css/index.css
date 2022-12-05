@@ -20,7 +20,8 @@ body{
 .logoSeed{
      margin-top: 20px;
     width: 280px;
-    margin-left: 20px;
+    margin-left: -40px;
+    position: absolute;
    
 }
 .home{
@@ -61,7 +62,7 @@ body{
    color: white;
    font-size: 30px;
    position: absolute;
-   top: 30%;
+   top: 25%;
    left: 2%;
    text-align: justify;
 
@@ -70,9 +71,12 @@ body{
 
 .computer{
     margin-left: 80rem;
-    width: 600px;
-    height: 550px;
-    border-color: black;
+    width: 800px;
+    height: 700px;
+    border-color: black
+    ;margin-top: -9px;
+    position: relative;
+    
 }
 
 .cards{
@@ -80,7 +84,7 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     padding: 20px;
     grid-gap: 40px;
-    margin-top: 800px;
+    margin-top: 900px;
 }
 .card{
     background-color: #1c1b29;
@@ -271,21 +275,72 @@ footer h4{
 }
 
 .sec-publi{
-    position: relative;
-    bottom: 0;
+    
     left: 0;
-
+    background-image: url(../img/bg_bggenerator_com.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat ;
 }
+
 
 .app{
   width:1000px;
   height: 800px;
-  left: 2;
+  margin-left: 90px;
+  margin-top: -20px;
+  position: relative;
+}
+
+.info{
+ margin-left: 80px;
+ text-align: justify;
+ margin-top: 15rem;
+}
+
+h1{
+  font-size: 30px;
+  
+  font-family: poppins;
 }
 
 p{
   font-size: 25px;
-  text-align: justify;
-  left: 5%;
+}
+.star{
+  width: 35px;
+  height: 45px;
+  margin-left: 45px;
+  margin-top: 4rem;
+}
+
+
+.btn_Info{
+  margin-top: 2rem;
+  padding: 0.4rem;
+  height: 4rem;
+  width: 10rem;
+  margin-left: 40px;
+  background: linear-gradient(to left, #4776E6, #5490e9);
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+
+
+.btn_Info:hover {
+   letter-spacing: 0.5px; 
+   background: linear-gradient(to right, #4776E6, #8e54e9);
+}
+
+
+
+.app{
+  top: 20px;
+  margin-left: 1000px;
+  position: relative;
 }
 
