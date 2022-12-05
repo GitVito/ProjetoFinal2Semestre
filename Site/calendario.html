@@ -204,13 +204,12 @@
                     <th class="acao">Excluir</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tbody">
             </tbody>
         </table>
     </div>
     <div class="modal-container">
         <div class="modal">
-            <form>
                 <label for="m-Título">Titulo</label>
                 <input id="m-Título" type="text" required />
                 <label for="m-Início">Início</label>
@@ -226,8 +225,7 @@
                 <label for="m-Matéria">Matéria </label>
                 <input id="m-Matéria" type="text" required />
                 
-                <button id="btnSalvar" onclick="">Salvar</button>
-            </form>
+                <button id="btnSalvar" onclick="insertItem()">Salvar</button>
         </div>
     </div>
 </div>
