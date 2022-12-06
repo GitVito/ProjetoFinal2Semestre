@@ -120,6 +120,13 @@
       
         <!--  fim Header-->
   <style>
+    body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+}
     .overlay {
     height: 69vh;
     width: 100%;
@@ -128,6 +135,7 @@
     top: 50%;
     left: 0%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 .nav {
@@ -218,7 +226,7 @@
 
 span.tab-team {
     background: #ffffff00;
-    color: #8f44fd;
+    color: #5B58FA;
     width: 200px;
     margin-left: -10px;
     font-family: "Ubuntu", sans-serif;
@@ -228,6 +236,7 @@ span.tab-team {
     transition: 0.3s ease;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
 
 
 }
@@ -259,6 +268,7 @@ span.tab-home {
     left: 15px;
     text-decoration: none;
     background-color: #ffffff00;
+    font-weight: bolder;
     
 }
 
@@ -280,7 +290,7 @@ span.calendario{
     top: -5px;
     left: 15px;
     background-color: #ffffff00;
-
+    font-weight: bolder;
 
 }
 
@@ -315,6 +325,7 @@ span.sino{
     color: #5B58FA;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
 
 
 }
@@ -348,6 +359,8 @@ span.chat{
     color: #5B58FA;    
     top: -6px;
     left: 10px;
+    font-weight: bolder;
+
 
 }
 
@@ -378,6 +391,7 @@ span.tarefas{
     top: 3px;
     background: #ecd1dd00;
     left: 8px;
+    font-weight: bolder;
 
 
 }
@@ -558,20 +572,20 @@ img.aviao{
 
       <div class="container2">
         <img src="img/dev/mayara.jpg" alt="Avatar" class="img1">
-        <p>AVISO SAÍDA DE AULA</p>
+        <p>AVISO DOCUMENTOS</p>
         <p class="nome">Mayara Ferreira</p>
 
         <span class="container2">No dia 15/11 vocês devem trazer esse documento assinado. Os menor sde idade devem solicitar a assinatura pelos responsáveis. Obrigada</span>
         <br>
         <br>
         <img src="img/dev/DOCS.jpg" alt="" class="img2">
-        <p class="time-right">11:02</p>
+        <p class="time-right">11:00</p>
       </div>
     </div>
       
     <div class="container3">
       <img src="img/notificacoes/Ailtonoo.png" alt="Avatar" class="img1">
-      <a >11:00</a>
+      <a >11:10</a>
 
       <p class="nome2">Ailton Gonsalves</p>
       <p class="container3">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!</p>
@@ -580,7 +594,7 @@ img.aviao{
 
     <div class="container4">
       <img src="img/notificacoes/mayara.jpg" alt="Avatar" class="img1">
-      <a>11:00</a>
+      <a>11:20</a>
 
       <p class="nome3">Mayara Ferreira</p>
       <p class="container4">Bom dia pessoal, Hoje terei uma consulta médica e não irei para a escola, mas está tudo bem! ​😁</p>
@@ -595,7 +609,7 @@ img.aviao{
 
     <div class="container5">
       <img src="img/notificacoes/Ailtonoo.png" alt="Avatar" class="img1">
-      <a >11:00</a>
+      <a >11:50</a>
 
       <p class="nome4">Ailton Gonsalves</p>
       <p class="container5">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!</p>
@@ -603,7 +617,6 @@ img.aviao{
     </div>
 
     <div class="espaco"></div>
-    <a href="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" download="https://www.ufrgs.br/producao/wp-content/uploads/2019/05/Lorem-Ipsum.pdf" target="_blank">Download Text</a>
     
 
   </div>
@@ -615,6 +628,14 @@ img.aviao{
   overflow: hidden;
   background-color: rgb(110, 97, 80);
   width: 500px;
+}
+div.icone{
+    height: 830px;
+    background-color: rgb(243, 239, 239);
+    width: 250px;
+    height: 100vh;
+
+
 }
 img.icone{
     width: 200px;
@@ -633,7 +654,7 @@ img.icone{
     position: fixed;
     z-index: 97 !important;
     top: 110px;
-    left: 252px;
+    left: 253px;
     width: 1670px; /* Set a width if you like */
     height: 110px;
     box-shadow: 0 0 7px 0px #000;
@@ -699,14 +720,15 @@ img.icone{
   }
 
 div.principal{
-    height:685px;
+    height:620px;
     background-color: rgb(255, 255, 255);
-    width: 1660px;
+    width: 1667px;
     position: relative;
     left: 101%;
-    top: -390px;
+    top: -385px;
     box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
     overflow: scroll;
+    overflow-x: hidden;
 }
 
   .espaco {
@@ -953,7 +975,7 @@ div.fundoinput{
   top:24.5%;
   left: 253px;
   width: 1670px; /* Set a width if you like */
-  height: 109px;
+  height: 125px;
   box-shadow: 0 0 7px 0px #000;
   clip-path: inset(0px -15px 0px -15px);
   border-top: solid 1px #adb5bd;

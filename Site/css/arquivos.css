@@ -4,7 +4,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
     position: fixed;
 }
 i{
@@ -20,7 +20,7 @@ span.chat{
         top:5px;
 }
 div.icone{
-    height: 830px;
+    height: 100vh;
     background-color: rgb(243, 239, 239);
     width: 250px;
 
@@ -31,9 +31,11 @@ img.icone{
   margin-left: -10px;
   margin-bottom: 20px;
 }
-.vertical-menu {
+.vertical-menu div {
   width: 200px; /* Set a width if you like */
   margin-left: 20px;
+  height: 100px;
+
 }
 .vertical-menu a {
   background-color: rgb(243, 239, 239); /* Grey background color */
@@ -44,6 +46,9 @@ img.icone{
   cursor: pointer;
   font-family: "Poppins";
   border-radius: 10px;
+  width: 70%;
+  margin-left: 8%;
+
 }
 
 .vertical-menu a:hover {
@@ -58,14 +63,15 @@ img.icone{
 
 
 div.principal{
-    height:745px;
+    height:750px;
     background-color: rgb(255, 255, 255);
-    width: 1660px;
+    width: 1665px;
     position: relative;
     left: 101%;
-    top: -390px;
+    top: -383px;
     box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -75,7 +81,7 @@ div.principal{
   position: fixed;
   z-index: 97 !important;
   top: 110px;
-  left: 252px;
+  left: 253px;
   width: 1670px; /* Set a width if you like */
   height: 110px;
   box-shadow: 0 0 7px 0px #000;
@@ -404,13 +410,13 @@ button.quadro4:hover{
     margin-left: 40px;
     margin-top: 2px;
     background-color: #64646417;
-    margin-bottom: px;
+    margin-bottom:05px;
 
 }
 
 .noti1 img{
   width: 30px;
-  height: 25px;
+  height: 28px;
   margin-top: 15px;
   filter: drop-shadow(0em 0em 0.2em #fff);
 
@@ -424,13 +430,13 @@ button.quadro4:hover{
     
     text-align: left;
     text-indent: 2em;
-    margin: auto;
     padding-top: 0.3em;
+    margin-bottom: 80px;
 }
 
-.comp1-not1 img{
-  width: 35px;
-  height: 32px;
+img.comp1-not1{
+  width: 30px;
+  height: 28px;
   margin-top: 15px;
   filter: drop-shadow(0em 0em 0.2em #fff);
 }
@@ -499,7 +505,7 @@ button.quadro4:hover{
     margin-left: 40px;
     margin-top: 2px;
     background-color: #64646417;
-    margin-bottom: px;
+    margin-bottom: 5px;
 
 
 }
@@ -576,15 +582,6 @@ body{
     font-family: 'Poppins';
 }
 
-.overlay {
-    height: 69vh;
-    width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-}
 
 .nav {
     background-color: white;
@@ -692,6 +689,7 @@ span.tab-team {
     transition: 0.3s ease;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
 
 
 }
@@ -722,6 +720,8 @@ span.tab-home {
     top: -5px;
     left: 15px;
     text-decoration: none;
+    font-weight: bolder;
+
     
 }
 
@@ -743,6 +743,8 @@ span.calendario{
     color: #5B58FA;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
+
 
 }
 
@@ -777,6 +779,8 @@ span.sino{
     color: #5B58FA;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
+
 
 
 }
@@ -810,6 +814,8 @@ span.chat{
     color: #5B58FA;    
     top: -6px;
     left: 10px;
+    font-weight: bolder;
+
 
 }
 
@@ -840,6 +846,8 @@ span.tarefas{
     top: 0px;
     background: #ecd1dd00;
     left: -85px;
+    font-weight: bolder;
+
 
 
 }

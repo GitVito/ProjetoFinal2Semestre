@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/turmas.css" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/.css" />
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
 
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -17,109 +16,112 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   
+  
     <title>Meus cursos</title>
   </head>
   <body>
-   <!--Header-->
+     <!--Header-->
  
 
- <header>
-  <div class="overlay"></div>
-  <div class="nav">
-    <ul class="tabs">
-
-      <a href="index.html">
-      <li class="tabs-item tab tab-home tab-is-active">
-        <div class="tab-circle"></div>
-        <img class="roxinho" src="img/home.png">            
-        <span class="tab-home">Home</span>
-      </li>
+  <header>
+    <div class="overlay"></div>
+    <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/casinha.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+  
+        <li class="tabs-item tab tab-chat " >
+  
+          <div class="tab-circle"></div>
+          <img src="img/chat.png" alt="" class="roxinho">
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas_alunos.html">
+  
+        <li class="tabs-item tab tab-tarefas" >
+  
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
       </a>
-
-      <a href="chat.html">
-
-      <li class="tabs-item tab tab-chat" style="height:55px ;">
-
-        <div class="tab-circle"></div>
-        <i class="fa fa-comment tab-icon"></i>
-      
-        <span class="chat">Chat</span>
-      </li>
-      </a>
-      <a href="Tarefas.html">
-
-      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
-
-        <div class="tab-circle"></div>
-        <i class="fa fa-clipboard tab-icon"></i>
-        <span class="tarefas">Tarefas</span>
-      </li>
-    </a>
-
-    <a href="notificacoes.html">
-      <li class="tabs-item tab tab-sino ">
-        <div class="tab-circle"></div>
-        <img class="sino" src="img/sino.png">        
-        <span class="sino">Avisos</span>
-      </li>
-      </a>
-
-      <a href="chat.html">
-      <li class="tabs-item tab tab-calendar ">
-        <div class="tab-circle"></div>
-        <img class="calendario" src="img/calendar.png">            
-        <span class="calendario">Agenda</span>
-      
-      </li>
-      </a>
-
-
-      <a href="turmas.html">
-      <li class="tabs-item tab tab-team ">
-        <div class="tab-circle"></div>
-        <img class="roxinho" src="img/multiple-users-silhouette.png">        
-        <span class="tab-team">Equipes</span>
-      </li>
-      </a>
-      
-      <img id="perfilImg" class="perfil" src="img/girl.png">
-      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
-
-    </ul>
-  </div>
-
-
-  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
-
-    <div class="PlaceTextPerfil">
-      <a href="perfil.html"><h5>Perfil</h5></a>
-      
+  
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sinoooo.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="calendario.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendarioooo.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team tab-is-active">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/team.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
     </div>
-    <div class="PlaceTextFormulario">
-      <a href="suporte.html"><h5>Suporte</h5></a>
-      
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporte.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formulario.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
     </div>
-    <div class="PlaceTextSuporte">
-      <a href="formulario.html"><h5>Formulario</h5></a>
-      
-    </div>
-
-    <div class="placeLinhaSeparar">
-      <div class="linhaSeparar"></div>
-    </div>
-
-
-    <div class="PlaceTextSair">
-      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
-      
-    </div>
-
-  </div>
-
-  </header>
-
-  <!--  fim Header-->
+  
+    </header>
+  
+    <!--  fim Header-->
 
   
 
@@ -147,124 +149,694 @@
      <!--Conteudo pagina -->
 
   <!--CARD-->
-  <div class="wrapper">
-    <h1> MEUS CURSOS </h1>
-    <div class="cols">
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="dev.html">
-            <div class="container">
-              <div class="front" img style="background-image: url(); ">
-                <div class="inner">
-                  <p>Desenvolvimento de Sistemas</p>
 
-                  
-          
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                <p> M2DSI</p>
-                <p>Professores: Mayara e Ailton</p>
-                <br>               
-                <p>2º termo - matutino</p>
-
-
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <a href="#openModal" class="mais">.<img src="img/turmas/mais (3).png" alt="" class="mais"></a>
-
-<div id="openModal" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close">X</a>
-    <img src="img/turmas/titulo.png" alt="" class="titulo">
-
-    <h2 class="titulo">Editar turma</h2>
-    <p>Membros da turma</p>
-
-    <img src="img/turmas/membros.png" alt="" class="membros">
-    <img src="img/turmas/mais (3).png" alt="" class="membros">
-    <ul class="list-group">
-      <li class="list-group-item">oi</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-
-    <select name="select">
-      <option value="valor1">Valor 1</option>
-      <option value="valor2" selected>Valor 2</option>
-      <option value="valor3">Valor 3</option>
-    </select>
-
-    <form>
-      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> opção1
-      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> opção2
-      <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> opção3
-      </form>
-
-      <form>
-        <INPUT TYPE="radio" NAME="OPCAO" VALUE="op1" CHECKED> opção1
-        <INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"> opção2
-        </form>
-        <input type="checkbox" class="switch" name="s1" id="s1">
-        <label for="s1">Switch</label>
-        
-  </div>
-</div>
-          
-      
-      
-   
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="index copy.html">  
-            <div class="container">
-            <div class="front" img style="background-image: url()">
-                <div class="inner">
-                  <p>AWS</p>
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                  <p>Professora: Mayara</p>
-                  <br>               
-                  <p>40 horas</p>                </div>
-              </div>
-            </div>
-            </a>
-
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="index copy.html">  
-            <div class="container">
-            <div class="front" img style="background-image: url(LuIMG/ParaBriz.jpg)">
-                <div class="inner">
-                  <p>Google Cloud</p>
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                  <p>Professora: Mayara</p>
-                  <br>               
-                  <p>40 horas</p>                
-                </div>
-              </div>
-            </div>
-          </a>  
-
-          </div>
-          
-            </div>
-          </div>
-        </div>
-     </div>
   
+            
+    <h1> MEUS CURSOS </h1>
+    
+
+    <div class="cards">
+      <a href="dev.html" class="">
+        <div class="card card1">
+            <div class="container">
+                <img  class="Im_card" src="img/programacao-removebg-preview.png" alt="Temp_Calendar">
+            </div>
+            <div class="details">
+                <h3>Desenvolvimento de sistemas</h3>
+                <p>Professores: Mayara e Ailton</p>
+            </div>
+        </div>
+      </a>
+        <div class="card card2">
+            <div class="container">
+                <img class="Im_card" src="https://th.bing.com/th/id/R.fedd5ef50946e9a34cd65f11fb2b65f1?rik=97Czhpf3n4aNZQ&pid=ImgRaw&r=0" alt="Temp_Chat">
+            </div>
+            <div class="details"> 
+               <h3>AWS</h3>
+              <p>
+               Professora Mayara - 40 horas
+              </p>
+          
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="container">
+                <img  class="Im_card" src="https://miro.medium.com/proxy/1*urMF0EgCJ7YbtK090Rdikw.png" alt="Singapore">
+            </div>
+            <div class="details">
+                <h3>Google Cloud</h3>
+                <p>Professora Mayara - 40 horas
+                  </p>
+            </div>
+        </div>
+      </div>
+      <a href="#openModal" class="mais">.<img src="img/lapis-removebg-preview (1).png" alt="" class="mais"></a>
+
+      <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="img/titulo.png" alt="" class="titulo">
+      
+          <h2 class="titulo">TURMA</h2>
+          <div class="dados">
+            <p class="dados">Nome da turma: </p>
+            <a class="dados">Desenvolvimento de sistemas </a>
+            <p class="dados">Descrição da turma</p>
+            <a class="dados">Professores: Mayara e Ailton </a>
+
+        </div>
+          <p class="membros">Membros da turma</p>
+
+          <img src="img/membros.png" alt="" class="membros" title="membros">
+      
+          <select name="select">
+            <option value="valor1">Valor 1</option>
+            <option value="valor2" selected>Valor 2</option>
+            <option value="valor3">Valor 3</option>
+          </select>
+      
+         
+      
+            <form class="form">
+              <p class="form">os membros podem postar comunicados</p>
+              <input type="radio" id="html" name="fav_language" value="HTML" checked> Todos
+              <br>
+              <input type="radio" id="css" name="fav_language" value="CSS"> Ninguém
+              <br>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript" class="form"> Ninguem, exceto...
+      
+      
+              </form>
+      
+              <form class="form">
+                <p class="form2">os membros podem criar pastas/arquivos</p>
+                <input type="radio" id="html" name="fav_language" value="HTML" checked> Todos
+                <br>
+                <input type="radio" id="css" name="fav_language" value="CSS"> Ninguém
+                <br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript"> Ninguem, exceto...
+        
+        
+                </form>
+      
+                <form class="form">
+                  <p class="form2">os membros podem adicionar apostilas</p>
+                  <input type="radio" id="html" name="fav_language" value="HTML" checked> Todos
+                  <br>
+                  <input type="radio" id="css" name="fav_language" value="CSS"> Ninguém
+                  <br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript"> Ninguem, exceto...
+          
+          
+                  </form>
+        
+                  <button class="salvar">salvar</button>
+        </div>
+      </div>
+
+      <a href="#openModal" class="mais">.<img src="img/lapis-removebg-preview (1).png" alt="" class="mais2"></a>
+      
+      <a href="#openModal" class="mais">.<img src="img/lapis-removebg-preview (1).png" alt="" class="mais3"></a>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+i{
+        margin-top:5px;
+
+}
+span.tarefas{
+        left:03px;
+        top:5px;
+}
+span.chat{
+        left:09px;
+        top:5px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.iframe{
+    width: 100%;
+    margin-top: 215px;
+}
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 80px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    width: 450px;
+
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    overflow: hidden;
+    width: 450px;
+}
+.Im_card{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    background-color: rgba(0, 0, 0, 0);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card1>.container:hover{
+  background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+    
+}
+.card2>.container:hover{
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+
+    
+}
+.card3>.container:hover{
+transition: 0.3s;
+opacity: .7;
+cursor: pointer;
+
+
+}
+.details{    
+    padding: 20px 10px;
+    margin-top: -20px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    font-family: "Poppins";
+}
+.details>p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins";
+
+}
+
+button.salvar{
+    font-family: "Poppins";
+    color: #fff;
+    margin-top:40px;
+    margin-left: 40%;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: lighter;
+    background-color: #52CBBE;
+    width: 100px;
+    height: 40px;
+    border: rgba(0, 0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 2000 !important;
+    margin-right: 1200px;
+  }
+
+  button.salvar:hover{
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    margin-top:40px;
+    margin-left: 40%;
+    font-size: 17px;
+    font-weight: lighter;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+    background-color: #3c948bab;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
+    cursor: pointer;
+  }
+
+  div.dados{
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+  }
+
+  p.dados{
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  a.dados{
+    margin-top: 12%;
+    margin-left: 7%;
+    width: 100%;
+    font-size: 16px;
+
+  }
+
+/*Css Menu*/
+
+    @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
+
+    body{
+        background-color: white;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        font-family: 'Poppins';
+    }
+
+    .overlay {
+        height: 69vh;
+        width: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav {
+        background-color: white;
+        padding: 12px 5px;
+        box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+        position: relative;
+        z-index: 99;
+    }
+
+    .tabs {
+        display: flex;
+        width: 530px;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .tab {
+        padding: 12px 22px;
+        background-color: #e0efff;
+        color: #58a6ff;
+        margin-right: 15px;
+        border-radius: 55px;
+        text-align: center;
+        white-space: nowrap;
+        transition: 0.7s ease;
+        overflow: hidden;
+        max-width: 0px;
+        cursor: pointer;
+        position: relative;
+        flex-basis: 120px;
+    }
+
+    .tab-is-active {
+        max-width: 120px;
+        box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+    }
+
+    .tab:hover {
+        max-width: 120px;
+        box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+        position: relative;
+    }
+
+    .tab-is-active .tab-name {
+        opacity: 1;
+    }
+
+    .tab-circle {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        border: 2px solid #95c5fd;
+        z-index: 10;
+        opacity: 0;
+        left: 20px;
+        pointer-events: none;
+    }
+
+    .tab-icon {
+        margin-right: 1px;
+        font-size: 18px;
+        vertical-align: middle;
+        position: relative;
+        right: 6.7px;
+        top: -1px;
+
+    }
+
+    .tab-name {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        top: 1px;
+        opacity: 0;
+
+    }
+
+    .logoSeed{
+        position: absolute;
+        left: 0%;
+        top: -2vh;
+        width: 280px;
+        margin: auto;
+    }
+
+    .tab-calendar {
+        background: #52cbbf3d;
+        color: #5B58FA;
+        left: 620px;
+
+    }
+
+    span.tab-team {
+        background: #52cbbf00;
+        color: #5B58FA;
+        width: 200px;
+        margin-left: -10px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        top: -5px;
+        left: 15px;
+        font-weight: bolder;
+
+
+
+    }
+    .tab-team {
+        background: #52cbbf3d;
+        color: #5B58FA;
+        width: 200px;
+        left: 620px;
+    }
+
+
+
+    .tab-home {
+        background-color: #52cbbf3d;
+        color: #5B58FA;
+        left: 620px;
+
+        
+    }
+    span.tab-home {
+        background-color: #3ef00800;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        color: #5B58FA;
+        top: -5px;
+        left: 15px;
+        text-decoration: none;
+        font-weight: bolder;
+        
+    }
+
+
+    .roxinho{
+        width: 20px;
+        margin-left: -8px;
+        margin-top: 5px;
+    }
+
+
+    span.calendario{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        background: #52cbbf00;
+        color: #5B58FA;
+        top: -5px;
+        left: 15px;
+        font-weight: bolder;
+
+    }
+
+    .calendario{
+        width: 20px;
+        margin-left: -08px;
+        margin-top: 5px;
+
+
+    }
+
+    img.perfil{
+        width: 60px;
+        right: 8.5%;
+        position: absolute;
+        z-index: 2000;
+    }
+    img.perfil{
+        cursor: pointer;
+    }
+    .sino{
+        width: 20px;
+        margin-left: -08px;
+        margin-top: 5px;
+    }
+    span.sino{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        color: #5B58FA;
+        top: -5px;
+        left: 15px;
+        font-weight: bolder;
+
+
+
+    }
+
+    .tab-sino {
+        background:#52cbbf3d;
+        color: #5B58FA;
+        left: 620px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .chat{
+        width: 20px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    img.chat{
+        width: 20px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+    span.chat{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        color: #5B58FA;    
+        top: -6px;
+        font-weight: bolder;
+        left: 10px;
+
+    }
+
+    .tab-chat {
+        background: #52cbbf3d;
+        color: #5B58FA;
+        left: 620px;
+        height: 30px;
+
+    }
+
+
+    img.tarefas{
+        width: 22px;
+        height: 22px;
+        margin-left: -57px;
+        margin-top: px;
+        background: #52cbbf3d;
+
+    }
+    span.tarefas{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s ease;
+        color: #5B58FA;
+        top: 0px;
+        background: #ecd1dd00;
+        left: 5px;
+        font-weight: bolder;
+
+
+    }
+    .tab-tarefas {
+        background: #52cbbf3d;
+        color: #5B58FA;
+        left: 620px;
+        height: 30px;
+    }
+
+
+    .dropDown{
+        position: absolute;
+        right: 3%;
+        z-index: -1;
+        overflow: scroll;
+        overflow-x: hidden;
+    
+        width: 12.5%;
+        height: 200px;
+        margin: auto;
+    }
+    
+    .dropDownPositionOpen{
+        top: 8.3%;
+        transition: 0.5s ease-in-out;
+    }
+    .dropDownPositionClose{
+        top: -25%;
+        transition: 0.5s ease;
+    }
+    .dropDown h5{
+        font-size: 0.7em;
+        cursor: pointer;
+        border-radius: 1em;
+        color: #000 !important;
+        padding: 0.5em;
+    }
+    #sizeSair{
+        font-size: 1em !important;
+    }
+    
+    .dropDown a{
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .dropIcon{
+        position: absolute;
+        right: 6%;
+        top: 50%;
+        width: 35px;
+        margin: auto;
+        transform: rotate(90deg);
+        border-radius: 50%;
+        padding: 0.2em;
+    }
+    
+    .dropIcon:hover{
+        background-color: #dadada;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .PlaceTextPerfil{
+        position: absolute;
+        width: 100%;
+        height: 33.3%;
+        margin: auto;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+    
+    }
+    
+    .PlaceTextFormulario{
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        height: 33.3%;
+        margin: auto;
+        font-size: 1.5em;
+    
+    }
+    
+    .PlaceTextSuporte{
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        height: 33.3%;
+        margin: auto;
+        font-size: 1.5em;
+    
+    }
     
   
+    .placeLinhaSeparar{
+        position: absolute;
+  
+        bottom: -10%;
+    
+        width: 100%;
+        margin: auto;
+    }
+    
+    .linhaSeparar{
+        margin: auto;
+        width: 60%;
+        height: 1px;
+        background-color: #000;
+    }
+    
+    .PlaceTextSair{
+        position: absolute;
+        bottom: -50%;
+        width: 100%;
+    }
+  
+    
+
+    .dropDown h5:hover{
+        background-color: #11ffe72c;
+        transition: all 0.5s linear;
+    }
+
+    .dropDown{
+        background-color: #e7e7ff;
+    }  
+  </style>
      
 
 
