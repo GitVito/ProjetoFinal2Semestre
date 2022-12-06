@@ -86,12 +86,12 @@ document.querySelector('#next-year').onclick = () => {
 
 
 const modal = document.querySelector('.modal-container')
-const tbody = document.querySelector('tbody')
+const tbody = document.querySelector('.tbody')
 const sTítulo = document.querySelector('#m-Título')
 const sInício = document.querySelector('#m-Início')
 const sFim = document.querySelector('#m-Fim')
 const sDescricao = document.querySelector('#m-Descrição')
-const sHorario = document.querySelector('#m-Horário')
+const sHorário = document.querySelector('#m-Horário')
 const sTurma = document.querySelector('#m-Turma')
 const sMateria = document.querySelector('#m-Matéria')
 const btnSalvar = document.querySelector('#btnSalvar')
@@ -112,20 +112,20 @@ function openModal(edit = false, index = 0) {
         sNome.value = itens[index].Título
         sFuncao.value = itens[index].Início
         sSetor.value = itens[index].Fim
-        sDescrição.value = itens[index].Descrição
+        sDescricao.value = itens[index].Descrição
         sHorário.value = itens[index].Horário
         sTurma.value = itens[index].Turma
-        sMatéria.value = itens[index].sMatéria
+        sMateria.value = itens[index].sMateria
  
         id = index
     } else {
         sTítulo.value = ''
         sInício.value = ''
         sFim.value = ''
-        sDescrição.value = ''
+        sDescricao.value = ''
         sHorário.value = ''
         sTurma.value = ''
-        sMatéria.value = ''
+        sMateria.value = ''
        
     }
 }
@@ -163,7 +163,7 @@ function insertItem(item, index) {
 }
 
 btnSalvar.onclick = e => {
-    if (sTítulo.value == '' || sInício.value == '' ||  sFim.value == '' || sDescrição.value == '' || sHorário.value == '' ||  sTurma.value == '' ||  sMatéria.value == '' ) {
+    if (sTítulo.value == '' || sInício.value == '' ||  sFim.value == '' || sDescricao.value == '' || sHorário.value == '' ||  sTurma.value == '' ||  sMateria.value == '' ) {
         return
     }
 
@@ -173,13 +173,13 @@ btnSalvar.onclick = e => {
         itens[id].Titulo = sTítulo.value
         itens[id].Início = sInício.value
         itens[id].Fim = sFim.value
-        itens[id].Descrição = sDescrição.value
+        itens[id].Descrição = sDescricao.value
         itens[id].Horário = sHorário.value
         itens[id].Turma = sTurma.value
-        itens[id].Matéria = sMatéria.value
+        itens[id].Matéria = sMateria.value
     
     } else {
-        itens.push({'Título': sTítulo.value, 'Início': sInício.value, 'Fim': sFim.value ,'Descrição': sDescrição.value, 'Horário': sHorário.value, 'Turma': sTurma.value, 'Matéria': sMatéria.value, })
+        itens.push({'Título': sTítulo.value, 'Início': sInício.value, 'Fim': sFim.value ,'Descrição': sDescricao.value, 'Horário': sHorário.value, 'Turma': sTurma.value, 'Matéria': sMateria.value, })
     }
 
     setItensBD()
