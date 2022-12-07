@@ -514,7 +514,7 @@ border-radius: 60%;
   }
   
   span.tab-team {
-      background: #52cbbf3d;
+      background: #52cbbf00;
       color: #5B58FA;
       width: 200px;
       margin-left: -10px;
@@ -525,7 +525,8 @@ border-radius: 60%;
       transition: 0.3s ease;
       top: -5px;
       left: 15px;
-  
+      font-weight: bolder;
+
   
   }
   .tab-team {
@@ -555,7 +556,8 @@ border-radius: 60%;
       top: -5px;
       left: 15px;
       text-decoration: none;
-      
+      font-weight: bolder;
+
   }
   
   
@@ -572,11 +574,12 @@ border-radius: 60%;
       font-weight: 500;
       position: relative;
       transition: 0.3s ease;
-      background: #52cbbf3d;
+      background: #52cbbf00;
       color: #5B58FA;
       top: -5px;
       left: 15px;
-  
+      font-weight: bolder;
+
   }
   
   .calendario{
@@ -610,7 +613,7 @@ border-radius: 60%;
       color: #5B58FA;
       top: -5px;
       left: 15px;
-  
+      font-weight: bolder;
   
   }
   
@@ -643,7 +646,8 @@ border-radius: 60%;
       color: #5B58FA;    
       top: -6px;
       left: 10px;
-  
+      font-weight: bolder;
+
   }
   
   .tab-chat {
@@ -673,6 +677,7 @@ border-radius: 60%;
       top: 0px;
       background: #ecd1dd00;
       left: 5px;
+      font-weight: bolder;
   
   
   }

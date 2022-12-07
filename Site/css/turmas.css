@@ -169,13 +169,13 @@ img.mais3:hover{
 
 img.membros{
     width: 200px;
-    margin-top: -40px;
+    margin-top: -30px;
     cursor: pointer;
     margin-left: -580px;
 }
 img.membros:hover{
     width: 207px;
-    margin-top: -40px;
+    margin-top: -30px;
     cursor: pointer;
     transition: 0.3s;
 }    
