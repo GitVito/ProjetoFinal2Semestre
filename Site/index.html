@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/perfil.css" />
     <script src="js/menu.js"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -23,10 +24,23 @@
     />
    
   </head>
-  <body >
+  <body>
           
-      
-      
+
+          <!-- início do preloader -->
+
+     
+ <div class="loader_bg">
+  <div class="loader">
+      <div class="container">
+          
+            <video src="img/Loader.mp4" autoplay muted style=" height: 500px;margin-top: 200px;"></video>
+          
+        </div>
+  </div>
+
+ </div>
+        <!-- fim do preloader --> 
     <!-- acessivel em libras -->
 
 <div vw class="enabled">
@@ -44,7 +58,7 @@
 <style>
   .access-button {
       border-radius: 50px;
-      width: 45px;
+      width: 60px;
     float: right;
   }
     </style>
@@ -56,7 +70,7 @@
 <section class="home">
   <img class="logoSeed" src="img/LogoSeed.png" alt="Seed_Logo">
   <!--Dark Mode-->
-  <div style="left: 90%;top: 5%;">
+  <div style="left: 96%;top: 5%;">
     <input type="checkbox" name="change-theme" id="change-theme" />
     <label for="change-theme">
       <i class="bi bi-sun"></i>
@@ -70,11 +84,10 @@
     <h3>A Maior Escola Online Do Mundo
       <br>Venha conhecer e ter o melhor aprendizado 
     </h3>
-    <a href=""><button class="btn_Home" data-anime="top">Entrar</button></a>
+    <a href="login.html"><button class="btn_Home" data-anime="top">Entrar</button></a>
 
   </div>
-    <img  class="computer" src="img/Inserir_um_título__1_-removebg-preview.png"
-     alt="">
+    <img  class="computer" src="img/PC.png" alt="">
 <br><br><br><br>
 </section>
 
@@ -85,8 +98,9 @@
           <img  class="Im_card" src="img/Temp_Calendar.png" alt="Temp_Calendar">
       </div>
       <div class="details">
-          <h3></h3>
-          <p>Veja suas tarefas em um cronograma.</p>
+          <h3>crie datas e eventos escolares para suas turmas</h3>
+          <p>acesse o calendário e veja a data de provas, 
+            avaliações e eventos da sua escola</p>
       </div>
   </div>
   <div class="card card2">
@@ -119,14 +133,24 @@
 <br><br>
 
 <section class="sec-publi">
-<div>
-  <h1>App Seed</h1>
-  <p>Estude de qualquer lugar com nosso App Seed</p>
-<a href=""><button class="btn_Home"> Baixar</button></a>
+<div class="info">
+  <h1>App Seed
+    Com uma Plataforma Interativida Online</h1>
+    <br>
+    <p> Estude de qualquer lugar com nosso App Seed
+    </p>
+    <p> Novas tecnoligas ajudam a tornar o aprendizado mais tranquilo para você.</p>
+     
+    <a href=""><button class="btn_Info"> Baixar</button></a>
+<img src="img/star.png" alt="" class="star">4,4
+  
+<div >
+  <img src="img/Cópia_de_baixe_agora-removebg-preview.png" alt="App" class="app">
+
+ </div>
 </div>
-
+ 
 </section>
-
 
  <!--Footer-->
 <hr>
@@ -190,5 +214,13 @@
   <script src="js/index.js" defer></script>
   <script src="js/comparacao.js"></script>
 
-
+ <!--inicio Script Preloader-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+     setTimeout(function(){
+         $('.loader_bg').fadeToggle();
+     }, 1500);
+     
+ </script>
+  <!--Fim Script Preloader-->
 </html>

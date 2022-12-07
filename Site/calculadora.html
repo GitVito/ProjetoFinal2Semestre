@@ -1,360 +1,706 @@
 <!DOCTYPE html>
-<html>
-     
+<html lang="en">
 <head>
-    <title>
-        Scientific Calculator using HTML, CSS and Js
-    </title>
-     
-    <!-- CSS property to create interactive
-        calculator interface -->
-    <style>
-     
-        /* Style to set the title of calculator */
-        .title {
-            margin-bottom: 10px;
-            padding: 5px 0;
-            font-size: 20px;
-            font-weight:bold;
-            text-align:center;
-            width: 447px;
-            color:green;
-            border: solid black 2px;
-        }
-         
-        /* Set the button style */
-        #btn {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-         
-        input[type="button"] {
-            background-color:green;
-            color: black;
-            border: solid black 2px;
-            width:100%
-        }
-         
-        /* Set input textarea */
-        input[type="text"] {
-            background-color:white;
-            border: solid black 2px;
-            width:100%
-        }
-    </style>
-     
-    <script>
-         
-        /* Creating function in HTML for backspace operation */
-        function backspace(calc) {                                            
-            size = calc.display.value.length;
-            calc.display.value = calc.display.value.substring(0, size-1);
-        }
-         
-        /* Creating function to calculate factorial of element */
-        function calculate(calc) {
-             
-            /* Check if function include ! character then
-            calculate factorial of number */
-            if(calc.display.value.includes("!")) {
-                 
-                size = calc.display.value.length;
-                n = Number(calc.display.value.substring(0, size-1));
-                f = 1;
-                 
-                for(i = 2; i <= n; i++)
-                    f = f*i;
-                calc.display.value = f;
-            }
-             
-            /* If function include % character then calculate
-            the % of number */
-            else if(calc.display.value.includes("%")) {
-                 
-                size = calc.display.value.length;
-                n = Number(calc.display.value.substring(0, size-1));
-                calc.display.value = n/100;
-            }
- 
-            else   
-                /* Otherwise evaluate and execute output */
-                calc.display.value = eval(calc.display.value);
-        }
-    </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 </head>
-
-<!--Header-->
- 
 
 <header>
         <div class="overlay"></div>
-        <div class="nav">
-          <ul class="tabs">
-      
-            <a href="index.html">
-            <li class="tabs-item tab tab-home tab-is-active">
-              <div class="tab-circle"></div>
-              <img class="roxinho" src="img/home.png">            
-              <span class="tab-home">Home</span>
-            </li>
-            </a>
-      
-            <a href="chat.html">
-      
-            <li class="tabs-item tab tab-chat" style="height:55px ;">
-      
-              <div class="tab-circle"></div>
-              <i class="fa fa-comment tab-icon"></i>
-            
-              <span class="chat">Chat</span>
-            </li>
-            </a>
-            <a href="Tarefas.html">
-      
-            <li class="tabs-item tab tab-tarefas" style="height:55px ;">
-      
-              <div class="tab-circle"></div>
-              <i class="fa fa-clipboard tab-icon"></i>
-              <span class="tarefas">Tarefas</span>
-            </li>
-          </a>
-      
-          <a href="notificacoes.html">
-            <li class="tabs-item tab tab-sino ">
-              <div class="tab-circle"></div>
-              <img class="sino" src="img/sino.png">        
-              <span class="sino">Avisos</span>
-            </li>
-            </a>
-      
-            <a href="chat.html">
-            <li class="tabs-item tab tab-calendar ">
-              <div class="tab-circle"></div>
-              <img class="calendario" src="img/calendar.png">            
-              <span class="calendario">Agenda</span>
-            
-            </li>
-            </a>
-      
-      
-            <a href="turmas.html">
-            <li class="tabs-item tab tab-team ">
-              <div class="tab-circle"></div>
-              <img class="roxinho" src="img/multiple-users-silhouette.png">        
-              <span class="tab-team">Equipes</span>
-            </li>
-            </a>
-            
-            <img id="perfilImg" class="perfil" src="img/girl.png">
-            <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
-      
-          </ul>
-        </div>
-      
-      
-        <div id="dropDownPlace" class="dropDown dropDownPositionClose">
-      
-          <div class="PlaceTextPerfil">
-            <a href="perfil.html"><h5>Perfil</h5></a>
-            
-          </div>
-          <div class="PlaceTextFormulario">
-            <a href="suporte.html"><h5>Suporte</h5></a>
-            
-          </div>
-          <div class="PlaceTextSuporte">
-            <a href="formulario.html"><h5>Formulario</h5></a>
-            
-          </div>
-      
-          <div class="placeLinhaSeparar">
-            <div class="linhaSeparar"></div>
-          </div>
-      
-      
-          <div class="PlaceTextSair">
-            <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
-            
-          </div>
-      
-        </div>
-      
-        </header>
-      
-        <!--  fim Header-->
- 
-<body>
-    <div class = title >
-        GeeksforGeeks Scientific Calculator
+    <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/casinha.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+  
+        <li class="tabs-item tab tab-chat " >
+  
+          <div class="tab-circle"></div>
+          <img src="img/chat.png" alt="" class="roxinho">
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+
+      <a href="Tarefas_alunos.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/clipboard (2).png">        
+          <span class="sino">Tarefas</span>
+        </li>
+        </a>
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sinoooo.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="calendario.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendarioooo.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team tab-is-active">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/team.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
     </div>
-     
-    <form name = "calc">
-         
-    <table id = "calc" border = 2>
-         
-    <tr>
-        <td colspan=5><input id="btn" name="display"
-            onkeypress="return event.charCode >= 48
-            && event.charCode <= 57" type="text">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="1"
-                OnClick="calc.display.value+='1'">
-        </td>
-         
-        <td><input id="btn" type="button" value="2"
-                OnClick="calc.display.value+='2'">
-        </td>
-         
-        <td><input id="btn" type="button" value="3"
-                OnClick="calc.display.value+='3'">
-        </td>
-         
-        <td><input id="btn" type="button" value="C"
-                OnClick="calc.display.value=''">
-        </td>
-        <td><input id="btn" type="button" value="<-"
-                OnClick="backspace(this.form)">
-        </td>
-        <td><input id="btn" type="button" value="="
-                OnClick="calculate(this.form)">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="4"
-                OnClick="calc.display.value+='4'">
-        </td>
-         
-        <td><input id="btn" type="button" value="5"
-                OnClick="calc.display.value+='5'">
-        </td>
-         
-        <td><input id="btn" type="button" value="6"
-                OnClick="calc.display.value+='6'">
-        </td>
-         
-        <td><input id="btn" type="button" value="-"
-                OnClick="calc.display.value='-'">
-        </td>
-         
-        <td><input id="btn" type="button" value="%"
-                OnClick="calc.display.value+='%'">
-        </td>
-         
-        <td><input id="btn" type="button" value="cos"
-                OnClick="calc.display.value='Math.cos('">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="7"
-                OnClick="calc.display.value+='7'">
-        </td>
-         
-        <td><input id="btn" type="button" value="8"
-                OnClick="calc.display.value+='8'">
-        </td>
-         
-        <td><input id="btn" type="button" value="9"
-                OnClick="calc.display.value+='9'">
-        </td>
-         
-        <td><input id="btn" type="button" value="*"
-                OnClick="calc.display.value+='*'">
-        </td>
-         
-        <td><input id="btn" type="button" value="n!"
-                OnClick="calc.display.value+='!'">
-        </td>
-         
-        <td><input id="btn" type="button" value="sin"
-                OnClick="calc.display.value='Math.sin('">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="."
-                OnClick="calc.display.value+='.'">
-        </td>
-         
-        <td><input id="btn" type="button" value="0"
-                OnClick="calc.display.value+='0'">
-        </td>
-         
-        <td><input id="btn" type="button" value=","
-                OnClick="calc.display.value+=','">
-        </td>
-         
-        <td><input id="btn" type="button" value="+"
-                OnClick="calc.display.value+='+'">
-        </td>
-         
-        <td><input id="btn" type="button" value="/"
-                OnClick="calc.display.value+='/'">
-        </td>
-         
-        <td><input id="btn" type="button" value="tan"
-                OnClick="calc.display.value='Math.tan('">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="E"
-                OnClick="calc.display.value+='Math.E'">
-        </td>
-         
-        <td><input id="btn" type="button" value="pi"
-                OnClick="calc.display.value+='Math.PI'">
-        </td>
-         
-        <td><input id="btn" type="button" value="^"
-                OnClick="calc.display.value+='Math.pow('">
-        </td>
-         
-        <td><input id="btn" type="button" value="("
-                OnClick="calc.display.value+='('">
-        </td>
-         
-        <td><input id="btn" type="button" value=")"
-                OnClick="calc.display.value+=')'">
-        </td>
-         
-        <td><input id="btn" type="button" value="log"
-                OnClick="calc.display.value='Math.log('">
-        </td>
-    </tr>
-     
-    <tr>
-        <td><input id="btn" type="button" value="sqrt"
-                OnClick="calc.display.value+='Math.sqrt('">
-        </td>
-         
-        <td><input id="btn" type="button" value="ln2"
-                OnClick="calc.display.value+='Math.LN2'">
-        </td>
-         
-        <td><input id="btn" type="button" value="ln10"
-                OnClick="calc.display.value+='Math.Log10'">
-        </td>
-         
-        <td><input id="btn" type="button" value="l2e"
-                OnClick="calc.display.value+='Math.LOG2E'">
-        </td>
-         
-        <td><input id="btn" type="button" value="l10e"
-                OnClick="calc.display.value+='Math.log10'">
-        </td>
-         
-        <td><input id="btn" type="button" value="exp"
-                OnClick="calc.display.value='Math.exp('">
-        </td>
-    </tr>
-    </table>
-    </form>
-</body>
- 
-</html> 
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporte.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formulario.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
+
+</header>
+<style type="text/css">
+* {
+padding: 0;
+margin: 5px;
+text-align: center;
+}
+body {
+background-color:#ffffff;
+overflow: hidden;
+}
+.calculator {
+width: 350px;
+height: 320px;
+background-color: #c0c0c0;
+box-shadow: 0px 0px 0px 10px #666;
+border: 5px solid black;
+border-radius: 10px;
+margin: 0 auto;
+}
+#display {
+width: 320px;
+height: 40px;
+text-align: right;
+background-color: black;
+border: 3px solid white;
+font-size: 18px;
+left: 2px;
+top: 2px;
+color: #7fff00;
+}
+.btnTop{
+color: white;
+background-color: #6f6f6f;
+font-size: 14px;
+margin: auto;
+width: 50px;
+height: 25px;
+}
+.btnNum {
+color: white;
+background-color: black;
+font-size: 14px;
+margin: auto;
+width: 50px;
+height: 25px;
+}
+.btnMath {
+color: white;
+background-color: #5B58FA;
+font-size: 14px;
+margin: auto;
+width: 50px;
+height: 25px;
+}
+.btnOpps {
+color: white;
+background-color: #52CBBE;
+font-size: 14px;
+margin: auto;
+width: 50px;
+height: 25px;
+}
+img.fundo{
+position: absolute;
+margin-top: 21%;
+margin-left: -52%;
+width: 2000px;
+}
+img.titulo{
+margin: 0 auto;
+width: 30%;
+}
+
+
+</style>
+<body>
+
+<img src="img/titulocalc.png" alt="" class="titulo">
+<form name="sci-calc">
+<table class="calculator" cellspacing="0" cellpadding="1" style="width: 517px;">
+<tr>
+<td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value= 0 "></td>
+<td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)"></td>
+<td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="π" onclick="addChar(this.form.display,'3.14159265359')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="x^" onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')"></td>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="√" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)"></td>
+<td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="." onclick="addChar(this.form.display, '.')"></td>
+<td><input type="button" class="btnOpps" name="btnOpps" value="x2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')"></td>
+</tr>
+<tr>
+<td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="cos" onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="sin" onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
+<td><input type="button" class="btnMath" name="btnMath" value="tan" onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
+</tr>
+</tabel>
+</form>
+<img src="img/fundo.jpg" alt="" class="fundo">
+
+
+
+<script>
+function addChar(input, character) {
+if(input.value == null || input.value == "0")
+input.value = character
+else
+input.value += character
+}
+function cos(form) {
+form.display.value = Math.cos(form.display.value);
+}
+function sin(form) {
+form.display.value = Math.sin(form.display.value);
+}
+function tan(form) {
+form.display.value = Math.tan(form.display.value);
+}
+function sqrt(form) {
+form.display.value = Math.sqrt(form.display.value);
+}
+function ln(form) {
+form.display.value = Math.log(form.display.value);
+}
+function exp(form) {
+form.display.value = Math.exp(form.display.value);
+}
+function deleteChar(input) {
+input.value = input.value.substring(0, input.value.length - 1)
+}
+var val = 0.0;
+function percent(input) {
+val = input.value;
+input.value = input.value + "%";
+}
+function changeSign(input) {
+if(input.value.substring(0, 1) == "-")
+input.value = input.value.substring(1, input.value.length)
+else
+input.value = "-" + input.value
+}
+function compute(form) {
+form.display.value = eval(form.display.value);
+}
+function square(form) {
+form.display.value = eval(form.display.value) * eval(form.display.value)
+}
+function checkNum(str) {
+for (var i = 0; i < str.length; i++) {
+var ch = str.charAt(i);
+if (ch < "0" || ch > "9") {
+if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
+&& ch != "(" && ch!= ")" && ch != "%") {
+alert("invalid entry!")
+return false
+}
+}
+}
+return true
+}
+</script>
+
+<style>
+/*Css Menu*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+    
+        body{
+            background-color: white;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            font-family: 'Poppins';
+        }
+    
+        .overlay {
+            display: none;
+            height: 69vh;
+            width: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .nav {
+            background-color: white;
+            padding: 12px 5px;
+            box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+            position: relative;
+            z-index: 99;
+        }
+    
+        .tabs {
+            display: flex;
+            width: 530px;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+    
+        .tab {
+            padding: 12px 22px;
+            background-color: #e0efff;
+            color: #58a6ff;
+            margin-right: 15px;
+            border-radius: 55px;
+            text-align: center;
+            white-space: nowrap;
+            transition: 0.7s ease;
+            overflow: hidden;
+            max-width: 0px;
+            cursor: pointer;
+            position: relative;
+            flex-basis: 120px;
+        }
+    
+        .tab-is-active {
+            max-width: 120px;
+            box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+        }
+    
+        .tab:hover {
+            max-width: 120px;
+            box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+            position: relative;
+        }
+    
+        .tab-is-active .tab-name {
+            opacity: 1;
+        }
+    
+        .tab-circle {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            border: 2px solid #95c5fd;
+            z-index: 10;
+            opacity: 0;
+            left: 20px;
+            pointer-events: none;
+        }
+    
+        .tab-icon {
+            margin-right: 1px;
+            font-size: 18px;
+            vertical-align: middle;
+            position: relative;
+            right: 6.7px;
+            top: -1px;
+    
+        }
+    
+        .tab-name {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            top: 1px;
+            opacity: 0;
+    
+        }
+    
+        .logoSeed{
+            position: absolute;
+            left: 0%;
+            top: -2vh;
+            width: 280px;
+            margin: auto;
+        }
+    
+        .tab-calendar {
+            background: #52cbbf3d;
+            color: #5B58FA;
+            left: 620px;
+    
+        }
+    
+        span.tab-team {
+            background: #52cbbf00;
+            color: #5B58FA;
+            width: 200px;
+            margin-left: -10px;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            top: -5px;
+            left: 15px;
+    
+    
+        }
+        .tab-team {
+            background: #52cbbf3d;
+            color: #5B58FA;
+            width: 200px;
+            left: 620px;
+        }
+    
+    
+    
+        .tab-home {
+            background-color: #52cbbf3d;
+            color: #5B58FA;
+            left: 620px;
+    
+            
+        }
+        span.tab-home {
+            background-color: #3ef00800;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            color: #5B58FA;
+            top: -5px;
+            left: 15px;
+            text-decoration: none;
+            
+        }
+    
+    
+        .roxinho{
+            width: 20px;
+            margin-left: -8px;
+            margin-top: 5px;
+        }
+    
+    
+        span.calendario{
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            background: #52cbbf00;
+            color: #5B58FA;
+            top: -5px;
+            left: 15px;
+    
+        }
+    
+        .calendario{
+            width: 20px;
+            margin-left: -08px;
+            margin-top: 5px;
+    
+    
+        }
+    
+        img.perfil{
+            width: 60px;
+            right: 8.5%;
+            position: absolute;
+            z-index: 2000;
+        }
+        img.perfil{
+            cursor: pointer;
+        }
+        .sino{
+            width: 20px;
+            margin-left: -08px;
+            margin-top: 5px;
+        }
+        span.sino{
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            color: #5B58FA;
+            top: -5px;
+            left: 15px;
+    
+    
+        }
+    
+        .tab-sino {
+            background:#52cbbf3d;
+            color: #5B58FA;
+            left: 620px;
+        }
+    
+        a{
+            text-decoration: none;
+        }
+    
+        .chat{
+            width: 20px;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        img.chat{
+            width: 20px;
+            margin-left: 8px;
+            margin-top: 5px;
+        }
+        span.chat{
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            color: #5B58FA;    
+            top: -6px;
+            left: 10px;
+    
+        }
+    
+        .tab-chat {
+            background: #52cbbf3d;
+            color: #5B58FA;
+            left: 620px;
+            height: 30px;
+    
+        }
+    
+    
+        img.tarefas{
+            width: 22px;
+            height: 22px;
+            margin-left: -57px;
+            margin-top: px;
+            background: #52cbbf3d;
+    
+        }
+        span.tarefas{
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease;
+            color: #5B58FA;
+            top: 0px;
+            background: #ecd1dd00;
+            left: 5px;
+    
+    
+        }
+        .tab-tarefas {
+            background: #52cbbf3d;
+            color: #5B58FA;
+            left: 620px;
+            height: 30px;
+        }
+    
+    
+        .dropDown{
+            position: absolute;
+            right: 3%;
+            z-index: -1;
+            overflow: scroll;
+            overflow-x: hidden;
+        
+            width: 12.5%;
+            height: 200px;
+            margin: auto;
+        }
+        
+        .dropDownPositionOpen{
+            top: 8.3%;
+            transition: 0.5s ease-in-out;
+        }
+        .dropDownPositionClose{
+            top: -25%;
+            transition: 0.5s ease;
+        }
+        .dropDown h5{
+            font-size: 0.7em;
+            cursor: pointer;
+            border-radius: 1em;
+            color: #000 !important;
+            padding: 0.5em;
+        }
+        #sizeSair{
+            font-size: 1em !important;
+        }
+        
+        .dropDown a{
+            list-style: none;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .dropIcon{
+            position: absolute;
+            right: 6%;
+            top: 50%;
+            width: 35px;
+            margin: auto;
+            transform: rotate(90deg);
+            border-radius: 50%;
+            padding: 0.2em;
+        }
+        
+        .dropIcon:hover{
+            background-color: #dadada;
+            cursor: pointer;
+            transition: 0.2s linear;
+        }
+        
+        .PlaceTextPerfil{
+            position: absolute;
+            width: 100%;
+            height: 33.3%;
+            margin: auto;
+            font-size: 1.5em;
+            padding-top: 0.5em;
+        
+        }
+        
+        .PlaceTextFormulario{
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            height: 33.3%;
+            margin: auto;
+            font-size: 1.5em;
+        
+        }
+        
+        .PlaceTextSuporte{
+            position: absolute;
+            top: 60%;
+            width: 100%;
+            height: 33.3%;
+            margin: auto;
+            font-size: 1.5em;
+        
+        }
+        
+      
+        .placeLinhaSeparar{
+            position: absolute;
+      
+            bottom: -10%;
+        
+            width: 100%;
+            margin: auto;
+        }
+        
+        .linhaSeparar{
+            margin: auto;
+            width: 60%;
+            height: 1px;
+            background-color: #000;
+        }
+        
+        .PlaceTextSair{
+            position: absolute;
+            bottom: -50%;
+            width: 100%;
+        }
+      
+        
+    
+        .dropDown h5:hover{
+            background-color: #11ffe72c;
+            transition: all 0.5s linear;
+            font-family: "Poppins";
+        }
+    
+        .dropDown{
+            background-color: #e7e7ff;
+        }  
+      </style>
+      <script src="js/menu.js"></script>
+      </body>
+</html>

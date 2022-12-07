@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <!-- <link rel="stylesheet" href="css/index.css" /> -->
+
+    <link rel="stylesheet" href="css/notificacoes.css" />
+    <link rel="stylesheet" href="css/notificacoesPro.css">
+    <script src="js/notificacao.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+  </head>
+  <body>
+
+            <!--Header-->
+ 
+
+ <header>
+  <div class="overlay"></div>
+  <div class="nav">
+
+    <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+
+    <ul class="tabs">
+
+      <a href="index.html">
+      <li class="tabs-item tab tab-home ">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/casinha.png">            
+        <span class="tab-home">Home</span>
+      </li>
+      </a>
+
+      <a href="chat.html">
+
+      <li class="tabs-item tab tab-chat" style="height:55px ;">
+
+        <div class="tab-circle"></div>
+        <img src="img/chat.png" alt="" class="roxinho">
+      
+        <span class="chat">Chat</span>
+      </li>
+      </a>
+      <a href="Tarefas_alunos.html">
+
+      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
+
+        <div class="tab-circle"></div>
+        <i class="fa fa-clipboard tab-icon"></i>
+        <span class="tarefas">Tarefas</span>
+      </li>
+    </a>
+
+    <a href="notificacoes.html">
+      <li class="tabs-item tab tab-sino tab-is-active">
+        <div class="tab-circle"></div>
+        <img class="sino" src="img/sinoooo.png">        
+        <span class="sino">Avisos</span>
+      </li>
+      </a>
+
+      <a href="calendario.html">
+      <li class="tabs-item tab tab-calendar ">
+        <div class="tab-circle"></div>
+        <img class="calendario" src="img/calendarioooo.png">            
+        <span class="calendario">Agenda</span>
+      
+      </li>
+      </a>
+
+
+      <a href="turmas.html">
+      <li class="tabs-item tab tab-team ">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/team.png">        
+        <span class="tab-team">Equipes</span>
+      </li>
+      </a>
+      
+      <img id="perfilImg" class="perfil" src="img/girl.png">
+      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+
+    </ul>
+  </div>
+
+
+  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+
+    <div class="PlaceTextPerfil">
+      <a href="perfil.html"><h5>Perfil</h5></a>
+      
+    </div>
+    <div class="PlaceTextFormulario">
+      <a href="suporte.html"><h5>Suporte</h5></a>
+      
+    </div>
+    <div class="PlaceTextSuporte">
+      <a href="formulario.html"><h5>Formulario</h5></a>
+      
+    </div>
+
+    <div class="placeLinhaSeparar">
+      <div class="linhaSeparar"></div>
+    </div>
+
+
+    <div class="PlaceTextSair">
+      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+      
+    </div>
+
+  </div>
+
+  </header>
+
+  <!--  fim Header-->
+
+  <div class="lastNoti">
+
+
+    <div class="tituloRecentes">
+
+        <h3>Recentes</h3>
+
+        <img class="iconFilter" src="img/notificacoes/exchange.png" alt="">
+
+        <div class="editNotif">
+            <img src="img/notificacoes/notificacao.png" alt="Enviar aviso">
+        </div>
+    </div>
+    <div class="placeNotiRecentes">
+        <div class="noti1">
+
+            <div class="comp1-not1">
+              <img class="imgPerfil" src="../Site/img/notificacoes/mayara.jpg" alt="Maiara Ferreira de Paula">
+            </div>
+
+            <div class="comp2-not1">
+              <h5>Mayara Ferreira</h5>
+            </div>
+            <div class="comp3-not1">
+              <p>"Lembrando que quem nao entregar todas as atividades até quinta, terá que fazer dancinha do TikTok na frente da sala toda!"</p>
+            </div>
+            <div class="separador"></div>
+
+            <div class="comp4">
+              <div class="checar">
+
+                <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+              
+              </div>
+            </div>
+            <div class="comp5">
+            <div class="dataNotif">
+              <p>07/11/2022</p>
+              </div>
+            </div>
+            <div class="comp6">
+              <a href="">
+
+                <div class="redirect">
+                  <a href="turmas.html">
+                    <button class="ir" type="button">
+                      <div class="textIr">
+                        <h6>
+                          Ir para turma
+                        </h6>
+                      </div>
+                      <div class="imgIrTurmas">
+                        <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+                      </div>
+                      
+                    </button>
+                  </a>
+                  
+                </div>
+              </a>
+            </div>
+            
+        </div>
+
+        <div class="lineSep1"></div>
+
+        <div class="noti2">
+
+          <div class="comp1-not1">
+            <img class="imgPerfil" src="../Site/img/notificacoes/Rafafafafa.jpg" alt="Rafaella Tomassetti">
+          </div>
+
+          <div class="comp2-not2">
+            <h5>Rafaella Tomassetti</h5>
+          </div>
+          <div class="comp3-not1">
+            <p>"A parte de python está finalizada? Preciso conferir algumas coisas..."</p>
+          </div>
+          <div class="separador"></div>
+
+          <div class="comp4">
+            <div class="checar">
+
+              <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+            
+            </div>
+          </div>
+          <div class="comp5">
+          <div class="dataNotif">
+            <p>23/10/2022</p>
+            </div>
+          </div>
+          <div class="comp6">
+            <a href="">
+
+              <div class="redirect">
+                <a href="chat.html">
+                  <button class="ir" type="button">
+                    <div class="textIr">
+                      <h6>
+                        Ir para chats
+                      </h6>
+                    </div>
+                    <div class="imgIrTurmas">
+                      <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+                    </div>
+                    
+                  </button>
+                </a>
+                
+              </div>
+            </a>
+          </div>
+          
+      </div>
+
+      <div class="lineSep2"></div>
+
+      <div class="noti3">
+
+        <div class="comp1-not1">
+          <img class="imgPerfil" src="../Site/img/notificacoes/Ailtonoo.png" alt="Ailton">
+        </div>
+
+        <div class="comp2-not1">
+          <h5>Ailton Gonçalves</h5>
+        </div>
+        <div class="comp3-not1">
+          <p>"Link do forms enviado! Por favor não esqueçam de realizar."</p><b> (Enviou um anexo)</b>
+        </div>
+        <div class="separador"></div>
+
+        <div class="comp4">
+          <div class="checar">
+
+            <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+          
+          </div>
+        </div>
+        <div class="comp5">
+        <div class="dataNotif">
+          <p>10/11/2022</p>
+          </div>
+        </div>
+        <div class="comp6">
+          <a href="">
+
+            <div class="redirect">
+              <a href="turmas.html">
+                <button class="ir" type="button">
+                  <div class="textIr">
+                    <h6>
+                      Ir para turma
+                    </h6>
+                  </div>
+                  <div class="imgIrTurmas">
+                    <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+                  </div>
+                  
+                </button>
+              </a>
+              
+            </div>
+          </a>
+        </div>
+        
+    </div>
+
+    <div class="lineSep3"></div>
+
+    <div class="noti4">
+
+      <div class="comp1-not1">
+        <img class="imgPerfil" src="../Site/img/notificacoes/foto Aline.jpg" alt="Aline Batista">
+      </div>
+
+      <div class="comp2-not1">
+        <h5>Aline Batista</h5>
+      </div>
+      <div class="comp3-not1">
+        <p>"Você consegue atualizar o banco de dados para mim? É só colocar alguns valores..."</p>
+      </div>
+      <div class="separador"></div>
+
+      <div class="comp4">
+        <div class="checar">
+
+          <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+        
+        </div>
+      </div>
+      <div class="comp5">
+      <div class="dataNotif">
+        <p>08/11/2022</p>
+        </div>
+      </div>
+      <div class="comp6">
+        <a href="">
+
+          <div class="redirect">
+            <a href="chat.html">
+              <button class="ir" type="button">
+                <div class="textIr">
+                  <h6>
+                    Ir para chats
+                  </h6>
+                </div>
+                <div class="imgIrTurmas">
+                  <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+                </div>
+                
+              </button>
+            </a>
+           
+          </div>
+        </a>
+      </div>
+      
+  </div>
+
+      <div class="lineSep4"></div>
+
+  <div class="noti5">
+
+    <div class="comp1-not1">
+      <img class="imgPerfil" src="../Site/img/notificacoes/foto - Gustavo.jpg" alt="Gustavo">
+    </div>
+
+    <div class="comp2-not1">
+      <h5>Gustavo Batista</h5>
+    </div>
+    <div class="comp3-not1">
+      <p>"Estou trabalhando nisso, mas ainda estou tendo alguns problemas com este código."</p>
+    </div>
+    <div class="separador"></div>
+
+    <div class="comp4">
+      <div class="checar">
+
+        <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+      
+      </div>
+    </div>
+    <div class="comp5">
+    <div class="dataNotif">
+      <p>08/11/2022</p>
+      </div>
+    </div>
+    <div class="comp6">
+      <a href="">
+
+        <div class="redirect">
+          <a href="chat.html">
+            <button class="ir" type="button">
+              <div class="textIr">
+                <h6>
+                  Ir para chats
+                </h6>
+              </div>
+              <div class="imgIrTurmas">
+                <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+              </div>
+              
+            </button>
+          </a>
+          
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+    <div class="lineSep5"></div>
+
+<div class="noti6">
+
+  <div class="comp1-not1">
+    <img class="imgPerfil" src="../Site/img/notificacoes/brneo_foto.jpg" alt="Breno">
+  </div>
+  
+  <div class="comp2-not1">
+    <h5>Breno Monteiro</h5>
+  </div>
+  <div class="comp3-not1">
+    <p>"Banco de dados ja está linkado!"</p>
+  </div>
+  <div class="separador"></div>
+
+  <div class="comp4">
+    <div class="checar">
+
+      <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+    
+    </div>
+  </div>
+  <div class="comp5">
+  <div class="dataNotif">
+    <p>05/11/2022</p>
+    </div>
+  </div>
+  <div class="comp6">
+    <a href="">
+
+      <div class="redirect">
+        <a href="chat.html">
+          <button class="ir" type="button">
+            <div class="textIr">
+              <h6>
+                Ir para chats
+              </h6>
+            </div>
+            <div class="imgIrTurmas">
+              <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+            </div>
+            
+          </button>
+        </a>
+        
+      </div>
+    </a>
+  </div>
+  
+</div>
+
+<div class="lineSep6"></div>
+
+<div class="noti7">
+
+  <div class="comp1-not1">
+    <img class="imgPerfil" src="../Site/img/notificacoes/mayara.jpg" alt="Maiara Ferreira de Paula">
+  </div>
+
+  <div class="comp2-not1">
+    <h5>Mayara Ferreira</h5>
+  </div>
+  <div class="comp3-not1">
+    <p>"Última semana para finalizar projeto! Foquem na apresentação, boa sorte!"</p>
+  </div>
+  <div class="separador"></div>
+
+  <div class="comp4">
+    <div class="checar">
+
+      <button type="button" class="AvisoCheck " id="checkAlunoAviso" onclick="checked(), noChecked()"></button>
+    
+    </div>
+  </div>
+  <div class="comp5">
+  <div class="dataNotif">
+    <p>11/11/2022</p>
+    </div>
+  </div>
+  <div class="comp6">
+
+
+      <div class="redirect">
+        <a href="turmas.html">
+          <button class="ir" type="button">
+            <div class="textIr">
+              <h6>
+                Ir para turma
+              </h6>
+            </div>
+            <div class="imgIrTurmas">
+              <img class="irTurmas" src="../Site/img/notificacoes/next.png" alt="turmas">
+            </div>
+            
+          </button>
+        </a>
+        
+      </div>
+
+  </div>
+  
+</div>
+
+<div class="lineSep7"></div>
+
+    </div>
+
+
+</div>
+
+
+
+<footer class="footer">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col containerFoot" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Victor</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+    
+</body>
+</html>

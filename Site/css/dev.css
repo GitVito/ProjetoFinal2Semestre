@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    overflow: scroll;
-    position: fixed;
-}
+
 i{
         margin-top:5px;
 
@@ -19,12 +13,7 @@ span.chat{
         left:09px;
         top:5px;
 }
-div.icone{
-    height: 830px;
-    background-color: rgb(243, 239, 239);
-    width: 250px;
 
-}
 img.icone{
     width: 200px;
     margin-top: 30px;

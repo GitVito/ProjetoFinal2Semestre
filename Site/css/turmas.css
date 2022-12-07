@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 body {
     width: 100%;
@@ -21,306 +20,290 @@ span.chat{
         left:09px;
         top:5px;
 }
-
-/*CARDS*/
-
-  h1{
-    font-size: 2.5rem;
-    font-family: 'Poppins';
-    font-weight: normal;
-    color: #444;
-    text-align: center;
-    margin: 2rem 0;
-    font-weight: bold;
-  }
-
-  
-  .wrapper{
-    width: 90%;
-    margin: 0 auto;
-    max-width: 80rem;
-  }
-  
-  .cols{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-
-  }
-  
-  .col{
-    width: calc(25% - 2rem);
-    margin: 1rem;
-    cursor: pointer;
-  }
-  
-  .container{
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-      -webkit-perspective: 1000px;
-              perspective: 1000px;
-
-  }
-  
-  .front,
-  .back{
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-    border-radius: 10px;
-      background-position: center;
-      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-      text-align: center;
-      min-height: 280px;
-      height: auto;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 1.5rem;
-  }
-  
-  .back{
-    background: #d49f0b;
-    background: -webkit-linear-gradient(45deg,  #0e4168 0%,#ce8911 100%);
-    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-    background: linear-gradient(45deg,  #7954b1 0%,#8c5bd4 100%);
-    font-family: 'Poppins';
-    text-align: left;
-    font-size: 20px;
-  }
-  
-  .front:after{
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      content: '';
-      display: block;
-      opacity: .6;
-      background-color: #8F47FA;
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-      border-radius: 10px;
-  }
-  .container:hover .front,
-  .container:hover .back{
-      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  }
-  
-  .back{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-  }
-  
-  .inner{
-      -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-              transform: translateY(-50%) translateZ(60px) scale(0.94);
-      top: 50%;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      padding: 2rem;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      outline: 1px solid transparent;
-      -webkit-perspective: inherit;
-              perspective: inherit;
-      z-index: 2;
-  }
-  
-  .container .back{
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-  }
-  
-  .container .front{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-  }
-  
-  .container:hover .back{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  
-  .container:hover .front{
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  
-  .front .inner p{
-    font-size: px;
-    margin-bottom: 2rem;
-    position: relative;
-    font-family: 'Poppins';
-    color: #fff;
-    font-weight: bolder;  
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-  
-  .front .inner p:after{
-    content: '';
-    width: 4rem;
-    height: 2px;
-    background: rgba(75, 0, 110, 0.7);
-    left: 80px;
-    margin-top: 80px;
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
     right: 0;
-    font-family: 'Poppins';
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 850px;
+    height: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 1px;
+    background: rgb(255, 255, 255);
+    overflow: scroll;
+    padding-left: 80px;
+    overflow-x: hidden;
+  }
+  .modalDialog p{
+    text-align: left;
+  }
+  .close {
+    background: #ffffff;
+    color: #af0909;
+    line-height: 25px;
     position: absolute;
-
+    right: 20px;
+    text-align: center;
+    z-index: 2000 !important;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
   }
-  
-  .front .inner span{
-    color: rgba(75, 0, 110, 0.7);
-    font-family: 'Poppins';
-    font-weight: 300;
+  .close:hover {
+    background: #bf7dea;
+    color: white;
   }
-
-  .modalDialog {
-        position: fixed;
-        font-family: Arial, Helvetica, sans-serif;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 99999;
-        opacity: 0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none;
-      }
-      .modalDialog:target {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .modalDialog > div {
-        width: 800px;
-        height: 500px;
-        position: relative;
-        margin: 10% auto;
-        padding: 5px 20px 13px 20px;
-        border-radius: 0px;
-        background: rgb(255, 255, 255);
-      }
-      .modalDialog p{
-        text-align: left;
-      }
-      .close {
-        background: #ffffff;
-        color: #af0909;
-        line-height: 25px;
-        position: absolute;
-        right: -12px;
-        text-align: center;
-        z-index: 2000 !important;
-        top: -10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
-        -moz-box-shadow: 1px 1px 3px #000;
-        -webkit-box-shadow: 1px 1px 3px #000;
-        box-shadow: 1px 1px 3px #000;
-      }
-      .close:hover {
-        background: #783aa1;
-        color: white;
-      }
 
 
 .mais{
-    width: 50px;
-    
+width: 50px;
+
 }
 
 a.mais{
-        color: rgba(245, 24, 24, 0);
+    color: rgba(245, 24, 24, 0);
 }
 
 img.mais{
-        width: 50px;
-        margin-top:250px;
-        margin-left: -95px;
-        z-index: 2000 !important;
-        cursor: pointer;  
-        position: relative;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0);
+    width: 50px;
+    margin-top: -3.2%;
+    margin-left: -21.5%;
+    z-index: 2000 !important;
+    cursor: pointer;  
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
 
 
 }
 
 img.mais:hover{
-        transition: 0.5s;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 50%;
-        width: 52px;
-        color: rgba(255, 255, 255, 0);
-        text-decoration: none;
+    border-radius: 50%;
+    width: 52px;
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.1s;
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.575));
 
-
-         
+     
 }
 
-.dropDown h5:hover{
-        background-color: #40b9ff;
-        transition: all 0.5s linear;
-    }
-    
-    .dropDown{
-        background-color: #f7fcff;
-    }
+a.mais2{
+    color: rgba(245, 24, 24, 0);
+}
+
+img.mais2{
+    width: 50px;
+    margin-top: -3.2%;
+    margin-left: 8%;
+    z-index: 2000 !important;
+    cursor: pointer;  
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+
+}
+
+img.mais2:hover{
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 52px;
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.1s;
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.575));
+}
+
+a.mais3{
+    color: rgba(245, 24, 24, 0);
+}
+
+img.mais3{
+    width: 50px;
+    margin-top: -3.2%;
+    margin-left: 37.5%;
+    z-index: 2000 !important;
+    cursor: pointer;  
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+
+}
+
+img.mais3:hover{
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 52px;
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.1s;
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.575));
+
+}
 
 img.membros{
     width: 200px;
+    margin-top: -40px;
+    cursor: pointer;
+    margin-left: -580px;
 }
-    
+img.membros:hover{
+    width: 207px;
+    margin-top: -40px;
+    cursor: pointer;
+    transition: 0.3s;
+}    
+p.membros{
+    margin-top: 30px;
+    font-weight: bold;
+}
 img.titulo{
     width: 600px;
-    margin-left:-20px;
+    margin-left:-400px;
     margin-top:-6px;
 
 
 }
 
 h2.titulo{
-    font-family: "Poppins";
-    font-weight: bolder
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 600;
+    margin-top: -310px;
+    margin-left: -480px;
+    color: #6100FF;
+    font-size: 30px;
 }
 
 
+p.form{
+    color: #000;
+    font-weight: bolder;
+    text-align: left;
+}
+
+form.form{
+    text-align: left;
+}
+
+p.form2{
+    color: #000;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+select{
+    display: none;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: -40%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    width: 450px;
+
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    overflow: hidden;
+    width: 450px;
+}
+.Im_card{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card1>.container:hover{
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+    
+}
+.card2>.container:hover{
+    transition: 0.3s;
+    opacity: .7;
+    cursor: pointer;
+
+    
+}
+.card3>.container:hover{
+transition: 0.3s;
+opacity: .7;
+cursor: pointer;
+
+
+}
+.details{    
+    padding: 20px 10px;
+    margin-top: -20px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    font-family: "Poppins";
+}
+.details>p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins";
+
+}
 /*Css Menu*/
 
     @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
@@ -596,7 +579,7 @@ h2.titulo{
         color: #5B58FA;
         top: 0px;
         background: #ecd1dd00;
-        left: -85px;
+        left: 3px;
 
 
     }
@@ -725,5 +708,3 @@ h2.titulo{
     .dropDown{
         background-color: #e7e7ff;
     }  
-
-

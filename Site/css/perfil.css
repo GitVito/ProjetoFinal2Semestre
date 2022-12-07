@@ -21,7 +21,7 @@
 .placeConfigPerfil{
     position: relative;
     width: 80%;
-    height: 1200px;
+    height: 1000px;
     margin: auto;
     margin-top: 3.5%;
     margin-bottom: 5%;
@@ -211,12 +211,13 @@ select{
 .editSenha{
         position: absolute;
         top: 50%;
-        right: -0%;
+        right: -20%;
         width: 24px;
         height: 24px;
         margin: auto;
         padding: 0.2em;
         border-radius: 0.2em;
+        display: none;
         /* filter: invert(100%); */
         /* background-color: #949494; */
     
@@ -357,7 +358,7 @@ select{
 
 .btnShowImgUp{
     position: absolute;
-    bottom: 40%;
+    bottom: 28%;
     transform: translateX(-50%);
     width: 90px;
     height: 44px;
@@ -440,4 +441,23 @@ div.linhaSeparar{
     height: 0.1%;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.493);
+}
+
+.relatProblem{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+
+    width: 3.5%;
+    height: 7%;
+    margin: auto;
+
+    cursor: pointer;
+}
+.relatProblem img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }

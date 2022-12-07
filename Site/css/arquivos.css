@@ -4,7 +4,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
     position: fixed;
 }
 i{
@@ -20,97 +20,103 @@ span.chat{
         top:5px;
 }
 div.icone{
-    height: 830px;
+    height: 100vh;
     background-color: rgb(243, 239, 239);
     width: 250px;
 
 }
 img.icone{
-    width: 200px;
-    margin-top: 30px;
-    margin-left: -10px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-bottom: 20px;
 }
-.vertical-menu {
-    width: 200px; /* Set a width if you like */
-    margin-left: 20px;
-  }
-  .vertical-menu a {
-    background-color: rgb(243, 239, 239); /* Grey background color */
-    color: rgb(5, 5, 5); /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer;
-    font-family: "Poppins";
-    border-radius: 10px;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+.vertical-menu div {
+  width: 200px; /* Set a width if you like */
+  margin-left: 20px;
+  height: 100px;
 
 }
-  
-  .vertical-menu a.active {
-    background-color: #7b52bd; /* Add a green color to the "active/current" link */
-    color: white;
-  }
+.vertical-menu a {
+  background-color: rgb(243, 239, 239); /* Grey background color */
+  color: rgb(5, 5, 5); /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  font-family: "Poppins";
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 8%;
 
+}
+
+.vertical-menu a:hover {
+  background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+
+}
+
+.vertical-menu a.active {
+  background-color: #52CBBE; /* Add a green color to the "active/current" link */
+  color: white;
+}
 
 
 div.principal{
-    height:745px;
+    height:750px;
     background-color: rgb(255, 255, 255);
-    width: 1660px;
+    width: 1665px;
     position: relative;
     left: 101%;
-    top: -390px;
+    top: -383px;
     box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
 
 
 
 .horizontal-menu {
-  background-color: #e0d0fa;
+  background-color: #B3E8E3;
   position: fixed;
   z-index: 97 !important;
   top: 110px;
-  left: 252px;
+  left: 253px;
   width: 1670px; /* Set a width if you like */
   height: 110px;
   box-shadow: 0 0 7px 0px #000;
 clip-path: inset(0px -15px 0px -15px);
+overflow: hidden;
 }
-  .horizontal-menu a {
-    margin-right: 50px;
-    background-color: rgb(243, 239, 239); /* Grey background color */
-    color: rgb(5, 5, 5); /* Black text color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer;
-    font-family: "Poppins";
-    border-radius: 10px;
-    margin-bottom: 100px;
-    position: relative;
-    top: 30%;
-    left: -540px;
-  }
-  
-  .horizontal-menu a:hover {
-    background-color: rgba(177, 177, 177, 0.61);
-    text-decoration: underline; 
-    transition: 0.5s;
+.horizontal-menu a {
+  margin-right: 50px;
+  background-color: rgb(243, 239, 239); /* Grey background color */
+  color: rgb(5, 5, 5); /* Black text color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  font-family: "Poppins";
+  border-radius: 10px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 30%;
+  left: -540px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}  
+.horizontal-menu a:hover {
+  background-color: rgba(177, 177, 177, 0.61);
+  text-decoration: underline; 
+  transition: 0.2s;
 
 }
-  
-  .horizontal-menu a.active {
-    background-color: #7b52bd; /* Add a green color to the "active/current" link */
-    color: white;
-    transition: 0.9s;
 
+.horizontal-menu a.active {
+  background-color: #52CBBE; /* Add a green color to the "active/current" link */
+  color: white;
+  transition: 0.9s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 12px 0px;
 
-  }
+}
 
   .quadro{
     overflow: scroll;
@@ -127,7 +133,7 @@ clip-path: inset(0px -15px 0px -15px);
     margin-bottom: 25px;
     font-size: 17px;
     font-weight: lighter;
-    background-color: #7b52bd;
+    background-color: #52CBBE;
     width: 100px;
     height: 50px;
     border: rgba(0, 0, 0, 0);
@@ -141,7 +147,7 @@ clip-path: inset(0px -15px 0px -15px);
 
   button.quadro:hover{
     font-family: "Poppins";
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top:40px;
     margin-left: 20px;
     font-size: 17px;
@@ -151,7 +157,7 @@ clip-path: inset(0px -15px 0px -15px);
     padding-bottom: 5px;
     border-radius: 15px;
     transition: 0.2s;
-    background-color: #c5afe9;
+    background-color: #3c948bab;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
     cursor: pointer;
   }
@@ -173,7 +179,7 @@ button.quadro3{
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: lighter;
-  background-color: #d8c8f3;
+  background-color: #b1d6d2;
   width: 80px;
   height: 50px;
   border: rgba(0, 0, 0, 0);
@@ -197,7 +203,7 @@ button.quadro3:hover{
   padding-bottom: 5px;
   border-radius: 15px;
   transition: 0.2s;
-  background-color: #c5afe9;
+  background-color: #3c948bad;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
   cursor: pointer;
 }
@@ -209,7 +215,7 @@ button.quadro4{
   transform: translateY(-145%);
   font-size: 17px;
   font-weight: lighter;
-  background-color: #d8c8f3;
+  background-color: #b1d6d2;
   width: 80px;
   height: 50px;
   border: rgba(0, 0, 0, 0);
@@ -232,7 +238,7 @@ button.quadro4:hover{
   padding-bottom: 5px;
   border-radius: 15px;
   transition: 0.2s;
-  background-color: #c5afe9;
+  background-color: #3c948bad;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
   cursor: pointer;
 }
@@ -291,7 +297,7 @@ button.quadro4:hover{
 
 .new-task-container input:focus {
   outline: none;
-  border-color: #7b52bd;
+  border-color: #2e746d;
 }
 
 
@@ -302,7 +308,7 @@ button.quadro4:hover{
   height: 100%;
   font-size: 1rem;
   border: none;
-  background-color: #7b52bd;
+  background-color: #52CBBE;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
@@ -404,13 +410,13 @@ button.quadro4:hover{
     margin-left: 40px;
     margin-top: 2px;
     background-color: #64646417;
-    margin-bottom: px;
+    margin-bottom:05px;
 
 }
 
 .noti1 img{
   width: 30px;
-  height: 25px;
+  height: 28px;
   margin-top: 15px;
   filter: drop-shadow(0em 0em 0.2em #fff);
 
@@ -424,13 +430,13 @@ button.quadro4:hover{
     
     text-align: left;
     text-indent: 2em;
-    margin: auto;
     padding-top: 0.3em;
+    margin-bottom: 80px;
 }
 
-.comp1-not1 img{
-  width: 35px;
-  height: 32px;
+img.comp1-not1{
+  width: 30px;
+  height: 28px;
   margin-top: 15px;
   filter: drop-shadow(0em 0em 0.2em #fff);
 }
@@ -499,7 +505,7 @@ button.quadro4:hover{
     margin-left: 40px;
     margin-top: 2px;
     background-color: #64646417;
-    margin-bottom: px;
+    margin-bottom: 5px;
 
 
 }
@@ -576,15 +582,6 @@ body{
     font-family: 'Poppins';
 }
 
-.overlay {
-    height: 69vh;
-    width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-}
 
 .nav {
     background-color: white;
@@ -692,6 +689,7 @@ span.tab-team {
     transition: 0.3s ease;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
 
 
 }
@@ -722,6 +720,8 @@ span.tab-home {
     top: -5px;
     left: 15px;
     text-decoration: none;
+    font-weight: bolder;
+
     
 }
 
@@ -743,6 +743,8 @@ span.calendario{
     color: #5B58FA;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
+
 
 }
 
@@ -777,6 +779,8 @@ span.sino{
     color: #5B58FA;
     top: -5px;
     left: 15px;
+    font-weight: bolder;
+
 
 
 }
@@ -810,6 +814,8 @@ span.chat{
     color: #5B58FA;    
     top: -6px;
     left: 10px;
+    font-weight: bolder;
+
 
 }
 
@@ -840,6 +846,8 @@ span.tarefas{
     top: 0px;
     background: #ecd1dd00;
     left: -85px;
+    font-weight: bolder;
+
 
 
 }
