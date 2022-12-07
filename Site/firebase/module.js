@@ -33,14 +33,7 @@ function entrarProfessor(){
   var senha = getElementVal("digitoSenhaPro")
 
   signInWithEmailAndPassword(auth, email, senha)
-  .then((userCredential) => {
-      const user = userCredential.user
-      alert("Usuario logado")
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-
-  });
+ 
 }
 
 
@@ -50,12 +43,5 @@ function entrarAluno(){
   var senha = getElementVal("digitoSenhaAluno")
 
   signInWithEmailAndPassword(auth, email, senha)
-  .then((userCredential) => {
-      const user = userCredential.user
-      alert("Usuario logado")
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
 
-  });
 }
