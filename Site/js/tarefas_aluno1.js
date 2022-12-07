@@ -36,3 +36,35 @@ function puxarAtividade(){
     conteudoAtiv.classList.add('conteudoPositView');
     conteudoDesemp.classList.add('conteudoDesempenhoFora');
 }
+
+function upGrafics(){
+
+    var barra1 = document.getElementById('barraId1');
+    var barra2 = document.getElementById('barraId2');
+    var barra3 = document.getElementById('barraId3');
+    var barra4 = document.getElementById('barraId4');
+    var numberMedia = document.getElementById('up-number-media');
+    
+
+    console.log("recebaaaa");
+    barra1.classList.add("animation-barras");
+    barra2.classList.add("animation-barras");
+    barra3.classList.add("animation-barras");
+    barra4.classList.add("animation-barras");
+    numberMedia.classList.add("upNumber");
+}
+
+function resetGrafics(){
+
+    let barra1 = document.getElementById('barraId1');
+    let barra2 = document.getElementById('barraId2');
+    let barra3 = document.getElementById('barraId3');
+    let barra4 = document.getElementById('barraId4');
+    let numberMedia = document.getElementById('up-number-media');
+
+    barra1.classList.remove("animation-barras");
+    barra2.classList.remove("animation-barras");
+    barra3.classList.remove("animation-barras");
+    barra4.classList.remove("animation-barras");
+    numberMedia.classList.remove("upNumber");
+}

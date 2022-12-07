@@ -1,6 +1,10 @@
 .li{
     list-style: none;
 }
+.a{
+    list-style: none;
+}
+
 
 .placeConteudo{
     position: relative;
@@ -267,6 +271,7 @@
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
+    list-style: none;
 }
 
 #progress-bar-container {
@@ -468,7 +473,7 @@
 .contain-avaliacoes-passadas{
     width:  25%;
     height: 100%;
-    background-color: #009908;
+    /* background-color: #009908; */
 
     position: absolute;
     left: 0;
@@ -566,7 +571,7 @@
 .contain-melhoria-passadas{
     width:  25%;
     height: 100%;
-    background-color: #fffb00;
+    /* background-color: #fffb00; */
 
     position: absolute;
     top: 0;
@@ -621,27 +626,29 @@
     text-align: left;
     align-content: center;
 }
-.icon-melhoria img{
+.arrow-up{
     width: 29%;
 }
-.icon-melhoria img:hover{
+.arrow-up:hover{
     cursor: pointer;
     animation: floatArrow 1s ease-in-out infinite;
 }
-.icon-melhoria:hover ~ .legenda-melhoria{
-    animation: show-legend 1s linear;
-    animation-delay: 3000ms;
+/* .icon-melhoria:hover ~ .legenda-melhoria{
+    animation: show-legend 2s linear;
     display: grid;
-}
+} */
 
-@keyframes show-legend {
+/* @keyframes show-legend {
     0%{
+        opacity: 0;
+    }
+    90%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
-}
+} */
 
 @keyframes floatArrow {
     0%{
@@ -678,21 +685,241 @@
 
 
 .contain-media-desempenho{
-    width:  35%;
+    width:  51%;
     height: 100%;
-    background-color: #e4150d;
+    /* background-color: #e4140d80; */
 
     position: absolute;    
     top: 0;
     right: 0;
 }
+.area-grafico{
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+    
+    width: 55%;
+    height: 80%;
+    border: 0.01em solid #000000;
+}
+.barras-grafico{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+}
+.barra1, .barra2, .barra3, .barra4{
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    background-color: #5B58FA;
+}
+.barra1:hover, .barra2:hover, .barra3:hover, .barra4:hover{
+    background-color: #221efd;
+    transition: 0.2s linear;
+}
+.barra1{
+    left: 20%;
+
+    height: 78%;
+}
+.barra2{
+    left: 40%;
+
+    height: 56%;
+}
+.barra3{
+    left: 60%;
+
+    height: 90%;
+}
+.barra4{
+    left: 80%;
+
+    height: 97%;
+}
+
+.barra1-section2{
+    height: 57% !important;
+       animation: up-barra 1s ease-in-out; 
+}
+.barra2-section2{
+
+    height: 87% !important;
+       animation: up-barra 1s ease-in-out; 
+}
+.barra3-section2{
+
+    height: 99% !important;
+    animation: up-barra 1s ease-in-out; 
+}
+.barra4-section2{
+
+    height: 97% !important;
+    animation: up-barra 1s ease-in-out; 
+}
+
+.barra1-section3{
+    height: 67% !important;
+    animation: up-barra 1s ease-in-out; 
+}
+.barra2-section3{
+    height: 58% !important;
+    animation: up-barra 1s ease-in-out; 
+}
+.barra3-section3{
+    height: 73% !important;
+    animation: up-barra 1s ease-in-out; 
+}
+.barra4-section3{
+    height: 99% !important;
+    animation: up-barra 1s ease-in-out; 
+}
 
 
 
+
+.animation-barras{
+    animation: up-barra 1s ease-in-out;
+}
+
+@keyframes up-barra {
+    0%{
+        bottom: -100%;
+    }
+    /* 50%{
+        bottom: -50%;
+    } */
+    100%{
+        bottom: 0%;
+    }
+}
+
+
+
+.mes-grafico{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 90%;
+    height: 17%;
+}
+.mes-barra1, .mes-barra2, .mes-barra3, .mes-barra4{
+    position: absolute;
+    bottom: 0%;
+    width: 14%;
+    height: 100%;
+    /* background-color: #004d04; */
+}
+.mes-barra1{
+    left: 18%;
+}
+.mes-barra2{
+    left: 38%;
+}
+.mes-barra3{
+    left: 58%;
+}
+.mes-barra4{
+    left: 78%;
+}
+.mes-legend{
+    margin-top: 15%;
+    transform: rotate(-20deg);
+    font-size: 1.1em !important;
+    color: #000000 !important;
+}
+.number-media{
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    
+    width: 40%;
+    height: 80%;
+    /* border: 0.01em solid #000000; */
+}
+
+.btnDetails{
+    position: absolute;
+    bottom: 3%;
+    left: 35%;
+
+    height: 18%;
+    width: 60%;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color: #5B58FA;
+    color: #FFF;
+}
+.btnDetails:hover{
+    background-color: #3834ff;
+}
+.tittle-media{
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.text-media{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 1.9em;
+}
+.upNumber{
+    animation: crescerNumber 1s ease-in-out;
+}
+@keyframes crescerNumber{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 .semestre2{
-    background-color: #207893;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 253, 184, 0.315);
+
+    position: relative;
 }
 .semestre3{
-    background-color: #312ece;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 253, 184, 0.315);
+
+    position: relative;
+}
+
+.rotate-arrow{
+    width: 29%;
+    transform: rotate(180deg);
+}
+.rotate-arrow:hover{
+    animation: rodar-arrow 1s ease-in-out infinite;
+    cursor: pointer;
+}
+@keyframes rodar-arrow {
+    0%{
+        transform: translateY(0%) rotate(180deg);
+    }
+    50%{
+        transform: translateY(-20%) rotate(180deg);
+    }
+    100%{
+        transform: translateY(0%) rotate(180deg);
+    }
 }

@@ -165,14 +165,14 @@
 
   <div class="areaNav">
 
-    <div id="divViewAtiv" class="viewAtividadesSelect" onclick="puxarAtividade()">
+    <div id="divViewAtiv" class="viewAtividadesSelect" onclick="puxarAtividade(), resetGrafics()">
       <div class="tittleView">
         <h3>Tarefas</h3>
       </div>
 
     </div>
 
-    <div id="divViewDesem" class="viewDesempenho" onclick="puxarDesempenho()">
+    <div id="divViewDesem" class="viewDesempenho" onclick="puxarDesempenho(), upGrafics()">
       <div class="tittleView">
         <h3>Desempenho</h3>
       </div>
@@ -361,7 +361,7 @@
                     <li><h5>AT2:</h5></li>
                 </div>   
                 <div class="tipo-nota5">
-                    <li><h5>AV1:</h5></li>
+                    <li><h5>P2:</h5></li>
                 </div>       
                 
                 <div class="nota1">
@@ -403,48 +403,329 @@
 
                   <div class="icon-melhoria">
                     <li>
-                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
                     </li>
                     
                   </div>
-                  <div class="legenda-melhoria m1">Melhoria de 100% desde o último semestre</div>
+                  <!-- <div class="legenda-melhoria m1">Melhoria de 100% desde o último semestre</div> -->
                   <div class="icon-melhoria">
                     <li>
-                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
                     </li>
                   </div>
                   <div class="icon-melhoria">
                     <li>
-                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
                     </li>
                   </div>
                   <div class="icon-melhoria">
                     <li>
-                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
                     </li>
                   </div>
                   <div class="icon-melhoria">
                     <li>
-                      <img src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
                     </li>
                   </div>
 
               </div>
 
 
-              <div class="contain-media-desempenho">             </div>
+              <div class="contain-media-desempenho">    
+                  <div class="area-grafico">
+                    <div class="barras-grafico">
+                      <div id="barraId1" class="barra1"></div>
+                      <div id="barraId2" class="barra2"></div>
+                      <div id="barraId3" class="barra3"></div>
+                      <div id="barraId4" class="barra4"></div>
+                    </div>
+                    <div class="mes-grafico">
+                      <div class="mes-barra1">
+                        <p class="mes-legend">01/08</p>
+                      </div>
+                      <div class="mes-barra2">
+                        <p class="mes-legend">01/09</p>
+                      </div>
+                      <div class="mes-barra3">
+                        <p class="mes-legend">01/10</p>
+                      </div>
+                      <div class="mes-barra4">
+                        <p class="mes-legend">01/11</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="number-media">
+                    <div class="tittle-media">
+                      <h3>Nota média:</h3>
+                    </div>
+                    <div class="text-media">
+                      <h1 id="up-number-media">95.8</h1>
+                    </div>
+                    <button class="btnDetails">
+                      Detalhes
+                    </button>
+                  </div>
+
+
+              </div>
 
 
             </div>
           
             <div class="section-content semestre2">
+                 
+              <div class="contain-avaliacoes-passadas">
+                <div class="tipo-nota1">
+                    <li><h5>AV2:</h5></li>
+                </div>  
+                <div class="tipo-nota2">
+                    <li><h5>P1:</h5></li>
+                </div>   
+                <div class="tipo-nota3">
+                    <li><h5>AV1:</h5></li>
+                </div>   
+                <div class="tipo-nota4">
+                    <li><h5>AT1:</h5></li>
+                </div>   
+                <div class="tipo-nota5">
+                    <li><h5>P2:</h5></li>
+                </div>       
                 
+                <div class="nota1">
+                  <li><h5>100</h5></li>
+              </div>  
+              <div class="nota2">
+                  <li><h5>87</h5></li>
+              </div>   
+              <div class="nota3">
+                  <li><h5>99</h5></li>
+              </div>   
+              <div class="nota4">
+                  <li><h5>94</h5></li>
+              </div>   
+              <div class="nota5">
+                  <li><h5>100</h5></li>
+              </div> 
+
+              </div>
+
+              <div class="contain-melhoria-passadas">        
+
+                  <div class="melhoria1">
+                    <li><h5>3%</h5></li>
+                  </div>
+                  <div class="melhoria2">
+                    <li><h5>-2%</h5></li>
+                  </div>
+                  <div class="melhoria3">
+                    <li><h5>-1%</h5></li>
+                  </div>
+                  <div class="melhoria4">
+                    <li><h5>14%</h5></li>
+                  </div>
+                  <div class="melhoria5">
+                    <li><h5>1%</h5></li>
+                  </div>
+
+
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                    
+                  </div>
+                  <!-- <div class="legenda-melhoria m1">Melhoria de 100% desde o último semestre</div> -->
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="rotate-arrow" src="img/tarefas/up-arrow-down.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="rotate-arrow" src="img/tarefas/up-arrow-down.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+
+              </div>
+
+
+              <div class="contain-media-desempenho">    
+                  <div class="area-grafico">
+                    <div class="barras-grafico">
+                      <div id="barraId1" class="barra1 barra1-section2"></div>
+                      <div id="barraId2" class="barra2 barra2-section2"></div>
+                      <div id="barraId3" class="barra3 barra3-section2"></div>
+                      <div id="barraId4" class="barra4 barra4-section2"></div>
+                    </div>
+                    <div class="mes-grafico">
+                      <div class="mes-barra1">
+                        <p class="mes-legend">01/08</p>
+                      </div>
+                      <div class="mes-barra2">
+                        <p class="mes-legend">01/09</p>
+                      </div>
+                      <div class="mes-barra3">
+                        <p class="mes-legend">01/10</p>
+                      </div>
+                      <div class="mes-barra4">
+                        <p class="mes-legend">01/11</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="number-media">
+                    <div class="tittle-media">
+                      <h3>Nota média:</h3>
+                    </div>
+                    <div class="text-media">
+                      <h1 id="up-number-media">96</h1>
+                    </div>
+                    <button class="btnDetails">
+                      Detalhes
+                    </button>
+                  </div>
+
+
+              </div>
             </div>
             
             <div class="section-content semestre3">
-                <img class="img-fluid rounded" src="" alt=""><br>
-                <h2></h2>
-                <p></p>
+                
+              <div class="contain-avaliacoes-passadas">
+                <div class="tipo-nota1">
+                    <li><h5>AV2:</h5></li>
+                </div>  
+                <div class="tipo-nota2">
+                    <li><h5>AT1:</h5></li>
+                </div>   
+                <div class="tipo-nota3">
+                    <li><h5>P2:</h5></li>
+                </div>   
+                <div class="tipo-nota4">
+                    <li><h5>AT3:</h5></li>
+                </div>   
+                <div class="tipo-nota5">
+                    <li><h5>AV1:</h5></li>
+                </div>       
+                
+                <div class="nota1">
+                  <li><h5>98</h5></li>
+              </div>  
+              <div class="nota2">
+                  <li><h5>79</h5></li>
+              </div>   
+              <div class="nota3">
+                  <li><h5>90</h5></li>
+              </div>   
+              <div class="nota4">
+                  <li><h5>100</h5></li>
+              </div>   
+              <div class="nota5">
+                  <li><h5>100</h5></li>
+              </div> 
+
+              </div>
+
+              <div class="contain-melhoria-passadas">        
+
+                  <div class="melhoria1">
+                    <li><h5>-2%</h5></li>
+                  </div>
+                  <div class="melhoria2">
+                    <li><h5>-15%</h5></li>
+                  </div>
+                  <div class="melhoria3">
+                    <li><h5>-10%</h5></li>
+                  </div>
+                  <div class="melhoria4">
+                    <li><h5>12%</h5></li>
+                  </div>
+                  <div class="melhoria5">
+                    <li><h5>1%</h5></li>
+                  </div>
+
+
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="rotate-arrow" src="img/tarefas/up-arrow-down.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                    
+                  </div>
+                  <!-- <div class="legenda-melhoria m1">Melhoria de 100% desde o último semestre</div> -->
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="rotate-arrow" src="img/tarefas/up-arrow-down.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="rotate-arrow" src="img/tarefas/up-arrow-down.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+                  <div class="icon-melhoria">
+                    <li>
+                      <img class="arrow-up" src="img/tarefas/up-arrow.png" alt="Melhoria ou Rebaixamento">
+                    </li>
+                  </div>
+
+              </div>
+
+
+              <div class="contain-media-desempenho">    
+                  <div class="area-grafico">
+                    <div class="barras-grafico">
+                      <div id="barraId1" class="barra1 barra1-section3"></div>
+                      <div id="barraId2" class="barra2 barra2-section3"></div>
+                      <div id="barraId3" class="barra3 barra3-section3"></div>
+                      <div id="barraId4" class="barra4 barra4-section3"></div>
+                    </div>
+                    <div class="mes-grafico">
+                      <div class="mes-barra1">
+                        <p class="mes-legend">01/08</p>
+                      </div>
+                      <div class="mes-barra2">
+                        <p class="mes-legend">01/09</p>
+                      </div>
+                      <div class="mes-barra3">
+                        <p class="mes-legend">01/10</p>
+                      </div>
+                      <div class="mes-barra4">
+                        <p class="mes-legend">01/11</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="number-media">
+                    <div class="tittle-media">
+                      <h3>Nota média:</h3>
+                    </div>
+                    <div class="text-media">
+                      <h1 id="up-number-media">95.8</h1>
+                    </div>
+                    <button class="btnDetails">
+                      Detalhes
+                    </button>
+                  </div>
+
+
+              </div>
             </div>
             
             <br>
