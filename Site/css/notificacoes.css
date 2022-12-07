@@ -374,12 +374,3 @@ h6{
     margin: auto;
     padding-top: 20%;
 }
-
-.dropDown h5:hover{
-    background-color: #40b9ff;
-    transition: all 0.5s linear;
-}
-
-.dropDown{
-    background-color: #f7fcff;
-}
