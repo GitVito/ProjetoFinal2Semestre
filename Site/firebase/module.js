@@ -33,6 +33,8 @@ function entrarProfessor(){
   var senha = getElementVal("digitoSenhaPro")
 
   signInWithEmailAndPassword(auth, email, senha)
+
+  
  
 }
 
