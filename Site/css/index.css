@@ -122,21 +122,21 @@ body{
 .card1>.container:after{
     background-image: linear-gradient(
         135deg,
-        #0100ec,
+        #0000ec3f,
         #fb36f4
     );
 }
 .card2>.container:after{
     background-image: linear-gradient(
         135deg,
-        #2bdce3,
+        #2bdde393,
         #42ffdb
     );
 }
 .card3>.container:after{
     background-image: linear-gradient(
         135deg,
-        #ffab1d,
+        #ffac1d7c,
         #f8501c
     );
 }
