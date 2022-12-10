@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/perfil.css" />
+
+    <link rel="stylesheet" href="css/suporte.css">
     <script src="js/menu.js"></script>
-    <script src="js/perfil.js"></script>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <!-- FontAwesome 6.1.1 CDN -->
@@ -20,11 +19,12 @@
       referrerpolicy="no-referrer"
     />
    
-    <title>Perfil | Seed</title>
+    <title>Suporte | Seed</title>
   </head>
   <body>
 
-       <!--Header-->
+
+        <!--Header-->
  
 
  <header>
@@ -35,7 +35,7 @@
 
     <ul class="tabs">
 
-      <a href="calculadora.html">
+      <a href="calculadoraProf.html">
         <li class="tabs-item tab tab-home">
           <div class="tab-circle"></div>
           <img class="roxinho" src="img/calculadora (2).png">            
@@ -43,7 +43,7 @@
         </li>
         </a>
 
-      <a href="chat.html">
+      <a href="chatProf.html">
 
       <li class="tabs-item tab tab-chat" style="height:55px ;">
 
@@ -53,7 +53,7 @@
         <span class="chat">Chat</span>
       </li>
       </a>
-      <a href="Tarefas_alunos.html">
+      <a href="Tarefas_professor.html">
 
       <li class="tabs-item tab tab-tarefas" style="height:55px ;">
 
@@ -63,7 +63,7 @@
       </li>
     </a>
 
-    <a href="notificacoes.html">
+    <a href="notificacoesPro.html">
       <li class="tabs-item tab tab-sino ">
         <div class="tab-circle"></div>
         <img class="sino" src="img/sinoooo.png">        
@@ -71,7 +71,7 @@
       </li>
       </a>
 
-      <a href="calendario.html">
+      <a href="calendarioProf.html">
       <li class="tabs-item tab tab-calendar ">
         <div class="tab-circle"></div>
         <img class="calendario" src="img/calendarioooo.png">            
@@ -81,7 +81,7 @@
       </a>
 
 
-      <a href="turmas.html">
+      <a href="prof_turmas.html">
       <li class="tabs-item tab tab-team ">
         <div class="tab-circle"></div>
         <img class="roxinho" src="img/team.png">        
@@ -99,15 +99,15 @@
   <div id="dropDownPlace" class="dropDown dropDownPositionClose">
 
     <div class="PlaceTextPerfil">
-      <a href="perfil.html"><h5>Perfil</h5></a>
+      <a href="perfil_prof.html"><h5>Perfil</h5></a>
       
     </div>
     <div class="PlaceTextFormulario">
-      <a href="suporte.html"><h5>Suporte</h5></a>
+      <a href="suporteProf.html"><h5>Suporte</h5></a>
       
     </div>
     <div class="PlaceTextSuporte">
-      <a href="formulario.html"><h5>Formulario</h5></a>
+      <a href="formularioProf.html"><h5>Formulario</h5></a>
       
     </div>
 
@@ -128,139 +128,42 @@
   <!--  fim Header-->
 
 
+  <div class="BaseSuporte">
 
-<div class="logoPerfil">
-    <img src="img/perfil/EditPerfilIcon.png" alt="Settings Icon">
-</div>
+    <div class="areaTittle">
+        <img class="iconSuporte" src="img/suporte/suporte-tecnicoColor.png" alt="Suporte">
+        <h3>Fale com nosso suporte</h3>
+        <img class="iconMais" src="img/suporte/pergunta.png" alt="Mais">
+    </div>
 
-<div class="placeConfigPerfil">
-
-    <div class="opcoesPerfil">
-
-      <div class="relatProblem">
-        <img src="img/notificacoes/caution.png" alt="Relatar Problema">
-      </div>
-
-        <div class="tituloEditPerfil">
-            <h3>Edições para perfil e login</h3>
+    <div class="areaChat">
+        <div class="explicandoSup">
+            <img src="img/suporte/atencao.png" alt="Aviso" class="iconAviso">
+            <p>
+                Selecione o seu problema na aba base desta janela.
+            </p>
+            <p>Aqui é onde você pode tirar algumas dúvidas, e ser ajudado caso esteja tendo algum problema na utilização do sistema.</p>
+            <p>
+                Você pode digitar sua dúvida a mão se o seu problema não estiver listado nas opções abaixo, apenas clicando no ícone posicionado no canto superior direito (responderemos por email).
+            </p>
         </div>
-
         
-  
+    </div>
 
-
-        <div class="placeFotoPerfil">
-
-         
-
-            <div class="foto">
-                <img class="imgUserPerfil" src="img/notificacoes/Rafafafafa.jpg" alt="Rafaella Tomassetti">
-                <img class="imgEdit" src="img/perfil/ferramenta-lapis.png" alt="">
-            </div>
-
-
-            <div class="nomeOutros">
-
-                <div class="nome">
-                    <h4>Rafaella Tomassetti</h4>
-                    <img src="img/perfil/ferramenta-lapis.png" alt="EditNome" class="editNomeUser">
-                </div>
-                <div class="matricula">
-                  <li><h5>Nº Matricula:</h5></li>
-                  <li><p><select name="matriculas" id="matriculas">
-                    <optgroup label="TI">
-                      <option value="item1">M1DSI: 9928374728</option>
-                    <option value="item2">AWS: 9922233328</option>
-                    </optgroup>
-                    
-                    op
-                  </select></li>
-                </div>
-                <div class="senha">
-                  <li><h5>CPF:</h5></li>
-                  <li>5348.366.58-70</li>
-                  <img class="editSenha" src="img/perfil/ferramenta-lapis.png" alt="Edit">
-                </div>
-                <div class="email">
-                  <li><h5>Endereço:</h5></li>
-                  <li>São Bernardo - Rua Veracruz, 755</li>
-                </div>
-                <div class="nomeCompleto">
-                  <li><h5>Nome completo:</h5></li>
-                  <li>Rafaella Tomasseti Prado  </li>
-                </div>
-                <div class="dataNasc">
-                  <li><h5>Data de nascimento:</h5></li>
-                  <li>09/01/2005</li>
-                </div>
-
-            </div>
+    <div class="areaEscrever">
+        <div class="pergunta1 perguntinhaEfeito">
+            <p class="perguntas">Não consigo acessar o chat de minha turma</p>
         </div>
-
-
-    </div>
-
-
-    <div class="linhaSeparar"></div>
-
-
-
-    <div class="tituloEditSistema">
-      <h3>Edições do site</h3>
-  </div>
-
-  <div class="placeEditSistema">
-
-    <div class="areaDelogin">
-      
-      <h5>Login automático:</h5>
-      
-      <br>
-      <input type="radio" name="loginAuto" id="loginSim">
-      <label for="loginSim">Sim</label>
-      
-      <input type="radio" name="loginAuto" id="loginNao">
-      <label for="loginNao">Não</label>
-    </div>
-
-    <div class="imgChat">
-      <h5>Editar fundo de chat</h5>
-      <br>
-
-      <div class="uploadImg">
-        <div class="coresDeFundo">
-          <div id="colors1" class="color cor1" onclick="selectColors1()"></div>
-          <div id="colors2" class="color cor2" onclick="selectColors2()"></div>
-          <div id="colors3" class="color cor3" onclick="selectColors3()"></div>
-          <div id="colors4" class="color cor4" onclick="selectColors4()"></div>
-          <div id="colors5" class="color cor5" onclick="selectColors5()"></div>
+        <div class="pergunta2 perguntinhaEfeito">
+            <p class="perguntas">Meu acesso de administrador de turma está falhando</p>
         </div>
-      </div>
-
-      <button class="btnShowImgUp" type="button" onclick="mudouCor()">Selecionar</button>
-    </div>
-
-    <div class="notificacaoOn">
-      <h5>Notificação ativa:</h5>
-
-      <br>
-      <input type="radio" name="NotificOn" id="notiHabilitado">
-      <label for="notiHabilitado">Habilitado</label>
-      
-      <input type="radio" name="NotificOn" id="notiDesabilitado">
-      <label for="notiDesabilitado">Desabilitado</label>
+        <div class="pergunta3 perguntinhaEfeito">
+            <p class="perguntas">Minhas mensagens não estão sendo enviadas</p>
+        </div>
+        <div class="pergunta4 perguntinhaEfeito"> <p class="perguntas">Não estou recebendo notificações</p></div>
 
     </div>
-
   </div>
-
-</div>
-
-
-
-
-
-
 
 
 <footer class="footer">

@@ -24,7 +24,7 @@
   
   .new-task-container input:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #5B58FA;
   }
   
   .new-task-button {
@@ -34,7 +34,7 @@
     height: 100%;
     font-size: 1rem;
     border: none;
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     color: #fff;
     padding: 12px;
     margin-left: 12px;
@@ -54,7 +54,7 @@
   }
   
   .task-item i {
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     color: #fff;
     padding: 12px;
     border-radius: 5px;
@@ -87,7 +87,7 @@
   }
 
   .dropDown h5:hover{
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     transition: all 0.5s linear;
 }
 
@@ -126,7 +126,7 @@
   height: 100%;
   font-size: 1rem;
   border: none;
-  background-color: #58a6ff;
+  background-color: #5B58FA;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
@@ -146,7 +146,7 @@
 }
 
 .task-item i {
-  background-color: #cc23b6;
+  background-color: #5B58FA;
   color: #fff;
   padding: 12px;
   border-radius: 5px;

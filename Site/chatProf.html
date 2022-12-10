@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Chats | Seed</title>
+  </head>
+  <body>
+  <!--Header-->
+ 
+
+  <header>
+    <div class="overlay"></div>
+    <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
+      <ul class="tabs">
+  
+        <a href="calculadoraProf.html">
+          <li class="tabs-item tab tab-home">
+            <div class="tab-circle"></div>
+            <img class="roxinho" src="img/calculadora (2).png">            
+            <span class="tab-home">Calculadora</span>
+          </li>
+          </a>
+  
+        <a href="chatProf.html">
+  
+        <li class="tabs-item tab tab-chat tab-is-active" >
+  
+          <div class="tab-circle"></div>
+          <img src="img/chat.png" alt="" class="roxinho">
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas_professor.html">
+  
+        <li class="tabs-item tab tab-tarefas" >
+  
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
+      </a>
+  
+      <a href="notificacoesPro.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sinoooo.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="calendarioProf.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendarioooo.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="prof_turmas.html">
+        <li class="tabs-item tab tab-team ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/team.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
+    </div>
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil_prof.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporteProf.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formularioProf.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
+    </header>
+  
+    <!--  fim Header-->
+
+        <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<style>
+  .access-button {
+      border-radius: 50px;
+    
+  }
+    </style>
+    
+    <div id="divBusca">
+      <input type="text" id="txtBusca" placeholder="Buscar..."/>
+      <img src="img/chat/lupinha.png" class= "lupinha" id="btnBusca" alt="Buscar"/>
+    </div>
+
+    <div class=" cuadrito">
+
+      <div class="container">
+        <img src="img/chat/rafa.jpg"  class= "chatrafa1" alt="Avatar">
+        <p>Bom dia genteeeee</p>
+        <span class="time-right">11:00</span>
+      </div>
+      
+      <div class="container darker">
+        <img src="img/chat/victor.jpg" class="chatvictor1"  alt="Avatar" >
+         <p> Bom dia bicho feio</p>
+        <span class="time-right">11:01</span>
+      </div>
+      
+      <div class="container2">
+        <img src="img/chat/WhatsApp Image 2022-11-04 at 11.15.56.jpeg" class="chatcard1" alt="Avatar">
+        <p>Para de ser chato Victor</p>
+        <span class="time-right">11:02</span>
+      </div>
+      
+      <div class="container darker2">
+        <img src="img/chat/Ailtonoo.png"  alt="Avatar" class="chatail">
+        <p>Bom dia pessoal</p>
+        <span class="time-right">11:05</span>
+      </div>
+    
+
+    <div class="container3">
+      <img src="img/chat/brneo_foto.jpg" class="chatbeno" alt="Avatar">
+      <p>Vai fazer enem, vaiii</p>
+      <span class="time-right">11:10</span>
+    </div>
+    
+    <div id="gu" class="container darker3 hide">
+      <img src="img/chat/foto - Gustavo.jpg" class="chatgu" alt="Avatar" class="right">
+      <p id="resposta"></p>
+      <span class="time-left">12:30</span>
+    </div>
+  </div>
+        <div class="nome">
+          <img src="img/chat/gru.png"  class= "fotonome" alt="Avatar">
+        <p class="nomegru" ><b>SALA M2DSI </b></p>
+
+        <img src="img/chat/camera-de-video (1).png" class="camera">
+        <img src="img/chat/pontos.png" class="pontos">
+        </div>
+
+    <div class="linha">
+
+      <div class="chat1">
+        <img src="img/chat/fotorafa.jpeg" class= "chatrafa" alt="Avatar">
+        <p><b>RAFAELLA TOMASSETTI </b></p>
+        
+        Tenho uma nova ideia, vou mostrar ...
+        <span class="time-right">11:00</span>
+      </div>
+
+      <div class="chat2">
+        <img src="img/chat/victor.jpg" class="chatvictor" alt="Avatar">
+        <p><b>VICTOR BAFFA</b></p>
+        
+        Essas mulheres ta tudo cega
+        <span class="time-right">11:40</span>
+      </div>
+
+      <div class="chat3">
+        <img src="img/chat/WhatsApp Image 2022-11-04 at 11.15.56.jpeg" class="chatcard" alt="Avatar">
+        <p><b>CARDELIS SOFIA SOLIS PINTO</b></p>
+         
+        Ultima semana de entrega
+        <span class="time-right">11:45</span>
+      </div>
+
+      <div class="chat4">
+        <img src="img/chat/foto aline .png" class="chataline" alt="Avatar">
+        <p><b> ALINE BATISTA DA ROCHA </b></p>
+        
+         Home pronta
+        <span class="time-right">11:50</span>
+      </div>
+
+      <div class="chat5">
+        <img src="img/chat/gru.png" class="sala"alt="Avatar">
+        <p><b>SALA M2DSI</b></p> 
+         <span class="time-right1">Vai fazer enem</span>
+         <img src="img/chat/bol-removebg-preview.png" class="bol">
+         <span class="time-right">11:00</span>
+      </div>
+
+      <div class="chat6">
+        <img src="img/chat/thami.png" class="fotothami" alt="Avatar">
+        <p><b> THAMIRES DE SÁ GOMES </b></p>
+        
+         Eu vejo as mensagem segunda
+            
+        <span class="time-right">11:00</span>
+      </div>
+    </div>
+
+   <div class="barrita">
+    <input type="text" name="valor2" id="chat" class="input">
+    <br>
+    <button class="button" onclick="chamar(), aparecerdiv()"> <img src="img/chat/enviar.png"></button>
+    <a href><img class="emoji" src="img/chat/emoji-removebg-preview.png"></a>
+    
+  </div>
+
+
+
+
+  
+
+    <script src="js/chat.js"> </script>
+
+
+
+
+
+  </body>
+</html>
