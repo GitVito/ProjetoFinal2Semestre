@@ -301,7 +301,7 @@
     <h3 class="titulo-modal">Selecione a atividade que deseja Visualizar</h3>
 
     <div class="content-ativs">
-      <div class="ativ-view ativ1-view">
+      <div class="ativ-view ativ1-view" id="ativ1">
 
         <div class="icon-view-ativ-modal">
           <img style="width: 90%; height: 90%;" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/181_Java-512.png" alt="">
@@ -310,11 +310,54 @@
           <h3>CRUD em Java</h3>
         </div>
         <div class="btn-view">
-          <button>
+          <button onclick="dropConfig()">
             <h4>Visualizar</h4>
           </button>
         </div>
         <div class="data-modal-view-ativ">Entrega: 12/12/2022</div>
+
+        <div class="config-ativ" id="configAtv">
+
+          <div class="upBlock" onclick="upDropConfig()">
+            <img style="width: 90%; height: 90%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Feather-arrows-arrow-up.svg/1024px-Feather-arrows-arrow-up.svg.png" alt="close">
+          </div>
+
+          <div class="alunosAtvi">
+            <label id="forAlunosAtiv" for="AlunosAtividade" style="font-size: 1.1em;">Alunos que entregaram:</label>
+            <br>
+            <select name="AlunosAtividade" id="alunoAtv">
+              <option value="Rafaella Tomasseti">Rafaella Tomasseti</option>
+              <option value="Gustavo Batista">Gustavo Batista</option>
+              <option value="Beatriz Holanda">Beatriz Holanda</option>
+              <option value="Emanuel Gomes">Emanuel Gomes</option>
+              <option value="Victor Baffa">Victor Baffa</option>
+              <option value="Sofia Cardelis">Sofia Cardelis</option>
+              <option value="Thamires de Sá">Thamires de Sá</option>
+            </select>
+           
+          </div>
+
+          <div class="arquivoUpload">
+            <p class="dataEntrega">
+              07/12/2022
+            </p>
+          </div>
+
+          <div class="turma">
+            <li><h4>Turma:</h4></li>
+            <li><p>M2DSI</p></li>
+          </div>
+
+          <div class="nota">
+            <li><h4>Nota média:</h4></li>
+            <li><p>94.5</p></li>
+          </div>
+          
+          <div class="btnredirectEdit" onclick="puxarEditarBtn()">
+            <h4>Editar</h4>
+          </div>
+
+        </div>
 
       </div>
 
@@ -324,7 +367,7 @@
           <img style="width: 80%; height: 80%;" src="https://cdn-icons-png.flaticon.com/512/2560/2560156.png" alt="">
         </div>
         <div class="title-ativ-view-modal">
-          <h3>Computador para ...</h3>
+          <h3>Computador p...</h3>
         </div>
         <div class="btn-view">
           <button>
@@ -392,10 +435,11 @@
     </div>
 
 
-    <h3 class="titulo-modal">Selecione a atividade que deseja Visualizar</h3>
+    <h3 class="titulo-modal">Selecione a atividade que deseja Editar</h3>
 
     <div class="content-ativs">
-      <div class="ativ-view ativ1-view">
+
+      <div class="ativ-view ativ1-view" id="ativ1-edit">
 
         <div class="icon-view-ativ-modal">
           <img style="width: 90%; height: 90%;" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/181_Java-512.png" alt="">
@@ -404,12 +448,66 @@
           <h3>CRUD em Java</h3>
         </div>
         <div class="btn-view">
-          <button>
-            <h4>Visualizar</h4>
+          <button onclick="dropConfigEdit()">
+            <h4>Editar</h4>
           </button>
         </div>
         <div class="data-modal-view-ativ">Entrega: 12/12/2022</div>
 
+        <div class="config-ativ" id="configAtvEdit">
+
+          <div class="upBlock" onclick="upDropConfigEdit()">
+            <img style="width: 90%; height: 90%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Feather-arrows-arrow-up.svg/1024px-Feather-arrows-arrow-up.svg.png" alt="close">
+          </div>
+
+          <div class="titleAluno"><h5>Aluno:</h5></div>
+          <div class="titleAtividade"><h5>Atividade:</h5></div>
+
+
+          <div class="alunosAtvi">
+            <label id="forAlunosAtiv" for="AlunosAtividade" style="font-size: 1.1em;">Alunos que entregaram:</label>
+            <br>
+            <select name="AlunosAtividade" id="alunoAtv">
+              <option value="Rafaella Tomasseti">Rafaella Tomasseti</option>
+              <option value="Gustavo Batista">Gustavo Batista</option>
+              <option value="Beatriz Holanda">Beatriz Holanda</option>
+              <option value="Emanuel Gomes">Emanuel Gomes</option>
+              <option value="Victor Baffa">Victor Baffa</option>
+              <option value="Sofia Cardelis">Sofia Cardelis</option>
+              <option value="Thamires de Sá">Thamires de Sá</option>
+            </select>
+           
+          </div>
+
+          <div class="editNota">
+            <li><h4>Editar Nota:</h4></li>
+            <li><input type="number" name="notaEdit" id="NotaEditar" placeholder="97"></li>
+          </div>
+
+          <div class="descricaoAtiv">
+            <li><h4>Editar descrição:</h4></li>
+            <li>
+              <button class="btnDesc">
+                <img style="width: 30%; height: 95%; margin: auto;" src="https://cdn-icons-png.flaticon.com/512/1827/1827951.png" alt="Edit">
+              </button>
+            </li>
+          </div>
+
+          <div class="editNome">
+            <li><h4>Editar titulo:</h4></li>
+            <li>
+              <button class="btnDesc">
+                <img style="width: 30%; height: 95%; margin: auto;" src="https://cdn-icons-png.flaticon.com/512/1827/1827951.png" alt="Edit">
+              </button>
+            </li>
+          </div>
+          
+          <div class="btnredirectEdit" onclick="salvarEdit()">
+            <h4>Salvar edição</h4>
+          </div>
+
+        </div>
+        
       </div>
 
       <div class="ativ-view ativ2-view">
@@ -418,11 +516,11 @@
           <img style="width: 80%; height: 80%;" src="https://cdn-icons-png.flaticon.com/512/2560/2560156.png" alt="">
         </div>
         <div class="title-ativ-view-modal">
-          <h3>Computador para ...</h3>
+          <h3>Computador p...</h3>
         </div>
         <div class="btn-view">
           <button>
-            <h4>Visualizar</h4>
+            <h4>Editar</h4>
           </button>
         </div>
         <div class="data-modal-view-ativ">Entrega: 09/11/2022</div>
@@ -439,7 +537,7 @@
         </div>
         <div class="btn-view">
           <button>
-            <h4>Visualizar</h4>
+            <h4>Editar</h4>
           </button>
         </div>
         <div class="data-modal-view-ativ">Entrega: 22/10/2022</div>
@@ -456,7 +554,7 @@
         </div>
         <div class="btn-view">
           <button>
-            <h4>Visualizar</h4>
+            <h4>Editar</h4>
           </button>
         </div>
         <div class="data-modal-view-ativ">Entrega: 17/09/2022</div>

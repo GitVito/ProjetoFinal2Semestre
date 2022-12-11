@@ -438,7 +438,7 @@ a:active{
   height: 70vh;
   border-radius: 1em;
 
-  background-color: #ebebeb;
+  background-color: #cecece;
   box-shadow: 0em 0em 2em 0.2em #717272;
 }
 
@@ -476,7 +476,7 @@ a:active{
 
   width: 80%;
   height: 72%;
-  background-color: #52cbbf3d;
+  background-color: #52cbbf6b;
 }
 
 .ativ-view{
@@ -484,6 +484,7 @@ a:active{
   
   width: 100%;
   height: 25%;
+  overflow: inherit;
 }
 
 .ativ1-view{
@@ -547,4 +548,158 @@ a:active{
   bottom: 3%;
   right: 30%;
   font-size: 1.3em;
+}
+
+.config-ativ{
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 200%;
+
+  display: none;
+
+  z-index: -5;
+  background-color: #e2e1ff;
+}
+
+.upBlock{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  width: 5.5%;
+  height: 18%;
+  cursor: pointer;
+}
+
+.alunosAtvi{
+  position: absolute;
+  top: 20%;
+  left: 3%;
+
+  width: 35%;
+  height: 30%;
+}
+.alunosAtvi select{
+  width: 100%;
+  height: 50%;
+  font-size: 1em;
+  margin-top: 3%;
+}
+
+.arquivoUpload{
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 30%;
+  height: 30%;
+  border-radius: 1em;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+
+  background-color: #c5c5c5;
+}
+.arquivoUpload:hover{
+  filter: brightness(90%);
+  cursor: pointer;
+}
+.dataEntrega{
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  font-size: 0.9em;
+}
+
+.turma{
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.nota{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.btnredirectEdit{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+  width: 40%;
+  height: 18%;
+  background-color: #4946ff;
+  color: #fff;
+  font-size: 1.2em;
+  display: grid;
+  align-items: center;
+}
+.btnredirectEdit:hover{
+  background-color: #3e3bff;
+}
+
+.editNota{
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+
+  height: 24%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.editNota input{
+  width: 40%;
+  height: 100%;
+}
+
+.titleAluno{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+
+  list-style: none;
+  font-size: 1.4em;
+}
+.titleAtividade{
+  position: absolute;
+  top: 5%;
+  right: 43%;
+
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.descricaoAtiv{
+  position: absolute;
+  top: 20%;
+  right: 28%;
+
+  width: 30%;
+  font-size: 1.1em;
+  list-style: none;
+}
+
+.btnDesc{
+  position: absolute;
+  top: 100%;
+  right: 35%;
+  width: 35%;
+  height: 100%;
+  cursor: pointer;
+}
+.editNome{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+
+  width: 30%;
+  font-size: 1.1em;
+  list-style: none;
 }
