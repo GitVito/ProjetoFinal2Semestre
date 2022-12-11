@@ -923,3 +923,115 @@
         transform: translateY(0%) rotate(180deg);
     }
 }
+
+.areaTarefa{
+position: absolute;
+top: 15%;
+left: -100%;
+
+display: none;
+width: 100%;
+height: 85%;
+
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+background-color: rgb(227, 227, 227);
+}
+
+.voltar{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    width: 5%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.imgTarefa{
+    position: absolute;
+    top: 13%;
+    left: 10%;
+
+    width: 15%;
+    height: 30%;
+    /* background-color: rgba(255, 255, 255, 0.747); */
+}
+.titleMateria{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+
+    width: 20%;
+    height: 30%;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.titleTarefa{
+    position: absolute;
+    top: 13%;
+    left: 28%;
+
+    font-size: 2.23em;
+    width: 35%;
+    height: 10%;
+}
+.descricaoTarefa{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+
+    font-size: 1.6em;
+    text-align: justify;
+    width: 50%;
+    height: 40%;
+    padding: 1em;
+    text-indent: 1em;
+    background-color: #52cbbf3d;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.enviarTarefa{
+    position: absolute;
+    bottom: 20%;
+    right: 24%;
+
+    display: grid;
+    grid-template-columns: 15% 80%;
+    align-items: center;
+    width: 45%;
+    height: 10%;
+    font-size: 2em;
+    font-weight: 500;
+    border-radius: 0.5em;
+    border: 1px solid #000000;
+    background-color: rgb(201, 201, 201);   
+    cursor: pointer;
+}
+.enviarTarefa:hover{
+    background-color: rgb(182, 182, 182);   
+}
+.enviarTarefa p{
+    grid-column-start: 2;
+}
+.enviarTarefa img{
+    grid-column-start: 2;
+}
+
+.submitTarefa{
+    position: absolute;
+    bottom: 6%;
+    right: 28.5%;
+    width: 35%;
+    height: 10%;
+    font-size: 2em;
+    border-radius: 0.5em;
+    background-color: #5B58FA;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
