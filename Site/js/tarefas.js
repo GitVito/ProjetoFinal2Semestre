@@ -131,3 +131,40 @@ refreshTasksUsingLocalStorage();
 addTaskButton.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
+
+
+
+
+
+
+
+
+
+
+
+function openView(){
+  let modalView = document.getElementById("modal-view");
+
+  modalView.style.display= "block";
+}
+
+function openEdit(){
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "block";
+}
+
+
+
+function closeView(){
+  let modalView = document.getElementById("modal-view");
+
+  modalView.style.display= "none";
+}
+
+function closeEdit(){
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "none";
+
+}
