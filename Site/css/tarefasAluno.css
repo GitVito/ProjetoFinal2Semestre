@@ -852,6 +852,7 @@
     bottom: 3%;
     left: 35%;
 
+    opacity: 0;
     height: 18%;
     width: 60%;
     border: none;
@@ -1037,3 +1038,20 @@ background-color: rgb(227, 227, 227);
     align-items: center;
     cursor: pointer;
 }
+
+#fileAluno{
+    position: absolute;
+    cursor: pointer;
+
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* #imgUpload{
+    background-color: #221efd;
+    padding: 0.3em;
+    transform: scale(1.2);
+    border-radius: 0.2em ;
+} */

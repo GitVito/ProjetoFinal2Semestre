@@ -760,12 +760,13 @@
     </div>
 
     <div class="enviarTarefa">
-      <p>Fazer upload arquivo</p>
-      
-      <img style="width: 8%; height: 60%; position: absolute; "  src="http://cdn.onlinewebfonts.com/svg/img_150954.png" alt="upload">
+
+      <p id="digitoFile">Fazer upload arquivo</p>
+      <input type="file" name="filealuno" id="fileAluno" oninput="corUpload()">
+      <img id="imgUpload" style="width: 8%; height: 60%; position: absolute; "  src="http://cdn.onlinewebfonts.com/svg/img_150954.png" alt="upload">
     </div>
 
-    <div class="submitTarefa">
+    <div class="submitTarefa" onclick="saveFile()">
       <h4>Salvar</h4>
     </div>
 
