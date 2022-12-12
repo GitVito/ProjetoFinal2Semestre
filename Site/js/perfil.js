@@ -83,3 +83,36 @@ function selectColors5(){
     colors5.style.border= "4px solid #aaaaaa";
     compara1 = 5;
 }
+
+
+
+  //Dark Mode
+  const changeThemeBtn = document.querySelector("#change-theme")//Pegar a chakboox  e fazer o evento com base nela
+
+
+// Toggle dark mode
+function toggleDarkMode(){
+  document.body.classList.toggle("dark"); //Pegando as classes do Body 
+}
+
+// Carregar o modo claro ou escuro
+function loadTheme() {
+  const darkMode = localStorage.getItem("dark");
+
+  if (darkMode) {
+    toggleDarkMode();
+  }
+}
+
+loadTheme();
+
+ changeThemeBtn.addEventListener("change", function () {
+  toggleDarkMode();
+
+  // Salva ou remove o Dark Mode from localStorage
+  localStorage.removeItem("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark", 1);
+  }
+}); 
