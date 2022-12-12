@@ -59,11 +59,11 @@
 
             
             <div class="placeBtnEntrar">
-
+                <a href="apostilas.html">
                 <button type="button" class="btnEntrarLogin" disabled="true" onclick="entrarAluno()">
                     <h6 id="btnEntrarDeVez">Entrar</h6>
                 </button>
-
+                </a>
             </div>
             
 
@@ -139,10 +139,13 @@
             </div>
 
             <div class="placeBtnEntrar">
-                    
-                    <button type="button" class="btnEntrarLogin" disabled="true" onclick="entrarProfessor()">
+                    <a href="apostilas.html">
+                    <button type="button" class="btnEntrarLogin" onclick="entrarProfessor()">
                         <h6 id="btnEntrarDeVez">Entrar</h6>
+                        
                     </button>
+                </a>
+                    
                     
 
             </div>
@@ -184,6 +187,15 @@
         };
 
         firebase.initializeApp(firebaseConfig);
+
+
+        console.log('antes');
+        firebase.auth().signInWithEmailAndPassword("breno@gmail.com", "123456").then(response => {
+            console.log('success', response)
+        }).catch(error => {
+            console.log('error', error)
+        });
+        console.log('depois')
 
     </script>
     <script src="js/login.js"></script>

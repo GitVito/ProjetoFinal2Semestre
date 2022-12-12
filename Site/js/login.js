@@ -51,37 +51,3 @@ function apagarDigito(){
 
 // entrar 
 
-function entrarProfessor() {
-    firebase.auth().signInWithEmailAndPassword(
-        form.email().value, form.password().value
-    ).then(response => {
-        window.location.assign("https://www.w3schools.com");
-    }).catch(error => {
-        alert(getErrorMessage(error));
-    });
-}
-  
-function getErrorMessage(error) {
-    if (error.code == "auth/user-not-found") {
-        return "Usuário nao encontrado";
-    }
-    return error.message;
-}
-  
-function entrarAluno() {
-    firebase.auth().signInWithEmailAndPassword(
-        form.email().value, form.password().value
-    ).then(response => {
-        window.location.assign("https://www.w3schools.com");
-    }).catch(error => {
-        alert(getErrorMessage(error));
-    });
-}
-  
-function getErrorMessage(error) {
-    if (error.code == "auth/user-not-found") {
-        return "Usuário nao encontrado";
-    }
-    return error.message;
-}
-  
