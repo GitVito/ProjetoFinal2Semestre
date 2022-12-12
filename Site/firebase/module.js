@@ -2,7 +2,7 @@ function entrarProfessor() {
   firebase.auth().signInWithEmailAndPassword(
       form.email().value, form.password().value
   ).then(response => {
-      window.location.href = "apostila.html";
+      window.location.href = "https://gitvito.github.io/ProjetoFinal2Semestre/Site/arquivos.html";
   }).catch(error => {
       alert(getErrorMessage(error));
   });
@@ -19,7 +19,7 @@ function entrarAluno() {
   firebase.auth().signInWithEmailAndPassword(
       form.email().value, form.password().value
   ).then(response => {
-      window.location.href = "apostila.html";
+      window.location.href = "https://gitvito.github.io/ProjetoFinal2Semestre/Site/arquivos.html";
   }).catch(error => {
       alert(getErrorMessage(error));
   });
