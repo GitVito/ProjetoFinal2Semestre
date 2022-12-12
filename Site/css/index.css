@@ -38,7 +38,7 @@ body{
   width: 100%;
   height: 90%;
   margin: 0;
-  background-image: url(../img/perfil/16-removebg-preview.png);
+  background-image: url(../img/background.png);
   background-size: 110% 155%;
   background-repeat: no-repeat;
   top: 0%
@@ -56,7 +56,6 @@ body{
    cursor: pointer;
    color: white;
    font-size: 20px;
-
    border-radius: 30px;
    transition: all 0.3s ease;
 }
@@ -81,7 +80,7 @@ body{
 
 .computer{
     margin-left:60rem;
-    width: 800px;
+    width: 890px;
     height: 700px;
     border-color: black;
     margin-top: -9px;
@@ -123,21 +122,21 @@ body{
 .card1>.container:after{
     background-image: linear-gradient(
         135deg,
-        #0100ec,
+        #0000ec3f,
         #fb36f4
     );
 }
 .card2>.container:after{
     background-image: linear-gradient(
         135deg,
-        #2bdce3,
+        #2bdde393,
         #42ffdb
     );
 }
 .card3>.container:after{
     background-image: linear-gradient(
         135deg,
-        #ffab1d,
+        #ffac1d7c,
         #f8501c
     );
 }
@@ -181,6 +180,11 @@ body{
 .dark header {
   background-color: #263238;
   color: #fff;
+}
+.dark h1{
+  font-size: 50px;
+  color: #adc2e9;
+  font-family: poppins;
 }
 
 
@@ -285,67 +289,59 @@ footer h4{
     
 }
 
-.sec-publi{
-    left: 0;
-    background-image: url(../img/fundo_Publi.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat ;
-}
-
-
-
 .info{
  margin-left: 80px;
  text-align: justify;
- margin-top: 15rem;
+ margin-top: 10rem;
 }
 
 h1{
-  font-size: 40px;
-  
+  font-size: 50px;
+  color: #0c338f;
   font-family: poppins;
 }
 
 p{
   font-size: 25px;
 }
-.star{
-  width: 35px;
-  height: 45px;
-  margin-left: 45px;
-  margin-top: 4rem;
-}
 
 
 .btn_Info{
   margin-top: 2rem;
   padding: 0.4rem;
-  height: 4rem;
-  width: 10rem;
+  height: 5.7rem;
+  width: 18rem;
   margin-left: 40px;
-  background: linear-gradient(to left, #4776E6, #5490e9);
+  background: linear-gradient(to left, #6a62df, #113b9e);
   cursor: pointer;
   color: white;
   font-size: 20px;
-
   border-radius: 30px;
-  transition: all 0.3s ease;
+
 }
-
-
-
-.btn_Info:hover {
-   letter-spacing: 0.5px; 
-   background: linear-gradient(to right, #4776E6, #8e54e9);
-}
-
-
 
 .app{
-    height: 900px;
-   width: 750px;
-  margin-left: 900px;
-  margin-top: -9px;
+  margin-left: 820px;
  
+ width: 910px;
+  height: 600px;
 }
 
+
+.star{
+  width: 35px;
+  height: 45px;
+  margin-left: 60px;
+  margin-top: 2rem;
+}
+
+h4{
+margin-left: 50px;
+
+}
+
+.cel{
+  margin-top: -15rem;
+  left: 980px;
+  width: 910px;
+}

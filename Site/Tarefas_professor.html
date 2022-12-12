@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/popup_tarefas.css" />
 
 
-    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
       referrerpolicy="no-referrer"
     />
    
-    <title>Home</title>
+    <title>Tarefas | Seed</title>
   </head>
   <body>
  <!--Header-->
@@ -41,7 +41,7 @@
   
       <ul class="tabs">
   
-        <a href="index.html">
+        <a href="calculadoraProf.html">
           <li class="tabs-item tab tab-home">
             <div class="tab-circle"></div>
             <img class="roxinho" src="img/calculadora (2).png">            
@@ -49,7 +49,7 @@
           </li>
           </a>
   
-        <a href="chat.html">
+        <a href="chatProf.html">
   
         <li class="tabs-item tab tab-chat" style="height:55px ;">
   
@@ -59,17 +59,15 @@
           <span class="chat">Chat</span>
         </li>
         </a>
-        <a href="Tarefas_alunos.html">
-  
-        <li class="tabs-item tab tab-tarefas tab-is-active" style="height:55px ;">
-  
+       
+      <a href="notificacoesPro.html">
+        <li class="tabs-item tab tab-sino ">
           <div class="tab-circle"></div>
-          <i class="fa fa-clipboard tab-icon"></i>
-          <span class="tarefas">Tarefas</span>
+          <img class="sino" src="img/clipboard (2).png">        
+          <span class="sino">Tarefas</span>
         </li>
-      </a>
-  
-      <a href="notificacoes.html">
+        </a>
+      <a href="notificacoesPro.html">
         <li class="tabs-item tab tab-sino ">
           <div class="tab-circle"></div>
           <img class="sino" src="img/sinoooo.png">        
@@ -77,7 +75,7 @@
         </li>
         </a>
   
-        <a href="calendario.html">
+        <a href="calendarioProf.html">
         <li class="tabs-item tab tab-calendar ">
           <div class="tab-circle"></div>
           <img class="calendario" src="img/calendarioooo.png">            
@@ -87,7 +85,7 @@
         </a>
   
   
-        <a href="turmas.html">
+        <a href="prof_turmas.html">
         <li class="tabs-item tab tab-team ">
           <div class="tab-circle"></div>
           <img class="roxinho" src="img/team.png">        
@@ -105,15 +103,15 @@
     <div id="dropDownPlace" class="dropDown dropDownPositionClose">
   
       <div class="PlaceTextPerfil">
-        <a href="perfil.html"><h5>Perfil</h5></a>
+        <a href="perfil_prof.html"><h5>Perfil</h5></a>
         
       </div>
       <div class="PlaceTextFormulario">
-        <a href="suporte.html"><h5>Suporte</h5></a>
+        <a href="suporteProf.html"><h5>Suporte</h5></a>
         
       </div>
       <div class="PlaceTextSuporte">
-        <a href="formulario.html"><h5>Formulario</h5></a>
+        <a href="formularioProf.html"><h5>Formulario</h5></a>
         
       </div>
   
@@ -123,7 +121,7 @@
   
   
       <div class="PlaceTextSair">
-        <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+        <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
         
       </div>
   
@@ -195,8 +193,22 @@
       type="date" class="new-task-input1"/><br>
       <br><input type="text" class="new-task-input2" placeholder="Descreva a tarefa.."/><br>
 
+
+      <div class="bordaBRD">
+        <h6 
+          class="JKJ">Fazer upload do arquivo:
+        </h6>
+        <br>
+          <img width="60" height="60" src="img/tarefas/nuvem.png"  class="imgGG"/>
+          <img width="60" height="60" src="img/tarefas/googledrive.png"  class="imgGG"/>
+          <img width="60" height="60" src="img/tarefas/GitHub.png"  class="imgGG"/>
+      </div>
+
+
     <br><button class="new-task-button">Adicionar</button>
   
+
+    <h4 class="title-tarefas-post">Tarefas postadas</h4>
 
     <div class="tasks-container"></div>
 
@@ -213,24 +225,46 @@
 
 <br><hr>
 
-<h1 style="margin-left: 0;"> Atividade entregues :</h1><br>
+<br><br><br>
 
-<div class="borderIMG">
+
+      <div class="opcoes-atividades">
+
+        <div class="ver-atividades" onclick="openView()">
+          <div class="title-ver-ativ">
+            <h3>Visualizar</h3>
+          </div>
+          <div class="iconVer">
+            <img src="http://cdn.onlinewebfonts.com/svg/img_249365.png" alt="View">
+          </div>
+        </div>
+
+        <div class="editar-atividades" onclick="openEdit()">
+          <div class="title-ver-ativ">
+            <h3>Editar</h3>
+          </div>
+          <div class="iconVer2">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/tools-equipment-construction/settings-icon.png" alt="Config">
+          </div>
+        </div>
+
+      </div>
+
+
+  
+
+
+
+<div class="borderIMG" style="display: none;">
   <div class="kok">
     <img width="50" height="50" src="img/aluno1.jpg"  class="imgGGG"/>
   </div>
-        <div class="bordaBRD">
-          <h6 
-            class="JKJ">Fazer upload do arquivo:
-          </h6>
-            <img width="50" height="50" src="img/tarefas/nuvem.png"  class="imgGGG1"/>
-            <img width="50" height="50" src="img/tarefas/googledrive.png"  class="imgGGG2"/>
-            <img width="50" height="50" src="img/tarefas/GitHub.png"  class="imgGGG3"/>
-        </div><br>
+        <br>
   
 </div>
-<br><input type="text" class="new-task-input222" placeholder="Adicione um comentario"/><br>
-<input type="number" min="0" max="100" class="new-task-input222" placeholder="Escolha a nota de 0 a 100"/>
+<br>
+<!-- <input type="text" class="new-task-input222" placeholder="Adicione um comentario"/><br>
+<input type="number" min="0" max="100" class="new-task-input222" placeholder="Escolha a nota de 0 a 100"/> -->
 
 <br><hr>
 
@@ -249,6 +283,296 @@
 
   </div>
 </div>
+
+
+
+
+<div class="modal" id="modal-view">
+
+  <div class="contain-modal-items">
+
+    <div class="close-modal" onclick="closeView()">
+      <img style="width: 100%; height: 100%;" src="https://cdn-icons-png.flaticon.com/512/6372/6372150.png" alt="X">
+    </div>
+
+
+    <h3 class="titulo-modal">Selecione a atividade que deseja Visualizar</h3>
+
+    <div class="content-ativs">
+      <div class="ativ-view ativ1-view" id="ativ1">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 90%; height: 90%;" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/181_Java-512.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>CRUD em Java</h3>
+        </div>
+        <div class="btn-view">
+          <button onclick="dropConfig()">
+            <h4>Visualizar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 12/12/2022</div>
+
+        <div class="config-ativ" id="configAtv">
+
+          <div class="upBlock" onclick="upDropConfig()">
+            <img style="width: 90%; height: 90%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Feather-arrows-arrow-up.svg/1024px-Feather-arrows-arrow-up.svg.png" alt="close">
+          </div>
+
+          <div class="alunosAtvi">
+            <label id="forAlunosAtiv" for="AlunosAtividade" style="font-size: 1.1em;">Alunos que entregaram:</label>
+            <br>
+            <select name="AlunosAtividade" id="alunoAtv">
+              <option value="Rafaella Tomasseti">Rafaella Tomasseti</option>
+              <option value="Gustavo Batista">Gustavo Batista</option>
+              <option value="Beatriz Holanda">Beatriz Holanda</option>
+              <option value="Emanuel Gomes">Emanuel Gomes</option>
+              <option value="Victor Baffa">Victor Baffa</option>
+              <option value="Sofia Cardelis">Sofia Cardelis</option>
+              <option value="Thamires de Sá">Thamires de Sá</option>
+            </select>
+           
+          </div>
+
+          <div class="arquivoUpload">
+            <p class="dataEntrega">
+              07/12/2022
+            </p>
+          </div>
+
+          <div class="turma">
+            <li><h4>Turma:</h4></li>
+            <li><p>M2DSI</p></li>
+          </div>
+
+          <div class="nota">
+            <li><h4>Nota média:</h4></li>
+            <li><p>94.5</p></li>
+          </div>
+          
+          <div class="btnredirectEdit" onclick="puxarEditarBtn()">
+            <h4>Editar</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ativ-view ativ2-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 80%; height: 80%;" src="https://cdn-icons-png.flaticon.com/512/2560/2560156.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>Computador p...</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Visualizar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 09/11/2022</div>
+
+
+      </div>
+      <div class="ativ-view ativ3-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 80%; height: 80%;" src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-512.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>Página responsível</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Visualizar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 22/10/2022</div>
+
+
+      </div>
+      <div class="ativ-view ativ4-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 90%; height: 90%;" src="https://cdn-icons-png.flaticon.com/512/3161/3161158.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>CRUD em Java</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Visualizar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 17/09/2022</div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="modal-edit">
+
+  <div class="contain-modal-items">
+
+    <div class="close-modal" onclick="closeEdit()">
+      <img style="width: 100%; height: 100%;" src="https://cdn-icons-png.flaticon.com/512/6372/6372150.png" alt="X">
+    </div>
+
+
+    <h3 class="titulo-modal">Selecione a atividade que deseja Editar</h3>
+
+    <div class="content-ativs">
+
+      <div class="ativ-view ativ1-view" id="ativ1-edit">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 90%; height: 90%;" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/181_Java-512.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>CRUD em Java</h3>
+        </div>
+        <div class="btn-view">
+          <button onclick="dropConfigEdit()">
+            <h4>Editar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 12/12/2022</div>
+
+        <div class="config-ativ" id="configAtvEdit">
+
+          <div class="upBlock" onclick="upDropConfigEdit()">
+            <img style="width: 90%; height: 90%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Feather-arrows-arrow-up.svg/1024px-Feather-arrows-arrow-up.svg.png" alt="close">
+          </div>
+
+          <div class="titleAluno"><h5>Aluno:</h5></div>
+          <div class="titleAtividade"><h5>Atividade:</h5></div>
+
+
+          <div class="alunosAtvi">
+            <label id="forAlunosAtiv" for="AlunosAtividade" style="font-size: 1.1em;">Alunos que entregaram:</label>
+            <br>
+            <select name="AlunosAtividade" id="alunoAtv">
+              <option value="Rafaella Tomasseti">Rafaella Tomasseti</option>
+              <option value="Gustavo Batista">Gustavo Batista</option>
+              <option value="Beatriz Holanda">Beatriz Holanda</option>
+              <option value="Emanuel Gomes">Emanuel Gomes</option>
+              <option value="Victor Baffa">Victor Baffa</option>
+              <option value="Sofia Cardelis">Sofia Cardelis</option>
+              <option value="Thamires de Sá">Thamires de Sá</option>
+            </select>
+           
+          </div>
+
+          <div class="editNota">
+            <li><h4>Editar Nota:</h4></li>
+            <li><input type="number" name="notaEdit" id="NotaEditar" placeholder="97"></li>
+          </div>
+
+          <div class="descricaoAtiv">
+            <li><h4>Editar descrição:</h4></li>
+            <li>
+              <button class="btnDesc">
+                <img style="width: 30%; height: 95%; margin: auto;" src="https://cdn-icons-png.flaticon.com/512/1827/1827951.png" alt="Edit">
+              </button>
+            </li>
+          </div>
+
+          <div class="editNome">
+            <li><h4>Editar titulo:</h4></li>
+            <li>
+              <button class="btnDesc">
+                <img style="width: 30%; height: 95%; margin: auto;" src="https://cdn-icons-png.flaticon.com/512/1827/1827951.png" alt="Edit">
+              </button>
+            </li>
+          </div>
+          
+          <div class="btnredirectEdit" onclick="salvarEdit()">
+            <h4>Salvar edição</h4>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="ativ-view ativ2-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 80%; height: 80%;" src="https://cdn-icons-png.flaticon.com/512/2560/2560156.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>Computador p...</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Editar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 09/11/2022</div>
+
+
+      </div>
+      <div class="ativ-view ativ3-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 80%; height: 80%;" src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-512.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>Página responsível</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Editar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 22/10/2022</div>
+
+
+      </div>
+      <div class="ativ-view ativ4-view">
+
+        <div class="icon-view-ativ-modal">
+          <img style="width: 90%; height: 90%;" src="https://cdn-icons-png.flaticon.com/512/3161/3161158.png" alt="">
+        </div>
+        <div class="title-ativ-view-modal">
+          <h3>CRUD em Java</h3>
+        </div>
+        <div class="btn-view">
+          <button>
+            <h4>Editar</h4>
+          </button>
+        </div>
+        <div class="data-modal-view-ativ">Entrega: 17/09/2022</div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 <script src="https://kit.fontawesome.com/f9e19193d6.js"crossorigin="anonymous"></script>
@@ -283,7 +607,7 @@
           <div class="footer-col" >
               <h4>Autor</h4>
               <ul>
-                  <li><a>Rafaela</a></li>
+                  <li><a>Brave</a></li>
               </ul>
           </div>
 

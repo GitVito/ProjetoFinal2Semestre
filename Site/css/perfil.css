@@ -309,6 +309,52 @@ select{
     font-size: 1em;
     /* background-color: #d4d4d4; */
 }
+
+
+
+
+  
+/* Dark theme */
+
+.theme{
+    margin-top: 300px;
+}
+.dark,
+.dark footer  {
+    background-color: #263238;
+    color: rgb(248, 246, 246);
+  }
+  .dark footer h4{
+    color: white;
+  }
+
+  .dark footer-col {
+    color: white;
+  }
+  .dark .tab-sino{
+    color: white;
+}
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+.dark h1{
+  font-size: 50px;
+  color: #adc2e9;
+  font-family: poppins;
+}
+
+
+.dark .bi-sun {
+  display: none;
+
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+/*Fim Dark Theme*/
 .areaDelogin h5{
     text-indent: 0.5em;
     font-size: 1.2em;

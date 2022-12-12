@@ -24,7 +24,7 @@
   
   .new-task-container input:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #5B58FA;
   }
   
   .new-task-button {
@@ -34,7 +34,7 @@
     height: 100%;
     font-size: 1rem;
     border: none;
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     color: #fff;
     padding: 12px;
     margin-left: 12px;
@@ -54,7 +54,7 @@
   }
   
   .task-item i {
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     color: #fff;
     padding: 12px;
     border-radius: 5px;
@@ -87,7 +87,7 @@
   }
 
   .dropDown h5:hover{
-    background-color: #58a6ff;
+    background-color: #5B58FA;
     transition: all 0.5s linear;
 }
 
@@ -124,14 +124,15 @@
   border-radius: 5px;
   font-weight: 500;
   height: 100%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
-  background-color: #58a6ff;
+  background-color: #5B58FA;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
   cursor: pointer;
-  
+  width: 50%;
+  margin: auto;
 }
 
 
@@ -146,7 +147,7 @@
 }
 
 .task-item i {
-  background-color: #cc23b6;
+  background-color: #5B58FA;
   color: #fff;
   padding: 12px;
   border-radius: 5px;
@@ -196,8 +197,11 @@ a:active{
 }
 
 .bordaBRD{
+  width: 70%;
   border: 1px solid black;
-  margin-top: 100px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
   border-radius: 10px;
   
 }
@@ -207,7 +211,7 @@ a:active{
 .JKJ{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
   color:#000000;
   
 }
@@ -346,4 +350,356 @@ a:active{
 }
 .option_container{
   margin-top: 3%;
+}
+
+.imgGG{
+  cursor: pointer;
+}
+
+.title-tarefas-post{
+  font-size: 1.7em;
+  text-align: start;
+  text-indent: 1em;
+  margin-top: 10%;
+}
+
+.opcoes-atividades{
+  margin: auto;
+
+  width: 70%;
+  padding: 2em;
+  display: flex;
+  border-radius: 1em;
+  /* border: 1px solid #000; */
+
+  background-color: #a1a1a1;
+}
+
+.ver-atividades, .editar-atividades{
+  width: 30%;
+  height: 25vh;
+  margin: auto;
+
+  position: relative;
+  cursor: pointer;
+
+  background-color: #5B58FA;
+  border-radius: 1em;
+/* 
+  border: 1px solid #000; */
+}
+
+.title-ver-ativ{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+
+  filter: invert(100%);
+}
+.title-ver-ativ h3{
+  font-size: 2em;
+}
+
+.iconVer{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 50%;
+
+  filter: invert(100%);
+}
+.iconVer img{
+  width: 40%;
+  height: 100%;
+}
+.iconVer2{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 50%;
+
+  filter: invert(100%);
+}
+.iconVer2 img{
+  width: 55%;
+  height: 100%;
+}
+
+.modal{
+  position: fixed;
+  z-index: 9999 !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+
+  width: 50%;
+  height: 70vh;
+  border-radius: 1em;
+
+  background-color: #cecece;
+  box-shadow: 0em 0em 2em 0.2em #717272;
+}
+
+.contain-modal-items{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.close-modal{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+
+  width: 6%;
+  height: 8%;
+  cursor: pointer;
+}
+
+.titulo-modal{
+  position: absolute;
+  top: 11%;
+  left: 5%;
+
+  font-size: 1.8em;
+}
+
+.content-ativs{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80%;
+  height: 72%;
+  background-color: #52cbbf6b;
+}
+
+.ativ-view{
+  position: absolute;
+  
+  width: 100%;
+  height: 25%;
+  overflow: inherit;
+}
+
+.ativ1-view{
+  top: 0;
+}
+.ativ2-view{
+  top: 25%;
+  /* background-color: #56566d; */
+}
+.ativ3-view{
+  top: 50%;
+  /* background-color: #0f0e53; */
+}
+.ativ4-view{
+  top: 75%;
+  /* background-color: #131330; */
+}
+
+.icon-view-ativ-modal{
+  position: absolute;
+  width: 15%;
+  height: 100%;
+}
+.title-ativ-view-modal{
+  position: absolute;
+  top: 3%;
+  left: 15%;
+  width: 40%;
+  height: 90%;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 1.4em;
+}
+.btn-view{
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  width: 20%;
+  height: 100%;
+}
+.btn-view button{
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+
+  height: 50%;
+  width: 90%;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  background-color: #5B58FA;
+  color: #FFF;
+}
+.btn-view button:hover{
+  background-color: #4946ff;
+}
+
+.data-modal-view-ativ{
+  position: absolute;
+  bottom: 3%;
+  right: 30%;
+  font-size: 1.3em;
+}
+
+.config-ativ{
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 200%;
+
+  display: none;
+
+  z-index: -5;
+  background-color: #e2e1ff;
+}
+
+.upBlock{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  width: 5.5%;
+  height: 18%;
+  cursor: pointer;
+}
+
+.alunosAtvi{
+  position: absolute;
+  top: 20%;
+  left: 3%;
+
+  width: 35%;
+  height: 30%;
+}
+.alunosAtvi select{
+  width: 100%;
+  height: 50%;
+  font-size: 1em;
+  margin-top: 3%;
+}
+
+.arquivoUpload{
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 30%;
+  height: 30%;
+  border-radius: 1em;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+
+  background-color: #c5c5c5;
+}
+.arquivoUpload:hover{
+  filter: brightness(90%);
+  cursor: pointer;
+}
+.dataEntrega{
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  font-size: 0.9em;
+}
+
+.turma{
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.nota{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.btnredirectEdit{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+  width: 40%;
+  height: 18%;
+  background-color: #4946ff;
+  color: #fff;
+  font-size: 1.2em;
+  display: grid;
+  align-items: center;
+}
+.btnredirectEdit:hover{
+  background-color: #3e3bff;
+}
+
+.editNota{
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+
+  height: 24%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.editNota input{
+  width: 40%;
+  height: 100%;
+}
+
+.titleAluno{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+
+  list-style: none;
+  font-size: 1.4em;
+}
+.titleAtividade{
+  position: absolute;
+  top: 5%;
+  right: 43%;
+
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.descricaoAtiv{
+  position: absolute;
+  top: 20%;
+  right: 28%;
+
+  width: 30%;
+  font-size: 1.1em;
+  list-style: none;
+}
+
+.btnDesc{
+  position: absolute;
+  top: 100%;
+  right: 35%;
+  width: 35%;
+  height: 100%;
+  cursor: pointer;
+}
+.editNome{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+
+  width: 30%;
+  font-size: 1.1em;
+  list-style: none;
 }

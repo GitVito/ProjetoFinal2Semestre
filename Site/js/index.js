@@ -66,7 +66,7 @@ function loadTheme() {
 
 loadTheme();
 
-/* changeThemeBtn.addEventListener("change", function () {
+ changeThemeBtn.addEventListener("change", function () {
   toggleDarkMode();
 
   // Salva ou remove o Dark Mode from localStorage
@@ -75,4 +75,4 @@ loadTheme();
   if (document.body.classList.contains("dark")) {
     localStorage.setItem("dark", 1);
   }
-}); */
+}); 

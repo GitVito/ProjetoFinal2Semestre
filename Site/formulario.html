@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/formulario.css" />
     <script src="js/notificacao.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/formulario.js"></script>
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -19,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
    
+    <title>Formulário | Seed</title>
   </head>
   <body>
 
@@ -34,7 +36,7 @@
 
     <ul class="tabs">
 
-      <a href="index.html">
+      <a href="calculadora.html">
         <li class="tabs-item tab tab-home">
           <div class="tab-circle"></div>
           <img class="roxinho" src="img/calculadora (2).png">            
@@ -52,7 +54,7 @@
         <span class="chat">Chat</span>
       </li>
       </a>
-      <a href="Tarefas.html">
+      <a href="Tarefas_alunos.html">
 
       <li class="tabs-item tab tab-tarefas" style="height:55px ;">
 
@@ -70,7 +72,7 @@
       </li>
       </a>
 
-      <a href="calendario.html">
+      <a href="calendar.html">
       <li class="tabs-item tab tab-calendar ">
         <div class="tab-circle"></div>
         <img class="calendario" src="img/calendarioooo.png">            
@@ -116,14 +118,24 @@
 
 
     <div class="PlaceTextSair">
-      <a href="login.html"><h5 id="sizeSair">Sair</h5></a>
+      <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
       
     </div>
 
   </div>
 
   </header>
-
+<style>span.tarefas{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+  color: #5B58FA;
+  top: 0px;
+  background: #ecd1dd00;
+  left: -90px;
+}</style>
   <!--  fim Header-->
 
 <div class="centro">
@@ -266,7 +278,7 @@
 
             <br><br>
             
-            <input type="submit" name="submit" id="submit">
+            <input type="submit" name="submit" id="submit" onclick="submitEnviado()">
 
         </fieldset>
     </form>
@@ -304,7 +316,7 @@
           <div class="footer-col containerFoot" >
               <h4>Autor</h4>
               <ul>
-                  <li><a>Victor</a></li>
+                  <li><a>Brave</a></li>
               </ul>
           </div>
 

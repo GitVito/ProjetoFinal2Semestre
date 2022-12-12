@@ -633,11 +633,7 @@ span.tarefas{
   padding: 0.2em;
 }
 
-.dropIcon:hover{
-  background-color: #dadada;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
+
 
 .PlaceTextPerfil{
 position: absolute;

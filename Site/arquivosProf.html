@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/arquivos.css" />
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
+
+
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>DSI | arquivos
+    </title>
+  </head>
+  <body>
+   <!--Header-->
+ 
+
+   <header>
+    <div class="overlay"></div>
+    <div class="nav">
+  
+      <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+  
+      <ul class="tabs">
+  
+        <a href="calculadoraProf.html">
+          <li class="tabs-item tab tab-home">
+            <div class="tab-circle"></div>
+            <img class="roxinho" src="img/calculadora (2).png">            
+            <span class="tab-home">Calculadora</span>
+          </li>
+          </a>
+  
+        <a href="chatProf.html">
+  
+        <li class="tabs-item tab tab-chat " >
+  
+          <div class="tab-circle"></div>
+          <img src="img/chat.png" alt="" class="roxinho">
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+     
+  
+      <a href="Tarefas_professor.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/clipboard (2).png">        
+          <span class="sino">Tarefas</span>
+        </li>
+        </a>
+
+        <a href="notificacoesPro.html">
+          <li class="tabs-item tab tab-sino ">
+            <div class="tab-circle"></div>
+            <img class="sino" src="img/sinoooo.png">        
+            <span class="sino">Avisos</span>
+          </li>
+          </a>
+  
+        <a href="calendar.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendarioooo.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="prof_turmas.html">
+        <li class="tabs-item tab tab-team tab-is-active">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/team.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img id="perfilImg" class="perfil" src="img/girl.png">
+        <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+  
+      </ul>
+    </div>
+  
+  
+    <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+  
+      <div class="PlaceTextPerfil">
+        <a href="perfil_prof.html"><h5>Perfil</h5></a>
+        
+      </div>
+      <div class="PlaceTextFormulario">
+        <a href="suporteProf.html"><h5>Suporte</h5></a>
+        
+      </div>
+      <div class="PlaceTextSuporte">
+        <a href="formularioProf.html"><h5>Formulario</h5></a>
+        
+      </div>
+  
+      <div class="placeLinhaSeparar">
+        <div class="linhaSeparar"></div>
+      </div>
+  
+  
+      <div class="PlaceTextSair">
+        <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
+        
+      </div>
+  
+    </div>
+  
+    </header>
+  
+    <!--  fim Header-->
+
+  
+
+    <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<style>
+  .access-button {
+      border-radius: 50px;
+    
+  }
+    </style>
+    <!-- acessivel em libras -->
+
+
+     <!--Conteudo pagina -->
+    <!--Conteudo pagina -->
+    <div class="icone">
+      <div>
+       <img src="img/dev/dev2-removebg-preview.png" class="icone">
+       <div class="vertical-menu">
+         <a href="#" class="active">Home</a>
+         <a href="#">PWFE</a>
+         <a href="#">PWBE 2</a>
+         <a href="#">IDM</a>
+         <a href="#">BANCO DE DADOS</a>
+       </div>
+     </div>
+ 
+   <div class="principal">
+ 
+     <div class="horizontal-menu">
+       <a href="devProf.html" >Comunicados</a>
+       <a href="arquivosProf.html" class="active">Arquivos</a>
+       <a href="apostilasProf.html">Apostilas</a>
+
+     </div>
+ 
+   
+     
+     <div class="quadro">
+      
+        <!--inicio tarefas-->
+        <button type="button" class="quadro" onclick="caixa(), caixafechar()"> NOVO +</button> 
+
+        <button type="button" class="quadro2" id="quadro2" onclick="pasta(), pastafechar()"> pasta</button>   
+        <button type="button" class="quadro2" id="quadro3" onclick="arquivo(), arquivofechar()"> arquivo</button> 
+        
+        <div class="container" id="container2">
+          <div class="new-task-container">
+    
+            <input
+            type="file" class="new-task-input" id="nomearquivo" placeholder="Tarefa para ser feita..."
+          />
+        
+            <button class="new-task-button" onclick="aparecerfile()">Adicionar arquivo</button>
+          </div>
+        
+          <div class="tasks-container"></div>
+
+          
+        </div>
+
+        <div class="container" id="container3">
+          <div class="new-task-container">
+    
+            <input
+            type="text" class="new-task-input" id="texto" placeholder="Nome da pasta"
+          />
+        
+            <button class="new-task-button" onclick="aparecerpasta()">Adicionar pasta</button>
+          </div>
+  
+
+
+            </div>
+            <script src="js/arquivos.js"></script>
+
+
+  <div class="noti1">
+
+      <div class="comp1-not1">
+        <img src="../Site/img/arquivos/folder-removebg-preview.png">
+      </div>
+
+      <div class="comp2-not1">
+        <h5>Somativas</h5>
+      </div>
+  
+  </div>
+
+  <div class="noti2" id="pasta2">
+
+    <div class="comp1-not2">
+      <img class="comp1-not1" src="../Site/img/arquivos/folder-removebg-preview.png" >
+    </div>
+
+    <div class="comp2-not1">
+      <h5 id="mostrarpasta"></h5>
+    </div>
+
+</div>
+  <div class="noti1">
+
+    <div class="comp1-not1">
+      <img class="" src="../Site/img/arquivos/arquivos.png">
+    </div>
+
+    <div class="comp2-not1">
+      <h5>orientacoes.docx</h5>
+    </div>
+    
+  </div>
+
+  <div class="noti2" id="arquivo2">
+
+    <div class="comp1-not1">
+      <img class="comp1-not1" src="../Site/img/arquivos/arquivos.png">
+    </div>
+
+    <div class="comp2-not1">
+      <h5 id="mostrarfile"></h5>
+    </div>
+</div>
+
+
+  
+
+
+
+
+<!--fim tarefas-->
+
+       
+
+        
+
+        <script
+          src="https://kit.fontawesome.com/f9e19193d6.js"
+          crossorigin="anonymous"
+        ></script>
+<!--fim tarefas-->
+ 
+   </div>
+     
+   
+      
+   </div>
+ 
+ 
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+     integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   </body>
+   <script src="js/menu.js"></script>
+   <script src="js/index.js"></script>
+ 
+ </html>
+ 

@@ -248,7 +248,7 @@ a{
 .card1{
     top: 0%;
     left: 20%;
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/Brave/cardelis.jpg);
     background-size: cover;
     background-position: 0;
 }
@@ -257,7 +257,7 @@ a{
     left: 50%;
     transform: translateX(-50%);
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/Brave/Breno.jpg);
     background-size: cover;
     background-position: 0;
 }
@@ -265,24 +265,24 @@ a{
     top: 0%;
     right: 20%;
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/chat/rafa.jpg);
     background-size: cover;
-    background-position: 0;
+    background-position: 0 0;
 }
 .card4{
     top: 0%;
     left: 10%;
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/Brave/thamires.jpg);
     background-size: cover;
-    background-position: 0;
+    background-position: 0% 0%;
 }
 .card5{
     top: 0%;
     left: 39.5%;
     transform: translateX(-50%);
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/Brave/Aline.jpg);
     background-size: cover;
     background-position: 0;
 }
@@ -291,7 +291,7 @@ a{
     right: 39.5%;
     transform: translateX(50%);
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/Brave/gustavo.jpg);
     background-size: cover;
     background-position: 0;
 }
@@ -299,9 +299,9 @@ a{
     top: 0%;
     right: 10%;
 
-    background-image: url(../img/Brave/Design\ sem\ nome.png);
+    background-image: url(../img/chat/victor.jpg);
     background-size: cover;
-    background-position: 0;
+    background-position: 0 0;
 }
 
 .legenda{

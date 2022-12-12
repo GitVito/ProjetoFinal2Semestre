@@ -131,3 +131,163 @@ refreshTasksUsingLocalStorage();
 addTaskButton.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
+
+
+
+
+
+
+
+
+
+
+
+function openView(){
+  let modalView = document.getElementById("modal-view");
+
+  modalView.style.display= "block";
+}
+
+function openEdit(){
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "block";
+}
+
+
+
+function closeView(){
+  let modalView = document.getElementById("modal-view");
+
+  modalView.style.display= "none";
+
+
+  let config = document.getElementById("configAtv");
+  let atividade1 = document.getElementById("ativ1");
+
+  config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+}
+
+function closeEdit(){
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "none";
+
+
+  let config = document.getElementById("configAtvEdit");
+  let atividade1 = document.getElementById("ativ1-edit");
+
+  // config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+
+}
+
+function dropConfig(){
+  let config = document.getElementById("configAtv");
+  let atividade1 = document.getElementById("ativ1");
+
+  // config.style.transition= "5s linear";
+  config.style.top= "100%";
+  config.style.zIndex= "1";
+
+  setTimeout(atividade1.style.overflow= "visible", 2000);
+  setTimeout(config.style.display= "block", 2000);
+
+  
+}
+
+function upDropConfig(){
+  let config = document.getElementById("configAtv");
+  let atividade1 = document.getElementById("ativ1");
+
+  // config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+
+  
+}
+
+function puxarEditarBtn(){
+  let config = document.getElementById("configAtv");
+  let atividade1 = document.getElementById("ativ1");
+  let modalView = document.getElementById("modal-view");
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "block";
+
+  modalView.style.display= "none";
+
+  // config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+
+
+  let configEdit = document.getElementById("configAtvEdit");
+  let atividade1Edit = document.getElementById("ativ1-edit");
+
+  configEdit.style.transition= "5s linear";
+  configEdit.style.top= "100%";
+  configEdit.style.zIndex= "1";
+
+  setTimeout(atividade1Edit.style.overflow= "visible", 2000);
+  setTimeout(configEdit.style.display= "block", 2000);
+}
+
+
+function dropConfigEdit(){
+  let configEdit = document.getElementById("configAtvEdit");
+  let atividade1Edit = document.getElementById("ativ1-edit");
+
+  configEdit.style.transition= "5s linear";
+  configEdit.style.top= "100%";
+  configEdit.style.zIndex= "1";
+
+  setTimeout(atividade1Edit.style.overflow= "visible", 2000);
+  setTimeout(configEdit.style.display= "block", 2000);
+}
+
+function upDropConfigEdit(){
+  let config = document.getElementById("configAtvEdit");
+  let atividade1 = document.getElementById("ativ1-edit");
+
+  // config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+
+  
+}
+
+function salvarEdit(){
+
+  let modalEdit = document.getElementById("modal-edit");
+
+  modalEdit.style.display= "none";
+
+  let config = document.getElementById("configAtvEdit");
+  let atividade1 = document.getElementById("ativ1-edit");
+
+  // config.style.transition= "5s linear";
+  config.style.top= "-100%";
+  config.style.zIndex= "-5";
+
+  setTimeout(atividade1.style.overflow= "hidden", 2000);
+  setTimeout(config.style.display= "none", 2000);
+}

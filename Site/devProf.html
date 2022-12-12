@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dev.css"/>
+    <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
+
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Meus cursos</title>
+  </head>
+  <body>
+      <!--Header-->
+ 
+
+      <header>
+        <div class="overlay"></div>
+        <div class="nav">
+      
+          <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
+      
+          <ul class="tabs">
+      
+            <a href="calculadoraProf.html">
+              <li class="tabs-item tab tab-home">
+                <div class="tab-circle"></div>
+                <img class="roxinho" src="img/calculadora (2).png">            
+                <span class="tab-home">Calculadora</span>
+              </li>
+              </a>
+      
+            <a href="chatProf.html">
+      
+            <li class="tabs-item tab tab-chat " >
+      
+              <div class="tab-circle"></div>
+              <img src="img/chat.png" alt="" class="roxinho">
+            
+              <span class="chat">Chat</span>
+            </li>
+            </a>
+      
+          <a href="Tarefas_professor.html">
+            <li class="tabs-item tab tab-sino ">
+              <div class="tab-circle"></div>
+              <img class="sino" src="img/clipboard (2).png">        
+              <span class="sino">Tarefas</span>
+            </li>
+            </a>
+          <a href="notificacoesPro.html">
+            <li class="tabs-item tab tab-sino ">
+              <div class="tab-circle"></div>
+              <img class="sino" src="img/sinoooo.png">        
+              <span class="sino">Avisos</span>
+            </li>
+            </a>
+      
+            <a href="calendario.html">
+            <li class="tabs-item tab tab-calendar ">
+              <div class="tab-circle"></div>
+              <img class="calendario" src="img/calendarioooo.png">            
+              <span class="calendario">Agenda</span>
+            
+            </li>
+            </a>
+      
+      
+            <a href="prof_turmas.html">
+            <li class="tabs-item tab tab-team tab-is-active">
+              <div class="tab-circle"></div>
+              <img class="roxinho" src="img/team.png">        
+              <span class="tab-team">Equipes</span>
+            </li>
+            </a>
+            
+            <img id="perfilImg" class="perfil" src="img/girl.png">
+            <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
+      
+          </ul>
+        </div>
+      
+      
+        <div id="dropDownPlace" class="dropDown dropDownPositionClose">
+      
+          <div class="PlaceTextPerfil">
+            <a href="perfil_prof.html"><h5>Perfil</h5></a>
+            
+          </div>
+          <div class="PlaceTextFormulario">
+            <a href="suporteProf.html"><h5>Suporte</h5></a>
+            
+          </div>
+          <div class="PlaceTextSuporte">
+            <a href="formularioProf.html"><h5>Formulario</h5></a>
+            
+          </div>
+      
+          <div class="placeLinhaSeparar">
+            <div class="linhaSeparar"></div>
+          </div>
+      
+      
+          <div class="PlaceTextSair">
+            <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
+            
+          </div>
+      
+        </div>
+      
+        </header>
+      
+        <!--  fim Header-->
+  <style>
+    body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+}
+    .overlay {
+    height: 69vh;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.nav {
+    background-color: white;
+    padding: 12px 5px;
+    box-shadow: 3px 3px 15px rgba(179, 179, 179, 0.185);
+    position: relative;
+    z-index: 99;
+}
+
+.tabs {
+    display: flex;
+    width: 530px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tab {
+    padding: 12px 22px;
+    background-color: #e0efff;
+    color: #58a6ff;
+    margin-right: 15px;
+    border-radius: 55px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.7s ease;
+    overflow: hidden;
+    max-width: 0px;
+    cursor: pointer;
+    position: relative;
+    flex-basis: 120px;
+}
+
+.tab-is-active {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+}
+
+.tab:hover {
+    max-width: 120px;
+    box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
+    position: relative;
+}
+
+.tab-is-active .tab-name {
+    opacity: 1;
+}
+
+.tab-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 2px solid #95c5fd;
+    z-index: 10;
+    opacity: 0;
+    left: 20px;
+    pointer-events: none;
+}
+
+.tab-icon {
+    margin-right: 1px;
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    right: 6.7px;
+    top: -1px;
+
+}
+
+.tab-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: 1px;
+    opacity: 0;
+
+}
+
+.tab-calendar {
+    background: #52cbbf3d;
+    color: #009ffb;
+    left: 620px;
+
+}
+
+span.tab-team {
+    background: #ffffff00;
+    color: #5B58FA;
+    width: 200px;
+    margin-left: -10px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    top: -5px;
+    left: 15px;
+    font-weight: bolder;
+
+
+}
+.tab-team {
+    background: #52cbbf3d;
+    color: #8f44fd;
+    width: 200px;
+    left: 620px;
+}
+
+
+
+.tab-home {
+    background-color: #52cbbf3d;
+    color: #35e77f;
+    left: 620px;
+
+    
+}
+span.tab-home {
+    background-color: #3ef00800;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -3.5px;
+    left: 15px;
+    text-decoration: none;
+    background-color: #ffffff00;
+    font-weight: bolder;
+    
+}
+
+
+.roxinho{
+    width: 20px;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+
+span.calendario{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+    background-color: #ffffff00;
+    font-weight: bolder;
+
+}
+
+.calendario{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+
+
+}
+
+img.perfil{
+    width: 60px;
+    right: 8.5%;
+    position: absolute;
+    z-index: 2000;
+}
+img.perfil{
+    cursor: pointer;
+}
+.sino{
+    width: 20px;
+    margin-left: -08px;
+    margin-top: 5px;
+}
+span.sino{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: -5px;
+    left: 15px;
+    font-weight: bolder;
+
+
+}
+
+.tab-sino {
+    background:#52cbbf3d;
+    color: #009ffb;
+    left: 620px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.chat{
+    width: 20px;
+    margin-left: -05px;
+    margin-top: 5px;
+}
+img.chat{
+    width: 20px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+span.chat{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;    
+    top: -6px;
+    left: 10px;
+    font-weight: bolder;
+
+
+}
+
+.tab-chat {
+    background:#52cbbf3d;
+    color: #FF833E;
+    left: 620px;
+    height: 30px;
+
+}
+
+
+img.tarefas{
+    width: 22px;
+    height: 22px;
+    margin-left: -57px;
+    margin-top: px;
+    background: #ecd1dd00;
+
+}
+span.tarefas{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+    color: #5B58FA;
+    top: 3px;
+    background: #ecd1dd00;
+    left: 8px;
+    font-weight: bolder;
+
+
+}
+.tab-tarefas {
+    background: #D6D5F8;
+    color: #d93479;
+    left: 620px;
+    height: 30px;
+}
+
+.dropDown{
+  position: absolute;
+  right: 3%;
+  z-index: 98 !important;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  width: 12.5%;
+  height: 200px;
+  margin: auto;
+}
+
+.dropDownPositionOpen{
+  top: 8.3%;
+  transition: 0.5s ease-in-out;
+}
+.dropDownPositionClose{
+  top: -25%;
+  transition: 0.5s ease;
+}
+.dropDown h5{
+  font-size: 0.7em;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #000 !important;
+  padding: 0.5em;
+}
+#sizeSair{
+  font-size: 1em !important;
+}
+
+.dropDown a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropIcon{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  width: 35px;
+  margin: auto;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  padding: 0.2em;
+}
+
+.dropIcon:hover{
+  background-color: #dadada;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.PlaceTextPerfil{
+position: absolute;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+
+}
+
+.PlaceTextFormulario{
+position: absolute;
+top: 35%;
+width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.PlaceTextSuporte{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 33.3%;
+  margin: auto;
+  font-size: 1.5em;
+
+}
+
+.placeLinhaSeparar{
+  position: absolute;
+
+  bottom: -10%;
+
+  width: 100%;
+  margin: auto;
+}
+
+.linhaSeparar{
+  margin: auto;
+  width: 60%;
+  height: 1px;
+  background-color: #000;
+}
+
+.PlaceTextSair{
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+}
+
+
+img.aviao{
+  width:25px;
+  margin-top: 35px ;
+  position: fixed;
+  margin-left: 20px;
+}
+  </style>
+
+    <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<style>
+  .access-button {
+      border-radius: 50px;
+    
+  }
+    </style>
+    <!-- acessivel em libras -->
+
+
+     <!--Conteudo pagina -->
+    <div class="icone">
+     <div>
+      <img src="img/dev/dev2-removebg-preview.png" class="icone">
+      <div class="vertical-menu">
+        <a href="#" class="active">Home</a>
+        <a href="#">PWFE</a>
+        <a href="#">PWBE 2</a>
+        <a href="#">IDM</a>
+        <a href="#">BANCO DE DADOS</a>
+      </div>
+    </div>
+
+  <div class="principal">
+
+    <div class="horizontal-menu">
+      <a href="#" class="active">Comunicados</a>
+      <a href="arquivosProf.html">Arquivos</a>
+      <a href="apostilasProf.html">Apostilas</a>
+
+
+      <img src="img/dev/camera-de-video.png" alt="" class="camera" title="entrar em reunião">
+      <img src="img/dev/calendar (1).png" alt="" class="calendar" title="agendar uma reunião">
+    </div>
+
+<style>
+  img.camera{
+    width: 35px;
+    position: absolute;
+    margin-top: 2.0%;
+    margin-left: 24%;
+    cursor: pointer;
+  }
+  img.camera:hover{
+    width: 35px;
+    position: absolute;
+    margin-top: 1.9%;
+    margin-left: 24%;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.575));
+  }
+
+  img.calendar{
+    width: 30px;
+    position: absolute;
+    margin-top: 2.1%;
+    margin-left: 28%;
+    cursor: pointer;
+  }
+  img.calendar:hover{
+    width: 30px;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 28%;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.575));
+
+  }
+</style>
+  
+    <div class="quadro">
+
+      <div class="container2">
+        <img src="img/dev/mayara.jpg" alt="Avatar" class="img1">
+        <p>AVISO DOCUMENTOS</p>
+        <p class="nome">Mayara Ferreira</p>
+
+        <span class="container2">No dia 15/11 vocês devem trazer esse documento assinado. Os menores de idade devem solicitar a assinatura pelos responsáveis. Obrigada</span>
+        <br>
+        <br>
+        <img src="img/dev/DOCS.jpg" alt="" class="img2">
+        <p class="time-right">11:00</p>
+      </div>
+    </div>
+      
+    <div class="container3">
+      <img src="img/notificacoes/Ailtonoo.png" alt="Avatar" class="img1">
+      <a >11:10</a>
+
+      <p class="nome2">Ailton Gonsalves</p>
+      <p class="container3">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esqueçam das recomendações. Qualquer coisa estou à disposição!</p>
+
+    </div>
+
+    <div class="container4">
+      <img src="img/notificacoes/mayara.jpg" alt="Avatar" class="img1">
+      <a>11:20</a>
+
+      <p class="nome3">Mayara Ferreira</p>
+      <p class="container4">Bom dia pessoal, Hoje terei uma consulta médica e não irei para a escola, mas está tudo bem! ​😁</p>
+      <br>
+      <br>
+      <br>
+
+      <p class="container4">Gostaria que vocês fizessem uma pesquisa sobre JavaScript❤️</p>
+      <br>
+
+    </div>
+
+    <div class="container5">
+      <img src="img/notificacoes/Ailtonoo.png" alt="Avatar" class="img1">
+      <a >11:50</a>
+
+      <p class="nome4">Ailton Gonsalves</p>
+      <p class="container5">Bom dia pessoal, para a aula de hoje gostaria que vocês continuassem os trabalhos finais. Não esquecçam das recomendações. Qualquer coisa estou à disposição!😉	</p>
+
+    </div>
+
+    <div class="espaco"></div>
+    
+
+  </div>
+  
+
+  <style>
+  
+  div.quadro{
+  overflow: hidden;
+  background-color: rgb(110, 97, 80);
+  width: 500px;
+}
+div.icone{
+    height: 830px;
+    background-color: rgb(243, 239, 239);
+    width: 250px;
+    height: 100vh;
+
+
+}
+img.icone{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+.quadro{
+    overflow: hidden;
+    background-color: rgb(110, 97, 80);
+    width: 500px;
+  }
+
+.horizontal-menu {
+    background-color: #B3E8E3;
+    position: fixed;
+    z-index: 97 !important;
+    top: 110px;
+    left: 253px;
+    width: 1670px; /* Set a width if you like */
+    height: 110px;
+    box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  overflow: hidden;
+  }
+  .horizontal-menu a {
+    margin-right: 50px;
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 30%;
+    left: -540px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }  
+  .horizontal-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61);
+    text-decoration: underline; 
+    transition: 0.2s;
+
+}
+  
+  .horizontal-menu a.active {
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 0.9s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 12px 0px;
+
+  }
+  .vertical-menu {
+    width: 200px; /* Set a width if you like */
+    margin-left: 20px;
+  }
+  .vertical-menu a {
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+
+}
+  
+  .vertical-menu a.active {
+    background-color: #52CBBE; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .overlay{
+    display: none;
+  }
+
+div.principal{
+    height:620px;
+    background-color: rgb(255, 255, 255);
+    width: 1667px;
+    position: relative;
+    left: 101%;
+    top: -385px;
+    box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+  .espaco {
+    background-color: rgba(243, 239, 239, 0);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 480px;
+    border: none;
+    margin-bottom: 100px;
+  }
+  .container2 {
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 100px;
+  }
+
+  .container2 p{
+    color: crimson;
+    font-family: "Poppins";
+    font-weight: bolder;
+    margin-top: -50px;
+  }
+
+  .container2 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: -30px;
+    margin-left: -250px;
+    text-align: left;
+    width: 480px;
+
+  }
+  .img1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: -650px;
+  }
+
+  img.img2{
+  margin-top:20px;
+  width: 220px;  
+  height: 50px;
+  }
+
+  
+  .container3 {
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 285px;
+    border: none;
+  }
+  .container3 p{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: -80px;
+    left: -185px;
+    height: 10px;
+    background-color: rgba(243, 239, 239, 0);
+    border: none;
+    text-align: left;
+  }
+
+  .container3 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: 30px;
+  }
+
+  .container3 a{
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top:80px;
+  }
+
+  .container4 {
+    border: none;
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 440px;
+    height: 150px;
+  }
+
+  .container4 p{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: -80px;
+    left: -185px;
+    height: 10px;
+    background-color: rgba(243, 239, 239, 0);
+    border: none;
+    text-align: left;
+    width: 460px;
+  }
+
+  .container4 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: 30px;
+  }
+
+  .container4 a{
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top:120px;
+  }
+
+  .container5 {
+    background-color: rgb(243, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 645px;
+    border: none;
+    margin-bottom: 100px;
+  }
+  .container5 p{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: -75px;
+    left: -185px;
+    height: 10px;
+    background-color: rgba(243, 239, 239, 0);
+    border: none;
+    text-align: left;
+  }
+
+  .container5 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: 100px;
+  }
+
+  .container5 a{
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top:80px;
+  }
+
+  p.nome{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left:-650px;
+    margin-top: 20px;
+    font-size: 12px;
+
+  }
+
+  p.nome2{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left: -140px;
+    margin-top: 0px;
+    font-size: 12px;
+
+  }
+
+  p.nome3{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left: -140px;
+    margin-top: 0px;
+    font-size: 12px;
+
+  }
+
+  p.nome4{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left: -140px;
+    margin-top: 0px;
+    font-size: 12px;
+
+  }
+  p.time-right {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top:50px;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(187, 187, 187);
+  }
+
+  
+input.fundoinput{
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 55px;
+    position: relative;
+    font-size: 20px;
+    margin-left: -1000px;
+    top: 30px;
+    border-radius: 0.5em;
+    border: none ;
+    padding-left: 50px;
+    z-index: 2000 !important;
+}
+
+div.fundoinput{
+  background-color: #f1f1f1;
+  position: fixed;
+  top:24.5%;
+  left: 253px;
+  width: 1670px; /* Set a width if you like */
+  height: 125px;
+  box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  border-top: solid 1px #adb5bd;
+  }
+
+  img.aviao{
+  width: 35px;
+  height: 35px;
+  margin-top: 48px;
+  left: 600px;
+  position: absolute;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+img.aviao:hover{
+  animation: aviao 0.8s;
+
+  cursor: pointer;
+
+}
+
+@keyframes aviao{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+  
+  </style>
+    
+  <div class="fundoinput">
+      <input type="text" class="fundoinput" placeholder="Digite uma mensagem.">
+      <img src="img/dev/send.png" alt="" class="aviao">
+
+  </div>
+     
+  </div>
+
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+
+</html>

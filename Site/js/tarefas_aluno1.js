@@ -68,3 +68,17 @@ function resetGrafics(){
     barra4.classList.remove("animation-barras");
     numberMedia.classList.remove("upNumber");
 }
+
+function abrirPagTarefa(){
+    let areaPagTarefa = document.getElementById("tarefa-click");
+
+    areaPagTarefa.style.left= "0";
+    areaPagTarefa.style.display= "block";
+}
+
+function voltarPagTarefas(){
+    let areaPagTarefa = document.getElementById("tarefa-click");
+
+    areaPagTarefa.style.left= "-100";
+    areaPagTarefa.style.display= "none";
+}
