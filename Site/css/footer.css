@@ -171,3 +171,42 @@
     min-width: 500px;
     margin: auto;
   }
+
+
+  
+  
+/* Dark theme */
+.dark,
+.dark footer  {
+    background-color: #263238;
+    color: rgb(248, 246, 246);
+  }
+  .dark footer h4{
+    color: white;
+  }
+
+  .dark  .footer-col ul li a {
+    color: white;
+  }
+
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+.dark h1{
+  font-size: 50px;
+  color: #adc2e9;
+  font-family: poppins;
+}
+
+
+.dark .bi-sun {
+  display: none;
+  width: 50px;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+/*Fim Dark Theme*/
