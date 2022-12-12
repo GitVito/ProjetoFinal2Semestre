@@ -155,8 +155,6 @@ body{
     line-height: 30px;
     font-weight: 400;
 }
-
-
   /**/
 
   input[type="checkbox"] {
@@ -230,22 +228,20 @@ body{
 /*Comparação*/
 
 .img-comp-container {
-  top:700px;
     position: relative;
     height: 50vh;
-    left: 350px;
+    margin-left: 500px;
   
 }
 
 
 .img-comp-img {
     position: absolute;
-    width: 60vw;
+    width: auto;
     height: auto;
     overflow: hidden;
 
 }
-
 
 
 .img-comp-img img {
@@ -260,7 +256,7 @@ body{
     cursor: ew-resize;
     width: 40px;
     height: 40px;
-    background-color: rgb(110, 49, 207);
+    background-color: rgb(15, 177, 136);
     opacity: 0.7;
     border-radius: 50%;
 }
