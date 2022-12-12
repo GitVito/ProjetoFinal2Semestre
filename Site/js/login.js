@@ -59,16 +59,16 @@ function entrarProfessor() {
     }).catch(error => {
         alert(getErrorMessage(error));
     });
-  }
+}
   
-  function getErrorMessage(error) {
+function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
         return "Usuário nao encontrado";
     }
     return error.message;
-  }
+}
   
-  function entrarAluno() {
+function entrarAluno() {
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
     ).then(response => {
@@ -76,12 +76,12 @@ function entrarProfessor() {
     }).catch(error => {
         alert(getErrorMessage(error));
     });
-  }
+}
   
-  function getErrorMessage(error) {
+function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
         return "Usuário nao encontrado";
     }
     return error.message;
-  }
+}
   
