@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/preloader.css" >
     <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <title>Login</title>
 </head>
@@ -24,13 +24,11 @@
           </div>
     </div>
   
-   </div>
+</div>
           <!-- fim do preloader --> 
     
     <div class="place">
 
-
-        
 
     <div id="id-div-aluno" class="loginAluno">
 
@@ -59,13 +57,15 @@
                <a href=""><h6 class="esqueciSenha">Esqueci minha senha</h6></a>
             </div>
 
-            <a href="turmas.html">
+            
             <div class="placeBtnEntrar">
-                <button type="button" onclick="entrarAluno()" class="btnEntrarLogin">
+
+                <button type="button" class="btnEntrarLogin" disabled="true" onclick="entrarAluno()">
                     <h6 id="btnEntrarDeVez">Entrar</h6>
                 </button>
+
             </div>
-            </a>
+            
 
         </div>
 
@@ -139,13 +139,12 @@
             </div>
 
             <div class="placeBtnEntrar">
-
-                <a href="prof_turmas.html">
-
-                    <button type="button" class="btnEntrarLogin" onclick="entrarProfessor()">
+                    
+                    <button type="button" class="btnEntrarLogin" disabled="true" onclick="entrarProfessor()">
                         <h6 id="btnEntrarDeVez">Entrar</h6>
                     </button>
-                </a>
+                    
+
             </div>
         
 
@@ -170,18 +169,33 @@
     </div>
 
     </div>
-    <script src="firebase/module.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB0mRJtewMmLrtjVhKwO5jfVFQ4lY4zOFI",
+            authDomain: "seed-f091d.firebaseapp.com",
+            databaseURL: "https://seed-f091d-default-rtdb.firebaseio.com",
+            projectId: "seed-f091d",
+            storageBucket: "seed-f091d.appspot.com",
+            messagingSenderId: "467421316797",
+            appId: "1:467421316797:web:b8ae86d14e959af2b519d4",
+            measurementId: "G-HMX1XZ8VG7"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
     <script src="js/login.js"></script>
     
-         <!--inicio Script Preloader-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <script>
-     setTimeout(function(){
-         $('.loader_bg').fadeToggle();
-     }, 1500);
+    <!--inicio Script Preloader-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            setTimeout(function(){
+                $('.loader_bg').fadeToggle();
+            }, 1500);
      
- </script>
+        </script>
   <!--Fim Script Preloader-->
 </body>
 </html>
