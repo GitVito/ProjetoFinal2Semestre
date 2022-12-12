@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+  />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/perfil.css" />
     <script src="js/menu.js"></script>
-    <script src="js/perfil.js"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <!-- FontAwesome 6.1.1 CDN -->
     <link
@@ -19,266 +22,151 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-  />
+   
+    <title>Home | Seed</title>
   </head>
   <body>
+          
 
-       <!--Header-->
- 
+          <!-- início do preloader -->
 
- <header>
-  <div class="overlay"></div>
-  <div class="nav">
-<div class="lD">
-  
-  <img class="logoSeed" src="img/LogoSeed.png" alt="Arrow Drop">
-
-</div>
-    <ul class="tabs">
-
-      <a href="calculadora.html">
-        <li class="tabs-item tab tab-home">
-          <div class="tab-circle"></div>
-          <img class="roxinho" src="img/calculadora (2).png">            
-          <span class="tab-home">Calculadora</span>
-        </li>
-        </a>
-
-      <a href="chat.html">
-
-      <li class="tabs-item tab tab-chat" style="height:55px ;">
-
-        <div class="tab-circle"></div>
-        <img src="img/chat.png" alt="" class="roxinho">
-      
-        <span class="chat">Chat</span>
-      </li>
-      </a>
-      <a href="Tarefas_alunos.html">
-
-      <li class="tabs-item tab tab-tarefas" style="height:55px ;">
-
-        <div class="tab-circle"></div>
-        <i class="fa fa-clipboard tab-icon"></i>
-        <span class="tarefas">Tarefas</span>
-      </li>
-    </a>
-
-    <a href="notificacoes.html">
-      <li class="tabs-item tab tab-sino ">
-        <div class="tab-circle"></div>
-        <img class="sino" src="img/sinoooo.png">        
-        <span class="sino">Avisos</span>
-      </li>
-      </a>
-
-      <a href="calendario.html">
-      <li class="tabs-item tab tab-calendar ">
-        <div class="tab-circle"></div>
-        <img class="calendario" src="img/calendarioooo.png">            
-        <span class="calendario">Agenda</span>
-      
-      </li>
-      </a>
-
-
-      <a href="turmas.html">
-      <li class="tabs-item tab tab-team ">
-        <div class="tab-circle"></div>
-        <img class="roxinho" src="img/team.png">        
-        <span class="tab-team">Equipes</span>
-      </li>
-      </a>
-      
-      <img id="perfilImg" class="perfil" src="img/girl.png">
-      <img id="id-dropIcon" class="dropIcon" src="img/notificacoes/next.png" alt="Arrow Drop" onclick="dropMenu(), upDropDown()">
-
-    </ul>
-  </div>
-
-
-  <div id="dropDownPlace" class="dropDown dropDownPositionClose">
-
-    <div class="PlaceTextPerfil">
-      <a href="perfil.html"><h5>Perfil</h5></a>
-      
-    </div>
-    <div class="PlaceTextFormulario">
-      <a href="suporte.html"><h5>Suporte</h5></a>
-      
-    </div>
-    <div class="PlaceTextSuporte">
-      <a href="formulario.html"><h5>Formulario</h5></a>
-      
-    </div>
-
-    <div class="placeLinhaSeparar">
-      <div class="linhaSeparar"></div>
-    </div>
-
-
-    <div class="PlaceTextSair">
-      <a href="index.html"><h5 id="sizeSair">Sair</h5></a>
-      
-    </div>
-
-  </div>
-
-  </header>
-
-  <!--  fim Header-->
-
-
-
-<div class="logoPerfil">
-    <img src="img/perfil/EditPerfilIcon.png" alt="Settings Icon">
-</div>
-
-<div class="placeConfigPerfil">
-
-    <div class="opcoesPerfil">
-
-      <div class="relatProblem">
-        <img src="img/notificacoes/caution.png" alt="Relatar Problema">
-      </div>
-
-        <div class="tituloEditPerfil">
-            <h3>Edições para perfil e login</h3>
+     
+ <div class="loader_bg">
+  <div class="loader">
+      <div class="container">
+          
+            <video src="img/Loader.mp4" autoplay muted style=" height: 500px;margin-top: 200px;"></video>
+          
         </div>
+  </div>
 
+ </div>
+        <!-- fim do preloader --> 
         
-  
+    <!-- acessivel em libras -->
 
-
-        <div class="placeFotoPerfil">
-
-         
-
-            <div class="foto">
-                <img class="imgUserPerfil" src="img/notificacoes/Rafafafafa.jpg" alt="Rafaella Tomassetti">
-                <img class="imgEdit" src="img/perfil/ferramenta-lapis.png" alt="">
-            </div>
-
-
-            <div class="nomeOutros">
-
-                <div class="nome">
-                    <h4>Rafaella Tomassetti</h4>
-                    <img src="img/perfil/ferramenta-lapis.png" alt="EditNome" class="editNomeUser">
-                </div>
-                <div class="matricula">
-                  <li><h5>Nº Matricula:</h5></li>
-                  <li><p><select name="matriculas" id="matriculas">
-                    <optgroup label="TI">
-                      <option value="item1">M1DSI: 9928374728</option>
-                    <option value="item2">AWS: 9922233328</option>
-                    </optgroup>
-                    
-                    op
-                  </select></li>
-                </div>
-                <div class="senha">
-                  <li><h5>CPF:</h5></li>
-                  <li>5348.366.58-70</li>
-                  <img class="editSenha" src="img/perfil/ferramenta-lapis.png" alt="Edit">
-                </div>
-                <div class="email">
-                  <li><h5>Endereço:</h5></li>
-                  <li>São Bernardo - Rua Veracruz, 755</li>
-                </div>
-                <div class="nomeCompleto">
-                  <li><h5>Nome completo:</h5></li>
-                  <li>Rafaella Tomasseti Prado  </li>
-                </div>
-                <div class="dataNasc">
-                  <li><h5>Data de nascimento:</h5></li>
-                  <li>09/01/2005</li>
-                </div>
-
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <div class="linhaSeparar"></div>
-
-
-
-    <div class="tituloEditSistema">
-      <h3>Edições do site</h3>
-  </div>
-
-  <div class="placeEditSistema">
-
-    <div class="areaDelogin">
-      
-      <h5>Login automático:</h5>
-      
-      <br>
-      <input type="radio" name="loginAuto" id="loginSim">
-      <label for="loginSim">Sim</label>
-      
-      <input type="radio" name="loginAuto" id="loginNao">
-      <label for="loginNao">Não</label>
-    </div>
-
-    <div class="imgChat">
-      <h5>Editar fundo de chat</h5>
-      <br>
-
-      <div class="uploadImg">
-        <div class="coresDeFundo">
-          <div id="colors1" class="color cor1" onclick="selectColors1()"></div>
-          <div id="colors2" class="color cor2" onclick="selectColors2()"></div>
-          <div id="colors3" class="color cor3" onclick="selectColors3()"></div>
-          <div id="colors4" class="color cor4" onclick="selectColors4()"></div>
-          <div id="colors5" class="color cor5" onclick="selectColors5()"></div>
-        </div>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
       </div>
-
-      <button class="btnShowImgUp" type="button" onclick="mudouCor()">Selecionar</button>
     </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
-    <div class="notificacaoOn">
-      <h5>Notificação ativa:</h5>
+<style>
+  .access-button {
+      border-radius: 50px;
+      width: 60px;
+    float: right;
+  }
+    </style>
 
-      <br>
-      <input type="radio" name="NotificOn" id="notiHabilitado">
-      <label for="notiHabilitado">Habilitado</label>
+    <!-- fim libras -->
+     
       
-      <input type="radio" name="NotificOn" id="notiDesabilitado">
-      <label for="notiDesabilitado">Desabilitado</label>
 
-    </div>
-
-      <!--Dark Mode-->
-      
-  <div class="theme">
-    <h5>Dark Mode</h5>
+<section class="home">
+  <img class="logoSeed" src="img/LogoSeed.png" alt="Seed_Logo">
+  <!--Dark Mode-->
+  <div style="left: 96%;top: 5%;">
     <input type="checkbox" name="change-theme" id="change-theme" />
     <label for="change-theme">
-      <i class="bi bi-sun" ></i>
+      <i class="bi bi-sun"></i>
       <i class="bi bi-moon"></i
     ></label>
   </div>
 <!--Fim Dark Mode-->
+
+  <div>
+    <h2 data-anime="left">Seed estudo que muda vidas!</h2>
+    <h3>A Maior Escola Online Do Mundo
+      <br>Venha conhecer e ter o melhor aprendizado 
+    </h3>
+    <a href="login.html"><button class="btn_Home" data-anime="top">Entrar</button></a>
+
   </div>
+    <img  class="computer" src="img/PC.png" alt="">
+<br><br><br><br>
+</section>
 
 
+<div class="cards">
+  <div class="card card1">
+      <div class="container">
+          <img  class="Im_card" src="img/Temp_Calendar.png" alt="Temp_Calendar">
+      </div>
+      <div class="details">
+          <h3>crie datas e eventos escolares para suas turmas</h3>
+          <p>acesse o calendário e veja a data de provas, 
+            avaliações e eventos da sua escola</p>
+      </div>
+  </div>
+  <div class="card card2">
+      <div class="container">
+          <img class="Im_card" src="img/Temp_Chat.jpg" alt="Temp_Chat">
+      </div>
+      <div class="details"> 
+         <h3>Chat</h3>
+        <p>
+         Junte-se com seus porfessores e colagas de turma em uma chamada de video ou pelo nosso chat.
+        </p>
+    
+      </div>
+  </div>
+  <div class="card card3">
+      <div class="container">
+          <img  class="Im_card" src="img/Temp_Equipe.jpg" alt="Singapore">
+      </div>
+      <div class="details">
+          <h3>Entrege suas atividades de forma mais rápida</h3>
+          <p>Aprendizagem online pensada para a vida real
+            Avance na sua jornada criativa sem parar sua vida.
+            AS aulas online ajudam você  a  encontrar
+            inspiração que se encaixa
+            na sua rotina.</p>
+      </div>
+  </div>
+</div>
+    
+<br><br>
+
+<section class="sec-publi">
+<div class="info">
+  <h1>App Seed
+    Com uma Plataforma Interativa Online</h1>
+    <br>
+    <p> Estude de qualquer lugar com nosso App Seed
+    </p>
+    <p> Novas tecnoligas ajudam a tornar o aprendizado mais tranquilo para você.</p>
+     
+    <div class="botao">
+      <a href=""><button class="btn_Info"><img src="img/apple.png"  class="icon" >  Get it from <br>
+        Apple Store</button></a>
+    
+        <a href=""><button class="btn_Info"><img src="img/google-play (1).png"  class="icon" > Get it from <br>
+          Play Store</button></a>
+          <br>
+          <img src="img/star.png" alt="" class="star"><h4>4,9</h4>
+    </div>
+    <div class="cel">
+      <img src="img/Celular.png" alt="" class="app">
+    </div>
 </div>
 
+
+ 
+</section>
+
+ <!--Footer-->
+<hr>
 <footer class="footer">
-  <hr>
+
   <div class="container">
       
-            <div class="col-md-12 text-center" >
-              <h5 class="animate-charcter" > Seed</h5>
-            </div>
+          
             <div class="row">
           <div class="footer-col" >
               <h4>Ajuda</h4>
@@ -295,14 +183,18 @@
               </ul>
           </div>
 
-          <div class="footer-col containerFoot" >
+          <div class="footer-col" >
               <h4>Autor</h4>
               <ul>
-                  <li><a>Victor</a></li>
+                  <li><a>Aline Batista</a></li>
               </ul>
           </div>
+          
+          <div class="col-md-12 text-center" >
+            <h5 class="animate-charcter" > Seed</h5>
+          </div>
 
-          <div class="footer-col">
+          <div class="footer-col" style="margin-left:100px ;">
               <h4>Redes Sociais</h4>
               <div class="redes">
                   <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -312,8 +204,32 @@
           </div>
       </div>
   </div>
+ 
 
 </footer>
-<script src="js/index.js" defer></script>
-</body>
+ <!--  Fim Footer -->
+
+ <!-- Scripts -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/comparacao.js"></script>
+
+ <!--inicio Script Preloader-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+     setTimeout(function(){
+         $('.loader_bg').fadeToggle();
+     }, 1500);
+     
+ </script>
+  <!--Fim Script Preloader-->
+
 </html>
