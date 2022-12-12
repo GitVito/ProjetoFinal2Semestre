@@ -93,6 +93,7 @@
 
   ol, ul{
     padding-left: 0%;
+    margin-left: 50px;
   }
 
   /*Atributos das letras dentro do footer*/
@@ -153,6 +154,7 @@
   }
   .redes{
     text-align: left;
+    margin-left: 50px;
   }
   
   /*hover para modificar os icones*/
