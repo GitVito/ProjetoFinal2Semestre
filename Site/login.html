@@ -155,8 +155,23 @@
     </div>
 
     </div>
-    <script src="firebase/module.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB0mRJtewMmLrtjVhKwO5jfVFQ4lY4zOFI",
+            authDomain: "seed-f091d.firebaseapp.com",
+            databaseURL: "https://seed-f091d-default-rtdb.firebaseio.com",
+            projectId: "seed-f091d",
+            storageBucket: "seed-f091d.appspot.com",
+            messagingSenderId: "467421316797",
+            appId: "1:467421316797:web:b8ae86d14e959af2b519d4",
+            measurementId: "G-HMX1XZ8VG7"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
     <script src="js/login.js"></script>
 </body>
 </html>

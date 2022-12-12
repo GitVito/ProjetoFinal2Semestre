@@ -13,6 +13,7 @@ import { getFirestore, getDoc,doc, getDocs, addDoc, collection,query, where } fr
 const firebaseConfig = {
   apiKey: "AIzaSyB0mRJtewMmLrtjVhKwO5jfVFQ4lY4zOFI",
   authDomain: "seed-f091d.firebaseapp.com",
+  databaseURL: "https://seed-f091d-default-rtdb.firebaseio.com",
   projectId: "seed-f091d",
   storageBucket: "seed-f091d.appspot.com",
   messagingSenderId: "467421316797",
@@ -27,23 +28,36 @@ const app = initializeApp(firebaseConfig);
 // referencia  pra seu banco
 
 
-function entrarProfessor(){
-
-  var email = getElementVal("digitoEmailPro")
-  var senha = getElementVal("digitoSenhaPro")
-
-  signInWithEmailAndPassword(auth, email, senha)
-
-  
- 
+function entrarProfessor() {
+  firebase.auth().signInWithEmailAndPassword(
+      form.email().value, form.password().value
+  ).then(response => {
+      window.location.href = "site/apostila.html";
+  }).catch(error => {
+      alert(getErrorMessage(error));
+  });
 }
 
+function getErrorMessage(error) {
+  if (error.code == "auth/user-not-found") {
+      return "Usuário nao encontrado";
+  }
+  return error.message;
+}
 
-function entrarAluno(){
+function entrarAluno() {
+  firebase.auth().signInWithEmailAndPassword(
+      form.email().value, form.password().value
+  ).then(response => {
+      window.location.href = "ProjetoFinal2Semestre/Site/apostila.html";
+  }).catch(error => {
+      alert(getErrorMessage(error));
+  });
+}
 
-  var email = getElementVal("digitoEmailAluno")
-  var senha = getElementVal("digitoSenhaAluno")
-
-  signInWithEmailAndPassword(auth, email, senha)
-
+function getErrorMessage(error) {
+  if (error.code == "auth/user-not-found") {
+      return "Usuário nao encontrado";
+  }
+  return error.message;
 }
