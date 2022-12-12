@@ -82,3 +82,21 @@ function voltarPagTarefas(){
     areaPagTarefa.style.left= "-100";
     areaPagTarefa.style.display= "none";
 }
+
+function corUpload(){
+    let imgCor = document.getElementById("imgUpload");
+    let inputFileAluno = document.getElementById("fileAluno");
+
+    if (inputFileAluno.value != ""){
+        imgCor.style.filter= "invert(100%)";
+        imgCor.style.backgroundColor="#dde102";
+        imgCor.style.padding= "0.3em";
+        imgCor.style.transform= "scale(1.2)";
+        imgCor.style.borderRadius= "0.2em";
+    }
+}
+
+
+function saveFile(){
+    alert("O arquivo foi enviado para seu professor(a)");
+}

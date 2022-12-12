@@ -374,3 +374,8 @@ h6{
     margin: auto;
     padding-top: 20%;
 }
+#checkCheck{
+    transform: scale(3.8);
+    cursor: pointer;
+    padding: 0;
+}

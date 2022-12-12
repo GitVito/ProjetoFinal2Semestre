@@ -643,3 +643,7 @@ margin-top: 35px ;
 position: fixed;
 margin-left: 20px;
 }
+
+.mais{
+  display: none;
+}
