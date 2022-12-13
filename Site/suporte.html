@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/formulario.css" />
     <link rel="stylesheet" href="css/suporte.css">
     <script src="js/menu.js"></script>
+    <script src="js/tarefas_aluno1.js"></script>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="img/dev/iconeseed.png" type="image/x-icon">
     <!-- FontAwesome 6.1.1 CDN -->
@@ -133,7 +134,13 @@
     <div class="areaTittle">
         <img class="iconSuporte" src="img/suporte/suporte-tecnicoColor.png" alt="Suporte">
         <h3>Fale com nosso suporte</h3>
-        <img class="iconMais" src="img/suporte/pergunta.png" alt="Mais">
+        <img class="iconMais" src="img/suporte/pergunta.png" alt="Mais" onclick="abrirInput()">
+
+        <div class="inputPlace" id="inputArea">
+          <h5  style="position:absolute; left: 3%;top: 3%; font-size: 1.3em;">Digite sua dúvida:</h5>
+          <img style="position:absolute; cursor: pointer; right: 1%;top: 3%; width: 11%; height: 25%;" onclick="fecharInput()" src="https://cdn-icons-png.flaticon.com/512/6372/6372150.png" alt="x">
+          <input type="text" name="duvida" id="inpDuvida">
+        </div>
     </div>
 
     <div class="areaChat">

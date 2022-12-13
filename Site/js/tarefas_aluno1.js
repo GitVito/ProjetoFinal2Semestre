@@ -15,6 +15,12 @@ function puxarDesempenho(){
 
     conteudoAtiv.classList.add('conteudoAtividadesFora');
     conteudoDesemp.classList.add('conteudoPositView');
+
+
+    let areaPagTarefa = document.getElementById("tarefa-click");
+
+    areaPagTarefa.style.left= "-100";
+    areaPagTarefa.style.display= "none";
 }
 
 function puxarAtividade(){
@@ -99,4 +105,39 @@ function corUpload(){
 
 function saveFile(){
     alert("O arquivo foi enviado para seu professor(a)");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function abrirInput(){
+    let inputPush = document.getElementById("inputArea");
+    inputPush.style.right= "0";
+
+
+    
+}
+
+function fecharInput(){
+    let inputPull = document.getElementById("inputArea");
+    inputPull.style.right= "-100%";
 }

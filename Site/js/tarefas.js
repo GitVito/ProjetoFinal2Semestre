@@ -290,4 +290,6 @@ function salvarEdit(){
 
   setTimeout(atividade1.style.overflow= "hidden", 2000);
   setTimeout(config.style.display= "none", 2000);
+
+  alert("Edições na atividades salvas!");
 }

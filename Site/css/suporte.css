@@ -174,3 +174,29 @@
 
     width: 10%;
 }
+
+.inputPlace{
+    position: absolute;
+    top: 0;
+    right: -100%;
+
+    display: grid;
+    align-items: center;
+
+    transition: all 0.5s linear;
+
+    height: 100%;
+    width: 30%;
+    background-color: #e4e4e4;
+}
+
+#inpDuvida{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30%;
+    width: 80%;
+    margin: auto;
+    text-indent: 1em;
+}

@@ -1055,3 +1055,15 @@ background-color: rgb(227, 227, 227);
     transform: scale(1.2);
     border-radius: 0.2em ;
 } */
+
+
+.dataAtivi{
+    position: absolute;
+    top: 65%;
+    left: 7%;
+
+    width: 20%;
+    height: 30%;
+    list-style: none;
+    font-size: 1.5em;
+}
